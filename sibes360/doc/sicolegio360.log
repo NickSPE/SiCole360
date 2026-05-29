@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.9)  26 MAY 2026 05:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.9)  28 MAY 2026 11:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -692,7 +692,7 @@ Package hyperref Info: Link coloring ON on input line 133.
 \@outlinefile=\write3
 \openout3 = `sicolegio360.out'.
 
-<logounas.png, id=152, 501.875pt x 501.875pt>
+<logounas.png, id=156, 501.875pt x 501.875pt>
 File: logounas.png Graphic file (type png)
 <use logounas.png>
 Package pdftex.def Info: logounas.png  used on input line 150.
@@ -743,7 +743,7 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 151
 (c:/texlive/2026/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<LOGO-FIIS-1000x1000-TR.png, id=153, 597.23125pt x 845.1575pt>
+<LOGO-FIIS-1000x1000-TR.png, id=157, 597.23125pt x 845.1575pt>
 File: LOGO-FIIS-1000x1000-TR.png Graphic file (type png)
 <use LOGO-FIIS-1000x1000-TR.png>
 Package pdftex.def Info: LOGO-FIIS-1000x1000-TR.png  used on input line 155.
@@ -787,265 +787,826 @@ File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 \bbl@ensure@spanish {Cap\'\i tulo} 1.
 [10
 
-] [11] [12] [13] [14] [15]
-\bbl@ensure@spanish {Cap\'\i tulo} 2.
-[16
+]
 
-] [17] [18] [19] [20] [21] [22] [23]
-\bbl@ensure@spanish {Cap\'\i tulo} 3.
+LaTeX Warning: Reference `fig:anexo_organigrama' on page 11 undefined on input 
+line 279.
+
+[11]
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 29
+8.
+ (c:/texlive/2026/texmf-dist/tex/latex/psnfss/t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+)
+Overfull \hbox (7.83154pt too wide) in paragraph at lines 345--345
+[]    \T1/pcr/m/n/12 Sistemas[Área de Sistemas, Datos y Análisis - SICOLEGIO 36
+0][] 
+ []
+
+[12]
+Overfull \hbox (15.03154pt too wide) in paragraph at lines 345--345
+[]    \T1/pcr/m/n/12 style Promotora fill:#FFFFFF,stroke:#000000,stroke-width:2
+px;[] 
+ []
+
+
+Overfull \hbox (15.03154pt too wide) in paragraph at lines 345--345
+[]    \T1/pcr/m/n/12 style Direccion fill:#FFFFFF,stroke:#000000,stroke-width:2
+px;[] 
+ []
+
+
+Overfull \hbox (166.23148pt too wide) in paragraph at lines 345--345
+[]    \T1/pcr/m/n/12 style Sistemas fill:#FFFFFF,stroke:#000000,stroke-width:3p
+x,stroke-dasharray: 5 5;[] 
+ []
+
+
+Overfull \hbox (15.03154pt too wide) in paragraph at lines 345--345
+[]    \T1/pcr/m/n/12 style Academico fill:#FFFFFF,stroke:#000000,stroke-width:2
+px;[] 
+ []
+
+
+Overfull \hbox (22.23154pt too wide) in paragraph at lines 345--345
+[]    \T1/pcr/m/n/12 style Secretaria fill:#FFFFFF,stroke:#000000,stroke-width:
+1px;[] 
+ []
+
+[13] [14] [15] [16] [17]
+Underfull \hbox (badness 10000) in paragraph at lines 420--420
+[]|\T1/ptm/b/n/12 Flujo
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 420--420
+\T1/ptm/b/n/12 Ma-nual
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 420--420
+[]|\T1/ptm/b/n/12 Flujo
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 420--420
+\T1/ptm/b/n/12 SI-CO-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 420--420
+\T1/ptm/b/n/12 LE-GIO
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 420--420
+\T1/ptm/b/n/12 360
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 420--420
+[]|\T1/ptm/m/n/12 Fichas
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 420--420
+\T1/ptm/m/n/12 di-gi-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 420--420
+\T1/ptm/m/n/12 ta-ción
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 420--420
+\T1/ptm/m/n/12 re-dun-
+ []
+
+
+Underfull \hbox (badness 1052) in paragraph at lines 420--420
+\T1/ptm/m/n/12 dan-te en
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 420--420
+[]|\T1/ptm/m/n/12 Única
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 420--420
+\T1/ptm/m/n/12 en-tra-da
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 420--420
+\T1/ptm/m/n/12 di-gi-tal
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 420--420
+\T1/ptm/m/n/12 por el
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 420--420
+\T1/ptm/m/n/12 apo-de-ra-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 420--420
+\T1/ptm/m/n/12 pla-ta-for-
+ []
+
+
+Overfull \hbox (13.71791pt too wide) in paragraph at lines 420--420
+[]|\T1/ptm/m/n/12 Verificación
+ []
+
+
+Underfull \hbox (badness 4913) in paragraph at lines 420--420
+\T1/ptm/m/n/12 vi-sual y
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 420--420
+\T1/ptm/m/n/12 ma-nual
+ []
+
+
+Underfull \hbox (badness 2495) in paragraph at lines 420--420
+\T1/ptm/m/n/12 en lis-tas
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 420--420
+\T1/ptm/m/n/12 im-pre-
+ []
+
+
+Overfull \hbox (7.05798pt too wide) in paragraph at lines 420--420
+[]|\T1/ptm/m/n/12 Validación
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 420--420
+\T1/ptm/m/n/12 au-to-ma-
+ []
+
+
+Underfull \hbox (badness 6608) in paragraph at lines 420--420
+\T1/ptm/m/n/12 ti-za-da a
+ []
+
+
+Underfull \hbox (badness 4518) in paragraph at lines 420--420
+\T1/ptm/m/n/12 ni-vel de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 420--420
+\T1/ptm/m/n/12 ba-se de
+ []
+
+
+Overfull \hbox (2.39034pt too wide) in paragraph at lines 420--420
+[]|\T1/ptm/m/n/12 Cuaderno
+ []
+
+
+Underfull \hbox (badness 7558) in paragraph at lines 420--420
+\T1/ptm/m/n/12 de ca-ja,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 420--420
+\T1/ptm/m/n/12 re-ci-bos
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 420--420
+\T1/ptm/m/n/12 im-pre-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 420--420
+\T1/ptm/m/n/12 sos,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 420--420
+\T1/ptm/m/n/12 ar-queo
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 420--420
+[]|\T1/ptm/m/n/12 Registro
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 420--420
+\T1/ptm/m/n/12 de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 420--420
+\T1/ptm/m/n/12 tran-sac-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 420--420
+\T1/ptm/m/n/12 cio-nes
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 420--420
+\T1/ptm/m/n/12 ató-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 420--420
+\T1/ptm/m/n/12 mi-cas,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 420--420
+\T1/ptm/m/n/12 ar-queo
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 420--420
+\T1/ptm/m/n/12 in-me-dia-
+ []
+
+
+Overfull \hbox (21.96194pt too wide) in paragraph at lines 420--420
+[]|\T1/ptm/m/n/12 Transcripción
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 420--420
+\T1/ptm/m/n/12 ma-nual
+ []
+
+
+Underfull \hbox (badness 1668) in paragraph at lines 420--420
+\T1/ptm/m/n/12 de no-tas
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 420--420
+\T1/ptm/m/n/12 dios en
+ []
+
+
+Overfull \hbox (3.72214pt too wide) in paragraph at lines 420--420
+[]|\T1/ptm/m/n/12 Ejecución
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 420--420
+\T1/ptm/m/n/12 ins-tan-
+ []
+
+
+Underfull \hbox (badness 1681) in paragraph at lines 420--420
+\T1/ptm/m/n/12 tá-nea en
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 420--420
+\T1/ptm/m/n/12 bac-kend
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 420--420
+\T1/ptm/m/n/12 me-dian-te
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 420--420
+\T1/ptm/m/n/12 trig-gers
+ []
+
+
+Overfull \hbox (19.05786pt too wide) in paragraph at lines 420--420
+[]|\T1/ptm/m/n/12 Recopilación
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 420--420
+\T1/ptm/m/n/12 ma-nual,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 420--420
+\T1/ptm/m/n/12 im-pre-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 420--420
+\T1/ptm/m/n/12 sión
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 420--420
+\T1/ptm/m/n/12 in-di-vi-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 420--420
+\T1/ptm/m/n/12 dua-li-za-
+ []
+
+
+Overfull \hbox (11.04211pt too wide) in paragraph at lines 420--420
+[]|\T1/ptm/m/n/12 Generación
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 420--420
+\T1/ptm/m/n/12 ma-si-va
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 420--420
+\T1/ptm/m/n/12 en lo-te
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 420--420
+\T1/ptm/m/n/12 a PDF
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 420--420
+\T1/ptm/m/n/12 des-car-
+ []
+
+
+Underfull \hbox (badness 1097) in paragraph at lines 420--420
+\T1/ptm/m/n/12 ga-ble en
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 420--420
+\T1/ptm/m/n/12 se-gun-
+ []
+
+
+Overfull \hbox (25.06989pt too wide) in paragraph at lines 420--420
+[]|\T1/ptm/m/n/12 Consolidación
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 420--420
+\T1/ptm/m/n/12 ma-nual
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 420--420
+[]|\T1/ptm/m/n/12 Cuadros
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 420--420
+\T1/ptm/m/n/12 de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 420--420
+\T1/ptm/m/n/12 con-trol
+ []
+
+
+Overfull \hbox (7.07007pt too wide) in paragraph at lines 420--420
+\T1/ptm/m/n/12 (DSS/EIS)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 420--420
+\T1/ptm/m/n/12 ac-tua-li-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 420--420
+\T1/ptm/m/n/12 tiem-po
+ []
+
+[18]
+Overfull \vbox (139.45029pt too high) has occurred while \output is active []
+
+
+[19] [20]
+Overfull \hbox (29.43153pt too wide) in paragraph at lines 488--488
+[]        \T1/pcr/m/n/12 B1[Acceder al Portal Web] --> B2[Llenar Formulario Dig
+ital][] 
+ []
+
+[21] [22] [23]
+\bbl@ensure@spanish {Cap\'\i tulo} 2.
 [24
 
+] [25] [26] [27] [28] [29] [30] [31]
+\bbl@ensure@spanish {Cap\'\i tulo} 3.
+[32
+
 ]
-Underfull \hbox (badness 2197) in paragraph at lines 540--540
+Underfull \hbox (badness 2197) in paragraph at lines 711--711
 []|\T1/ptm/b/n/12 Propósito Ope-ra-ti-vo en SI-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 540--540
+Underfull \hbox (badness 10000) in paragraph at lines 711--711
 []|\T1/ptm/m/n/12 DNI, Nom-bres, Ape-lli-dos,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 540--540
+Underfull \hbox (badness 10000) in paragraph at lines 711--711
 []|\T1/ptm/m/n/12 Administración del per-so-nal
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 540--540
+Underfull \hbox (badness 10000) in paragraph at lines 711--711
 []|\T1/ptm/m/n/12 Bloque de Ho-ras, Cru-ce
  []
 
 
-Underfull \hbox (badness 1755) in paragraph at lines 540--540
+Underfull \hbox (badness 1755) in paragraph at lines 711--711
 []|\T1/ptm/m/n/12 Nombre de Au-la, Ubi-ca-ción,
  []
 
-[25] [26] [27] [28]
-Underfull \hbox (badness 3954) in paragraph at lines 622--622
+[33] [34] [35] [36]
+Underfull \hbox (badness 3954) in paragraph at lines 793--793
 []|\T1/ptm/m/n/12 Matrícula de es-tu-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 623--623
+Underfull \hbox (badness 10000) in paragraph at lines 794--794
 []|\T1/ptm/m/n/12 Registro de es-tu-
  []
 
 
-Underfull \hbox (badness 1320) in paragraph at lines 626--626
+Underfull \hbox (badness 1320) in paragraph at lines 797--797
 []|\T1/ptm/m/n/12 Asignación de cur-
  []
 
 
-Underfull \hbox (badness 1210) in paragraph at lines 627--627
+Underfull \hbox (badness 1210) in paragraph at lines 798--798
 []|\T1/ptm/m/n/12 Asignación de sec-
  []
 
 
-Underfull \hbox (badness 1521) in paragraph at lines 629--629
+Underfull \hbox (badness 1521) in paragraph at lines 800--800
 []|\T1/ptm/m/n/12 Justificación de in-
  []
 
 
-Underfull \hbox (badness 2134) in paragraph at lines 631--631
+Underfull \hbox (badness 2134) in paragraph at lines 802--802
 []|\T1/ptm/m/n/12 Estudiante, no-ta, eva-lua-
  []
 
 
-Underfull \hbox (badness 2318) in paragraph at lines 632--632
+Underfull \hbox (badness 2318) in paragraph at lines 803--803
 []|\T1/ptm/m/n/12 Cálculo de pro-me-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 633--633
+Underfull \hbox (badness 10000) in paragraph at lines 804--804
 []|\T1/ptm/m/n/12 Promedios, asis-ten-cia,
  []
 
 
-Underfull \hbox (badness 2495) in paragraph at lines 639--639
+Underfull \hbox (badness 2495) in paragraph at lines 810--810
 []|\T1/ptm/m/n/12 Comunicados es-co-
  []
 
 
-Underfull \hbox (badness 2478) in paragraph at lines 640--640
+Underfull \hbox (badness 2478) in paragraph at lines 811--811
 []|\T1/ptm/m/n/12 Reportes ins-ti-tu-cio-
  []
 
-[29]
-ignored: Infinite glue shrinkage found in box being split [30] [31] [32] [33] [34] [
-35] [36]
-LaTeX Font Info:    Trying to load font information for T1+pcr on input line 79
-7.
+[37]
+ignored: Infinite glue shrinkage found in box being split [38] [39] [40] [41] [42] [
+43] [44] [45] [46] [47]
+Underfull \hbox (badness 10000) in paragraph at lines 1015--1015
+[]|\T1/ptm/b/n/12 Perfil Con-duc-
+ []
 
-(c:/texlive/2026/texmf-dist/tex/latex/psnfss/t1pcr.fd
-File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-) [37] [38] [39] [40]
-[41]
+
+Underfull \hbox (badness 10000) in paragraph at lines 1015--1015
+[]|\T1/ptm/b/n/12 Ausentismo
+ []
+
+
+Underfull \hbox (badness 1521) in paragraph at lines 1015--1015
+[]|\T1/ptm/b/n/12 Estado de Pen-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1015--1015
+[]|\T1/ptm/m/n/12 Recuperación
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1015--1015
+\T1/ptm/m/n/12 post-pandemia.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1015--1015
+\T1/ptm/m/n/12 Pro-me-dios ba-jos
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1015--1015
+[]|\T1/ptm/m/n/12 Histórico ce-
+ []
+
+
+Underfull \hbox (badness 3439) in paragraph at lines 1015--1015
+\T1/ptm/m/n/12 rra-do. 100% de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1015--1015
+\T1/ptm/m/n/12 pen-sio-nes pa-ga-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1015--1015
+\T1/ptm/m/n/12 mi-ca. Pro-me-dios
+ []
+
+
+Underfull \hbox (badness 2096) in paragraph at lines 1015--1015
+\T1/ptm/m/n/12 14.88 en 3\TS1/ptm/m/n/12 ° \T1/ptm/m/n/12 Se-
+ []
+
+
+Underfull \hbox (badness 1406) in paragraph at lines 1015--1015
+\T1/ptm/m/n/12 ce-len-te. Pi-cos de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1015--1015
+[]|\T1/ptm/m/n/12 Reducción
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1015--1015
+\T1/ptm/m/n/12 es-tu-dian-tes
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1015--1015
+[]|\T1/ptm/m/n/12 Histórico ce-
+ []
+
+
+Underfull \hbox (badness 3439) in paragraph at lines 1015--1015
+\T1/ptm/m/n/12 rra-do. 100% de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1015--1015
+\T1/ptm/m/n/12 pen-sio-nes pa-ga-
+ []
+
+
+Underfull \hbox (badness 7631) in paragraph at lines 1015--1015
+[]|\T1/ptm/m/n/12 Gestión en cur-
+ []
+
+
+Underfull \hbox (badness 1259) in paragraph at lines 1015--1015
+\T1/ptm/m/n/12 li-za-dos en 4\TS1/ptm/m/n/12 ° \T1/ptm/m/n/12 de
+ []
+
+
+Underfull \hbox (badness 3758) in paragraph at lines 1015--1015
+\T1/ptm/m/n/12 Pri-ma-ria (pro-me-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1015--1015
+[]|\T1/ptm/m/n/12 Bitácora es-co-lar
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1015--1015
+\T1/ptm/m/n/12 mo-de-ra-da y de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1015--1015
+[]|\T1/ptm/m/n/12 Periodo ac-ti-vo.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1015--1015
+\T1/ptm/m/n/12 Mar-zo y Abril
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1015--1015
+\T1/ptm/m/n/12 100% pa-ga-do.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1015--1015
+\T1/ptm/m/n/12 Junio-Dic en
+ []
+
+[48]
+Overfull \hbox (51.03152pt too wide) in paragraph at lines 1031--1031
+[]\T1/pcr/m/n/12 # Lógica Django ORM implementada para asegurar consistencia mu
+ltianual[] 
+ []
+
+
+Overfull \hbox (159.03148pt too wide) in paragraph at lines 1031--1031
+[]    \T1/pcr/m/n/12 estudiante__matriculas__periodo__anio=anio, # Filtro estri
+cto de año en matrícula[] 
+ []
+
+
+Overfull \hbox (223.83145pt too wide) in paragraph at lines 1031--1031
+[]    \T1/pcr/m/n/12 periodo__anio=anio                           # Filtro estr
+icto de año en periodo académico[] 
+ []
+
+[49] [50] [51] [52]
 \bbl@ensure@spanish {Cap\'\i tulo} 4.
 
-Overfull \hbox (79.83151pt too wide) in paragraph at lines 932--932
+Overfull \hbox (79.83151pt too wide) in paragraph at lines 1173--1173
 []\T1/pcr/m/n/12 |   |-- config/            # Configuraciones globales y de seg
 uridad HTTPS[] 
  []
 
 
-Overfull \hbox (87.03151pt too wide) in paragraph at lines 932--932
+Overfull \hbox (87.03151pt too wide) in paragraph at lines 1173--1173
 []\T1/pcr/m/n/12 |   |-- controllers/       # Lógica transaccional (Matrícula, 
 Notas, Pagos)[] 
  []
 
 
-Overfull \hbox (87.03151pt too wide) in paragraph at lines 932--932
+Overfull \hbox (87.03151pt too wide) in paragraph at lines 1173--1173
 []\T1/pcr/m/n/12 |   |-- models/            # Definición física del esquema de 
 base de datos[] 
  []
 
 
-Overfull \hbox (115.8315pt too wide) in paragraph at lines 932--932
+Overfull \hbox (115.8315pt too wide) in paragraph at lines 1173--1173
 []\T1/pcr/m/n/12 |   |-- routes/            # Definición de endpoints y control
  de acceso (APIs)[] 
  []
 
 
-Overfull \hbox (72.63152pt too wide) in paragraph at lines 932--932
+Overfull \hbox (72.63152pt too wide) in paragraph at lines 1173--1173
 []\T1/pcr/m/n/12 |   `-- database.js        # Conector relacional y pools de tr
 ansacciones[] 
  []
 
-[42
+[53
 
 ]
-Overfull \hbox (108.6315pt too wide) in paragraph at lines 932--932
+Overfull \hbox (108.6315pt too wide) in paragraph at lines 1173--1173
 []        \T1/pcr/m/n/12 |-- components/    # Componentes modulares reactivos (
 tablas de notas)[] 
  []
 
 
-Overfull \hbox (94.2315pt too wide) in paragraph at lines 932--932
+Overfull \hbox (94.2315pt too wide) in paragraph at lines 1173--1173
 []        \T1/pcr/m/n/12 |-- views/         # Pantallas principales del sistema
  transaccional[] 
  []
 
 
-Overfull \hbox (58.23152pt too wide) in paragraph at lines 932--932
+Overfull \hbox (58.23152pt too wide) in paragraph at lines 1173--1173
 []        \T1/pcr/m/n/12 `-- App.js         # Enrutador principal y consumo del
  API REST[] 
  []
 
 
-Overfull \hbox (151.83148pt too wide) in paragraph at lines 978--978
+Overfull \hbox (151.83148pt too wide) in paragraph at lines 1219--1219
 []\T1/pcr/m/n/12 async function registrarMatriculaTransaccional(idEstudiante, i
 dSeccion, montoPago) {[] 
  []
 
 
-Overfull \hbox (36.63153pt too wide) in paragraph at lines 978--978
+Overfull \hbox (36.63153pt too wide) in paragraph at lines 1219--1219
 []    \T1/pcr/m/n/12 // 2. Validar el aforo máximo disponible de la sección aca
 démica[] 
  []
 
 
-Overfull \hbox (576.6313pt too wide) in paragraph at lines 978--978
+Overfull \hbox (576.6313pt too wide) in paragraph at lines 1219--1219
 []      \T1/pcr/m/n/12 'SELECT aforo_max, (SELECT COUNT(*) FROM Matricula WHERE
  id_seccion = $1) as matriculados FROM Seccion WHERE id_seccion = $1 FOR UPDATE
 ',[] 
  []
 
-[43]
-Overfull \hbox (497.43134pt too wide) in paragraph at lines 978--978
+[54]
+Overfull \hbox (497.43134pt too wide) in paragraph at lines 1219--1219
 []    \T1/pcr/m/n/12 const matriculaQuery = 'INSERT INTO Matricula (id_estudian
 te, id_seccion, fecha) VALUES ($1, $2, NOW()) RETURNING id_matricula';[] 
  []
 
 
-Overfull \hbox (173.43147pt too wide) in paragraph at lines 978--978
+Overfull \hbox (173.43147pt too wide) in paragraph at lines 1219--1219
 []    \T1/pcr/m/n/12 const matriculaRes = await client.query(matriculaQuery, [i
 dEstudiante, idSeccion]);[] 
  []
 
 
-Overfull \hbox (7.83154pt too wide) in paragraph at lines 978--978
+Overfull \hbox (7.83154pt too wide) in paragraph at lines 1219--1219
 []    \T1/pcr/m/n/12 // 4. Registrar la transacción de cobro inicial de matrícu
 la[] 
  []
 
 
-Overfull \hbox (360.6314pt too wide) in paragraph at lines 978--978
+Overfull \hbox (360.6314pt too wide) in paragraph at lines 1219--1219
 []    \T1/pcr/m/n/12 const pagoQuery = 'INSERT INTO Pago (id_estudiante, monto,
  concepto, fecha_pago) VALUES ($1, $2, $3, NOW())';[] 
  []
 
 
-Overfull \hbox (79.83151pt too wide) in paragraph at lines 978--978
+Overfull \hbox (79.83151pt too wide) in paragraph at lines 1219--1219
 []    \T1/pcr/m/n/12 await client.query(pagoQuery, [idEstudiante, montoPago, 'M
 ATRICULA']);[] 
  []
 
 
-Overfull \hbox (15.03154pt too wide) in paragraph at lines 978--978
+Overfull \hbox (15.03154pt too wide) in paragraph at lines 1219--1219
 []    \T1/pcr/m/n/12 // 5. Confirmar transacción de forma atómica en base de da
 tos[] 
  []
 
 
-Overfull \hbox (151.83148pt too wide) in paragraph at lines 978--978
+Overfull \hbox (151.83148pt too wide) in paragraph at lines 1219--1219
 []    \T1/pcr/m/n/12 // En caso de cualquier error se aborta la transacción y s
 e deshacen los cambios[] 
  []
 
-[44] [45] [46] [47] [48] [49] [50]
+[55] [56] [57] [58] [59] [60] [61]
 \bbl@ensure@spanish {Cap\'\i tulo} 5.
-[51
+[62
 
-] [52] [53
+] [63] [64
 
 ]
-<image.png, id=620, 1444.64719pt x 182.93344pt>
+<image.png, id=698, 1444.64719pt x 182.93344pt>
 File: image.png Graphic file (type png)
 <use image.png>
-Package pdftex.def Info: image.png  used on input line 1167.
+Package pdftex.def Info: image.png  used on input line 1408.
 (pdftex.def)             Requested size: 362.37598pt x 45.88676pt.
- [54
+ [65
 
  <./image.png>]
-<1.png, id=628, 313.14429pt x 341.60493pt>
+<1.png, id=704, 313.14429pt x 341.60493pt>
 File: 1.png Graphic file (type png)
 <use 1.png>
-Package pdftex.def Info: 1.png  used on input line 1178.
+Package pdftex.def Info: 1.png  used on input line 1419.
 (pdftex.def)             Requested size: 362.37598pt x 395.33415pt.
- [55
+ [66
 
  <./1.png (PNG copy)>]
-<3.png, id=633, 313.14429pt x 341.60493pt>
+<3.png, id=710, 313.14429pt x 341.60493pt>
 File: 3.png Graphic file (type png)
 <use 3.png>
-Package pdftex.def Info: 3.png  used on input line 1189.
+Package pdftex.def Info: 3.png  used on input line 1430.
 (pdftex.def)             Requested size: 362.37598pt x 395.33415pt.
- [56
+ [67
 
  <./3.png (PNG copy)>] (./sicolegio360.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
  ***********
+
+
+LaTeX Warning: There were undefined references.
+
 Package rerunfilecheck Info: File `sicolegio360.out' has not changed.
-(rerunfilecheck)             Checksum: B714700903D15D132F6B326403448A13;9837.
+(rerunfilecheck)             Checksum: 7DDAF43F3565B1448497A44F20E61907;10311.
  ) 
 Here is how much of TeX's memory you used:
- 16457 strings out of 467525
- 258355 string characters out of 5423210
- 715880 words of memory out of 5000000
- 44852 multiletter control sequences out of 15000+600000
+ 16497 strings out of 467525
+ 258819 string characters out of 5423210
+ 716078 words of memory out of 5000000
+ 44858 multiletter control sequences out of 15000+600000
  670341 words of font info for 81 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,12n,83p,801b,657s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,12n,83p,842b,657s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2026/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb><c:/texlive/20
 26/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/2026/texmf-dist/font
 s/type1/urw/times/utmbi8a.pfb><c:/texlive/2026/texmf-dist/fonts/type1/urw/times
 /utmr8a.pfb><c:/texlive/2026/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on sicolegio360.pdf (57 pages, 3565283 bytes).
+Output written on sicolegio360.pdf (68 pages, 3585023 bytes).
 PDF statistics:
- 722 PDF objects out of 1000 (max. 8388607)
- 639 compressed objects within 7 object streams
- 261 named destinations out of 1000 (max. 500000)
- 322 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 807 PDF objects out of 1000 (max. 8388607)
+ 712 compressed objects within 8 object streams
+ 295 named destinations out of 1000 (max. 500000)
+ 330 words of extra memory for PDF output out of 10000 (max. 10000000)
 

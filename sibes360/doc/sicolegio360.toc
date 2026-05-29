@@ -6,152 +6,162 @@
 \contentsline {section}{\numberline {1.1}Contexto de la organización escolar}{10}{section.1.1}%
 \contentsline {subsection}{\numberline {1.1.1}Las instituciones educativas privadas como organizaciones de servicios}{10}{subsection.1.1.1}%
 \contentsline {subsection}{\numberline {1.1.2}Tipos de organizaciones y roles del sistema}{10}{subsection.1.1.2}%
-\contentsline {section}{\numberline {1.2}El enfoque socio-tecnológico en SICOLEGIO 360}{11}{section.1.2}%
-\contentsline {section}{\numberline {1.3}Diagnóstico de los procesos manuales actuales}{11}{section.1.3}%
-\contentsline {subsection}{\numberline {1.3.1}Gestión y Registro Administrativo Manual}{11}{subsection.1.3.1}%
-\contentsline {paragraph}{Proceso manual de matrícula.}{11}{paragraph*.4}%
-\contentsline {paragraph}{Proceso manual de registro de estudiantes.}{12}{paragraph*.5}%
-\contentsline {paragraph}{Proceso manual de registro de docentes.}{12}{paragraph*.6}%
-\contentsline {paragraph}{Proceso manual de asignación de cursos y secciones.}{12}{paragraph*.7}%
-\contentsline {subsection}{\numberline {1.3.2}Gestión Académica y Evaluación Manual}{12}{subsection.1.3.2}%
-\contentsline {paragraph}{Proceso manual de asistencia.}{12}{paragraph*.8}%
-\contentsline {paragraph}{Proceso manual de registro de notas.}{12}{paragraph*.9}%
-\contentsline {paragraph}{Proceso manual de cálculo de promedios.}{12}{paragraph*.10}%
-\contentsline {paragraph}{Proceso manual de emisión de libretas.}{13}{paragraph*.11}%
-\contentsline {subsection}{\numberline {1.3.3}Gestión Disciplinaria y de Bienestar Manual}{13}{subsection.1.3.3}%
-\contentsline {paragraph}{Proceso manual de conducta e incidencias.}{13}{paragraph*.12}%
-\contentsline {paragraph}{Proceso manual de citaciones a padres.}{13}{paragraph*.13}%
-\contentsline {subsection}{\numberline {1.3.4}Gestión Financiera, de Comunicados y Alertas Manual}{13}{subsection.1.3.4}%
-\contentsline {paragraph}{Proceso manual de pagos de pensiones.}{13}{paragraph*.14}%
-\contentsline {paragraph}{Proceso manual de comunicados escolares.}{13}{paragraph*.15}%
-\contentsline {section}{\numberline {1.4}Análisis de deficiencias y limitaciones de la gestión manual}{14}{section.1.4}%
-\contentsline {section}{\numberline {1.5}Formulación del problema y objetivos del proyecto}{14}{section.1.5}%
-\contentsline {subsection}{\numberline {1.5.1}Formulación del problema}{14}{subsection.1.5.1}%
-\contentsline {subsection}{\numberline {1.5.2}Objetivos del proyecto}{15}{subsection.1.5.2}%
-\contentsline {paragraph}{Objetivo general:}{15}{paragraph*.17}%
-\contentsline {paragraph}{Objetivos específicos:}{15}{paragraph*.18}%
-\contentsline {chapter}{\numberline {2}Marco Teórico y Enfoque de Sistemas Transaccionales (TPS)}{16}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Teoría general de los sistemas de información}{16}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Aplicación de los tipos de sistemas en SICOLEGIO 360}{16}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Sistemas de Procesamiento de Transacciones (TPS)}{16}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}Aplicación de sistemas de oficina en SICOLEGIO 360}{17}{subsection.2.2.2}%
-\contentsline {subsection}{\numberline {2.2.3}Aplicación de KWS en SICOLEGIO 360}{17}{subsection.2.2.3}%
-\contentsline {subsection}{\numberline {2.2.4}Aplicación de MIS en SICOLEGIO 360}{17}{subsection.2.2.4}%
-\contentsline {subsection}{\numberline {2.2.5}Aplicación de DSS en SICOLEGIO 360}{17}{subsection.2.2.5}%
-\contentsline {subsection}{\numberline {2.2.6}Aplicación de ESS/EIS en SICOLEGIO 360}{18}{subsection.2.2.6}%
-\contentsline {subsection}{\numberline {2.2.7}Relación entre los sistemas dentro de SICOLEGIO 360}{18}{subsection.2.2.7}%
-\contentsline {subsection}{\numberline {2.2.8}Flujo de información desde el nivel operativo hasta el nivel estratégico}{18}{subsection.2.2.8}%
-\contentsline {section}{\numberline {2.3}Funciones del sistema en la pirámide organizacional}{18}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Niveles organizacionales y sistemas de información}{18}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}Nivel operativo: TPS}{19}{subsection.2.3.2}%
-\contentsline {subsection}{\numberline {2.3.3}Nivel del conocimiento: KWS y sistemas de oficina}{19}{subsection.2.3.3}%
-\contentsline {subsection}{\numberline {2.3.4}Nivel administrativo: MIS y DSS}{19}{subsection.2.3.4}%
-\contentsline {subsection}{\numberline {2.3.5}Nivel estratégico: ESS/EIS}{19}{subsection.2.3.5}%
-\contentsline {subsection}{\numberline {2.3.6}Usuarios atendidos por cada nivel de la pirámide}{20}{subsection.2.3.6}%
-\contentsline {section}{\numberline {2.4}El TPS como base organizacional y garantías ACID}{20}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}Importancia de los TPS en SICOLEGIO 360}{20}{subsection.2.4.1}%
-\contentsline {subsection}{\numberline {2.4.2}Garantías del TPS: Propiedades ACID}{20}{subsection.2.4.2}%
-\contentsline {section}{\numberline {2.5}Análisis de datos e indicadores organizacionales}{21}{section.2.5}%
-\contentsline {subsection}{\numberline {2.5.1}Dimensiones de Datos Analizados}{21}{subsection.2.5.1}%
-\contentsline {paragraph}{Datos institucionales.}{21}{paragraph*.20}%
-\contentsline {paragraph}{Datos académicos.}{21}{paragraph*.21}%
-\contentsline {paragraph}{Datos de asistencia.}{21}{paragraph*.22}%
-\contentsline {paragraph}{Datos de conducta.}{22}{paragraph*.23}%
-\contentsline {paragraph}{Datos financieros.}{22}{paragraph*.24}%
-\contentsline {paragraph}{Datos de comunicación con padres.}{22}{paragraph*.25}%
-\contentsline {subsection}{\numberline {2.5.2}Indicadores principales del sistema}{22}{subsection.2.5.2}%
-\contentsline {chapter}{\numberline {3}Propuesta y Diseño Lógico del TPS SICOLEGIO 360}{24}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Arquitectura del TPS propuesto}{24}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Módulos y submódulos del sistema}{24}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Módulos de Configuración Institucional y Seguridad}{24}{subsection.3.2.1}%
-\contentsline {paragraph}{Módulo de administración general de la plataforma.}{24}{paragraph*.27}%
-\contentsline {subsection}{\numberline {3.2.2}Módulo de Gestión Jerárquica de Instituciones Educativas}{24}{subsection.3.2.2}%
-\contentsline {paragraph}{1. Submódulo de Información General de la IE.}{26}{paragraph*.29}%
-\contentsline {paragraph}{2. Submódulo de Director.}{26}{paragraph*.30}%
-\contentsline {paragraph}{3. Submódulo de Docentes.}{26}{paragraph*.31}%
-\contentsline {paragraph}{4. Submódulo de Cursos / Áreas.}{26}{paragraph*.32}%
-\contentsline {paragraph}{5. Submódulo de Grados y Secciones.}{26}{paragraph*.33}%
-\contentsline {paragraph}{6. Submódulo de Alumnos.}{26}{paragraph*.34}%
-\contentsline {paragraph}{7. Submódulo de Matrícula.}{27}{paragraph*.35}%
-\contentsline {paragraph}{8. Submódulo de Horarios.}{27}{paragraph*.36}%
-\contentsline {paragraph}{9. Submódulo de Aulas.}{27}{paragraph*.37}%
-\contentsline {paragraph}{Módulo de usuarios y roles.}{27}{paragraph*.38}%
-\contentsline {subsection}{\numberline {3.2.3}Módulos de Gestión Académica e Historial Escolar}{27}{subsection.3.2.3}%
-\contentsline {paragraph}{Módulo de matrícula.}{27}{paragraph*.39}%
-\contentsline {paragraph}{Módulo de estudiantes.}{27}{paragraph*.40}%
-\contentsline {paragraph}{Módulo de apoderados.}{28}{paragraph*.41}%
-\contentsline {paragraph}{Módulo de docentes.}{28}{paragraph*.42}%
-\contentsline {paragraph}{Módulo académico.}{28}{paragraph*.43}%
-\contentsline {paragraph}{Módulo de horarios.}{28}{paragraph*.44}%
-\contentsline {subsection}{\numberline {3.2.4}Módulos de Control de Asistencia y Evaluación}{28}{subsection.3.2.4}%
-\contentsline {paragraph}{Módulo de asistencia.}{28}{paragraph*.45}%
-\contentsline {paragraph}{Módulo de notas y evaluaciones.}{28}{paragraph*.46}%
-\contentsline {paragraph}{Módulo de libretas.}{28}{paragraph*.47}%
-\contentsline {paragraph}{Módulo de conducta.}{28}{paragraph*.48}%
-\contentsline {subsection}{\numberline {3.2.5}Módulos de Gestión Financiera, Comunicación y Soporte Analítico}{29}{subsection.3.2.5}%
-\contentsline {paragraph}{Módulo de pagos y pensiones.}{29}{paragraph*.49}%
-\contentsline {paragraph}{Módulo de comunicación.}{29}{paragraph*.50}%
-\contentsline {paragraph}{Módulo de reportes.}{29}{paragraph*.51}%
-\contentsline {paragraph}{Módulo de alertas.}{29}{paragraph*.52}%
-\contentsline {section}{\numberline {3.3}Matriz y procesamiento de las 21 transacciones del TPS}{29}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}TPS de Gestión y Configuración Institucional}{32}{subsection.3.3.1}%
-\contentsline {paragraph}{TPS 1: Registro de institución educativa.}{32}{paragraph*.53}%
-\contentsline {paragraph}{TPS 2: Configuración institucional.}{32}{paragraph*.54}%
-\contentsline {subsection}{\numberline {3.3.2}TPS de Gestión Académica y Evaluación}{32}{subsection.3.3.2}%
-\contentsline {paragraph}{TPS 3: Matrícula de estudiantes.}{32}{paragraph*.55}%
-\contentsline {paragraph}{TPS 4: Registro de estudiantes.}{33}{paragraph*.56}%
-\contentsline {paragraph}{TPS 5: Registro de apoderados.}{33}{paragraph*.57}%
-\contentsline {paragraph}{TPS 6: Registro de docentes.}{33}{paragraph*.58}%
-\contentsline {paragraph}{TPS 7: Asignación de cursos.}{33}{paragraph*.59}%
-\contentsline {paragraph}{TPS 8: Asignación de grados y secciones.}{33}{paragraph*.60}%
-\contentsline {paragraph}{TPS 9: Control de asistencia.}{33}{paragraph*.61}%
-\contentsline {paragraph}{TPS 10: Justificación de inasistencias.}{33}{paragraph*.62}%
-\contentsline {paragraph}{TPS 11: Registro de evaluaciones.}{34}{paragraph*.63}%
-\contentsline {paragraph}{TPS 12: Registro de notas.}{34}{paragraph*.64}%
-\contentsline {paragraph}{TPS 13: Cálculo de promedios.}{34}{paragraph*.65}%
-\contentsline {paragraph}{TPS 14: Emisión de libreta de notas.}{34}{paragraph*.66}%
-\contentsline {subsection}{\numberline {3.3.3}TPS de Gestión Disciplinaria y de Bienestar}{34}{subsection.3.3.3}%
-\contentsline {paragraph}{TPS 15: Conducta estudiantil.}{34}{paragraph*.67}%
-\contentsline {paragraph}{TPS 16: Citación a padres.}{34}{paragraph*.68}%
-\contentsline {paragraph}{TPS 17: Acuerdos con padres.}{34}{paragraph*.69}%
-\contentsline {subsection}{\numberline {3.3.4}TPS Financieros, de Comunicación y Reportes}{35}{subsection.3.3.4}%
-\contentsline {paragraph}{TPS 18: Pagos de pensiones.}{35}{paragraph*.70}%
-\contentsline {paragraph}{TPS 19: Registro de deudas y moras.}{35}{paragraph*.71}%
-\contentsline {paragraph}{TPS 20: Comunicados escolares.}{35}{paragraph*.72}%
-\contentsline {paragraph}{TPS 21: Reportes institucionales.}{35}{paragraph*.73}%
-\contentsline {section}{\numberline {3.4}Especificación de requerimientos transaccionales}{35}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}Requerimientos Funcionales}{35}{subsection.3.4.1}%
-\contentsline {subsection}{\numberline {3.4.2}Requerimientos No Funcionales}{36}{subsection.3.4.2}%
-\contentsline {section}{\numberline {3.5}Casos de uso y modelado del TPS}{37}{section.3.5}%
-\contentsline {section}{\numberline {3.6}Diseño de la base de datos relacional y diccionario de datos}{38}{section.3.6}%
-\contentsline {subsection}{\numberline {3.6.1}Modelo multiinstitucional de datos}{38}{subsection.3.6.1}%
-\contentsline {subsection}{\numberline {3.6.2}Esquema de las 26 tablas relacionales}{38}{subsection.3.6.2}%
-\contentsline {subsection}{\numberline {3.6.3}Diccionario de datos de tablas críticas}{39}{subsection.3.6.3}%
-\contentsline {subsection}{\numberline {3.6.4}Relaciones principales}{40}{subsection.3.6.4}%
-\contentsline {chapter}{\numberline {4}Ingeniería, Implementación, Beneficios y Viabilidad}{42}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Configuración del entorno de desarrollo transaccional}{42}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Estructura del software y flujo transaccional automatizado}{42}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Consistencia, seguridad y control de transacciones}{43}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Aseguramiento de las propiedades ACID en código}{43}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Seguridad del Sistema}{44}{subsection.4.3.2}%
-\contentsline {section}{\numberline {4.4}Plan de pruebas y aseguramiento de calidad del TPS}{45}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Beneficios del sistema de información}{46}{section.4.5}%
-\contentsline {subsection}{\numberline {4.5.1}Beneficios Académicos y Administrativos}{46}{subsection.4.5.1}%
-\contentsline {subsection}{\numberline {4.5.2}Beneficios Financieros}{47}{subsection.4.5.2}%
-\contentsline {subsection}{\numberline {4.5.3}Beneficios para Docentes y Padres}{47}{subsection.4.5.3}%
-\contentsline {subsection}{\numberline {4.5.4}Beneficios para Estudiantes y Directivos}{47}{subsection.4.5.4}%
-\contentsline {subsection}{\numberline {4.5.5}Beneficios para el Administrador de la Plataforma}{48}{subsection.4.5.5}%
-\contentsline {section}{\numberline {4.6}Retos de implementación del TPS}{48}{section.4.6}%
-\contentsline {section}{\numberline {4.7}Estudios de viabilidad del sistema}{49}{section.4.7}%
-\contentsline {subsection}{\numberline {4.7.1}Viabilidad Técnica}{49}{subsection.4.7.1}%
-\contentsline {subsection}{\numberline {4.7.2}Viabilidad Económica}{49}{subsection.4.7.2}%
-\contentsline {subsection}{\numberline {4.7.3}Viabilidad Operativa}{50}{subsection.4.7.3}%
-\contentsline {subsection}{\numberline {4.7.4}Viabilidad Organizacional}{50}{subsection.4.7.4}%
-\contentsline {subsection}{\numberline {4.7.5}Viabilidad Comercial}{50}{subsection.4.7.5}%
-\contentsline {chapter}{\numberline {5}Conclusiones y Recomendaciones}{51}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Conclusiones}{51}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Recomendaciones}{52}{section.5.2}%
-\contentsline {chapter}{Anexos}{53}{chapter*.79}%
-\contentsline {chapter}{Anexo 1: Enfoque Socio-Tecnol\'ogico}{54}{appendix*.80}%
-\contentsline {chapter}{Anexo 2: Pir\'amide de Niveles Organizacionales}{55}{appendix*.82}%
-\contentsline {chapter}{Anexo 3: Tipos de Sistemas de Informaci\'on}{56}{appendix*.84}%
+\contentsline {subsection}{\numberline {1.1.3}Estructura Organizacional y Organigrama de la IE}{11}{subsection.1.1.3}%
+\contentsline {section}{\numberline {1.2}El enfoque socio-tecnológico en SICOLEGIO 360}{14}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Diagnóstico de los procesos manuales actuales}{14}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}Gestión y Registro Administrativo Manual}{14}{subsection.1.3.1}%
+\contentsline {paragraph}{Proceso manual de matrícula.}{14}{paragraph*.4}%
+\contentsline {paragraph}{Proceso manual de registro de estudiantes.}{15}{paragraph*.5}%
+\contentsline {paragraph}{Proceso manual de registro de docentes.}{15}{paragraph*.6}%
+\contentsline {paragraph}{Proceso manual de asignación de cursos y secciones.}{15}{paragraph*.7}%
+\contentsline {subsection}{\numberline {1.3.2}Gestión Académica y Evaluación Manual}{15}{subsection.1.3.2}%
+\contentsline {paragraph}{Proceso manual de asistencia.}{15}{paragraph*.8}%
+\contentsline {paragraph}{Proceso manual de registro de notas.}{15}{paragraph*.9}%
+\contentsline {paragraph}{Proceso manual de cálculo de promedios.}{16}{paragraph*.10}%
+\contentsline {paragraph}{Proceso manual de emisión de libretas.}{16}{paragraph*.11}%
+\contentsline {subsection}{\numberline {1.3.3}Gestión Disciplinaria y de Bienestar Manual}{16}{subsection.1.3.3}%
+\contentsline {paragraph}{Proceso manual de conducta e incidencias.}{16}{paragraph*.12}%
+\contentsline {paragraph}{Proceso manual de citaciones a padres.}{16}{paragraph*.13}%
+\contentsline {subsection}{\numberline {1.3.4}Gestión Financiera, de Comunicados y Alertas Manual}{16}{subsection.1.3.4}%
+\contentsline {paragraph}{Proceso manual de pagos de pensiones.}{16}{paragraph*.14}%
+\contentsline {paragraph}{Proceso manual de comunicados escolares.}{16}{paragraph*.15}%
+\contentsline {subsection}{\numberline {1.3.5}Modelado de Procesos: Flujos Manuales vs. Automatizados (Enfoque BPMN)}{17}{subsection.1.3.5}%
+\contentsline {subsubsection}{El Proceso de Matrícula y Recaudación de Pensiones}{17}{subsubsection*.16}%
+\contentsline {subsubsection}{Código de Modelado BPMN de Flujos para Software de Diagramación}{20}{subsubsection*.18}%
+\contentsline {paragraph}{1. Código de Proceso Manual (As-Is) - Flujo de Información Tradicional:}{20}{paragraph*.19}%
+\contentsline {paragraph}{2. Código de Proceso Automatizado (To-Be) - Flujo Optimizado por SICOLEGIO 360:}{21}{paragraph*.20}%
+\contentsline {section}{\numberline {1.4}Análisis de deficiencias y limitaciones de la gestión manual}{22}{section.1.4}%
+\contentsline {section}{\numberline {1.5}Formulación del problema y objetivos del proyecto}{22}{section.1.5}%
+\contentsline {subsection}{\numberline {1.5.1}Formulación del problema}{22}{subsection.1.5.1}%
+\contentsline {subsection}{\numberline {1.5.2}Objetivos del proyecto}{23}{subsection.1.5.2}%
+\contentsline {paragraph}{Objetivo general:}{23}{paragraph*.22}%
+\contentsline {paragraph}{Objetivos específicos:}{23}{paragraph*.23}%
+\contentsline {chapter}{\numberline {2}Marco Teórico y Enfoque de Sistemas Transaccionales (TPS)}{24}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Teoría general de los sistemas de información}{24}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Aplicación de los tipos de sistemas en SICOLEGIO 360}{24}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Sistemas de Procesamiento de Transacciones (TPS)}{24}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Aplicación de sistemas de oficina en SICOLEGIO 360}{25}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Aplicación de KWS en SICOLEGIO 360}{25}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.4}Aplicación de MIS en SICOLEGIO 360}{25}{subsection.2.2.4}%
+\contentsline {subsection}{\numberline {2.2.5}Aplicación de DSS en SICOLEGIO 360}{25}{subsection.2.2.5}%
+\contentsline {subsection}{\numberline {2.2.6}Aplicación de ESS/EIS en SICOLEGIO 360}{26}{subsection.2.2.6}%
+\contentsline {subsection}{\numberline {2.2.7}Relación entre los sistemas dentro de SICOLEGIO 360}{26}{subsection.2.2.7}%
+\contentsline {subsection}{\numberline {2.2.8}Flujo de información desde el nivel operativo hasta el nivel estratégico}{26}{subsection.2.2.8}%
+\contentsline {section}{\numberline {2.3}Funciones del sistema en la pirámide organizacional}{26}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Niveles organizacionales y sistemas de información}{26}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Nivel operativo: TPS}{27}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}Nivel del conocimiento: KWS y sistemas de oficina}{27}{subsection.2.3.3}%
+\contentsline {subsection}{\numberline {2.3.4}Nivel administrativo: MIS y DSS}{27}{subsection.2.3.4}%
+\contentsline {subsection}{\numberline {2.3.5}Nivel estratégico: ESS/EIS}{27}{subsection.2.3.5}%
+\contentsline {subsection}{\numberline {2.3.6}Usuarios atendidos por cada nivel de la pirámide}{28}{subsection.2.3.6}%
+\contentsline {section}{\numberline {2.4}El TPS como base organizacional y garantías ACID}{28}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Importancia de los TPS en SICOLEGIO 360}{28}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Garantías del TPS: Propiedades ACID}{28}{subsection.2.4.2}%
+\contentsline {section}{\numberline {2.5}Análisis de datos e indicadores organizacionales}{29}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}Dimensiones de Datos Analizados}{29}{subsection.2.5.1}%
+\contentsline {paragraph}{Datos institucionales.}{29}{paragraph*.25}%
+\contentsline {paragraph}{Datos académicos.}{29}{paragraph*.26}%
+\contentsline {paragraph}{Datos de asistencia.}{29}{paragraph*.27}%
+\contentsline {paragraph}{Datos de conducta.}{30}{paragraph*.28}%
+\contentsline {paragraph}{Datos financieros.}{30}{paragraph*.29}%
+\contentsline {paragraph}{Datos de comunicación con padres.}{30}{paragraph*.30}%
+\contentsline {subsection}{\numberline {2.5.2}Indicadores principales del sistema}{30}{subsection.2.5.2}%
+\contentsline {chapter}{\numberline {3}Propuesta y Diseño Lógico del TPS SICOLEGIO 360}{32}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Arquitectura del TPS propuesto}{32}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Módulos y submódulos del sistema}{32}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Módulos de Configuración Institucional y Seguridad}{32}{subsection.3.2.1}%
+\contentsline {paragraph}{Módulo de administración general de la plataforma.}{32}{paragraph*.32}%
+\contentsline {subsection}{\numberline {3.2.2}Módulo de Gestión Jerárquica de Instituciones Educativas}{32}{subsection.3.2.2}%
+\contentsline {paragraph}{1. Submódulo de Información General de la IE.}{34}{paragraph*.34}%
+\contentsline {paragraph}{2. Submódulo de Director.}{34}{paragraph*.35}%
+\contentsline {paragraph}{3. Submódulo de Docentes.}{34}{paragraph*.36}%
+\contentsline {paragraph}{4. Submódulo de Cursos / Áreas.}{34}{paragraph*.37}%
+\contentsline {paragraph}{5. Submódulo de Grados y Secciones.}{34}{paragraph*.38}%
+\contentsline {paragraph}{6. Submódulo de Alumnos.}{34}{paragraph*.39}%
+\contentsline {paragraph}{7. Submódulo de Matrícula.}{35}{paragraph*.40}%
+\contentsline {paragraph}{8. Submódulo de Horarios.}{35}{paragraph*.41}%
+\contentsline {paragraph}{9. Submódulo de Aulas.}{35}{paragraph*.42}%
+\contentsline {paragraph}{Módulo de usuarios y roles.}{35}{paragraph*.43}%
+\contentsline {subsection}{\numberline {3.2.3}Módulos de Gestión Académica e Historial Escolar}{35}{subsection.3.2.3}%
+\contentsline {paragraph}{Módulo de matrícula.}{35}{paragraph*.44}%
+\contentsline {paragraph}{Módulo de estudiantes.}{35}{paragraph*.45}%
+\contentsline {paragraph}{Módulo de apoderados.}{36}{paragraph*.46}%
+\contentsline {paragraph}{Módulo de docentes.}{36}{paragraph*.47}%
+\contentsline {paragraph}{Módulo académico.}{36}{paragraph*.48}%
+\contentsline {paragraph}{Módulo de horarios.}{36}{paragraph*.49}%
+\contentsline {subsection}{\numberline {3.2.4}Módulos de Control de Asistencia y Evaluación}{36}{subsection.3.2.4}%
+\contentsline {paragraph}{Módulo de asistencia.}{36}{paragraph*.50}%
+\contentsline {paragraph}{Módulo de notas y evaluaciones.}{36}{paragraph*.51}%
+\contentsline {paragraph}{Módulo de libretas.}{36}{paragraph*.52}%
+\contentsline {paragraph}{Módulo de conducta.}{36}{paragraph*.53}%
+\contentsline {subsection}{\numberline {3.2.5}Módulos de Gestión Financiera, Comunicación y Soporte Analítico}{37}{subsection.3.2.5}%
+\contentsline {paragraph}{Módulo de pagos y pensiones.}{37}{paragraph*.54}%
+\contentsline {paragraph}{Módulo de comunicación.}{37}{paragraph*.55}%
+\contentsline {paragraph}{Módulo de reportes.}{37}{paragraph*.56}%
+\contentsline {paragraph}{Módulo de alertas.}{37}{paragraph*.57}%
+\contentsline {section}{\numberline {3.3}Matriz y procesamiento de las 21 transacciones del TPS}{37}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}TPS de Gestión y Configuración Institucional}{40}{subsection.3.3.1}%
+\contentsline {paragraph}{TPS 1: Registro de institución educativa.}{40}{paragraph*.58}%
+\contentsline {paragraph}{TPS 2: Configuración institucional.}{40}{paragraph*.59}%
+\contentsline {subsection}{\numberline {3.3.2}TPS de Gestión Académica y Evaluación}{40}{subsection.3.3.2}%
+\contentsline {paragraph}{TPS 3: Matrícula de estudiantes.}{40}{paragraph*.60}%
+\contentsline {paragraph}{TPS 4: Registro de estudiantes.}{41}{paragraph*.61}%
+\contentsline {paragraph}{TPS 5: Registro de apoderados.}{41}{paragraph*.62}%
+\contentsline {paragraph}{TPS 6: Registro de docentes.}{41}{paragraph*.63}%
+\contentsline {paragraph}{TPS 7: Asignación de cursos.}{41}{paragraph*.64}%
+\contentsline {paragraph}{TPS 8: Asignación de grados y secciones.}{41}{paragraph*.65}%
+\contentsline {paragraph}{TPS 9: Control de asistencia.}{41}{paragraph*.66}%
+\contentsline {paragraph}{TPS 10: Justificación de inasistencias.}{41}{paragraph*.67}%
+\contentsline {paragraph}{TPS 11: Registro de evaluaciones.}{42}{paragraph*.68}%
+\contentsline {paragraph}{TPS 12: Registro de notas.}{42}{paragraph*.69}%
+\contentsline {paragraph}{TPS 13: Cálculo de promedios.}{42}{paragraph*.70}%
+\contentsline {paragraph}{TPS 14: Emisión de libreta de notas.}{42}{paragraph*.71}%
+\contentsline {subsection}{\numberline {3.3.3}TPS de Gestión Disciplinaria y de Bienestar}{42}{subsection.3.3.3}%
+\contentsline {paragraph}{TPS 15: Conducta estudiantil.}{42}{paragraph*.72}%
+\contentsline {paragraph}{TPS 16: Citación a padres.}{42}{paragraph*.73}%
+\contentsline {paragraph}{TPS 17: Acuerdos con padres.}{42}{paragraph*.74}%
+\contentsline {subsection}{\numberline {3.3.4}TPS Financieros, de Comunicación y Reportes}{43}{subsection.3.3.4}%
+\contentsline {paragraph}{TPS 18: Pagos de pensiones.}{43}{paragraph*.75}%
+\contentsline {paragraph}{TPS 19: Registro de deudas y moras.}{43}{paragraph*.76}%
+\contentsline {paragraph}{TPS 20: Comunicados escolares.}{43}{paragraph*.77}%
+\contentsline {paragraph}{TPS 21: Reportes institucionales.}{43}{paragraph*.78}%
+\contentsline {section}{\numberline {3.4}Especificación de requerimientos transaccionales}{43}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Requerimientos Funcionales}{43}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Requerimientos No Funcionales}{44}{subsection.3.4.2}%
+\contentsline {section}{\numberline {3.5}Casos de uso y modelado del TPS}{45}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Subsistema de Análisis Estratégico y Decisiones Organizacionales (DSS / EIS)}{46}{section.3.6}%
+\contentsline {subsection}{\numberline {3.6.1}Los cuatro pilares analíticos de gobernanza escolar}{46}{subsection.3.6.1}%
+\contentsline {subsection}{\numberline {3.6.2}Modelo de simulación histórica y diferenciación multianual}{48}{subsection.3.6.2}%
+\contentsline {subsection}{\numberline {3.6.3}Mecanismos de consistencia en consultas transaccionales (Django ORM)}{48}{subsection.3.6.3}%
+\contentsline {section}{\numberline {3.7}Diseño de la base de datos relacional y diccionario de datos}{49}{section.3.7}%
+\contentsline {subsection}{\numberline {3.7.1}Modelo multiinstitucional de datos}{49}{subsection.3.7.1}%
+\contentsline {subsection}{\numberline {3.7.2}Esquema de las 26 tablas relacionales}{49}{subsection.3.7.2}%
+\contentsline {subsection}{\numberline {3.7.3}Diccionario de datos de tablas críticas}{50}{subsection.3.7.3}%
+\contentsline {subsection}{\numberline {3.7.4}Relaciones principales}{51}{subsection.3.7.4}%
+\contentsline {chapter}{\numberline {4}Ingeniería, Implementación, Beneficios y Viabilidad}{53}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Configuración del entorno de desarrollo transaccional}{53}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Estructura del software y flujo transaccional automatizado}{53}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Consistencia, seguridad y control de transacciones}{54}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Aseguramiento de las propiedades ACID en código}{54}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Seguridad del Sistema}{55}{subsection.4.3.2}%
+\contentsline {section}{\numberline {4.4}Plan de pruebas y aseguramiento de calidad del TPS}{56}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Beneficios del sistema de información}{57}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Beneficios Académicos y Administrativos}{57}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.2}Beneficios Financieros}{58}{subsection.4.5.2}%
+\contentsline {subsection}{\numberline {4.5.3}Beneficios para Docentes y Padres}{58}{subsection.4.5.3}%
+\contentsline {subsection}{\numberline {4.5.4}Beneficios para Estudiantes y Directivos}{58}{subsection.4.5.4}%
+\contentsline {subsection}{\numberline {4.5.5}Beneficios para el Administrador de la Plataforma}{59}{subsection.4.5.5}%
+\contentsline {section}{\numberline {4.6}Retos de implementación del TPS}{59}{section.4.6}%
+\contentsline {section}{\numberline {4.7}Estudios de viabilidad del sistema}{60}{section.4.7}%
+\contentsline {subsection}{\numberline {4.7.1}Viabilidad Técnica}{60}{subsection.4.7.1}%
+\contentsline {subsection}{\numberline {4.7.2}Viabilidad Económica}{60}{subsection.4.7.2}%
+\contentsline {subsection}{\numberline {4.7.3}Viabilidad Operativa}{61}{subsection.4.7.3}%
+\contentsline {subsection}{\numberline {4.7.4}Viabilidad Organizacional}{61}{subsection.4.7.4}%
+\contentsline {subsection}{\numberline {4.7.5}Viabilidad Comercial}{61}{subsection.4.7.5}%
+\contentsline {chapter}{\numberline {5}Conclusiones y Recomendaciones}{62}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Conclusiones}{62}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Recomendaciones}{63}{section.5.2}%
+\contentsline {chapter}{Anexos}{64}{chapter*.85}%
+\contentsline {chapter}{Anexo 1: Enfoque Socio-Tecnol\'ogico}{65}{appendix*.86}%
+\contentsline {chapter}{Anexo 2: Pir\'amide de Niveles Organizacionales}{66}{appendix*.88}%
+\contentsline {chapter}{Anexo 3: Tipos de Sistemas de Informaci\'on}{67}{appendix*.90}%

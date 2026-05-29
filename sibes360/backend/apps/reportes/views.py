@@ -288,7 +288,7 @@ class AnalisisStatsView(APIView):
                 estudiante__institucion=inst,
                 periodo__anio=anio,
                 promedio__lt=11.0
-            ).values('curso__nombre').annotate(count=Count('id')).order_by('-count')
+            ).values('curso__nombre').annotate(count=Count('estudiante', distinct=True)).order_by('-count')
 
             cursos_riesgo = []
             for item in cursos_c:

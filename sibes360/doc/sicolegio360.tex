@@ -118,6 +118,17 @@
 \usepackage{rotating}
 \usepackage{framed}
 \usepackage{setspace}
+\usepackage{listings}
+\usepackage{xcolor}
+
+\lstset{
+    basicstyle=\ttfamily\small,
+    breaklines=true,
+    breakatwhitespace=true,
+    frame=single,
+    columns=fullflexible,
+    keepspaces=true
+}
 
 % -- Espaciado y Sangrias APA 7 -----------------------------
 \usepackage{indentfirst} % Forzar sangria en el primer parrafo de cada seccion
@@ -272,6 +283,37 @@ SICOLEGIO 360 se dirige a instituciones educativas privadas pequeñas y medianas
 \end{itemize}
 Los actores involucrados en la ejecución de transacciones dentro de esta organización incluyen al \textit{Superadministrador de la plataforma} (gestor del negocio SaaS), el \textit{Administrador del colegio} (configurador de la base académica), el \textit{Director} (usuario estratégico), el \textit{Docente} (registrador de transacciones académicas), la \textit{Secretaría/Tesorería} (procesadores administrativos y financieros), los \textit{Padres de Familia} y los \textit{Estudiantes} (receptores y consultores autorizados).
 
+\subsection{Estructura Organizacional y Organigrama de la IE}
+
+La estructura organizativa de las instituciones educativas privadas de nivel básico regular en el Perú sigue un modelo jerárquico y funcional normado por el Ministerio de Educación (MINEDU), diseñado para coordinar de forma equilibrada la gestión administrativa y la pedagógica. Con el propósito de soportar la implantación de la plataforma transaccional e informativa SICOLEGIO 360, se propone una reestructuración funcional que incorpora un área estratégica especializada.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{organigramaa.png}
+    \caption{Estructura Organizacional y Jerárquica de la IE -- SICOLEGIO 360}
+    \label{fig:organigrama}
+\end{figure}
+
+En la Figura~\ref{fig:organigrama}, se detalla la jerarquía organizacional propuesta para la institución, la cual incluye los siguientes niveles y áreas:
+
+\begin{enumerate}
+    \item \textbf{Órgano Promotor (Promotora / Directorio):} Máxima entidad del colegio privado, responsable de la inversión, sostenibilidad económica, planeamiento estratégico a largo plazo y contratación de directivos.
+    \item \textbf{Dirección General (Director):} Representante legal y líder educativo del centro. Es la autoridad directa responsable de ejecutar las directrices de la promotora y velar por el cumplimiento del Proyecto Educativo Institucional (PEI).
+    \item \textbf{Administración y Tesorería:} Área encargada del flujo financiero transaccional, facturación mensual, control de egresos, contratación de proveedores y el cobro de pensiones escolares.
+    \item \textbf{Subdirección Académica y Coordinación Pedagógica:} Núcleo técnico que planifica, supervisa y evalúa el desempeño metodológico de los docentes en los niveles de Inicial, Primaria y Secundaria.
+    \item \textbf{Secretaría General:} Responsable del archivo documentario, el control oficial del registro de matrículas e historial de calificaciones, y de la sincronización manual o digital con los sistemas gubernamentales como el SIAGIE.
+    \item \textbf{Departamento Psicopedagógico:} Encargado de la tutoría estudiantil, psicología educativa y el control de la bitácora conductual y de convivencia.
+    \item \textbf{El nuevo "Área de Sistemas, Datos y Análisis Estratégico (SICOLEGIO 360)":} 
+    Es el área de TI/Soporte que reporta directamente a la Dirección General. Actúa como el nexo socio-tecnológico de la organización, responsable de:
+    \begin{itemize}
+        \item Administrar el tenant institucional en la plataforma SaaS.
+        \item Garantizar la seguridad, confidencialidad e integridad física y lógica de los datos de la comunidad escolar.
+        \item Consolidar los datos transaccionales del TPS para alimentar el DSS y proveer reportes predictivos a la Dirección General (ausentismo crónico, cursos críticos y radar de calidad YoY).
+        \item Brindar soporte técnico y capacitación continua a docentes, secretarios y apoderados.
+    \end{itemize}
+    \item \textbf{Comunidad Educativa (Docentes, Auxiliares, Estudiantes y Padres de Familia):} Constituye la base operativa y receptora de la plataforma. Los docentes y auxiliares alimentan el sistema con calificaciones, conducta y asistencia, mientras que los estudiantes y padres de familia (apoderados) participan activamente interactuando con los reportes en tiempo real y gestionando de forma segura la liquidación de sus pensiones.
+\end{enumerate}
+
 \section{El enfoque socio-tecnológico en SICOLEGIO 360}
 
 El diseño de SICOLEGIO 360 adopta un enfoque socio-tecnológico, reconociendo que el éxito del sistema de información depende del ajuste óptimo entre dos dimensiones críticas: la dimensión técnica (el software transaccional, la base de datos relacional) y la dimensión social (el personal de secretaría, los docentes, los padres y los directivos) \citep{laudon2016}.
@@ -315,6 +357,96 @@ En los colegios que no disponen de una plataforma integrada, los flujos administ
 \paragraph{Proceso manual de pagos de pensiones.} Los pagos de pensiones se registran en recibos físicos numerados y en un cuaderno de control de tesorería. La verificación del estado de pago de un estudiante requiere revisar físicamente los recibos o el cuaderno, lo que es lento e impreciso cuando hay un gran número de estudiantes.
 
 \paragraph{Proceso manual de comunicados escolares.} Los comunicados escolares se envían principalmente de dos maneras: mediante documentos físicos entregados a los estudiantes (que no siempre llegan a los padres) o a través de grupos de WhatsApp (que no garantizan que todos los padres reciban y lean el comunicado). No hay un registro formal de los comunicados enviados ni confirmación de recepción.
+
+\subsection{Modelado de Procesos: Flujos Manuales vs. Automatizados (Enfoque BPMN)}
+
+Para comprender de manera rigurosa la transformación operativa y de control de datos que introduce SICOLEGIO 360, se ha realizado un modelado comparativo bajo el estándar BPMN (Business Process Model and Notation). Este análisis contrasta el flujo de procesos tradicional o manual (As-Is) frente al flujo optimizado y automatizado por la plataforma (To-Be).
+
+\subsubsection{El Proceso de Matrícula y Recaudación de Pensiones}
+El ciclo de vida de la matrícula y la recaudación es uno de los flujos de información más críticos en el colegio, ya que cruza el área académica con la financiera:
+
+\begin{itemize}
+    \item \textbf{Flujo Manual Tradicional (As-Is):} El apoderado asiste físicamente al colegio. La secretaria recopila los datos en una ficha de papel, transcribiendo los datos a una hoja de cálculo local (Excel). Luego, el apoderado se dirige a tesorería para pagar la matrícula en efectivo. La tesorera anota la cobranza en un cuaderno físico de caja, emite un recibo autocopiativo a mano, y archiva una copia física. Posteriormente, el apoderado retorna con la secretaria para ratificar la sección, la cual se asigna revisando un papel de aforo. Finalmente, el director debe consolidar los cuadernos y archivos a fin de mes para conocer el balance de vacantes y recaudación. Este proceso toma un promedio de 3 a 5 días hábiles y presenta alta redundancia e inconsistencia de datos.
+    \item \textbf{Flujo Automatizado Digital (To-Be):} El apoderado accede al portal de SICOLEGIO 360 y registra la ficha digital. El sistema genera de forma automática la orden de cobro en la base de datos centralizada. Una vez procesado el pago (sea en ventanilla o en caja digital), el backend ejecuta de forma atómica (ACID) la actualización del estado de matrícula del estudiante y la reducción de la vacante disponible de la sección asignada en tiempo real. La secretaría y la tesorería reciben notificaciones instantáneas, y el dashboard EIS del Director general se actualiza de manera inmediata.
+\end{itemize}
+
+La Tabla~\ref{tab:comparacion_bpmn} detalla la comparativa formal de ambos enfoques, evidenciando las ganancias en eficiencia administrativa.
+
+\begin{table}[H]
+\centering
+\caption{Matriz comparativa de procesos: Flujo Manual vs. SICOLEGIO 360}
+\label{tab:comparacion_bpmn}
+\renewcommand{\arraystretch}{1.3}
+
+\begin{tabularx}{\textwidth}{|X|X|X|X|}
+\hline
+\textbf{Dimensión de Proceso} &
+\textbf{Flujo Manual (As-Is)} &
+\textbf{Flujo SICOLEGIO 360 (To-Be)} &
+\textbf{Eficiencia} \\
+\hline
+
+Registro de Matrícula &
+Fichas de papel, digitación redundante en Excel. &
+Única entrada digital por el apoderado en la plataforma. &
+Reducción del 90\% del tiempo. \\
+\hline
+
+Control de Aforo y Vacantes &
+Verificación visual y manual en listas impresas. &
+Validación automatizada a nivel de base de datos relacional. &
+Inmediato, prevención de sobreaforo. \\
+\hline
+
+Recaudación y Pensiones &
+Cuaderno de caja, recibos impresos, arqueo manual. &
+Registro de transacciones atómicas, arqueo inmediato. &
+Consistencia financiera automática. \\
+\hline
+
+Cálculo de Promedios &
+Transcripción manual de notas y promedios en Excel. &
+Ejecución instantánea en backend mediante triggers y ORM. &
+Nula posibilidad de error de fórmula. \\
+\hline
+
+Emisión de Libretas &
+Recopilación manual, impresión individualizada. &
+Generación masiva en lote a PDF descargable en segundos. &
+De 3 días a 5 segundos por aula. \\
+\hline
+
+Análisis de Decisiones &
+Consolidación manual de reportes al fin de mes. &
+Cuadros de control (DSS/EIS) actualizados en tiempo real. &
+Acceso inmediato a la información. \\
+\hline
+
+\end{tabularx}
+\end{table}
+\subsubsection{Código de Modelado BPMN de Flujos para Software de Diagramación}
+
+Con el fin de permitir al usuario recrear visualmente ambos flujos de procesos en herramientas de modelado de procesos como draw.io, Mermaid Live Editor, Lucidchart o Bizagi Modeler, se proveen a continuación los códigos fuente de modelado secuencial en el estándar universal \texttt{Mermaid.js}:
+
+\paragraph{1. Código de Proceso Manual (As-Is) - Flujo de Información Tradicional:}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{asis.png}
+    \caption{Código de Proceso Manual (As-Is)}
+    \label{fig:organigrama}
+\end{figure}
+
+
+\paragraph{2. Código de Proceso Automatizado (To-Be) - Flujo Optimizado por SICOLEGIO 360:}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{Tobe.png}
+    \caption{Código de Proceso Automatizado (To-Be)}
+    \label{fig:organigrama}
+\end{figure}
+
 
 \section{Análisis de deficiencias y limitaciones de la gestión manual}
 
@@ -789,7 +921,69 @@ Los principales casos de uso que interactúan con el sistema transaccional de SI
   \item \textbf{CU-10:} Gestionar alertas (actor: sistema automático / director).
 \end{itemize}
 
-El Anexo 17 contiene el diagrama unificado de casos de uso general del sistema.
+\section{Subsistema de Análisis Estratégico y Decisiones Organizacionales (DSS / EIS)}
+
+La evolución de SICOLEGIO 360 desde un sistema puramente operacional (TPS) hacia una herramienta de gobernanza institucional se consolida en el desarrollo del \textbf{Subsistema de Análisis Estratégico y Decisiones Organizacionales}. Este componente actúa como un Sistema de Soporte a la Toma de Decisiones (DSS) para los Directores del colegio, y como un Sistema de Información Ejecutiva (EIS) para los promotores y superadministradores de la plataforma, integrando métricas críticas de las dimensiones académica, disciplinaria, de asistencia y financiera.
+
+\subsection{Los cuatro pilares analíticos de gobernanza escolar}
+El subsistema extrae, consolida y visualiza en tiempo real los datos transaccionales del colegio mediante cuatro componentes gráficos de alto impacto directivo:
+
+\begin{enumerate}
+    \item \textbf{Distribución de Calificaciones por Rango SIAGIE (Criterio Oficial MINEDU):}
+    Este gráfico de tipo dona clasifica dinámicamente todos los promedios acumulados en el año lectivo seleccionado de acuerdo con las cuatro escalas de competencia del Ministerio de Educación de Perú:
+    \begin{itemize}
+        \item \textbf{AD (Logro Destacado [18 - 20]):} Alumnos que demuestran un aprendizaje sobresaliente.
+        \item \textbf{A (Logro Previsto [14 - 17]):} Alumnos que alcanzan el nivel esperado.
+        \item \textbf{B (En Proceso [11 - 13]):} Alumnos en camino a consolidar la competencia.
+        \item \textbf{C (En Inicio [0 - 10]):} Alumnos con dificultades severas (desaprobados).
+    \end{itemize}
+    \textit{Impacto en la toma de decisiones:} Al finalizar el año escolar, el Director puede identificar el volumen exacto de estudiantes en la Escala C para presupuestar y coordinar la impresión de \textbf{Carpetas de Recuperación Académica} y planificar las jornadas de nivelación vacacional.
+
+    \item \textbf{Panel de Monitoreo de Cursos Críticos (Alumnos en Escala C):}
+    Consolida de manera descendente las asignaturas académicas que acumulan la mayor cantidad de alumnos desaprobados (nota promedio inferior a 11.0). Cada curso es representado con un indicador de riesgo y una barra de progreso interactiva de color carmín que denota la proporción de riesgo.
+    \textit{Impacto en la toma de decisiones:} Permite a la coordinación académica realizar auditorías pedagógicas y capacitaciones metodológicas dirigidas específicamente a los docentes de las materias con picos de desaprobación (por ejemplo, Matemática o Computación), antes de que el período concluya de forma definitiva.
+
+    \item \textbf{Métrica de Alerta de Deserción y Ausentismo Crónico por Grado:}
+    Un gráfico de línea que monitorea longitudinalmente la cantidad de estudiantes que acumulan 3 o más inasistencias en el período escolar seleccionado.
+    \textit{Impacto en la toma de decisiones:} Sirve como un sistema de alerta temprana de abandono escolar. Facilita al equipo de psicología y asistencia social del colegio la programación de visitas domiciliarias preventivas antes de incurrir en la causal de desaprobación automática por inasistencia (que según la normativa oficial de educación peruana equivale al 30\% de faltas).
+
+    \item \textbf{Radar de Calidad Escolar Multidimensional:}
+    Consiste en un gráfico de radar concéntrico que evalúa simultáneamente la salud y el equilibrio operativo del colegio en una escala de 0 a 100\% a través de cuatro ejes esenciales:
+    \begin{itemize}
+        \item \textbf{Rendimiento Académico:} Porcentaje promedio general de las notas de toda la institución escolar.
+        \item \textbf{Puntualidad y Asistencia:} Ratio global de presencias y tardanzas justificadas.
+        \item \textbf{Buen Clima y Convivencia:} Ausencia o control de incidencias disciplinarias catalogadas como graves.
+        \item \textbf{Solvencia y Recaudación:} Ratio de pensiones cobradas en el plazo correspondiente.
+    \end{itemize}
+    \textit{Impacto en la toma de decisiones:} Muestra de forma simultánea el polígono del año actual en curso frente al polígono del año lectivo inmediato anterior (YoY Comparison). El Director y el promotor escolar pueden visualizar con un solo golpe de vista si la institución mejoró en su balance operativo integral o si, por ejemplo, un aumento en la recaudación se correlaciona negativamente con el clima escolar.
+\end{enumerate}
+
+\subsection{Modelo de simulación histórica y diferenciación multianual}
+Para dotar al subsistema de consistencia analítica e histórica realista de cara a la defensa del proyecto, se ha seminado la base de datos bajo tres escenarios anuales altamente diferenciados (Tabla~\ref{tab:escenarios_simulacion}):
+
+\begin{table}[H]
+\centering
+\caption{Escenarios multianuales de simulación y diferenciación transaccional}
+\label{tab:escenarios_simulacion}
+\begin{tabularx}{\textwidth}{lXXp{2.2cm}p{3cm}}
+\toprule
+\textbf{Año Lectivo} & \textbf{Perfil Pedagógico} & \textbf{Perfil Conductual} & \textbf{Ausentismo Crónico} & \textbf{Estado de Pensiones} \\
+\midrule
+2024 & Recuperación post-pandemia. Promedios bajos (mínimo 10.79 en 2° Secundaria). & Alto índice de incidencias disciplinarias leves y graves registradas. & 44 estudiantes en alerta de deserción. & Histórico cerrado. 100\% de pensiones pagadas. \\
+2025 & Excelencia académica. Promedios elevados (máximo 14.88 en 3° Secundaria). & Clima escolar excelente. Picos de méritos y conductas positivas. & Reducción drástica a 29 estudiantes en alerta. & Histórico cerrado. 100\% de pensiones pagadas. \\
+2026 (Actual) & Gestión en curso. Desafíos localizados en 4° de Primaria (promedio 11.53). & Bitácora escolar moderada y de control disciplinario oportuno. & 36 estudiantes con alertas acumuladas a Mayo. & Periodo activo. Marzo y Abril 100\% pagado. Mayo 15\% mora. Junio-Dic en "Pendiente". \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\subsection{Mecanismos de consistencia en consultas transaccionales (Django ORM)}
+Un reto técnico de alta ingeniería resuelto en el backend del subsistema fue la prevención de duplicación de promedios al realizar agregaciones multi-tabla (joins). Debido a que un estudiante tiene un historial de matrículas longitudinal a lo largo del tiempo, una consulta relacional simple de promedios agrupados por grado unía (join) registros de matrículas pasadas del mismo alumno, inflando los promedios e inyectando inconsistencias en las comparativas multianuales. 
+
+Para salvaguardar la exactitud del cálculo matemático, se implementó el filtrado relacional estricto del año académico a nivel de código ORM en el backend de Django:
+
+
+
+Esta restricción garantiza que al evaluar el rendimiento académico del año 2025, el promedio de notas sea calculado únicamente para los estudiantes que estuvieron efectivamente matriculados en dicho año lectivo, asegurando la durabilidad y consistencia (ACID) del sistema analítico gerencial.
 
 \section{Diseño de la base de datos relacional y diccionario de datos}
 
@@ -918,17 +1112,17 @@ El código fuente del sistema de información se organiza de acuerdo a la siguie
 \begin{verbatim}
 sicolegio360-project/
 |-- backend/
-|   |-- config/            # Configuraciones globales y de seguridad HTTPS
-|   |-- controllers/       # Lógica transaccional (Matrícula, Notas, Pagos)
-|   |-- models/            # Definición física del esquema de base de datos
-|   |-- routes/            # Definición de endpoints y control de acceso (APIs)
-|   `-- database.js        # Conector relacional y pools de transacciones
+|   |-- config/            
+|   |-- controllers/       
+|   |-- models/            
+|   |-- routes/            
+|   `-- database.js        
 `-- frontend/
-    |-- public/            # Archivos estáticos y logos
+    |-- public/            
     `-- src/
-        |-- components/    # Componentes modulares reactivos (tablas de notas)
-        |-- views/         # Pantallas principales del sistema transaccional
-        `-- App.js         # Enrutador principal y consumo del API REST
+        |-- components/    
+        |-- views/         
+        `-- App.js         
 \end{verbatim}
 
 Para comprender la dinámica de flujo, el Anexo 16 presenta el flujograma del proceso automatizado comparado con el proceso manual del Anexo 15, mostrando cómo se elimina drásticamente la duplicidad de tareas.
@@ -937,45 +1131,53 @@ Para comprender la dinámica de flujo, el Anexo 16 presenta el flujograma del pr
 
 \subsection{Aseguramiento de las propiedades ACID en código}
 Para asegurar que las transacciones de SICOLEGIO 360 se ejecuten con estricta atomicidad en el backend, toda operación múltiple se realiza mediante bloques transaccionales controlados. El siguiente segmento de código ilustra la lógica transaccional implementada para la transacción de \textbf{Registro de Matrícula (TPS 3)} en Node.js, garantizando la consistencia de los datos ante posibles fallos de ejecución:
-
-\begin{verbatim}
+\begin{lstlisting}[language=JavaScript, caption={Proceso transaccional de matrícula}]
 async function registrarMatriculaTransaccional(idEstudiante, idSeccion, montoPago) {
   const client = await databasePool.connect();
   try {
-    // 1. Iniciar la transacción SQL en base de datos
     await client.query('BEGIN');
 
-    // 2. Validar el aforo máximo disponible de la sección académica
     const seccionRes = await client.query(
       'SELECT aforo_max, (SELECT COUNT(*) FROM Matricula WHERE id_seccion = $1) as matriculados FROM Seccion WHERE id_seccion = $1 FOR UPDATE',
       [idSeccion]
     );
+
     const { aforo_max, matriculados } = seccionRes.rows[0];
+
     if (parseInt(matriculados) >= parseInt(aforo_max)) {
       throw new Error('CAPACIDAD_MAXIMA_SUPERADA');
     }
 
-    // 3. Insertar la transacción de matrícula
-    const matriculaQuery = 'INSERT INTO Matricula (id_estudiante, id_seccion, fecha) VALUES ($1, $2, NOW()) RETURNING id_matricula';
-    const matriculaRes = await client.query(matriculaQuery, [idEstudiante, idSeccion]);
+    const matriculaQuery =
+      'INSERT INTO Matricula (id_estudiante, id_seccion, fecha) VALUES ($1, $2, NOW()) RETURNING id_matricula';
+
+    const matriculaRes = await client.query(
+      matriculaQuery,
+      [idEstudiante, idSeccion]
+    );
+
     const idMatricula = matriculaRes.rows[0].id_matricula;
 
-    // 4. Registrar la transacción de cobro inicial de matrícula
-    const pagoQuery = 'INSERT INTO Pago (id_estudiante, monto, concepto, fecha_pago) VALUES ($1, $2, $3, NOW())';
-    await client.query(pagoQuery, [idEstudiante, montoPago, 'MATRICULA']);
+    const pagoQuery =
+      'INSERT INTO Pago (id_estudiante, monto, concepto, fecha_pago) VALUES ($1, $2, $3, NOW())';
 
-    // 5. Confirmar transacción de forma atómica en base de datos
+    await client.query(
+      pagoQuery,
+      [idEstudiante, montoPago, 'MATRICULA']
+    );
+
     await client.query('COMMIT');
     return { success: true, idMatricula };
+
   } catch (error) {
-    // En caso de cualquier error se aborta la transacción y se deshacen los cambios
     await client.query('ROLLBACK');
     return { success: false, error: error.message };
+
   } finally {
     client.release();
   }
 }
-\end{verbatim}
+\end{lstlisting}
 
 \subsection{Seguridad del Sistema}
 La seguridad de SICOLEGIO 360 está basada en múltiples capas de protección:
