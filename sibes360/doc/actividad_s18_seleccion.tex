@@ -1,0 +1,344 @@
+% ============================================================
+%  ACTIVIDAD S18: PLAN DE SELECCIÓN ERP PARA PYME AMAZÓNICA
+%  Curso: Sistemas de Información  |  Ciclo VII
+%  Universidad Nacional Agraria de la Selva
+% ============================================================
+\documentclass[12pt,a4paper,oneside]{report}
+
+% -- Paquetes esenciales -------------------------------------
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[provide=*,spanish]{babel}
+\addto\captionsspanish{\renewcommand{\tablename}{Tabla}}
+\addto\captionsspanish{\renewcommand{\listtablename}{\'Indice de Tablas}}
+\addto\captionsspanish{\renewcommand{\listfigurename}{\'Indice de Figuras}}
+\addto\captionsspanish{\renewcommand{\contentsname}{\'Indice General}}
+\usepackage{lmodern}
+
+% -- Geometría -----------------------------------------------
+\usepackage[
+  top=2.54cm, bottom=2.54cm,
+  left=2.54cm, right=2.54cm,
+  headheight=28pt
+]{geometry}
+
+% -- Colores -------------------------------------------------
+\usepackage[table]{xcolor}
+\definecolor{azulOscuro}{RGB}{10,47,97}
+\definecolor{azulMedio}{RGB}{28,100,180}
+\definecolor{verdInst}{RGB}{34,120,80}
+\definecolor{grisClaro}{RGB}{245,246,248}
+\definecolor{grisTabla}{RGB}{220,225,232}
+\definecolor{dorado}{RGB}{180,140,20}
+
+% -- Tipografía (Times New Roman para APA 7) -----------------
+\usepackage{times}
+
+% -- Encabezados y pies --------------------------------------
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\MakeUppercase{SICOLEGIO 360: Plan de Selección ERP}}
+\fancyhead[R]{\thepage}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0.5pt}
+
+% -- Secciones en formato APA 7 ------------------------------
+\usepackage{titlesec}
+\titleformat{\chapter}
+  {\normalfont\bfseries\Large\centering}
+  {\thechapter\quad}
+  {0pt}
+  {}
+\titlespacing*{\chapter}{0pt}{-25pt}{15pt}
+\titleformat{\section}
+  {\normalfont\bfseries\large}{\thesection}{1em}{}
+\titleformat{\subsection}
+  {\normalfont\bfseries\itshape\normalsize}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}
+  {\normalfont\bfseries\normalsize}{\thesubsubsection}{1em}{}
+
+% -- Listas --------------------------------------------------
+\usepackage{enumitem}
+\setlist[itemize]{leftmargin=1.5em,itemsep=2pt,topsep=4pt}
+\setlist[enumerate]{leftmargin=1.5em,itemsep=2pt,topsep=4pt}
+
+% -- Tablas --------------------------------------------------
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{tabularx}
+\renewcommand{\arraystretch}{1.35}
+
+% -- Figuras y Captions --------------------------------------
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{subcaption}
+\captionsetup[table]{labelfont=bf,textfont=it,labelsep=newline,singlelinecheck=off,justification=raggedright}
+\captionsetup[figure]{labelfont=bf,textfont=it,labelsep=newline,singlelinecheck=off,justification=raggedright}
+
+% -- Hiperenlaces -------------------------------------------
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=black,
+  citecolor=black,
+  urlcolor=black,
+  pdftitle={SICOLEGIO 360 -- Actividad S18 Plan de Selección ERP},
+  pdfauthor={Evaristo Jara, Jose Junior - Tapullima Serna, Meselemias - Rengifo Fretel, Juan Manuel},
+  pdfsubject={Sistemas de Información UNAS 2026},
+}
+
+% -- Utilidades ----------------------------------------------
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{setspace}
+\usepackage{indentfirst} 
+\setlength{\parskip}{0pt}
+\setlength{\parindent}{1.27cm}
+
+% ═════════════════════════════════════════════════════════════
+\begin{document}
+\sloppy
+\doublespacing
+
+% ─────────────────────────────────────────────────────────────
+%  PORTADA (Estilo Académico UNAS / FIIS)
+% ─────────────────────────────────────────────────────────────
+\begin{titlepage}
+    \begin{center}
+        \setstretch{1.1}
+        {\fontsize{14}{16}\selectfont\textbf{UNIVERSIDAD NACIONAL AGRARIA DE LA SELVA}} \\[0.3cm]
+        {\fontsize{13}{15}\selectfont\textbf{FACULTAD DE INGENIERÍA EN INFORMÁTICA Y SISTEMAS}} \\[0.2cm]
+        {\fontsize{12}{14}\selectfont\textbf{ESCUELA PROFESIONAL DE INGENIERÍA DE SISTEMAS}} \\[0.4cm]
+        
+        % Bloques para logos institucionales
+        \begin{minipage}{0.45\textwidth}
+            \centering
+            \includegraphics[height=5.5cm,keepaspectratio]{logounas.png}
+        \end{minipage}
+        \hfill
+        \begin{minipage}{0.45\textwidth}
+            \centering
+            \includegraphics[height=4.5cm,keepaspectratio]{LOGO-FIIS-1000x1000-TR.png}
+        \end{minipage}\\[0.3cm]
+        
+        \rule{\linewidth}{1.5pt} \\[0.6cm]
+        
+        % Título de la Actividad
+        {\fontsize{13}{16}\selectfont\textbf{ACTIVIDAD S18: PLAN DE SELECCIÓN ERP PARA PYME AMAZÓNICA}} \\[0.3cm]
+        {\fontsize{11}{13}\selectfont\textbf{METODOLOGÍA PANORAMA APLICADA A LA IEP "CIENCIAS" DE TINGO MARÍA}} \\[0.4cm]
+        
+        \rule{\linewidth}{1.5pt} \\[1.0cm]
+        
+        % Información académica y autores
+        \setstretch{1.5}
+        \begin{minipage}{0.85\textwidth}
+            \begin{flushleft}
+                \begin{tabular}{@{}p{3.5cm}p{9.5cm}@{}}
+                    \textbf{Curso:} & Sistemas de Información \\[0.2cm]
+                    \textbf{Autores:} & Evaristo Jara, Jose Junior \\
+                                      & Tapullima Serna, Meselemias \\
+                                      & Rengifo Fretel, Juan Manuel \\[0.2cm]
+                    \textbf{Docente:} & Dr. William G. Paucar Palomino \\[0.2cm]
+                    \textbf{Ciclo:} & Séptimo \\[0.2cm]
+                    \textbf{Institución:} & Universidad Nacional Agraria de la Selva \\[0.2cm]
+                \end{tabular}
+            \end{flushleft}
+        \end{minipage}
+        
+        \vfill
+        
+        % Ubicación y Fecha
+        {\fontsize{12}{14}\selectfont\textbf{Tingo María -- Perú}} \\[0.2cm]
+        {\fontsize{12}{14}\selectfont\textbf{2026}}
+    \end{center}
+\end{titlepage}
+
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+% ─────────────────────────────────────────────────────────────
+%  INTRODUCCIÓN
+% ─────────────────────────────────────────────────────────────
+\chapter*{Introducción}
+\addcontentsline{toc}{chapter}{Introducción}
+
+La selección de un sistema de Planificación de Recursos Empresariales (ERP) constituye uno de los procesos de decisión estratégica más críticos para cualquier organización, y cobra un matiz de mayor complejidad al tratarse de pequeñas y medianas empresas (PYMES) situadas en la región amazónica del Perú. Estas empresas operan bajo condiciones particulares de infraestructura, presupuestos limitados y rigideces normativas locales dadas por entidades gubernamentales como la SUNAT y el Ministerio de Educación (Minedu).
+
+Siguiendo la metodología de selección de la consultora global \textbf{Panorama Consulting Group}, el presente informe técnico detalla el plan de selección de ERP diseñado para la \textbf{Institución Educativa Particular "Ciencias"} de Tingo María. El proceso parte de la definición de requisitos críticos del negocio, evalúa una terna de sistemas candidatos (short-list) —que incluye a la plataforma a medida desarrollada localmente, \textbf{SiColegio 360}— y aplica una matriz de ponderación funcional detallada. Finalmente, se modela el Costo Total de Propiedad (TCO) a 3 años para argumentar de manera técnica, económica y estratégica la recomendación de la solución óptima para el colegio.
+
+\newpage
+
+% ─────────────────────────────────────────────────────────────
+%  DESARROLLO DE LA ACTIVIDAD
+% ─────────────────────────────────────────────────────────────
+
+\section{Requisitos Críticos del ERP para la IEP "Ciencias"}
+
+Para guiar el proceso de selección y garantizar la alineación del software con las necesidades de la IEP "Ciencias", se han definido 10 requisitos críticos agrupados según su prioridad y categoría funcional. Estos requisitos representan las capacidades mínimas no negociables que el ERP seleccionado debe proveer para resolver los cuellos de botella identificados en el diagnóstico operativo:
+
+\begin{table}[H]
+\caption{Requisitos Críticos para la Selección del ERP}
+\label{tab:requisitos_criticos}
+\centering\small
+\begin{tabularx}{\textwidth}{l p{7.5cm} c c}
+\toprule
+\textbf{Código} & \textbf{Descripción del Requisito Crítico} & \textbf{Prioridad} & \textbf{Categoría} \\
+\midrule
+REQ-01 & Registro de matrícula digital en línea con aforo dinámico y selección de sección por aula en tiempo real. & Alta & Funcional \\
+\midrule
+REQ-02 & Conciliación bancaria automática mediante análisis de comprobantes y validación cruzada con extractos de BCP/Nación. & Alta & Funcional \\
+\midrule
+REQ-03 & Registro académico de notas y asistencias de docentes exportable directamente al formato oficial del SIAGIE (Minedu). & Alta & Normativo \\
+\midrule
+REQ-04 & Módulo de facturación electrónica integrado con pasarelas de pago y homologado ante la SUNAT. & Alta & Normativo \\
+\midrule
+REQ-05 & Portal del apoderado responsivo con acceso a calificaciones en tiempo real e historial de estado financiero mensual. & Media & Funcional \\
+\midrule
+REQ-06 & Control transaccional de stock de materiales educativos y activos físicos del colegio vinculados a matrículas. & Media & Logística \\
+\midrule
+REQ-07 & Control de acceso basado en roles (RBAC) con autenticación segura y registro de auditoría (logs) de operaciones de cobro. & Alta & Seguridad \\
+\midrule
+REQ-08 & Dashboard de control gerencial en tiempo real con indicadores financieros (morosidad, flujo de caja) y académicos. & Alta & Gerencial \\
+\midrule
+REQ-09 & Flexibilidad para la personalización y acceso al código fuente para adaptaciones según necesidades del colegio. & Alta & No Funcional \\
+\midrule
+REQ-10 & Bajo costo de licenciamiento de usuarios y requerimiento mínimo de infraestructura de servidores físicos. & Alta & Económico \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\newpage
+
+\section{Short-list de Candidatos ERP y Justificación}
+
+Siguiendo la metodología de Panorama, se construyó una lista corta de tres candidatos idóneos para competir en la selección. La lista incluye un ERP corporativo propietario, un ERP open-source estándar y el sistema a medida desarrollado para la institución:
+
+\begin{enumerate}
+    \item \textbf{SiColegio 360 (A Medida / Open Source Local):} \\
+    Es la plataforma transaccional diseñada específicamente para la gestión de colegios privados en el Perú. Técnicamente, cuenta con un frontend en \textbf{React/Vite}, un backend API REST en \textbf{Python/Django REST Framework} y almacenamiento en base de datos relacional \textbf{PostgreSQL}.
+    \begin{itemize}
+        \item \textit{Justificación de Selección:} Fue diseñado con las reglas de negocio peruanas de raíz (SIAGIE y SUNAT), ofrece cero costos de adquisición de licencias y tiene una arquitectura ligera y extensible que corre sobre servidores en la nube económicos.
+    \end{itemize}
+    
+    \item \textbf{Odoo ERP Community Edition (Open Source Estándar Global):} \\
+    Es el ERP de código abierto más popular del mundo, desarrollado en Python y soportado sobre PostgreSQL. Cuenta con una arquitectura modular que cubre inventario, CRM, ventas y finanzas básicas de forma nativa.
+    \begin{itemize}
+        \item \textit{Justificación de Selección:} Al ser open-source, no exige pagos por licencias de uso mensual en su versión comunitaria. Cuenta con una API robusta y permite la adaptación mediante módulos de terceros, aunque carece de flujos específicos para colegios peruanos de forma predeterminada.
+    \end{itemize}
+    
+    \item \textbf{SAP Business One (Propietario / Closed Source Corporativo):} \\
+    El ERP líder del mercado global para pequeñas y medianas empresas. Es un sistema propietario con bases de datos estructuradas en SAP HANA o Microsoft SQL Server, comercializado exclusivamente mediante partners certificados.
+    \begin{itemize}
+        \item \textit{Justificación de Selección:} Provee una solidez transaccional incuestionable, control de inventarios riguroso y altos estándares de seguridad corporativa. Sirve como punto de comparación en cuanto a costos y tiempos frente al software libre.
+    \end{itemize}
+\end{enumerate}
+
+
+
+\section{Matriz de Comparación Funcional}
+
+Se realizó una evaluación de los tres sistemas frente a los 10 requisitos críticos definidos en la Tabla \ref{tab:requisitos_criticos}, utilizando una escala de puntuación del 1 al 5 (donde 1 representa una nula cobertura nativa y 5 una cobertura completa sin adaptaciones):
+
+\begin{table}[H]
+\caption{Matriz de Comparación Funcional (Escala 1-5)}
+\label{tab:matriz_funcional}
+\centering\small
+\begin{tabularx}{\textwidth}{l c c c X}
+\toprule
+\textbf{Código} & \textbf{SiColegio 360} & \textbf{Odoo Comm.} & \textbf{SAP B1} & \textbf{Justificación de las Puntuaciones} \\
+\midrule
+REQ-01 & 5 & 3 & 2 & SiColegio 360 cuenta con matrícula dinámica en línea nativa. Odoo y SAP B1 requieren adaptaciones complejas de su módulo de ventas. \\
+\midrule
+REQ-02 & 5 & 4 & 4 & SiColegio 360 procesa directamente capturas de WhatsApp y formatos locales. Odoo y SAP concilian bien bancos pero requieren APIs adicionales. \\
+\midrule
+REQ-03 & 5 & 2 & 1 & SiColegio 360 incluye exportación SIAGIE nativa. Odoo y SAP B1 no tienen compatibilidad con Minedu y requieren codificación a medida. \\
+\midrule
+REQ-04 & 5 & 4 & 3 & SiColegio 360 tiene pasarela local y SUNAT nativas. Odoo tiene localización peruana de partners; SAP requiere middleware costoso. \\
+\midrule
+REQ-05 & 5 & 3 & 2 & SiColegio 360 tiene portal responsivo diseñado en React para padres. Odoo tiene portal web básico; SAP requiere licenciamiento web extra. \\
+\midrule
+REQ-06 & 4 & 5 & 5 & Odoo y SAP B1 tienen los mejores motores logísticos del mercado. SiColegio 360 cubre el flujo escolar pero es más básico. \\
+\midrule
+REQ-07 & 5 & 4 & 5 & SAP B1 tiene máxima seguridad nativa. SiColegio 360 implementa RBAC/JWT detallado. Odoo cuenta con seguridad por grupos. \\
+\midrule
+REQ-08 & 5 & 4 & 4 & SiColegio 360 muestra morosidad escolar directa. Odoo y SAP tienen buenos reportes pero requieren configuración/Crystal Reports. \\
+\midrule
+REQ-09 & 5 & 4 & 1 & SiColegio 360 es software libre modificable por completo. Odoo tiene backend abierto en Python; SAP B1 es cerrado (código protegido). \\
+\midrule
+REQ-10 & 5 & 4 & 1 & SiColegio 360 y Odoo tienen costo de licencia 0. SAP B1 exige licencias por usuario nominal extremadamente costosas. \\
+\midrule
+\textbf{Total} & \textbf{49} & \textbf{37} & \textbf{28} & \textbf{SiColegio 360 obtiene la mayor puntuación por su alta especialización educativa y flexibilidad local.} \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\newpage
+
+\section{Análisis de Costo Total de Propiedad (TCO) a 3 Años}
+
+El análisis financiero de Costo Total de Propiedad (TCO) evalúa todos los desembolsos monetarios asociados al software durante un horizonte de 3 años, expresados en Soles (S/.). Los costos se estiman en base a la escala operativa de la IEP "Ciencias" (10 usuarios administrativos/dirección concurrentes, 25 docentes con acceso a notas y 400 padres de familia con acceso al portal web):
+
+\begin{table}[H]
+\caption{Matriz de Costo Total de Propiedad (TCO) a 3 Años (en Soles)}
+\label{tab:tco_comparativo}
+\centering
+\begin{tabularx}{\textwidth}{l *{3}{>{\raggedleft\arraybackslash}X}}
+\toprule
+\textbf{Categoría de Costo} & \textbf{SiColegio 360} & \textbf{Odoo Community} & \textbf{SAP Business One} \\
+\midrule
+Licenciamiento de Software & S/. 0 & S/. 0 & S/. 45,000 \\
+Implementación y Consultoría & S/. 15,000 & S/. 28,000 & S/. 65,000 \\
+Soporte Técnico de Terceros & S/. 5,400 & S/. 14,400 & S/. 36,000 \\
+Capacitación de Personal & S/. 4,000 & S/. 8,000 & S/. 15,000 \\
+Infraestructura (Hosting Nube) & S/. 9,000 & S/. 10,800 & S/. 21,600 \\
+\midrule
+\textbf{Costo Total (TCO)} & \textbf{S/. 33,400} & \textbf{S/. 61,200} & \textbf{S/. 182,600} \\
+\midrule
+\textbf{Ahorro Financiero vs SAP} & \textbf{S/. 149,200} & \textbf{S/. 121,400} & \textbf{--} \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\subsection{Detalle de las estimaciones financieras:}
+\begin{itemize}
+    \item \textbf{Licenciamiento:} SiColegio 360 y Odoo Community tienen costo de licencia de S/. 0. SAP Business One requiere licencias profesionales y limitadas para 10 usuarios concurrentes, estimadas en S/. 15,000 anuales (S/. 45,000 acumulado).
+    \item \textbf{Implementación:} La personalización de SiColegio 360 demanda S/. 15,000 en horas de programadores locales. Odoo requiere S/. 28,000 para adaptar los flujos de colegio y SUNAT. SAP B1 requiere un partner oficial con consultores certificados, elevando el costo a S/. 65,000.
+    \item \textbf{Soporte:} SiColegio 360 considera S/. 150/mes de soporte correctivo local. Odoo requiere soporte calificado a S/. 400/mes. SAP B1 exige contratos anuales de mantenimiento del 18\% del valor del software (S/. 12,000 anuales).
+    \item \textbf{Capacitación:} SiColegio 360 ofrece interfaces sencillas y capacitación simplificada (S/. 4,000). Odoo y SAP B1 tienen curvas de aprendizaje empinadas para usuarios no técnicos, exigiendo programas de capacitación extensos.
+    \item \textbf{Infraestructura:} SiColegio 360 corre óptimamente en una máquina virtual de AWS de costo básico. Odoo requiere mayor CPU y memoria. SAP B1 exige instancias de alto rendimiento para soportar la memoria in-memory de SAP HANA o bases de datos relacionales robustas corporativas.
+\end{itemize}
+
+\newpage
+
+\section{Recomendación del ERP Ganador y Justificación}
+
+De acuerdo con los resultados de la matriz comparativa funcional y el análisis de TCO, se recomienda formalmente la selección e implementación de \textbf{SiColegio 360} como la plataforma ERP oficial para la IEP "Ciencias". La justificación de esta decisión se fundamenta en tres pilares estratégicos:
+
+\subsection{Justificación Técnica}
+SiColegio 360 destaca por encima de los otros competidores por su especialización nativa para el rubro educativo peruano. Su backend desarrollado en \textbf{Django REST Framework} y base de datos relacional \textbf{PostgreSQL} permiten que los procesos transaccionales críticos (como la concurrencia de 400 matrículas en el primer día de campaña de verano) se procesen garantizando las propiedades ACID, eliminando cualquier riesgo de sobre-reserva de aulas o pagos huérfanos. Las integraciones locales requeridas por la IEP "Ciencias" (formatos del SIAGIE/Minedu y facturación electrónica de SUNAT) ya se encuentran desarrolladas en el núcleo del sistema, a diferencia de Odoo y SAP B1 que requieren rediseñar sus arquitecturas contables y operativas a costos prohibitivos.
+
+\subsection{Justificación Económica}
+El análisis financiero de TCO a 3 años demuestra que SiColegio 360 representa la opción más viable y con menor riesgo financiero para el colegio, con un costo total de \textbf{S/. 33,400}. Esto representa un ahorro directo de \textbf{S/. 27,800} en comparación con Odoo Community, y un ahorro masivo de \textbf{S/. 149,200} frente a SAP Business One. La eliminación de licencias de uso mensual permite que el retorno de la inversión (ROI) se acelere sustancialmente a menos de 4 meses de operado el sistema (según los cálculos de recuperación de morosidad de la sesión S17).
+
+\subsection{Justificación Estratégica}
+Implementar un sistema desarrollado localmente con tecnologías modernas y estándar (React, Python) otorga a la dirección del colegio una soberanía tecnológica absoluta. No hay dependencia de partners de software transnacionales ni de variaciones en el tipo de cambio del dólar americano para licencias de software propietario. Adicionalmente, el soporte se maneja de manera ágil y directa en Tingo María, asegurando adaptaciones en tiempo récord ante eventuales cambios en las normativas del Ministerio de Educación de Perú.
+
+\newpage
+
+% ─────────────────────────────────────────────────────────────
+%  CONCLUSIONES
+% ─────────────────────────────────────────────────────────────
+\chapter*{Conclusiones}
+\addcontentsline{toc}{chapter}{Conclusiones}
+
+\begin{enumerate}
+    \item La aplicación de la metodología de selección ERP de Panorama Consulting Group a la IEP "Ciencias" de Tingo María permitió estructurar un proceso de toma de decisiones transparente y libre de sesgos comerciales, fundamentado en requisitos funcionales críticos del contexto real del negocio.
+    \item A través de la matriz de comparación funcional, se determinó que los ERP genéricos globales (como Odoo y SAP Business One) presentan brechas funcionales severas al enfrentarse a la normativa educativa y tributaria del Perú (SIAGIE/SUNAT), requiriendo personalizaciones caras que desvirtúan sus economías de escala originales.
+    \item \textbf{SiColegio 360} demostró ser la alternativa óptima al integrar el mayor nivel de cobertura funcional (49 de 50 puntos posibles) con el Costo Total de Propiedad más bajo a 3 años (S/. 33,400), lo que garantiza la viabilidad técnica de su stack moderno (React y Django/PostgreSQL) y el éxito del retorno financiero para el colegio.
+\end{enumerate}
+
+\end{document}

@@ -1,0 +1,380 @@
+% ============================================================
+%  ACTIVIDAD S17: DIAGNÓSTICO ERP/CRM/SCM
+%  Curso: Sistemas de Información  |  Ciclo VII
+%  Universidad Nacional Agraria de la Selva
+% ============================================================
+\documentclass[12pt,a4paper,oneside]{report}
+
+% -- Paquetes esenciales -------------------------------------
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[provide=*,spanish]{babel}
+\addto\captionsspanish{\renewcommand{\tablename}{Tabla}}
+\addto\captionsspanish{\renewcommand{\listtablename}{\'Indice de Tablas}}
+\addto\captionsspanish{\renewcommand{\listfigurename}{\'Indice de Figuras}}
+\addto\captionsspanish{\renewcommand{\contentsname}{\'Indice General}}
+\usepackage{lmodern}
+
+% -- Geometría -----------------------------------------------
+\usepackage[
+  top=2.54cm, bottom=2.54cm,
+  left=2.54cm, right=2.54cm,
+  headheight=28pt
+]{geometry}
+
+% -- Colores -------------------------------------------------
+\usepackage[table]{xcolor}
+\definecolor{azulOscuro}{RGB}{10,47,97}
+\definecolor{azulMedio}{RGB}{28,100,180}
+\definecolor{verdInst}{RGB}{34,120,80}
+\definecolor{grisClaro}{RGB}{245,246,248}
+\definecolor{grisTabla}{RGB}{220,225,232}
+\definecolor{dorado}{RGB}{180,140,20}
+
+% -- Tipografía (Times New Roman para APA 7) -----------------
+\usepackage{times}
+
+% -- Encabezados y pies --------------------------------------
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\MakeUppercase{SICOLEGIO 360: Diagnóstico ERP/CRM/SCM}}
+\fancyhead[R]{\thepage}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0.5pt}
+
+% -- Secciones en formato APA 7 ------------------------------
+\usepackage{titlesec}
+\titleformat{\chapter}
+  {\normalfont\bfseries\Large\centering}
+  {\thechapter\quad}
+  {0pt}
+  {}
+\titlespacing*{\chapter}{0pt}{-25pt}{15pt}
+\titleformat{\section}
+  {\normalfont\bfseries\large}{\thesection}{1em}{}
+\titleformat{\subsection}
+  {\normalfont\bfseries\itshape\normalsize}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}
+  {\normalfont\bfseries\normalsize}{\thesubsubsection}{1em}{}
+
+% -- Listas --------------------------------------------------
+\usepackage{enumitem}
+\setlist[itemize]{leftmargin=1.5em,itemsep=2pt,topsep=4pt}
+\setlist[enumerate]{leftmargin=1.5em,itemsep=2pt,topsep=4pt}
+
+% -- Tablas --------------------------------------------------
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{tabularx}
+\renewcommand{\arraystretch}{1.35}
+
+% -- Figuras y Captions --------------------------------------
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{subcaption}
+\captionsetup[table]{labelfont=bf,textfont=it,labelsep=newline,singlelinecheck=off,justification=raggedright}
+\captionsetup[figure]{labelfont=bf,textfont=it,labelsep=newline,singlelinecheck=off,justification=raggedright}
+
+% -- Hiperenlaces -------------------------------------------
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=azulOscuro,
+  citecolor=azulOscuro,
+  urlcolor=azulMedio,
+  pdftitle={SICOLEGIO 360 -- Actividad S17 Diagnóstico ERP/CRM/SCM},
+  pdfauthor={Evaristo Jara, Jose Junior - Tapullima Serna, Meselemias},
+  pdfsubject={Sistemas de Información UNAS 2026},
+}
+
+% -- Utilidades ----------------------------------------------
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{setspace}
+\usepackage{indentfirst} 
+\setlength{\parskip}{0pt}
+\setlength{\parindent}{1.27cm}
+
+% ═════════════════════════════════════════════════════════════
+\begin{document}
+\sloppy
+\doublespacing
+
+% ─────────────────────────────────────────────────────────────
+%  PORTADA (Estilo Académico UNAS / FIIS)
+% ─────────────────────────────────────────────────────────────
+\begin{titlepage}
+    \begin{center}
+        \setstretch{1.1}
+        {\fontsize{14}{16}\selectfont\textbf{UNIVERSIDAD NACIONAL AGRARIA DE LA SELVA}} \\[0.3cm]
+        {\fontsize{13}{15}\selectfont\textbf{FACULTAD DE INGENIERÍA EN INFORMÁTICA Y SISTEMAS}} \\[0.2cm]
+        {\fontsize{12}{14}\selectfont\textbf{ESCUELA PROFESIONAL DE INGENIERÍA DE SISTEMAS}} \\[0.4cm]
+        
+        % Bloques para logos institucionales
+        \begin{minipage}{0.45\textwidth}
+            \centering
+            \includegraphics[height=5.5cm,keepaspectratio]{logounas.png}
+        \end{minipage}
+        \hfill
+        \begin{minipage}{0.45\textwidth}
+            \centering
+            \includegraphics[height=4.5cm,keepaspectratio]{LOGO-FIIS-1000x1000-TR.png}
+        \end{minipage}\\[0.3cm]
+        
+        \rule{\linewidth}{1.5pt} \\[0.6cm]
+        
+        % Título de la Actividad
+        {\fontsize{13}{16}\selectfont\textbf{ACTIVIDAD S17: DIAGNÓSTICO ERP/CRM/SCM EN UNA EMPRESA DE TINGO MARÍA}} \\[0.3cm]
+        {\fontsize{11}{13}\selectfont\textbf{PROPUESTA ESTRATÉGICA BASADA EN LA PLATAFORMA SICOLEGIO 360}} \\[0.4cm]
+        
+        \rule{\linewidth}{1.5pt} \\[1.0cm]
+        
+        % Información académica y autores
+        \setstretch{1.5}
+        \begin{minipage}{0.85\textwidth}
+            \begin{flushleft}
+                \begin{tabular}{@{}p{3.5cm}p{9.5cm}@{}}
+                    \textbf{Curso:} & Sistemas de Información \\[0.2cm]
+                    \textbf{Autores:} & Evaristo Jara, Jose Junior \\
+                                      & Tapullima Serna, Meselemias \\
+                                      & Rengifo Fretel Juan Manuel \\[0.2cm]
+                    \textbf{Docente:} & Dr. William G. Paucar Palomino \\[0.2cm]
+                    \textbf{Ciclo:} & Séptimo \\[0.2cm]
+                    \textbf{Institución:} & Universidad Nacional Agraria de la Selva \\[0.2cm]
+                \end{tabular}
+            \end{flushleft}
+        \end{minipage}
+        
+        \vfill
+        
+        % Ubicación y Fecha
+        {\fontsize{12}{14}\selectfont\textbf{Tingo María -- Perú}} \\[0.2cm]
+        {\fontsize{12}{14}\selectfont\textbf{2026}}
+    \end{center}
+\end{titlepage}
+
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+% ─────────────────────────────────────────────────────────────
+%  INTRODUCCIÓN
+% ─────────────────────────────────────────────────────────────
+\chapter*{Introducción}
+\addcontentsline{toc}{chapter}{Introducción}
+
+La gestión moderna de las organizaciones exige la integración de sus procesos clave a través de tecnologías de información empresariales. En la Amazonía peruana, específicamente en la ciudad de Tingo María, muchas organizaciones de tamaño mediano y pequeño enfrentan barreras operativas severas debido a la persistencia de procesos manuales tradicionales. Estas deficiencias repercuten directamente en su rentabilidad, control logístico y relación con los clientes.
+
+El presente informe académico desarrolla un diagnóstico situacional para la \textbf{Institución Educativa Particular "Ciencias"} de Tingo María, una empresa que pertenece al sector comercio y servicios educativos. Basándonos en la plataforma de software diseñada por el equipo, \textbf{SiColegio 360}, se analiza cómo la adopción de un sistema integrado que consolide el Procesamiento de Transacciones (TPS), el Sistema de Información Gerencial (MIS) y el Soporte de Decisiones (DSS) puede erradicar la morosidad y la desorganización logística, garantizando un retorno de inversión (ROI) altamente atractivo y una estabilidad operativa bajo el cumplimiento normativo exigido en el Perú.
+
+\newpage
+
+% ─────────────────────────────────────────────────────────────
+%  DESARROLLO DE LA ACTIVIDAD
+% ─────────────────────────────────────────────────────────────
+
+\section{Identificación de la Empresa y Procesos Actuales}
+
+Para la realización de esta actividad, se ha seleccionado a una empresa real del sector servicios/comercio de la ciudad de Tingo María:
+
+\begin{itemize}
+    \item \textbf{Razón Social:} Institución Educativa Particular "Ciencias" S.R.L.
+    \item \textbf{Giro de Negocio:} Servicios Educativos de Educación Básica Regular (Primaria y Secundaria).
+    \item \textbf{Escala Operativa:} 400 alumnos matriculados, 25 docentes y 4 administrativos permanentes.
+    \item \textbf{Ubicación:} Tingo María, Provincia de Leoncio Prado, Departamento de Huánuco.
+\end{itemize}
+
+A continuación, se detalla la investigación de sus procesos operativos clave en su estado actual (sin un sistema integrado):
+
+\subsection{Gestión de Ventas (Admisión y Matrícula)}
+Las "ventas" en esta empresa corresponden a la captación de postulantes, la separación de vacantes y la formalización de matrículas anuales. Actualmente, este proceso es completamente manual y presencial. La secretaria del colegio recibe las solicitudes de información y llena una ficha de postulación en papel. Si el alumno es admitido, la confirmación de la vacante se registra en una hoja de cálculo local (Microsoft Excel) de forma aislada. La comunicación de los costos y la disponibilidad de aulas se realiza de forma verbal o por chats individuales de WhatsApp, lo que con frecuencia genera la duplicidad en la asignación de vacantes o la falta de actualización del estado de las aulas disponibles.
+
+\subsection{Gestión de Inventario (Materiales Educativos y Activos)}
+El colegio gestiona dos tipos de inventario. El primero corresponde a los materiales de distribución directa (libros de texto de editoriales asociadas, agendas institucionales y uniformes deportivos). Este inventario se controla mediante listas impresas donde se registra con firma física la recepción de los padres. El segundo tipo abarca los activos físicos institucionales (carpetas escolares, computadoras de laboratorio de cómputo, proyectores multimedia y materiales didácticos de ciencias). El control es de carácter anual e histórico, registrándose en un libro de actas físico, careciendo de un control transaccional de mantenimiento, estado de conservación o depreciación de activos.
+
+\subsection{Gestión de Finanzas (Recaudación de Pensiones e Ingresos)}
+La recaudación mensual de pensiones escolares es el proceso más vulnerable del colegio. Los padres de familia realizan transferencias bancarias o depósitos en efectivo en las cuentas institucionales del Banco de la Nación o BCP. Posteriormente, deben enviar la fotografía del comprobante de depósito (voucher) a la tesorera vía WhatsApp. La tesorera realiza la validación manual de cada imagen confrontándola contra su estado de cuenta bancario físico. Una vez validada, registra el pago en un archivo Excel maestro y elabora un recibo de ingresos manual en papel autocopiativo. Este flujo genera una brecha temporal de varios días en la actualización de saldos, pérdidas de capturas de pantalla de WhatsApp y errores de digitación en los montos abonados.
+
+\subsection{Gestión de Clientes (Padres de Familia y Alumnos)}
+Los "clientes" de la institución son los padres de familia y los propios estudiantes. La comunicación académica (notas bimestrales, reportes de conducta, avisos de urgencia) y administrativa (recordatorios de pago de pensiones) se gestiona de forma descentralizada e informal. Cada docente de aula crea un grupo de WhatsApp con los padres de familia. La información oficial se diluye en las conversaciones diarias del chat, lo que resulta en reclamos por desinformación. Asimismo, no existe un registro centralizado sobre el historial del cliente (consultas previas, incidencias de pago, compromisos firmados o ficha psicológica/médica del estudiante), lo que impide brindar una atención al cliente de carácter personalizado o estratégico.
+
+\newpage
+
+\section{Identificación de 3 Problemas Concretos por Resolver}
+
+Basándose en el análisis situacional de la IEP "Ciencias", se identifican tres problemas operativos que un sistema integrado de información (ERP/CRM) resolverá de manera inmediata:
+
+\begin{enumerate}
+    \item \textbf{Problema Financiero (ERP): Alta tasa de morosidad y fallas críticas en la conciliación de pensiones.} \\
+    La morosidad de pago en el colegio alcanza un promedio constante del 30\% al cierre de cada mes. Esto es provocado por la falta de notificaciones automáticas y preventivas a los padres de familia. Adicionalmente, el método de conciliación de depósitos bancarios vía imágenes de WhatsApp es ineficiente y propenso a errores humanos, registrándose un 12\% de comprobantes duplicados, omitidos o asignados a alumnos incorrectos. Esto deriva en falsos cobros y malestar en la comunidad educativa.
+    
+    \item \textbf{Problema de Captación y Fidelización (CRM): Pérdida de leads de admisión y falta de canal oficial de comunicación.} \\
+    Durante la campaña de matrículas de verano, se reciben aproximadamente 150 consultas de vacantes de alumnos nuevos. Al no contar con un sistema CRM que registre los datos de contacto y el nivel de interés de los padres (embudo de ventas), el 45\% de estos contactos se pierden sin seguimiento telefónico o digital. Por otro lado, la informalidad en el uso de WhatsApp como canal de soporte ha fragmentado la comunicación institucional, incrementando la tasa de deserción de alumnos actuales en un 15\% anual debido a quejas no atendidas o desinformación administrativa.
+    
+    \item \textbf{Problema Logístico y Operativo (SCM/ERP): Demoras en la emisión de reportes a la UGEL y pérdida en inventario de materiales.} \\
+    La consolidación de notas bimestrales de los 25 docentes se hace de manera manual, demorando en promedio 15 días calendario para emitir las libretas de calificaciones y los informes oficiales requeridos por el SIAGIE de la UGEL Leoncio Prado. Asimismo, en el inventario físico de materiales de estudio (guías didácticas y uniformes), se reporta una merma no justificada del 8\% anual debido a la ausencia de un registro de stock automatizado que asocie la entrega del material directamente a la transacción de matrícula del estudiante.
+\end{enumerate}
+
+\newpage
+
+\section{Recomendación del Sistema Específico y Justificación Técnica}
+
+Frente a este escenario, se recomienda la implementación de la plataforma \textbf{SiColegio 360}, un sistema a medida con enfoque ERP/CRM desarrollado específicamente para el contexto de la gestión educativa básica regular en el Perú. 
+
+A continuación, se presentan las justificaciones de la elección mediante \textbf{5 criterios técnicos} fundamentados en la arquitectura del software desarrollado en el proyecto:
+
+\begin{enumerate}
+    \item \textbf{Diseño de Base de Datos Relacional y Propiedades ACID (Transaccionalidad):} \\
+    A diferencia de sistemas ofimáticos o bases de datos no estructuradas, SiColegio 360 se soporta sobre un diseño relacional normalizado de 26 tablas en PostgreSQL. El sistema implementa bloques transaccionales controlados para procesos críticos como la matrícula y facturación. Esto garantiza que las transacciones cumplan con las propiedades ACID (Atomicidad, Consistencia, Aislamiento y Durabilidad). Por ejemplo, al registrar una matrícula y cobrar la cuota inicial, el sistema asegura que la asignación de vacante en el aula y la emisión del recibo digital ocurran como una única operación atómica; si alguna falla, todo el proceso se revierte automáticamente, evitando inconsistencias de datos.
+    
+    \item \textbf{Arquitectura Web Multiinstitucional y Control de Acceso Basado en Roles (RBAC):} \\
+    El sistema cuenta con una arquitectura dividida (decoupled) con un frontend enriquecido en React/Vite y un backend escalable en Node.js/Express. Esta estructura permite un acceso web responsivo desde cualquier dispositivo móvil o de escritorio para los usuarios del colegio. La seguridad transaccional se garantiza mediante tokens JWT y un modelo RBAC que restringe los endpoints de la API. Así, un docente solo tiene permisos de escritura sobre las notas de sus cursos asignados, un padre de familia solo tiene visibilidad de lectura de sus hijos, y el tesorero tiene exclusividad en la alteración de los módulos de pensiones y cajas.
+    
+    \item \textbf{Integración Vertical de Niveles Organizacionales (TPS $\rightarrow$ MIS $\rightarrow$ DSS):} \\
+    SiColegio 360 no es solo un registrador de datos transaccionales (TPS). Los datos procesados diariamente en las ventanillas de cobranza y matrículas alimentan automáticamente los módulos del Sistema de Información Gerencial (MIS). A través de visualizadores dinámicos, el software consolida reportes de morosidad proyectada y flujo de caja en tiempo real. Esta información es consumida por el módulo DSS (Decision Support System) para que la dirección del colegio pueda planificar el presupuesto de inversiones operativas de manera informada y sin depender de informes contables retrasados semanas.
+    
+    \item \textbf{Cumplimiento y Adaptabilidad Normativa (UGEL/SUNAT):} \\
+    Un criterio técnico clave en el contexto peruano es la compatibilidad del sistema con los entes reguladores estatales. SiColegio 360 incluye un motor de procesamiento de datos que exporta las actas de evaluación académica en el formato plano exacto requerido para la carga en el SIAGIE (UGEL). Asimismo, su API de pagos está diseñada para integrarse con proveedores de facturación electrónica (PSE/SUNAT), automatizando la generación de boletas de venta electrónicas apenas se confirme la conciliación del pago de pensiones.
+    
+    \item \textbf{Optimización del Costo de Infraestructura y Despliegue (TCO):} \\
+    La arquitectura de SiColegio 360 emplea tecnologías modernas y de código abierto (open-source), lo que elimina los costos excesivos de licencias corporativas que exigen los ERP comerciales genéricos como SAP Business One o Microsoft Dynamics (que requieren licencias por usuario y altos costos de consultoría). La solución se despliega de forma simplificada a través de contenedores Docker en servicios en la nube como AWS o DigitalOcean, logrando un Costo Total de Propiedad (TCO) sumamente bajo para la IEP "Ciencias" y permitiendo una escalabilidad fluida si el colegio expande su alumnado.
+\end{enumerate}
+
+\newpage
+
+\section{Estimación Financiera y Retorno de Inversión (ROI)}
+
+Para realizar una estimación financiera robusta y realista, nos basamos en los informes de \textbf{Panorama Consulting Group} sobre implementaciones de ERP en pequeñas y medianas empresas (PYMES). De acuerdo con estas cifras globales de referencia, la inversión en sistemas integrados representa en promedio entre el 3\% y 5\% de los ingresos anuales de la organización, logrando recuperar la inversión en un periodo medio de 2.5 años debido a eficiencias operativas y financieras.
+
+A continuación, se detalla la estructura financiera de la propuesta para la IEP "Ciencias" de Tingo María:
+
+\subsection{Parámetros Iniciales del Negocio (IEP "Ciencias")}
+\begin{itemize}
+    \item \textbf{Matrícula Anual:} S/. 250 por alumno.
+    \item \textbf{Pensión Mensual:} S/. 250 por alumno (9 pensiones al año).
+    \item \textbf{Población Estudiantil:} 400 alumnos.
+    \item \textbf{Ingresos Anuales Brutos:} 
+    \[ \text{Ingresos} = 400 \text{ alumnos} \times (\text{S/. } 250 \text{ matrícula} + \text{S/. } 250 \times 9 \text{ pensiones}) = \text{S/. } 1,000,000 \]
+\end{itemize}
+
+\subsection{Inversión Inicial (Año 0) y Costos Operativos}
+\begin{itemize}
+    \item \textbf{Inversión de Implementación (Año 0):} S/. 25,000. Incluye:
+        \begin{itemize}
+            \item Parametrización y personalización de módulos en SiColegio 360: S/. 12,000
+            \item Migración de base de datos histórica de alumnos y padres: S/. 4,000
+            \item Capacitación de personal administrativo y docentes: S/. 4,000
+            \item Adquisición de hardware básico (lectora de código de barras y tablet de asistencia): S/. 5,000
+        \end{itemize}
+    \item \textbf{Costos de Operación y Mantenimiento (Años 1 al 3):} S/. 4,800 anuales. Incluye:
+        \begin{itemize}
+            \item Hosting en la nube (AWS LightSail - base de datos y aplicación): S/. 250 mensuales (S/. 3,000 anuales)
+            \item Soporte técnico preventivo y correctivo (remoto): S/. 150 mensuales (S/. 1,800 anuales)
+        \end{itemize}
+\end{itemize}
+
+\subsection{Beneficios Anuales Cuantificables Proyectados (Ahorros e Ingresos Adicionales)}
+\begin{itemize}
+    \item \textbf{Reducción de Morosidad (ERP):} Reducción del 30\% al 5\% de morosidad constante. Esto permite recuperar anualmente un promedio de S/. 45,000 que antes se convertían en cuentas incobrables o se retrasaban sustancialmente.
+    \item \textbf{Incremento en Captación de Alumnos Nuevos (CRM):} Incremento de 5\% de la población estudiantil gracias al control de leads y seguimiento proactivo (20 alumnos nuevos).
+    \[ \text{Ingreso adicional} = 20 \text{ alumnos} \times \text{S/. } 2,500 \text{ anuales} = \text{S/. } 50,000 \]
+    \item \textbf{Eficiencia Logística y Administrativa:} Ahorro en papelería (cero libretas físicas, boletas digitales directas al correo) y reducción de horas extra administrativas en cierres bimestrales, sumando S/. 10,000 anuales en ahorros directos.
+    \item \textbf{Total de Beneficios Anuales:} S/. 105,000.
+\end{itemize}
+
+\newpage
+
+\subsection{Flujo de Caja y Evaluación Financiera}
+
+A continuación, se presenta la Tabla \ref{tab:flujo_caja} con el flujo de caja neto proyectado a 3 años para la IEP "Ciencias" y el posterior cálculo de rentabilidad.
+
+\begin{table}[H]
+\caption{Flujo de Caja Proyectado de la Implementación (Soles)}
+\label{tab:flujo_caja}
+\centering
+\begin{tabularx}{\textwidth}{l*{4}{>{\centering\arraybackslash}X}}
+\toprule
+\textbf{Concepto / Rubro} & \textbf{Año 0} & \textbf{Año 1} & \textbf{Año 2} & \textbf{Año 3} \\
+\midrule
+Inversión Inicial & -S/. 25,000 & S/. 0 & S/. 0 & S/. 0 \\
+Costos Operativos & S/. 0 & -S/. 4,800 & -S/. 4,800 & -S/. 4,800 \\
+Beneficios Cuantificables & S/. 0 & S/. 105,000 & S/. 105,000 & S/. 105,000 \\
+\midrule
+\textbf{Flujo de Caja Neto} & \textbf{-S/. 25,000} & \textbf{S/. 100,200} & \textbf{S/. 100,200} & \textbf{S/. 100,200} \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\subsection{Cálculo del Valor Actual Neto (VAN) y Tasa Interna de Retorno (TIR)}
+
+Considerando una Tasa de Descuento (COK - Costo de Oportunidad del Capital) de referencia del \textbf{12\% anual} (tasa promedio de mercado para financiamiento de proyectos de tecnología educativa de escala pyme en el Perú), aplicamos las siguientes fórmulas financieras:
+
+\subsubsection{Fórmula del Valor Actual Neto (VAN):}
+\[ VAN = I_0 + \sum_{t=1}^{n} \frac{F_t}{(1 + COK)^t} \]
+
+Sustituyendo los valores de nuestro flujo:
+\[ VAN = -25,000 + \frac{100,200}{(1 + 0.12)^1} + \frac{100,200}{(1 + 0.12)^2} + \frac{100,200}{(1 + 0.12)^3} \]
+\[ VAN = -25,000 + 89,464.29 + 79,878.83 + 71,320.38 \]
+\[ VAN = -25,000 + 240,663.50 \]
+\[ VAN = \text{\textbf{S/. 215,663.50}} \]
+
+Dado que el $VAN > 0$, el proyecto es financieramente viable y genera un valor agregado de S/. 215,663.50 sobre la inversión inicial.
+
+\subsubsection{Cálculo de la Tasa Interna de Retorno (TIR):}
+La TIR es la tasa de descuento que hace que el VAN sea igual a cero:
+\[ -25,000 + \sum_{t=1}^{3} \frac{100,200}{(1 + TIR)^t} = 0 \]
+
+Mediante aproximación numérica, obtenemos una tasa de rendimiento anual interna de:
+\[ TIR \approx \text{\textbf{395.7\%}} \]
+
+Esta tasa demuestra el alto impacto multiplicador de implementar software desarrollado localmente (SiColegio 360), donde la inversión inicial es baja en relación con el volumen de cobranza recuperado y eficiencias logradas en la organización.
+
+\subsubsection{Cálculo del Retorno de Inversión (ROI):}
+El ROI acumulado a los 3 años se calcula de la siguiente manera:
+\[ ROI = \frac{\text{Flujo Neto Acumulado 3 años} - \text{Inversión Inicial}}{\text{Inversión Inicial}} \times 100 \]
+\[ ROI = \frac{(100,200 \times 3) - 25,000}{25,000} \times 100 \]
+\[ ROI = \frac{300,600 - 25,000}{25,000} \times 100 = \text{\textbf{1102.4\%}} \]
+
+El periodo de recuperación de la inversión (Payback) estimado es de \textbf{3 meses y 10 días} a partir de iniciado el Año 1, momento en el cual el flujo acumulado supera el costo de la inversión inicial de S/. 25,000.
+
+\newpage
+
+\section{Estructura de Presentación Ejecutiva (Pitch de 5 Minutos)}
+
+Para la sustentación de la propuesta tecnológica ante el Directorio de la IEP "Ciencias", se ha estructurado una presentación ejecutiva de 5 minutos, enfocada en la persuasión estratégica y el sustento técnico y financiero:
+
+\begin{description}
+    \item[\textbf{Minuto 1: El Problema (El cuello de botella administrativo)}] \hfill \\
+    El problema central de la IEP "Ciencias" no es su calidad educativa, sino el desgaste operativo e ineficiencia financiera. Actualmente, se pierde un 30\% de ingresos mensuales en cuentas morosas por no contar con recordatorios automáticos de pago y depender de capturas de WhatsApp para conciliar cuentas. Además, el 45\% de los padres que solicitan vacantes en verano se pierden en el olvido por falta de seguimiento comercial, afectando directamente la rentabilidad del negocio.
+    
+    \item[\textbf{Minuto 2: La Solución (Presentación de SiColegio 360)}] \hfill \\
+    Proponemos la adopción de \textbf{SiColegio 360}, un sistema integrado de información académica y administrativa diseñado a la medida de los colegios privados de Tingo María. SiColegio 360 automatiza y centraliza la matrícula en línea, el control logístico de libros y la pasarela de confirmación de pagos de pensiones. Todo esto en un entorno seguro alojado en la nube que conecta a directores, secretarias, profesores y padres de familia en un único canal oficial.
+    
+    \item[\textbf{Minuto 3: Sustento Técnico (¿Por qué es robusto y confiable?)}] \hfill \\
+    Nuestra plataforma garantiza la máxima seguridad de datos. Cumple estrictamente con las propiedades ACID a través de una base de datos relacional PostgreSQL de 26 tablas, lo que impide que ocurra el sobrecupo de estudiantes o registros de pago fantasmas. Además, su arquitectura desacoplada React/Node.js permite el acceso multiplataforma sumamente ágil, segmentando la información según roles mediante tokens de seguridad (JWT) y facilitando el cumplimiento normativo exigido por el SIAGIE (UGEL).
+    
+    \item[\textbf{Minuto 4: Viabilidad Financiera (El ROI del proyecto)}] \hfill \\
+    La implementación de \textbf{SiColegio 360} requiere una inversión única de S/. 25,000 y un mantenimiento de solo S/. 400 mensuales. Al automatizar la cobranza y optimizar la captación de nuevos estudiantes con nuestro CRM integrado, proyectamos un beneficio neto anual de S/. 100,200. Esto arroja un Valor Actual Neto (VAN) de S/. 215,663.50 a una tasa de descuento de 12\%, y nos permite asegurar que el colegio recuperará cada sol invertido en un tiempo récord de menos de 4 meses de operación.
+    
+    \item[\textbf{Minuto 5: Proveedor Recomendado y Cierre del Pitch}] \hfill \\
+    El proveedor recomendado es el equipo de desarrollo de \textbf{SiColegio 360}, los diseñadores directos del sistema en la UNAS. A diferencia de un software genérico o costosos sistemas extranjeros, este proveedor garantiza un soporte directo en Tingo María, conocimiento pleno de la normativa de la UGEL Leoncio Prado, y una adaptabilidad total a los requerimientos futuros de la institución escolar. SiColegio 360 es la llave para dar el salto tecnológico definitivo de la IEP "Ciencias", transformando la operatividad diaria en decisiones estratégicas eficientes.
+\end{description}
+
+\newpage
+
+% ─────────────────────────────────────────────────────────────
+%  CONCLUSIONES
+% ─────────────────────────────────────────────────────────────
+\chapter*{Conclusiones}
+\addcontentsline{toc}{chapter}{Conclusiones}
+
+\begin{enumerate}
+    \item El diagnóstico operativo de la IEP "Ciencias" evidencia que la ausencia de un software integrado de gestión administrativa y académica merma significativamente la eficiencia transaccional y la solidez financiera de la organización escolar, generando pérdidas económicas directas y debilidades en la atención al cliente.
+    \item La recomendación técnica del sistema a medida \textbf{SiColegio 360} como solución ERP/CRM es idónea para la institución. Su diseño relacional con cumplimiento ACID y arquitectura RBAC resuelven de fondo los problemas de inconsistencia y seguridad, mientras que su compatibilidad SIAGIE/SUNAT garantiza la fluidez en el cumplimiento de regulaciones peruanas.
+    \item El estudio financiero demuestra una rentabilidad sobresaliente para el proyecto educativo. Con una baja inversión de capital de S/. 25,000 en el Año 0 y costos de hosting controlados de S/. 4,800 anuales, el proyecto reporta un Valor Actual Neto de S/. 215,663.50 y una TIR de 395.7\%, con un tiempo estimado de retorno menor a 4 meses, validando plenamente la conveniencia estratégica de su desarrollo.
+\end{enumerate}
+
+\end{document}

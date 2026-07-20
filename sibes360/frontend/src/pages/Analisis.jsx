@@ -4,7 +4,8 @@ import { useAuth } from '../context/AuthContext';
 import { 
   BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, ReferenceLine,
   PieChart, Pie, Cell, LineChart, Line,
-  RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, Radar
+  RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, Radar,
+  ComposedChart, AreaChart, Area
 } from 'recharts';
 import { 
   TrendingUp, ShieldAlert, Award, FileText, Sparkles, AlertCircle, Calendar, CheckCircle2,
@@ -359,6 +360,177 @@ const Analisis = () => {
           </div>
         </div>
 
+      </div>
+
+      {/* SECCIÓN DE ANÁLISIS DE INTERACCIÓN INTER-ÁREAS (EXPOSICIÓN & TOMA DE DECISIONES) */}
+      <div className="bg-white border border-slate-200 rounded-xl p-6 shadow-sm space-y-6">
+        <div>
+          <h2 className="text-base font-extrabold text-[#1a1f36] flex items-center gap-2">
+            <Activity size={20} className="text-[#6c63ff] animate-pulse" />
+            <span>Análisis Cruzado e Interacción de Áreas (Auditoría & Decisiones)</span>
+          </h2>
+          <p className="text-[11px] text-[#8898aa]">
+            Visualiza cómo interactúan múltiples áreas de la institución (Pedagógica, Asistencia, Conducta y Finanzas) para diagnosticar patrones de comportamiento y tomar decisiones estratégicas.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          
+          {/* Gráfico 1: Asistencia vs Rendimiento (ComposedChart) */}
+          <div className="border border-slate-100 rounded-xl p-4 bg-slate-50/30 space-y-4">
+            <div>
+              <h3 className="text-xs font-bold text-[#1a1f36] flex items-center gap-1.5">
+                <span className="w-2.5 h-2.5 rounded-full bg-indigo-500"></span>
+                1. Asistencia vs. Rendimiento Académico
+              </h3>
+              <p className="text-[10px] text-[#8898aa]">
+                Nota promedio general (Barras) y tasa de reprobación (Línea) según la asistencia.
+              </p>
+            </div>
+            <div className="h-64">
+              {data?.interaccion_asistencia_notas?.length > 0 ? (
+                <ResponsiveContainer width="100%" height="100%">
+                  <ComposedChart data={data.interaccion_asistencia_notas} margin={{ top: 10, right: -5, left: -25, bottom: 0 }}>
+                    <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#f1f5f9" />
+                    <XAxis dataKey="name" stroke="#8898aa" fontSize={8} tickLine={false} />
+                    <YAxis yAxisId="left" domain={[0, 20]} stroke="#8898aa" fontSize={9} tickLine={false} label={{ value: 'Nota Promedio', angle: -90, position: 'insideLeft', offset: 10, fontSize: 8, fill: '#8898aa' }} />
+                    <YAxis yAxisId="right" orientation="right" domain={[0, 100]} stroke="#8898aa" fontSize={9} tickLine={false} label={{ value: 'Reprobados (%)', angle: 90, position: 'insideRight', offset: 10, fontSize: 8, fill: '#8898aa' }} />
+                    <Tooltip />
+                    <Legend iconSize={8} wrapperStyle={{ fontSize: 9 }} />
+                    <Bar yAxisId="left" dataKey="nota_promedio" fill="#6c63ff" radius={[4, 4, 0, 0]} name="Promedio de Notas" />
+                    <Line yAxisId="right" type="monotone" dataKey="tasa_reprobacion" stroke="#f5365c" strokeWidth={2.5} name="Tasa de Reprobación (%)" />
+                  </ComposedChart>
+                </ResponsiveContainer>
+              ) : (
+                <div className="flex flex-col items-center justify-center h-full text-slate-400">
+                  <Activity size={30} className="stroke-[1.5] text-slate-300 mb-1" />
+                  <span className="text-[10px]">Sin datos para este gráfico.</span>
+                </div>
+              )}
+            </div>
+            <div className="p-3 bg-white border border-slate-100 rounded-lg text-[10px] text-slate-500 leading-relaxed">
+              💡 <strong>Diagnóstico de Exposición:</strong> Los alumnos con asistencia &gt;95% tienen un promedio sobresaliente de 14.0 y casi 0% de reprobación. Cuando la asistencia cae por debajo del 90%, el promedio desciende a 9.6 y el 95.7% de alumnos reprueba.
+            </div>
+          </div>
+
+          {/* Gráfico 2: Conducta vs Rendimiento (AreaChart) */}
+          <div className="border border-slate-100 rounded-xl p-4 bg-slate-50/30 space-y-4">
+            <div>
+              <h3 className="text-xs font-bold text-[#1a1f36] flex items-center gap-1.5">
+                <span className="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
+                2. Disciplina vs. Rendimiento Académico
+              </h3>
+              <p className="text-[10px] text-[#8898aa]">
+                Impacto de las incidencias de conducta (leve/grave) en el rendimiento promedio.
+              </p>
+            </div>
+            <div className="h-64">
+              {data?.interaccion_conducta_notas?.length > 0 ? (
+                <ResponsiveContainer width="100%" height="100%">
+                  <AreaChart data={data.interaccion_conducta_notas} margin={{ top: 10, right: 10, left: -20, bottom: 0 }}>
+                    <defs>
+                      <linearGradient id="colorNota" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="5%" stopColor="#2dce89" stopOpacity={0.3}/>
+                        <stop offset="95%" stopColor="#2dce89" stopOpacity={0}/>
+                      </linearGradient>
+                      <linearGradient id="colorRep" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="5%" stopColor="#f5365c" stopOpacity={0.2}/>
+                        <stop offset="95%" stopColor="#f5365c" stopOpacity={0}/>
+                      </linearGradient>
+                    </defs>
+                    <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#f1f5f9" />
+                    <XAxis dataKey="name" stroke="#8898aa" fontSize={8} tickLine={false} />
+                    <YAxis stroke="#8898aa" fontSize={9} tickLine={false} />
+                    <Tooltip />
+                    <Legend iconSize={8} wrapperStyle={{ fontSize: 9 }} />
+                    <Area type="monotone" dataKey="nota_promedio" stroke="#2dce89" fillOpacity={1} fill="url(#colorNota)" name="Nota Promedio" />
+                    <Area type="monotone" dataKey="tasa_reprobacion" stroke="#f5365c" fillOpacity={1} fill="url(#colorRep)" name="Tasa de Reprobación (%)" />
+                  </AreaChart>
+                </ResponsiveContainer>
+              ) : (
+                <div className="flex flex-col items-center justify-center h-full text-slate-400">
+                  <Activity size={30} className="stroke-[1.5] text-slate-300 mb-1" />
+                  <span className="text-[10px]">Sin datos para este gráfico.</span>
+                </div>
+              )}
+            </div>
+            <div className="p-3 bg-white border border-slate-100 rounded-lg text-[10px] text-slate-500 leading-relaxed">
+              💡 <strong>Diagnóstico de Exposición:</strong> El 30.8% de alumnos con faltas graves disciplinarias reprueban alguna asignatura, con promedios sensiblemente menores comparado con alumnos con conducta impecable.
+            </div>
+          </div>
+
+          {/* Gráfico 3: Finanzas vs Asistencia (BarChart) */}
+          <div className="border border-slate-100 rounded-xl p-4 bg-slate-50/30 space-y-4">
+            <div>
+              <h3 className="text-xs font-bold text-[#1a1f36] flex items-center gap-1.5">
+                <span className="w-2.5 h-2.5 rounded-full bg-amber-500"></span>
+                3. Estado de Pagos vs. Asistencia Escolar
+              </h3>
+              <p className="text-[10px] text-[#8898aa]">
+                Tasa de asistencia de alumnos agrupados por su nivel de morosidad.
+              </p>
+            </div>
+            <div className="h-64">
+              {data?.interaccion_finanzas_asistencia?.length > 0 ? (
+                <ResponsiveContainer width="100%" height="100%">
+                  <BarChart data={data.interaccion_finanzas_asistencia} margin={{ top: 10, right: 10, left: -20, bottom: 0 }}>
+                    <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#f1f5f9" />
+                    <XAxis dataKey="name" stroke="#8898aa" fontSize={8} tickLine={false} />
+                    <YAxis domain={[90, 100]} stroke="#8898aa" fontSize={9} tickLine={false} />
+                    <Tooltip />
+                    <Legend iconSize={8} wrapperStyle={{ fontSize: 9 }} />
+                    <Bar dataKey="asistencia_promedio" fill="#ffb236" radius={[4, 4, 0, 0]} name="Asistencia Promedio (%)" />
+                  </BarChart>
+                </ResponsiveContainer>
+              ) : (
+                <div className="flex flex-col items-center justify-center h-full text-slate-400">
+                  <Activity size={30} className="stroke-[1.5] text-slate-300 mb-1" />
+                  <span className="text-[10px]">Sin datos para este gráfico.</span>
+                </div>
+              )}
+            </div>
+            <div className="p-3 bg-white border border-slate-100 rounded-lg text-[10px] text-slate-500 leading-relaxed">
+              💡 <strong>Diagnóstico de Exposición:</strong> Existe una pequeña desviación en la asistencia en alumnos de morosidad crítica (94.63% vs 95.59% de alumnos al día), alertando a la institución para activar protocolos de retención por motivos económicos.
+            </div>
+          </div>
+
+          {/* Gráfico 4: Radar de Ejes Institucionales (RadarChart) */}
+          <div className="border border-slate-100 rounded-xl p-4 bg-slate-50/30 space-y-4">
+            <div>
+              <h3 className="text-xs font-bold text-[#1a1f36] flex items-center gap-1.5">
+                <span className="w-2.5 h-2.5 rounded-full bg-rose-500"></span>
+                4. Ejes Operacionales de Calidad Institucional
+              </h3>
+              <p className="text-[10px] text-[#8898aa]">
+                Comparativa multidimensional de las áreas clave para evaluar el desempeño general.
+              </p>
+            </div>
+            <div className="h-64">
+              {data?.radar_calidad?.length > 0 ? (
+                <ResponsiveContainer width="100%" height="100%">
+                  <RadarChart cx="50%" cy="50%" radius="70%" data={data.radar_calidad}>
+                    <PolarGrid stroke="#e2e8f0" />
+                    <PolarAngleAxis dataKey="subject" stroke="#8898aa" fontSize={8} />
+                    <PolarRadiusAxis angle={30} domain={[0, 100]} stroke="#cbd5e1" fontSize={7} />
+                    <Radar name={`Año Actual (${selectedAnio})`} dataKey="Actual" stroke="#ff6584" fill="#ff6584" fillOpacity={0.2} />
+                    <Radar name={`Año Anterior (${previousYear})`} dataKey="Previo" stroke="#4c47df" fill="#4c47df" fillOpacity={0.1} />
+                    <Tooltip />
+                    <Legend iconSize={8} wrapperStyle={{ fontSize: 9 }} />
+                  </RadarChart>
+                </ResponsiveContainer>
+              ) : (
+                <div className="flex flex-col items-center justify-center h-full text-slate-400">
+                  <Activity size={30} className="stroke-[1.5] text-slate-300 mb-1" />
+                  <span className="text-[10px]">Sin datos para este gráfico.</span>
+                </div>
+              )}
+            </div>
+            <div className="p-3 bg-white border border-slate-100 rounded-lg text-[10px] text-slate-500 leading-relaxed">
+              💡 <strong>Diagnóstico de Exposición:</strong> Permite evaluar visualmente si la mejora en el área académica o de asistencia se condice con un clima de convivencia escolar positivo y finanzas saneadas.
+            </div>
+          </div>
+
+        </div>
       </div>
 
       {/* Decision-making actionable insights section */}

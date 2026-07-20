@@ -2,7 +2,9 @@ from rest_framework import viewsets, status
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from django.db.models import Avg, Count
+# pyrefly: ignore [missing-import]
 from .models import Reporte
+# pyrefly: ignore [missing-import]
 from .serializers import ReporteSerializer
 from estudiantes.models import Estudiante
 from docentes.models import Docente
@@ -271,7 +273,7 @@ class AnalisisStatsView(APIView):
                     absences_count = Asistencia.objects.filter(
                         estudiante=student,
                         fecha__year=anio,
-                        estado__in=['F', 'FJ']
+                        estado__in=['F', 'FJ', 'Falta']
                     ).count()
                     if absences_count >= 3:
                         en_riesgo_count += 1
@@ -303,7 +305,7 @@ class AnalisisStatsView(APIView):
                 val_academico = round((float(avg_grade) / 20.0 * 100.0), 1) if avg_grade is not None else 0.0
                 
                 total_as = Asistencia.objects.filter(estudiante__institucion=inst, fecha__year=target_yr)
-                present_as = total_as.filter(estado__in=['P', 'T']).count()
+                present_as = total_as.filter(estado__in=['P', 'T', 'Presente', 'Tardanza']).count()
                 val_asistencia = round((present_as / total_as.count() * 100.0), 1) if total_as.count() > 0 else 0.0
                 
                 tot_students = Estudiante.objects.filter(institucion=inst).count()
@@ -331,6 +333,143 @@ class AnalisisStatsView(APIView):
                 {"subject": "Solvencia Recaudación", "Actual": act_fi, "Previo": prev_fi}
             ]
 
+            # --- NUEVAS INTERACCIONES INTER-ÁREAS PARA TOMA DE DECISIONES ---
+            # 8. Asistencia vs Notas
+            all_students = Estudiante.objects.filter(institucion=inst).distinct()
+            
+            bracket_excelente_notas = []
+            bracket_regular_notas = []
+            bracket_riesgo_notas = []
+            
+            reprobados_excelente = 0
+            reprobados_regular = 0
+            reprobados_riesgo = 0
+            
+            for student in all_students:
+                total_as = Asistencia.objects.filter(estudiante=student, fecha__year=anio).count()
+                if total_as == 0:
+                    continue
+                present_as = Asistencia.objects.filter(
+                    estudiante=student, 
+                    fecha__year=anio, 
+                    estado__in=['P', 'T', 'Presente', 'Tardanza']
+                ).count()
+                rate = (present_as / total_as * 100.0)
+                
+                avg_grade = Promedio.objects.filter(estudiante=student, periodo__anio=anio).aggregate(Avg('promedio'))['promedio__avg']
+                if avg_grade is None:
+                    continue
+                avg_grade_val = float(avg_grade)
+                
+                if rate > 95:
+                    bracket_excelente_notas.append(avg_grade_val)
+                    if avg_grade_val < 11.0:
+                        reprobados_excelente += 1
+                elif rate >= 90:
+                    bracket_regular_notas.append(avg_grade_val)
+                    if avg_grade_val < 11.0:
+                        reprobados_regular += 1
+                else:
+                    bracket_riesgo_notas.append(avg_grade_val)
+                    if avg_grade_val < 11.0:
+                        reprobados_riesgo += 1
+
+            def calc_bracket_stats(grades_list, reprobados_count):
+                cnt = len(grades_list)
+                avg = round(sum(grades_list) / cnt, 2) if cnt > 0 else 0.0
+                rep_pct = round((reprobados_count / cnt * 100.0), 1) if cnt > 0 else 0.0
+                return avg, rep_pct, cnt
+
+            avg_exc, pct_exc, cnt_exc = calc_bracket_stats(bracket_excelente_notas, reprobados_excelente)
+            avg_reg, pct_reg, cnt_reg = calc_bracket_stats(bracket_regular_notas, reprobados_regular)
+            avg_rie, pct_rie, cnt_rie = calc_bracket_stats(bracket_riesgo_notas, reprobados_riesgo)
+
+            interaccion_asistencia_notas = [
+                {"name": "Excelente (>95% Asist.)", "nota_promedio": avg_exc, "tasa_reprobacion": pct_exc, "cantidad": cnt_exc},
+                {"name": "Regular (90-95% Asist.)", "nota_promedio": avg_reg, "tasa_reprobacion": pct_reg, "cantidad": cnt_reg},
+                {"name": "En Riesgo (<90% Asist.)", "nota_promedio": avg_rie, "tasa_reprobacion": pct_rie, "cantidad": cnt_rie}
+            ]
+
+            # 9. Conducta vs Notas
+            bracket_sin_faltas_notas = []
+            bracket_leves_notas = []
+            bracket_graves_notas = []
+            
+            rep_sin = 0
+            rep_leve = 0
+            rep_grave = 0
+
+            for student in all_students:
+                conducts = Conducta.objects.filter(estudiante=student, fecha__year=anio)
+                grave_count = conducts.filter(tipo='Grave').count()
+                leve_count = conducts.filter(tipo='Leve').count()
+                
+                avg_grade = Promedio.objects.filter(estudiante=student, periodo__anio=anio).aggregate(Avg('promedio'))['promedio__avg']
+                if avg_grade is None:
+                    continue
+                avg_grade_val = float(avg_grade)
+                
+                if grave_count >= 1:
+                    bracket_graves_notas.append(avg_grade_val)
+                    if avg_grade_val < 11.0:
+                        rep_grave += 1
+                elif leve_count >= 1:
+                    bracket_leves_notas.append(avg_grade_val)
+                    if avg_grade_val < 11.0:
+                        rep_leve += 1
+                else:
+                    bracket_sin_faltas_notas.append(avg_grade_val)
+                    if avg_grade_val < 11.0:
+                        rep_sin += 1
+
+            avg_sin, pct_sin, cnt_sin = calc_bracket_stats(bracket_sin_faltas_notas, rep_sin)
+            avg_lev, pct_lev, cnt_lev = calc_bracket_stats(bracket_leves_notas, rep_leve)
+            avg_grv, pct_grv, cnt_grv = calc_bracket_stats(bracket_graves_notas, rep_grave)
+
+            interaccion_conducta_notas = [
+                {"name": "Sin Faltas", "nota_promedio": avg_sin, "tasa_reprobacion": pct_sin, "cantidad": cnt_sin},
+                {"name": "Faltas Leves (1-2)", "nota_promedio": avg_lev, "tasa_reprobacion": pct_lev, "cantidad": cnt_lev},
+                {"name": "Faltas Graves (>=1)", "nota_promedio": avg_grv, "tasa_reprobacion": pct_grv, "cantidad": cnt_grv}
+            ]
+
+            # 10. Finanzas vs Asistencia
+            bracket_al_dia_att = []
+            bracket_deuda_leve_att = []
+            bracket_moroso_critico_att = []
+
+            for student in all_students:
+                pensions = Pension.objects.filter(estudiante=student, periodo__contains=str(anio))
+                if not pensions.exists():
+                    continue
+                deudoras = pensions.filter(estado__in=['Vencido', 'Pendiente']).count()
+                
+                total_as = Asistencia.objects.filter(estudiante=student, fecha__year=anio).count()
+                if total_as == 0:
+                    continue
+                present_as = Asistencia.objects.filter(
+                    estudiante=student, 
+                    fecha__year=anio, 
+                    estado__in=['P', 'T', 'Presente', 'Tardanza']
+                ).count()
+                attendance_rate = (present_as / total_as * 100.0)
+                
+                if deudoras >= 3:
+                    bracket_moroso_critico_att.append(attendance_rate)
+                elif deudoras >= 1:
+                    bracket_deuda_leve_att.append(attendance_rate)
+                else:
+                    bracket_al_dia_att.append(attendance_rate)
+
+            avg_dia = round(sum(bracket_al_dia_att) / len(bracket_al_dia_att), 2) if len(bracket_al_dia_att) > 0 else 0.0
+            avg_dle = round(sum(bracket_deuda_leve_att) / len(bracket_deuda_leve_att), 2) if len(bracket_deuda_leve_att) > 0 else 0.0
+            avg_mcr = round(sum(bracket_moroso_critico_att) / len(bracket_moroso_critico_att), 2) if len(bracket_moroso_critico_att) > 0 else 0.0
+
+            interaccion_finanzas_asistencia = [
+                {"name": "Al Día (0 Deudas)", "asistencia_promedio": avg_dia, "cantidad": len(bracket_al_dia_att)},
+                {"name": "Deuda Leve (1-2 Meses)", "asistencia_promedio": avg_dle, "cantidad": len(bracket_deuda_leve_att)},
+                {"name": "Moroso Crítico (>=3 Meses)", "asistencia_promedio": avg_mcr, "cantidad": len(bracket_moroso_critico_att)}
+            ]
+
             return Response({
                 "academico_grado": academico_grado,
                 "conducta_grado": conducta_grado,
@@ -338,7 +477,10 @@ class AnalisisStatsView(APIView):
                 "distribucion_notas": distribucion_notas,
                 "ausentismo_riesgo": ausentismo_riesgo,
                 "cursos_riesgo": cursos_riesgo,
-                "radar_calidad": radar_calidad
+                "radar_calidad": radar_calidad,
+                "interaccion_asistencia_notas": interaccion_asistencia_notas,
+                "interaccion_conducta_notas": interaccion_conducta_notas,
+                "interaccion_finanzas_asistencia": interaccion_finanzas_asistencia
             }, status=status.HTTP_200_OK)
 
         except Exception as e:
