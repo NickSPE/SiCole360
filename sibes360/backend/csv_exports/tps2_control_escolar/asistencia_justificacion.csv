@@ -1,0 +1,798 @@
+id,motivo,documento,estado,asistencia_id
+6625,Viaje urgente programado fuera de la ciudad.,certificado_76439418_20240315.pdf,Rechazado,472565
+6626,Cita médica odontológica programada con anterioridad.,certificado_69333404_20240315.pdf,Pendiente,472621
+6627,Suspensión de transporte público de su zona.,certificado_70799284_20240315.pdf,Rechazado,472625
+6628,Suspensión de transporte público de su zona.,certificado_61946613_20240315.pdf,Aprobado,472682
+6629,Cita médica odontológica programada con anterioridad.,certificado_62943446_20240318.pdf,Aprobado,472922
+6630,Suspensión de transporte público de su zona.,certificado_67333862_20240318.pdf,Rechazado,472939
+6631,Problemas familiares de fuerza mayor.,certificado_72517533_20240318.pdf,Aprobado,472953
+6632,Problemas familiares de fuerza mayor.,certificado_62953456_20240318.pdf,Pendiente,472969
+6633,Viaje urgente programado fuera de la ciudad.,certificado_72063807_20240318.pdf,Pendiente,473178
+6634,Cita médica odontológica programada con anterioridad.,certificado_63419443_20240318.pdf,Pendiente,473198
+6635,Problemas de salud del alumno (fiebre y malestar general).,certificado_72076827_20240319.pdf,Pendiente,473359
+6636,Suspensión de transporte público de su zona.,certificado_70228023_20240319.pdf,Pendiente,473402
+6637,Problemas de salud del alumno (fiebre y malestar general).,certificado_64452366_20240319.pdf,Pendiente,473436
+6638,Viaje urgente programado fuera de la ciudad.,certificado_66801907_20240319.pdf,Rechazado,473442
+6639,Problemas de salud del alumno (fiebre y malestar general).,certificado_76284037_20240319.pdf,Pendiente,473483
+6640,Problemas de salud del alumno (fiebre y malestar general).,certificado_68974884_20240319.pdf,Rechazado,473556
+6641,Problemas familiares de fuerza mayor.,certificado_70799284_20240320.pdf,Aprobado,473645
+6642,Viaje urgente programado fuera de la ciudad.,certificado_63627386_20240320.pdf,Aprobado,473647
+6643,Problemas familiares de fuerza mayor.,certificado_65966404_20240320.pdf,Aprobado,473691
+6644,Suspensión de transporte público de su zona.,certificado_64489228_20240320.pdf,Aprobado,473801
+6645,Problemas familiares de fuerza mayor.,certificado_61970720_20240320.pdf,Rechazado,473804
+6646,Problemas familiares de fuerza mayor.,certificado_67427309_20240321.pdf,Aprobado,474119
+6647,Suspensión de transporte público de su zona.,certificado_64768161_20240321.pdf,Rechazado,474193
+6648,Suspensión de transporte público de su zona.,certificado_77575995_20240321.pdf,Rechazado,474225
+6649,Cita médica odontológica programada con anterioridad.,certificado_70246852_20240322.pdf,Aprobado,474259
+6650,Viaje urgente programado fuera de la ciudad.,certificado_64987295_20240322.pdf,Pendiente,474285
+6651,Viaje urgente programado fuera de la ciudad.,certificado_62953456_20240322.pdf,Pendiente,474329
+6652,Cita médica odontológica programada con anterioridad.,certificado_73402770_20240322.pdf,Rechazado,474416
+6653,Viaje urgente programado fuera de la ciudad.,certificado_70874022_20240322.pdf,Rechazado,474419
+6654,Cita médica odontológica programada con anterioridad.,certificado_66173771_20240322.pdf,Aprobado,474448
+6655,Suspensión de transporte público de su zona.,certificado_61630307_20240325.pdf,Pendiente,474604
+6656,Problemas de salud del alumno (fiebre y malestar general).,certificado_66527182_20240325.pdf,Pendiente,474634
+6657,Cita médica odontológica programada con anterioridad.,certificado_75153503_20240325.pdf,Aprobado,474638
+6658,Cita médica odontológica programada con anterioridad.,certificado_60022680_20240325.pdf,Aprobado,474677
+6659,Problemas de salud del alumno (fiebre y malestar general).,certificado_68809983_20240325.pdf,Pendiente,474699
+6660,Viaje urgente programado fuera de la ciudad.,certificado_71091846_20240325.pdf,Aprobado,474747
+6661,Cita médica odontológica programada con anterioridad.,certificado_70665578_20240325.pdf,Pendiente,474864
+6662,Suspensión de transporte público de su zona.,certificado_73957073_20240326.pdf,Aprobado,474943
+6663,Problemas de salud del alumno (fiebre y malestar general).,certificado_62953456_20240326.pdf,Aprobado,475009
+6664,Viaje urgente programado fuera de la ciudad.,certificado_79413063_20240326.pdf,Rechazado,475014
+6665,Viaje urgente programado fuera de la ciudad.,certificado_69515804_20240326.pdf,Aprobado,475147
+6666,Viaje urgente programado fuera de la ciudad.,certificado_78853731_20240326.pdf,Aprobado,475237
+6667,Problemas familiares de fuerza mayor.,certificado_72861964_20240326.pdf,Pendiente,475261
+6668,Problemas familiares de fuerza mayor.,certificado_64435062_20240327.pdf,Rechazado,475335
+6669,Problemas familiares de fuerza mayor.,certificado_75363251_20240327.pdf,Aprobado,475398
+6670,Viaje urgente programado fuera de la ciudad.,certificado_70874022_20240327.pdf,Pendiente,475439
+6671,Problemas de salud del alumno (fiebre y malestar general).,certificado_60617016_20240327.pdf,Aprobado,475525
+6672,Problemas familiares de fuerza mayor.,certificado_72209302_20240327.pdf,Aprobado,475546
+6673,Problemas familiares de fuerza mayor.,certificado_65506837_20240327.pdf,Aprobado,475552
+6674,Problemas de salud del alumno (fiebre y malestar general).,certificado_63565618_20240327.pdf,Aprobado,475591
+6675,Viaje urgente programado fuera de la ciudad.,certificado_61829992_20240328.pdf,Rechazado,475661
+6676,Suspensión de transporte público de su zona.,certificado_76977124_20240328.pdf,Pendiente,475680
+6677,Problemas familiares de fuerza mayor.,certificado_67394803_20240328.pdf,Pendiente,475781
+6678,Cita médica odontológica programada con anterioridad.,certificado_74011595_20240328.pdf,Rechazado,475842
+6679,Suspensión de transporte público de su zona.,certificado_72627498_20240328.pdf,Pendiente,475900
+6680,Viaje urgente programado fuera de la ciudad.,certificado_76799287_20240328.pdf,Pendiente,475938
+6681,Problemas de salud del alumno (fiebre y malestar general).,certificado_71091846_20240329.pdf,Rechazado,476107
+6682,Problemas familiares de fuerza mayor.,certificado_77659525_20240329.pdf,Aprobado,476110
+6683,Viaje urgente programado fuera de la ciudad.,certificado_63861620_20240401.pdf,Rechazado,476363
+6684,Suspensión de transporte público de su zona.,certificado_62953456_20240401.pdf,Pendiente,476369
+6685,Suspensión de transporte público de su zona.,certificado_66624235_20240401.pdf,Pendiente,476501
+6686,Cita médica odontológica programada con anterioridad.,certificado_68455673_20240401.pdf,Pendiente,476531
+6687,Suspensión de transporte público de su zona.,certificado_73119533_20240401.pdf,Aprobado,476599
+6688,Problemas familiares de fuerza mayor.,certificado_74864763_20240401.pdf,Aprobado,476620
+6689,Cita médica odontológica programada con anterioridad.,certificado_64987295_20240402.pdf,Rechazado,476665
+6690,Suspensión de transporte público de su zona.,certificado_70799284_20240402.pdf,Pendiente,476705
+6691,Suspensión de transporte público de su zona.,certificado_61899341_20240402.pdf,Aprobado,476812
+6692,Problemas de salud del alumno (fiebre y malestar general).,certificado_73047163_20240402.pdf,Rechazado,476909
+6693,Cita médica odontológica programada con anterioridad.,certificado_61486350_20240402.pdf,Rechazado,476962
+6694,Problemas de salud del alumno (fiebre y malestar general).,certificado_62826917_20240403.pdf,Pendiente,477159
+6695,Viaje urgente programado fuera de la ciudad.,certificado_66173771_20240403.pdf,Pendiente,477168
+6696,Suspensión de transporte público de su zona.,certificado_64051252_20240403.pdf,Pendiente,477206
+6697,Viaje urgente programado fuera de la ciudad.,certificado_79126954_20240403.pdf,Rechazado,477213
+6698,Problemas familiares de fuerza mayor.,certificado_70665578_20240403.pdf,Pendiente,477244
+6699,Suspensión de transporte público de su zona.,certificado_64241673_20240404.pdf,Pendiente,477369
+6700,Problemas familiares de fuerza mayor.,certificado_73002035_20240404.pdf,Aprobado,477395
+6701,Viaje urgente programado fuera de la ciudad.,certificado_65265608_20240404.pdf,Aprobado,477448
+6702,Cita médica odontológica programada con anterioridad.,certificado_67756452_20240404.pdf,Aprobado,477486
+6703,Problemas de salud del alumno (fiebre y malestar general).,certificado_66801907_20240404.pdf,Rechazado,477522
+6704,Problemas familiares de fuerza mayor.,certificado_64768161_20240404.pdf,Pendiente,477593
+6705,Cita médica odontológica programada con anterioridad.,certificado_63419443_20240404.pdf,Aprobado,477618
+6706,Problemas de salud del alumno (fiebre y malestar general).,certificado_68823126_20240404.pdf,Pendiente,477621
+6707,Viaje urgente programado fuera de la ciudad.,certificado_62610757_20240404.pdf,Aprobado,477632
+6708,Viaje urgente programado fuera de la ciudad.,certificado_66093610_20240404.pdf,Rechazado,477652
+6709,Cita médica odontológica programada con anterioridad.,certificado_78332672_20240404.pdf,Aprobado,477654
+6710,Suspensión de transporte público de su zona.,certificado_71973605_20240405.pdf,Pendiente,477765
+6711,Problemas de salud del alumno (fiebre y malestar general).,certificado_66109649_20240405.pdf,Rechazado,477811
+6712,Problemas de salud del alumno (fiebre y malestar general).,certificado_73957073_20240408.pdf,Aprobado,478003
+6713,Suspensión de transporte público de su zona.,certificado_63861620_20240408.pdf,Rechazado,478063
+6714,Suspensión de transporte público de su zona.,certificado_68120882_20240408.pdf,Pendiente,478066
+6715,Cita médica odontológica programada con anterioridad.,certificado_66735272_20240408.pdf,Rechazado,478116
+6716,Cita médica odontológica programada con anterioridad.,certificado_70947186_20240408.pdf,Aprobado,478131
+6717,Suspensión de transporte público de su zona.,certificado_61645219_20240408.pdf,Aprobado,478133
+6718,Problemas de salud del alumno (fiebre y malestar general).,certificado_70197504_20240408.pdf,Aprobado,478134
+6719,Problemas familiares de fuerza mayor.,certificado_73039212_20240408.pdf,Pendiente,478146
+6720,Problemas familiares de fuerza mayor.,certificado_62826917_20240408.pdf,Pendiente,478179
+6721,Cita médica odontológica programada con anterioridad.,certificado_70220611_20240408.pdf,Pendiente,478216
+6722,Viaje urgente programado fuera de la ciudad.,certificado_69546027_20240408.pdf,Aprobado,478236
+6723,Problemas de salud del alumno (fiebre y malestar general).,certificado_63565618_20240408.pdf,Aprobado,478311
+6724,Suspensión de transporte público de su zona.,certificado_73479483_20240408.pdf,Pendiente,478317
+6725,Problemas de salud del alumno (fiebre y malestar general).,certificado_72076827_20240409.pdf,Pendiente,478459
+6726,Viaje urgente programado fuera de la ciudad.,certificado_78802227_20240409.pdf,Rechazado,478597
+6727,Cita médica odontológica programada con anterioridad.,certificado_74559591_20240409.pdf,Aprobado,478616
+6728,Cita médica odontológica programada con anterioridad.,certificado_73957073_20240410.pdf,Aprobado,478683
+6729,Problemas de salud del alumno (fiebre y malestar general).,certificado_64435062_20240410.pdf,Aprobado,478735
+6730,Suspensión de transporte público de su zona.,certificado_73002035_20240410.pdf,Rechazado,478755
+6731,Problemas familiares de fuerza mayor.,certificado_72745307_20240410.pdf,Aprobado,478778
+6732,Problemas familiares de fuerza mayor.,certificado_77096740_20240410.pdf,Rechazado,478788
+6733,Problemas de salud del alumno (fiebre y malestar general).,certificado_64006430_20240410.pdf,Pendiente,478860
+6734,Suspensión de transporte público de su zona.,certificado_73069513_20240410.pdf,Rechazado,478861
+6735,Viaje urgente programado fuera de la ciudad.,certificado_61970720_20240410.pdf,Rechazado,478904
+6736,Viaje urgente programado fuera de la ciudad.,certificado_62892821_20240410.pdf,Pendiente,478921
+6737,Suspensión de transporte público de su zona.,certificado_63625039_20240410.pdf,Pendiente,478931
+6738,Problemas familiares de fuerza mayor.,certificado_75827101_20240410.pdf,Pendiente,478957
+6739,Suspensión de transporte público de su zona.,certificado_66527182_20240411.pdf,Aprobado,479054
+6740,Viaje urgente programado fuera de la ciudad.,certificado_62953456_20240411.pdf,Aprobado,479089
+6741,Suspensión de transporte público de su zona.,certificado_74194826_20240411.pdf,Rechazado,479100
+6742,Viaje urgente programado fuera de la ciudad.,certificado_74865021_20240411.pdf,Rechazado,479141
+6743,Problemas de salud del alumno (fiebre y malestar general).,certificado_65265608_20240411.pdf,Aprobado,479148
+6744,Problemas familiares de fuerza mayor.,certificado_76439418_20240412.pdf,Rechazado,479365
+6745,Viaje urgente programado fuera de la ciudad.,certificado_72076827_20240412.pdf,Rechazado,479479
+6746,Cita médica odontológica programada con anterioridad.,certificado_75716718_20240412.pdf,Aprobado,479505
+6747,Problemas familiares de fuerza mayor.,certificado_74552940_20240412.pdf,Rechazado,479598
+6748,Problemas familiares de fuerza mayor.,certificado_64974651_20240412.pdf,Aprobado,479623
+6749,Problemas familiares de fuerza mayor.,certificado_73047163_20240412.pdf,Aprobado,479629
+6750,Problemas familiares de fuerza mayor.,certificado_65506837_20240412.pdf,Rechazado,479632
+6751,Cita médica odontológica programada con anterioridad.,certificado_76685857_20240415.pdf,Aprobado,479742
+6752,Cita médica odontológica programada con anterioridad.,certificado_75298348_20240415.pdf,Aprobado,479747
+6753,Suspensión de transporte público de su zona.,certificado_72094204_20240415.pdf,Aprobado,479948
+6754,Problemas familiares de fuerza mayor.,certificado_68823126_20240415.pdf,Pendiente,480001
+6755,Problemas de salud del alumno (fiebre y malestar general).,certificado_62943446_20250317.pdf,Rechazado,480048
+6756,Problemas de salud del alumno (fiebre y malestar general).,certificado_66063152_20250317.pdf,Rechazado,480069
+6757,Problemas de salud del alumno (fiebre y malestar general).,certificado_67107089_20250317.pdf,Aprobado,480075
+6758,Suspensión de transporte público de su zona.,certificado_66170196_20250317.pdf,Aprobado,480216
+6759,Problemas familiares de fuerza mayor.,certificado_71512406_20250317.pdf,Rechazado,480227
+6760,Cita médica odontológica programada con anterioridad.,certificado_68328840_20250317.pdf,Pendiente,480269
+6761,Suspensión de transporte público de su zona.,certificado_76977124_20250317.pdf,Pendiente,480271
+6762,Suspensión de transporte público de su zona.,certificado_78625050_20250317.pdf,Aprobado,480272
+6763,Cita médica odontológica programada con anterioridad.,certificado_71498139_20250317.pdf,Rechazado,480299
+6764,Problemas familiares de fuerza mayor.,certificado_61630307_20250318.pdf,Aprobado,480558
+6765,Viaje urgente programado fuera de la ciudad.,certificado_66077910_20250318.pdf,Pendiente,480605
+6766,Problemas de salud del alumno (fiebre y malestar general).,certificado_63254340_20250318.pdf,Aprobado,480692
+6767,Cita médica odontológica programada con anterioridad.,certificado_62953456_20250318.pdf,Aprobado,480696
+6768,Viaje urgente programado fuera de la ciudad.,certificado_73479483_20250318.pdf,Aprobado,480706
+6769,Problemas de salud del alumno (fiebre y malestar general).,certificado_72700973_20250319.pdf,Aprobado,480804
+6770,Problemas de salud del alumno (fiebre y malestar general).,certificado_64241673_20250319.pdf,Aprobado,480834
+6771,Viaje urgente programado fuera de la ciudad.,certificado_61630307_20250319.pdf,Rechazado,480913
+6772,Problemas de salud del alumno (fiebre y malestar general).,certificado_67655054_20250319.pdf,Pendiente,480969
+6773,Problemas de salud del alumno (fiebre y malestar general).,certificado_77168677_20250319.pdf,Pendiente,481019
+6774,Suspensión de transporte público de su zona.,certificado_64793353_20250319.pdf,Pendiente,481024
+6775,Suspensión de transporte público de su zona.,certificado_71499866_20250319.pdf,Aprobado,481038
+6776,Problemas de salud del alumno (fiebre y malestar general).,certificado_65265608_20250319.pdf,Rechazado,481087
+6777,Suspensión de transporte público de su zona.,certificado_69472646_20250319.pdf,Rechazado,481096
+6778,Problemas de salud del alumno (fiebre y malestar general).,certificado_65596165_20250320.pdf,Rechazado,481133
+6779,Viaje urgente programado fuera de la ciudad.,certificado_60561236_20250320.pdf,Pendiente,481313
+6780,Suspensión de transporte público de su zona.,certificado_65200666_20250320.pdf,Pendiente,481446
+6781,Cita médica odontológica programada con anterioridad.,certificado_79223285_20250321.pdf,Rechazado,481533
+6782,Problemas de salud del alumno (fiebre y malestar general).,certificado_72588694_20250321.pdf,Pendiente,481552
+6783,Problemas de salud del alumno (fiebre y malestar general).,certificado_72750683_20250321.pdf,Rechazado,481630
+6784,Suspensión de transporte público de su zona.,certificado_71973605_20250321.pdf,Pendiente,481644
+6785,Viaje urgente programado fuera de la ciudad.,certificado_78911435_20250321.pdf,Pendiente,481809
+6786,Problemas de salud del alumno (fiebre y malestar general).,certificado_76128405_20250324.pdf,Aprobado,481875
+6787,Problemas familiares de fuerza mayor.,certificado_64435062_20250324.pdf,Rechazado,481893
+6788,Viaje urgente programado fuera de la ciudad.,certificado_69333404_20250324.pdf,Pendiente,481902
+6789,Problemas familiares de fuerza mayor.,certificado_77553870_20250324.pdf,Aprobado,482018
+6790,Viaje urgente programado fuera de la ciudad.,certificado_72627498_20250324.pdf,Rechazado,482127
+6791,Cita médica odontológica programada con anterioridad.,certificado_72557067_20250325.pdf,Aprobado,482299
+6792,Viaje urgente programado fuera de la ciudad.,certificado_62389603_20250325.pdf,Pendiente,482307
+6793,Problemas familiares de fuerza mayor.,certificado_78443617_20250325.pdf,Aprobado,482315
+6794,Problemas familiares de fuerza mayor.,certificado_76461656_20250325.pdf,Pendiente,482461
+6795,Suspensión de transporte público de su zona.,certificado_78802227_20250326.pdf,Aprobado,482870
+6796,Cita médica odontológica programada con anterioridad.,certificado_78911435_20250326.pdf,Pendiente,482874
+6797,Viaje urgente programado fuera de la ciudad.,certificado_79765173_20250327.pdf,Pendiente,483081
+6798,Problemas de salud del alumno (fiebre y malestar general).,certificado_78985518_20250327.pdf,Rechazado,483134
+6799,Problemas familiares de fuerza mayor.,certificado_75363251_20250327.pdf,Rechazado,483166
+6800,Problemas familiares de fuerza mayor.,certificado_68684579_20250327.pdf,Pendiente,483201
+6801,Problemas de salud del alumno (fiebre y malestar general).,certificado_64520588_20250327.pdf,Pendiente,483205
+6802,Viaje urgente programado fuera de la ciudad.,certificado_67152970_20250328.pdf,Rechazado,483262
+6803,Viaje urgente programado fuera de la ciudad.,certificado_70665578_20250328.pdf,Rechazado,483330
+6804,Viaje urgente programado fuera de la ciudad.,certificado_61165294_20250328.pdf,Pendiente,483359
+6805,Problemas familiares de fuerza mayor.,certificado_71472691_20250328.pdf,Aprobado,483408
+6806,Viaje urgente programado fuera de la ciudad.,certificado_68899052_20250328.pdf,Aprobado,483424
+6807,Cita médica odontológica programada con anterioridad.,certificado_79335152_20250328.pdf,Pendiente,483475
+6808,Viaje urgente programado fuera de la ciudad.,certificado_77168677_20250328.pdf,Pendiente,483504
+6809,Viaje urgente programado fuera de la ciudad.,certificado_70472652_20250328.pdf,Rechazado,483530
+6810,Cita médica odontológica programada con anterioridad.,certificado_61163093_20250328.pdf,Rechazado,483561
+6811,Problemas de salud del alumno (fiebre y malestar general).,certificado_65200666_20250328.pdf,Aprobado,483576
+6812,Problemas familiares de fuerza mayor.,certificado_65812795_20250331.pdf,Aprobado,483621
+6813,Viaje urgente programado fuera de la ciudad.,certificado_64768161_20250331.pdf,Aprobado,483690
+6814,Suspensión de transporte público de su zona.,certificado_61630307_20250331.pdf,Rechazado,483753
+6815,Suspensión de transporte público de su zona.,certificado_66173771_20250331.pdf,Aprobado,483795
+6816,Problemas de salud del alumno (fiebre y malestar general).,certificado_74194826_20250401.pdf,Pendiente,483969
+6817,Cita médica odontológica programada con anterioridad.,certificado_63085180_20250401.pdf,Rechazado,483984
+6818,Suspensión de transporte público de su zona.,certificado_78524707_20250401.pdf,Rechazado,483991
+6819,Problemas de salud del alumno (fiebre y malestar general).,certificado_75547331_20250401.pdf,Aprobado,484027
+6820,Viaje urgente programado fuera de la ciudad.,certificado_67071676_20250401.pdf,Rechazado,484048
+6821,Viaje urgente programado fuera de la ciudad.,certificado_69515804_20250401.pdf,Pendiente,484197
+6822,Suspensión de transporte público de su zona.,certificado_66279749_20250401.pdf,Rechazado,484273
+6823,Problemas de salud del alumno (fiebre y malestar general).,certificado_77914805_20250402.pdf,Rechazado,484355
+6824,Cita médica odontológica programada con anterioridad.,certificado_63627386_20250402.pdf,Rechazado,484361
+6825,Problemas familiares de fuerza mayor.,certificado_66391775_20250402.pdf,Aprobado,484456
+6826,Viaje urgente programado fuera de la ciudad.,certificado_74633895_20250402.pdf,Aprobado,484509
+6827,Problemas de salud del alumno (fiebre y malestar general).,certificado_76977124_20250402.pdf,Aprobado,484531
+6828,Suspensión de transporte público de su zona.,certificado_69401745_20250402.pdf,Pendiente,484589
+6829,Cita médica odontológica programada con anterioridad.,certificado_63431728_20250402.pdf,Rechazado,484592
+6830,Problemas de salud del alumno (fiebre y malestar general).,certificado_68225093_20250402.pdf,Rechazado,484634
+6831,Problemas de salud del alumno (fiebre y malestar general).,certificado_72861964_20250403.pdf,Rechazado,484656
+6832,Suspensión de transporte público de su zona.,certificado_76496003_20250403.pdf,Pendiente,484693
+6833,Suspensión de transporte público de su zona.,certificado_70799284_20250403.pdf,Pendiente,484698
+6834,Problemas familiares de fuerza mayor.,certificado_66801907_20250403.pdf,Rechazado,484722
+6835,Viaje urgente programado fuera de la ciudad.,certificado_68455673_20250403.pdf,Rechazado,484770
+6836,Problemas de salud del alumno (fiebre y malestar general).,certificado_75743670_20250403.pdf,Aprobado,484804
+6837,Viaje urgente programado fuera de la ciudad.,certificado_67333862_20250403.pdf,Aprobado,484838
+6838,Viaje urgente programado fuera de la ciudad.,certificado_77318337_20250403.pdf,Rechazado,484862
+6839,Problemas familiares de fuerza mayor.,certificado_68305783_20250403.pdf,Rechazado,484894
+6840,Problemas familiares de fuerza mayor.,certificado_68225093_20250403.pdf,Rechazado,484989
+6841,Problemas familiares de fuerza mayor.,certificado_73448787_20250404.pdf,Aprobado,485012
+6842,Problemas de salud del alumno (fiebre y malestar general).,certificado_76411365_20250404.pdf,Pendiente,485062
+6843,Suspensión de transporte público de su zona.,certificado_72498756_20250404.pdf,Pendiente,485130
+6844,Problemas de salud del alumno (fiebre y malestar general).,certificado_64974651_20250404.pdf,Pendiente,485145
+6845,Problemas de salud del alumno (fiebre y malestar general).,certificado_66109649_20250404.pdf,Pendiente,485185
+6846,Problemas familiares de fuerza mayor.,certificado_66173771_20250404.pdf,Aprobado,485215
+6847,Viaje urgente programado fuera de la ciudad.,certificado_75810523_20250404.pdf,Pendiente,485248
+6848,Cita médica odontológica programada con anterioridad.,certificado_70197504_20250404.pdf,Aprobado,485354
+6849,Viaje urgente programado fuera de la ciudad.,certificado_68823126_20250407.pdf,Pendiente,485382
+6850,Problemas de salud del alumno (fiebre y malestar general).,certificado_72700973_20250407.pdf,Aprobado,485419
+6851,Problemas familiares de fuerza mayor.,certificado_72588694_20250407.pdf,Rechazado,485457
+6852,Suspensión de transporte público de su zona.,certificado_60503794_20250408.pdf,Pendiente,485773
+6853,Problemas de salud del alumno (fiebre y malestar general).,certificado_76977124_20250408.pdf,Rechazado,485951
+6854,Viaje urgente programado fuera de la ciudad.,certificado_63060136_20250408.pdf,Aprobado,485999
+6855,Cita médica odontológica programada con anterioridad.,certificado_66459643_20250409.pdf,Pendiente,486079
+6856,Suspensión de transporte público de su zona.,certificado_68870352_20250409.pdf,Rechazado,486172
+6857,Viaje urgente programado fuera de la ciudad.,certificado_67394803_20250409.pdf,Pendiente,486254
+6858,Problemas familiares de fuerza mayor.,certificado_79765173_20250409.pdf,Pendiente,486276
+6859,Suspensión de transporte público de su zona.,certificado_65200666_20250409.pdf,Pendiente,486416
+6860,Problemas de salud del alumno (fiebre y malestar general).,certificado_76183036_20250410.pdf,Rechazado,486440
+6861,Cita médica odontológica programada con anterioridad.,certificado_62550749_20250410.pdf,Rechazado,486451
+6862,Viaje urgente programado fuera de la ciudad.,certificado_70370100_20250410.pdf,Rechazado,486467
+6863,Suspensión de transporte público de su zona.,certificado_71512406_20250410.pdf,Pendiente,486617
+6864,Viaje urgente programado fuera de la ciudad.,certificado_61034119_20250410.pdf,Rechazado,486667
+6865,Cita médica odontológica programada con anterioridad.,certificado_62953456_20250410.pdf,Aprobado,486731
+6866,Cita médica odontológica programada con anterioridad.,certificado_68225093_20250410.pdf,Rechazado,486764
+6867,Problemas de salud del alumno (fiebre y malestar general).,certificado_69333404_20250411.pdf,Aprobado,486872
+6868,Viaje urgente programado fuera de la ciudad.,certificado_70825667_20250411.pdf,Rechazado,486902
+6869,Problemas de salud del alumno (fiebre y malestar general).,certificado_62862412_20250411.pdf,Rechazado,487069
+6870,Cita médica odontológica programada con anterioridad.,certificado_71808243_20250414.pdf,Pendiente,487153
+6871,Problemas familiares de fuerza mayor.,certificado_65812795_20250414.pdf,Pendiente,487171
+6872,Suspensión de transporte público de su zona.,certificado_77135451_20250414.pdf,Rechazado,487404
+6873,Suspensión de transporte público de su zona.,certificado_65200666_20250414.pdf,Aprobado,487481
+6874,Problemas de salud del alumno (fiebre y malestar general).,certificado_71124968_20250415.pdf,Rechazado,487553
+6875,Cita médica odontológica programada con anterioridad.,certificado_74011595_20250415.pdf,Aprobado,487571
+6876,Problemas de salud del alumno (fiebre y malestar general).,certificado_63625039_20250415.pdf,Aprobado,487609
+6877,Suspensión de transporte público de su zona.,certificado_69723504_20260302.pdf,Pendiente,487855
+6878,Suspensión de transporte público de su zona.,certificado_73182955_20260302.pdf,Aprobado,487877
+6879,Cita médica odontológica programada con anterioridad.,certificado_71512406_20260302.pdf,Rechazado,487924
+6880,Cita médica odontológica programada con anterioridad.,certificado_64475216_20260302.pdf,Aprobado,488039
+6881,Cita médica odontológica programada con anterioridad.,certificado_70874022_20260302.pdf,Aprobado,488104
+6882,Cita médica odontológica programada con anterioridad.,certificado_69407757_20260302.pdf,Aprobado,488166
+6883,Cita médica odontológica programada con anterioridad.,certificado_63627386_20260302.pdf,Rechazado,488179
+6884,Problemas de salud del alumno (fiebre y malestar general).,certificado_63419443_20260302.pdf,Pendiente,488191
+6885,Suspensión de transporte público de su zona.,certificado_64972758_20260303.pdf,Rechazado,488274
+6886,Problemas de salud del alumno (fiebre y malestar general).,certificado_64475216_20260303.pdf,Pendiente,488404
+6887,Suspensión de transporte público de su zona.,certificado_74330258_20260304.pdf,Rechazado,488594
+6888,Problemas familiares de fuerza mayor.,certificado_72049802_20260304.pdf,Rechazado,488700
+6889,Viaje urgente programado fuera de la ciudad.,certificado_60617016_20260304.pdf,Pendiente,488724
+6890,Viaje urgente programado fuera de la ciudad.,certificado_62403973_20260304.pdf,Aprobado,488768
+6891,Suspensión de transporte público de su zona.,certificado_64475216_20260304.pdf,Aprobado,488769
+6892,Viaje urgente programado fuera de la ciudad.,certificado_78095488_20260304.pdf,Pendiente,488773
+6893,Suspensión de transporte público de su zona.,certificado_72076827_20260304.pdf,Pendiente,488804
+6894,Problemas de salud del alumno (fiebre y malestar general).,certificado_66941315_20260304.pdf,Rechazado,488833
+6895,Problemas de salud del alumno (fiebre y malestar general).,certificado_70874022_20260304.pdf,Rechazado,488834
+6896,Viaje urgente programado fuera de la ciudad.,certificado_74572837_20260304.pdf,Aprobado,488898
+6897,Viaje urgente programado fuera de la ciudad.,certificado_63625039_20260304.pdf,Pendiente,488934
+6898,Suspensión de transporte público de su zona.,certificado_73182955_20260305.pdf,Pendiente,488972
+6899,Cita médica odontológica programada con anterioridad.,certificado_64974651_20260305.pdf,Rechazado,489070
+6900,Viaje urgente programado fuera de la ciudad.,certificado_70197504_20260305.pdf,Pendiente,489186
+6901,Problemas de salud del alumno (fiebre y malestar general).,certificado_76588250_20260305.pdf,Rechazado,489294
+6902,Suspensión de transporte público de su zona.,certificado_73479483_20260305.pdf,Rechazado,489301
+6903,Problemas de salud del alumno (fiebre y malestar general).,certificado_64604063_20260306.pdf,Aprobado,489318
+6904,Viaje urgente programado fuera de la ciudad.,certificado_70665578_20260306.pdf,Aprobado,489368
+6905,Cita médica odontológica programada con anterioridad.,certificado_72861964_20260306.pdf,Rechazado,489469
+6906,Suspensión de transporte público de su zona.,certificado_70566447_20260306.pdf,Pendiente,489491
+6907,Suspensión de transporte público de su zona.,certificado_62069274_20260306.pdf,Rechazado,489553
+6908,Suspensión de transporte público de su zona.,certificado_61696487_20260306.pdf,Rechazado,489588
+6909,Cita médica odontológica programada con anterioridad.,certificado_73479483_20260306.pdf,Aprobado,489666
+6910,Cita médica odontológica programada con anterioridad.,certificado_71117158_20260309.pdf,Aprobado,489738
+6911,Problemas de salud del alumno (fiebre y malestar general).,certificado_65828808_20260309.pdf,Rechazado,489934
+6912,Cita médica odontológica programada con anterioridad.,certificado_69515804_20260309.pdf,Pendiente,489946
+6913,Viaje urgente programado fuera de la ciudad.,certificado_66036080_20260309.pdf,Pendiente,489990
+6914,Problemas familiares de fuerza mayor.,certificado_68836549_20260309.pdf,Aprobado,490018
+6915,Viaje urgente programado fuera de la ciudad.,certificado_63972418_20260310.pdf,Rechazado,490308
+6916,Problemas de salud del alumno (fiebre y malestar general).,certificado_71131006_20260310.pdf,Aprobado,490321
+6917,Problemas familiares de fuerza mayor.,certificado_68679186_20260310.pdf,Rechazado,490359
+6918,Cita médica odontológica programada con anterioridad.,certificado_62382767_20260310.pdf,Rechazado,490386
+6919,Viaje urgente programado fuera de la ciudad.,certificado_70729012_20260311.pdf,Rechazado,490540
+6920,Cita médica odontológica programada con anterioridad.,certificado_67526975_20260311.pdf,Rechazado,490705
+6921,Cita médica odontológica programada con anterioridad.,certificado_73787181_20260311.pdf,Aprobado,490732
+6922,Viaje urgente programado fuera de la ciudad.,certificado_63419443_20260311.pdf,Pendiente,490746
+6923,Problemas familiares de fuerza mayor.,certificado_62615189_20260312.pdf,Aprobado,490853
+6924,Viaje urgente programado fuera de la ciudad.,certificado_76977124_20260312.pdf,Pendiente,491028
+6925,Cita médica odontológica programada con anterioridad.,certificado_78044037_20260312.pdf,Rechazado,491065
+6926,Cita médica odontológica programada con anterioridad.,certificado_79413063_20260313.pdf,Rechazado,491433
+6927,Cita médica odontológica programada con anterioridad.,certificado_62842044_20260316.pdf,Pendiente,491703
+6928,Cita médica odontológica programada con anterioridad.,certificado_73210947_20260316.pdf,Aprobado,491709
+6929,Problemas familiares de fuerza mayor.,certificado_64753830_20260317.pdf,Pendiente,491869
+6930,Problemas familiares de fuerza mayor.,certificado_61899341_20260317.pdf,Aprobado,491897
+6931,Problemas familiares de fuerza mayor.,certificado_61266858_20260317.pdf,Rechazado,491951
+6932,Cita médica odontológica programada con anterioridad.,certificado_68836535_20260317.pdf,Rechazado,491971
+6933,Suspensión de transporte público de su zona.,certificado_78802227_20260317.pdf,Aprobado,491979
+6934,Problemas de salud del alumno (fiebre y malestar general).,certificado_66380962_20260317.pdf,Aprobado,492174
+6935,Problemas familiares de fuerza mayor.,certificado_73002035_20260317.pdf,Aprobado,492198
+6936,Problemas de salud del alumno (fiebre y malestar general).,certificado_76411365_20260318.pdf,Aprobado,492237
+6937,Problemas familiares de fuerza mayor.,certificado_68970544_20260318.pdf,Rechazado,492332
+6938,Problemas de salud del alumno (fiebre y malestar general).,certificado_68455673_20260318.pdf,Pendiente,492383
+6939,Cita médica odontológica programada con anterioridad.,certificado_66391775_20260318.pdf,Rechazado,492385
+6940,Problemas familiares de fuerza mayor.,certificado_71499866_20260318.pdf,Rechazado,492434
+6941,Cita médica odontológica programada con anterioridad.,certificado_63627386_20260318.pdf,Pendiente,492559
+6942,Cita médica odontológica programada con anterioridad.,certificado_63419443_20260318.pdf,Aprobado,492571
+6943,Cita médica odontológica programada con anterioridad.,certificado_74011595_20260319.pdf,Rechazado,492660
+6944,Viaje urgente programado fuera de la ciudad.,certificado_67360628_20260319.pdf,Pendiente,492675
+6945,Cita médica odontológica programada con anterioridad.,certificado_64354501_20260319.pdf,Rechazado,492749
+6946,Viaje urgente programado fuera de la ciudad.,certificado_72498756_20260319.pdf,Pendiente,492872
+6947,Problemas de salud del alumno (fiebre y malestar general).,certificado_79787935_20260319.pdf,Pendiente,492926
+6948,Viaje urgente programado fuera de la ciudad.,certificado_68225093_20260320.pdf,Pendiente,492996
+6949,Viaje urgente programado fuera de la ciudad.,certificado_75827101_20260320.pdf,Rechazado,493108
+6950,Problemas de salud del alumno (fiebre y malestar general).,certificado_73225503_20260320.pdf,Pendiente,493170
+6951,Suspensión de transporte público de su zona.,certificado_73959573_20260320.pdf,Pendiente,493253
+6952,Suspensión de transporte público de su zona.,certificado_63627386_20260320.pdf,Aprobado,493289
+6953,Suspensión de transporte público de su zona.,certificado_62943446_20260323.pdf,Pendiente,493326
+6954,Suspensión de transporte público de su zona.,certificado_65495758_20260323.pdf,Aprobado,493467
+6955,Problemas familiares de fuerza mayor.,certificado_63616018_20260323.pdf,Pendiente,493533
+6956,Problemas de salud del alumno (fiebre y malestar general).,certificado_78524707_20260324.pdf,Rechazado,493790
+6957,Cita médica odontológica programada con anterioridad.,certificado_62826917_20260324.pdf,Pendiente,493885
+6958,Suspensión de transporte público de su zona.,certificado_63231757_20260324.pdf,Pendiente,493891
+6959,Suspensión de transporte público de su zona.,certificado_68120882_20260324.pdf,Rechazado,493969
+6960,Problemas de salud del alumno (fiebre y malestar general).,certificado_76838854_20260324.pdf,Pendiente,493977
+6961,Problemas de salud del alumno (fiebre y malestar general).,certificado_79787935_20260324.pdf,Rechazado,494021
+6962,Problemas de salud del alumno (fiebre y malestar general).,certificado_76183036_20260324.pdf,Pendiente,494034
+6963,Problemas de salud del alumno (fiebre y malestar general).,certificado_60828986_20260324.pdf,Pendiente,494049
+6964,Suspensión de transporte público de su zona.,certificado_64972758_20260325.pdf,Rechazado,494114
+6965,Cita médica odontológica programada con anterioridad.,certificado_66391775_20260325.pdf,Pendiente,494210
+6966,Viaje urgente programado fuera de la ciudad.,certificado_61696487_20260325.pdf,Aprobado,494333
+6967,Viaje urgente programado fuera de la ciudad.,certificado_79021542_20260326.pdf,Pendiente,494433
+6968,Viaje urgente programado fuera de la ciudad.,certificado_66063152_20260326.pdf,Rechazado,494450
+6969,Suspensión de transporte público de su zona.,certificado_61165294_20260326.pdf,Pendiente,494532
+6970,Suspensión de transporte público de su zona.,certificado_65690258_20260326.pdf,Pendiente,494556
+6971,Problemas familiares de fuerza mayor.,certificado_78004127_20260326.pdf,Aprobado,494640
+6972,Problemas familiares de fuerza mayor.,certificado_62150183_20260326.pdf,Pendiente,494651
+6973,Cita médica odontológica programada con anterioridad.,certificado_60435041_20260326.pdf,Rechazado,494669
+6974,Problemas de salud del alumno (fiebre y malestar general).,certificado_75992116_20260326.pdf,Rechazado,494672
+6975,Suspensión de transporte público de su zona.,certificado_75810523_20260327.pdf,Rechazado,494841
+6976,Viaje urgente programado fuera de la ciudad.,certificado_71512406_20260327.pdf,Rechazado,494859
+6977,Viaje urgente programado fuera de la ciudad.,certificado_67748133_20260327.pdf,Pendiente,494919
+6978,Suspensión de transporte público de su zona.,certificado_77135451_20260327.pdf,Aprobado,494947
+6979,Problemas de salud del alumno (fiebre y malestar general).,certificado_72230370_20260327.pdf,Rechazado,495025
+6980,Cita médica odontológica programada con anterioridad.,certificado_79223285_20260327.pdf,Rechazado,495030
+6981,Suspensión de transporte público de su zona.,certificado_74572837_20260327.pdf,Pendiente,495103
+6982,Viaje urgente programado fuera de la ciudad.,certificado_73039212_20260330.pdf,Aprobado,495149
+6983,Problemas familiares de fuerza mayor.,certificado_71131145_20260330.pdf,Pendiente,495173
+6984,Viaje urgente programado fuera de la ciudad.,certificado_68225093_20260330.pdf,Aprobado,495186
+6985,Problemas de salud del alumno (fiebre y malestar general).,certificado_74559591_20260330.pdf,Aprobado,495508
+6986,Problemas de salud del alumno (fiebre y malestar general).,certificado_68823126_20260331.pdf,Aprobado,495588
+6987,Problemas familiares de fuerza mayor.,certificado_68455673_20260331.pdf,Rechazado,495668
+6988,Suspensión de transporte público de su zona.,certificado_60503794_20260331.pdf,Rechazado,495850
+6989,Problemas familiares de fuerza mayor.,certificado_68225093_20260401.pdf,Rechazado,495916
+6990,Problemas familiares de fuerza mayor.,certificado_62812451_20260401.pdf,Pendiente,495949
+6991,Problemas de salud del alumno (fiebre y malestar general).,certificado_68455673_20260401.pdf,Pendiente,496033
+6992,Cita médica odontológica programada con anterioridad.,certificado_64241673_20260401.pdf,Aprobado,496063
+6993,Suspensión de transporte público de su zona.,certificado_76689062_20260401.pdf,Aprobado,496110
+6994,Suspensión de transporte público de su zona.,certificado_70370100_20260401.pdf,Aprobado,496177
+6995,Problemas de salud del alumno (fiebre y malestar general).,certificado_61899341_20260402.pdf,Rechazado,496277
+6996,Problemas familiares de fuerza mayor.,certificado_64384065_20260402.pdf,Rechazado,496368
+6997,Suspensión de transporte público de su zona.,certificado_70729012_20260402.pdf,Rechazado,496380
+6998,Cita médica odontológica programada con anterioridad.,certificado_62826917_20260402.pdf,Rechazado,496440
+6999,Cita médica odontológica programada con anterioridad.,certificado_65265608_20260402.pdf,Pendiente,496605
+7000,Cita médica odontológica programada con anterioridad.,certificado_78911435_20260403.pdf,Rechazado,496643
+7001,Problemas de salud del alumno (fiebre y malestar general).,certificado_64974651_20260403.pdf,Rechazado,496735
+7002,Suspensión de transporte público de su zona.,certificado_68455673_20260403.pdf,Rechazado,496763
+7003,Problemas de salud del alumno (fiebre y malestar general).,certificado_67399742_20260403.pdf,Pendiente,496781
+7004,Cita médica odontológica programada con anterioridad.,certificado_71499866_20260403.pdf,Aprobado,496814
+7005,Viaje urgente programado fuera de la ciudad.,certificado_66170196_20260403.pdf,Rechazado,496942
+7006,Viaje urgente programado fuera de la ciudad.,certificado_72652714_20260406.pdf,Pendiente,496996
+7007,Problemas familiares de fuerza mayor.,certificado_60735287_20260406.pdf,Aprobado,496997
+7008,Viaje urgente programado fuera de la ciudad.,certificado_63152784_20260406.pdf,Rechazado,497131
+7009,Suspensión de transporte público de su zona.,certificado_77169982_20260406.pdf,Aprobado,497245
+7010,Cita médica odontológica programada con anterioridad.,certificado_69723504_20260407.pdf,Pendiente,497345
+7011,Suspensión de transporte público de su zona.,certificado_66173771_20260407.pdf,Rechazado,497390
+7012,Cita médica odontológica programada con anterioridad.,certificado_70665578_20260407.pdf,Rechazado,497398
+7013,Problemas de salud del alumno (fiebre y malestar general).,certificado_77609966_20260407.pdf,Pendiente,497455
+7014,Viaje urgente programado fuera de la ciudad.,certificado_61630307_20260407.pdf,Rechazado,497515
+7015,Suspensión de transporte público de su zona.,certificado_72076827_20260407.pdf,Pendiente,497564
+7016,Suspensión de transporte público de su zona.,certificado_76838854_20260407.pdf,Pendiente,497627
+7017,Problemas de salud del alumno (fiebre y malestar general).,certificado_64974651_20260408.pdf,Pendiente,497830
+7018,Viaje urgente programado fuera de la ciudad.,certificado_60138372_20260408.pdf,Rechazado,497928
+7019,Problemas de salud del alumno (fiebre y malestar general).,certificado_72094204_20260408.pdf,Aprobado,497932
+7020,Problemas familiares de fuerza mayor.,certificado_70665578_20260409.pdf,Aprobado,498128
+7021,Problemas familiares de fuerza mayor.,certificado_64006430_20260409.pdf,Rechazado,498219
+7022,Cita médica odontológica programada con anterioridad.,certificado_76284037_20260409.pdf,Rechazado,498238
+7023,Problemas de salud del alumno (fiebre y malestar general).,certificado_70599902_20260409.pdf,Pendiente,498256
+7024,Viaje urgente programado fuera de la ciudad.,certificado_60138372_20260409.pdf,Aprobado,498293
+7025,Cita médica odontológica programada con anterioridad.,certificado_76689062_20260409.pdf,Rechazado,498300
+7026,Problemas familiares de fuerza mayor.,certificado_66735272_20260409.pdf,Pendiente,498303
+7027,Cita médica odontológica programada con anterioridad.,certificado_63419443_20260409.pdf,Pendiente,498411
+7028,Problemas familiares de fuerza mayor.,certificado_74893193_20260410.pdf,Pendiente,498435
+7029,Cita médica odontológica programada con anterioridad.,certificado_76066353_20260410.pdf,Aprobado,498475
+7030,Cita médica odontológica programada con anterioridad.,certificado_73047163_20260410.pdf,Rechazado,498523
+7031,Problemas familiares de fuerza mayor.,certificado_76424356_20260410.pdf,Rechazado,498562
+7032,Suspensión de transporte público de su zona.,certificado_72861964_20260410.pdf,Aprobado,498594
+7033,Problemas de salud del alumno (fiebre y malestar general).,certificado_70599902_20260410.pdf,Rechazado,498621
+7034,Cita médica odontológica programada con anterioridad.,certificado_70197504_20260410.pdf,Rechazado,498676
+7035,Cita médica odontológica programada con anterioridad.,certificado_63651817_20260413.pdf,Rechazado,498811
+7036,Viaje urgente programado fuera de la ciudad.,certificado_72750683_20260413.pdf,Rechazado,498837
+7037,Suspensión de transporte público de su zona.,certificado_68118095_20260413.pdf,Aprobado,498843
+7038,Problemas familiares de fuerza mayor.,certificado_66306005_20260413.pdf,Rechazado,498849
+7039,Suspensión de transporte público de su zona.,certificado_63152784_20260413.pdf,Rechazado,498956
+7040,Suspensión de transporte público de su zona.,certificado_72076827_20260413.pdf,Rechazado,499024
+7041,Problemas de salud del alumno (fiebre y malestar general).,certificado_72438793_20260413.pdf,Aprobado,499044
+7042,Problemas familiares de fuerza mayor.,certificado_72085925_20260413.pdf,Aprobado,499060
+7043,Viaje urgente programado fuera de la ciudad.,certificado_61645219_20260413.pdf,Pendiente,499074
+7044,Viaje urgente programado fuera de la ciudad.,certificado_60295403_20260413.pdf,Aprobado,499140
+7045,Problemas de salud del alumno (fiebre y malestar general).,certificado_71498139_20260413.pdf,Aprobado,499147
+7046,Viaje urgente programado fuera de la ciudad.,certificado_70665578_20260414.pdf,Aprobado,499223
+7047,Cita médica odontológica programada con anterioridad.,certificado_60423305_20260414.pdf,Rechazado,499273
+7048,Problemas familiares de fuerza mayor.,certificado_79126954_20260414.pdf,Pendiente,499429
+7049,Problemas de salud del alumno (fiebre y malestar general).,certificado_66720838_20260414.pdf,Pendiente,499485
+7050,Viaje urgente programado fuera de la ciudad.,certificado_60503794_20260414.pdf,Rechazado,499500
+7051,Problemas familiares de fuerza mayor.,certificado_62812451_20260415.pdf,Rechazado,499599
+7052,Viaje urgente programado fuera de la ciudad.,certificado_64384065_20260415.pdf,Pendiente,499653
+7053,Viaje urgente programado fuera de la ciudad.,certificado_76496003_20260415.pdf,Pendiente,499656
+7054,Problemas de salud del alumno (fiebre y malestar general).,certificado_70027430_20260415.pdf,Aprobado,499715
+7055,Problemas familiares de fuerza mayor.,certificado_64475216_20260415.pdf,Pendiente,499719
+7056,Viaje urgente programado fuera de la ciudad.,certificado_79170676_20260415.pdf,Aprobado,499764
+7057,Cita médica odontológica programada con anterioridad.,certificado_70901688_20260415.pdf,Rechazado,499814
+7058,Problemas de salud del alumno (fiebre y malestar general).,certificado_66036080_20260415.pdf,Pendiente,499845
+7059,Cita médica odontológica programada con anterioridad.,certificado_73076942_20260416.pdf,Pendiente,499898
+7060,Suspensión de transporte público de su zona.,certificado_67756452_20260416.pdf,Aprobado,499980
+7061,Cita médica odontológica programada con anterioridad.,certificado_66459643_20260416.pdf,Pendiente,500109
+7062,Problemas familiares de fuerza mayor.,certificado_66170196_20260416.pdf,Aprobado,500227
+7063,Viaje urgente programado fuera de la ciudad.,certificado_66279749_20260417.pdf,Aprobado,500302
+7064,Viaje urgente programado fuera de la ciudad.,certificado_71512406_20260417.pdf,Aprobado,500334
+7065,Problemas de salud del alumno (fiebre y malestar general).,certificado_77534951_20260417.pdf,Aprobado,500335
+7066,Viaje urgente programado fuera de la ciudad.,certificado_74552940_20260417.pdf,Rechazado,500433
+7067,Problemas de salud del alumno (fiebre y malestar general).,certificado_61946613_20260417.pdf,Pendiente,500436
+7068,Problemas de salud del alumno (fiebre y malestar general).,certificado_64006430_20260420.pdf,Rechazado,500774
+7069,Problemas de salud del alumno (fiebre y malestar general).,certificado_67406227_20260420.pdf,Rechazado,500824
+7070,Problemas familiares de fuerza mayor.,certificado_79126954_20260420.pdf,Aprobado,500889
+7071,Problemas de salud del alumno (fiebre y malestar general).,certificado_76588250_20260420.pdf,Rechazado,500974
+7072,Viaje urgente programado fuera de la ciudad.,certificado_79021542_20260421.pdf,Aprobado,501003
+7073,Viaje urgente programado fuera de la ciudad.,certificado_71512406_20260421.pdf,Aprobado,501064
+7074,Cita médica odontológica programada con anterioridad.,certificado_62099291_20260421.pdf,Rechazado,501091
+7075,Viaje urgente programado fuera de la ciudad.,certificado_64974651_20260421.pdf,Aprobado,501115
+7076,Problemas de salud del alumno (fiebre y malestar general).,certificado_60617016_20260421.pdf,Aprobado,501134
+7077,Cita médica odontológica programada con anterioridad.,certificado_69472646_20260421.pdf,Aprobado,501140
+7078,Problemas familiares de fuerza mayor.,certificado_62630919_20260421.pdf,Pendiente,501162
+7079,Problemas de salud del alumno (fiebre y malestar general).,certificado_62826917_20260421.pdf,Rechazado,501185
+7080,Problemas de salud del alumno (fiebre y malestar general).,certificado_63627386_20260421.pdf,Rechazado,501319
+7081,Problemas familiares de fuerza mayor.,certificado_67109853_20260422.pdf,Pendiente,501390
+7082,Cita médica odontológica programada con anterioridad.,certificado_64643746_20260422.pdf,Aprobado,501432
+7083,Cita médica odontológica programada con anterioridad.,certificado_78443683_20260422.pdf,Pendiente,501518
+7084,Viaje urgente programado fuera de la ciudad.,certificado_72588694_20260422.pdf,Rechazado,501542
+7085,Problemas de salud del alumno (fiebre y malestar general).,certificado_71973605_20260422.pdf,Pendiente,501551
+7086,Problemas familiares de fuerza mayor.,certificado_74865021_20260422.pdf,Rechazado,501552
+7087,Suspensión de transporte público de su zona.,certificado_72700973_20260422.pdf,Aprobado,501602
+7088,Suspensión de transporte público de su zona.,certificado_69723504_20260423.pdf,Pendiente,501725
+7089,Problemas de salud del alumno (fiebre y malestar general).,certificado_64520588_20260423.pdf,Rechazado,501814
+7090,Suspensión de transporte público de su zona.,certificado_60423305_20260423.pdf,Pendiente,501828
+7091,Viaje urgente programado fuera de la ciudad.,certificado_60138372_20260423.pdf,Aprobado,501943
+7092,Viaje urgente programado fuera de la ciudad.,certificado_78321524_20260423.pdf,Rechazado,501996
+7093,Cita médica odontológica programada con anterioridad.,certificado_79533904_20260424.pdf,Rechazado,502156
+7094,Viaje urgente programado fuera de la ciudad.,certificado_64974651_20260424.pdf,Rechazado,502210
+7095,Suspensión de transporte público de su zona.,certificado_76424356_20260424.pdf,Pendiente,502212
+7096,Problemas de salud del alumno (fiebre y malestar general).,certificado_65828808_20260424.pdf,Pendiente,502344
+7097,Problemas familiares de fuerza mayor.,certificado_69814522_20260424.pdf,Pendiente,502358
+7098,Problemas de salud del alumno (fiebre y malestar general).,certificado_63627386_20260424.pdf,Aprobado,502414
+7099,Problemas familiares de fuerza mayor.,certificado_73479483_20260424.pdf,Rechazado,502441
+7100,Viaje urgente programado fuera de la ciudad.,certificado_61486350_20260427.pdf,Rechazado,502465
+7101,Suspensión de transporte público de su zona.,certificado_62610757_20260427.pdf,Pendiente,502526
+7102,Problemas de salud del alumno (fiebre y malestar general).,certificado_78443683_20260427.pdf,Aprobado,502613
+7103,Problemas familiares de fuerza mayor.,certificado_63419443_20260427.pdf,Aprobado,502791
+7104,Suspensión de transporte público de su zona.,certificado_67758301_20260428.pdf,Rechazado,502919
+7105,Suspensión de transporte público de su zona.,certificado_68836535_20260428.pdf,Aprobado,502921
+7106,Problemas familiares de fuerza mayor.,certificado_64354501_20260428.pdf,Pendiente,502969
+7107,Problemas de salud del alumno (fiebre y malestar general).,certificado_76689062_20260428.pdf,Aprobado,503045
+7108,Suspensión de transporte público de su zona.,certificado_73364596_20260428.pdf,Aprobado,503054
+7109,Suspensión de transporte público de su zona.,certificado_61970720_20260428.pdf,Rechazado,503084
+7110,Suspensión de transporte público de su zona.,certificado_65200666_20260428.pdf,Aprobado,503090
+7111,Problemas de salud del alumno (fiebre y malestar general).,certificado_77241839_20260429.pdf,Pendiente,503235
+7112,Problemas familiares de fuerza mayor.,certificado_64893703_20260429.pdf,Aprobado,503354
+7113,Viaje urgente programado fuera de la ciudad.,certificado_74865021_20260429.pdf,Rechazado,503377
+7114,Problemas familiares de fuerza mayor.,certificado_65596165_20260429.pdf,Pendiente,503412
+7115,Viaje urgente programado fuera de la ciudad.,certificado_66941315_20260429.pdf,Pendiente,503433
+7116,Suspensión de transporte público de su zona.,certificado_71231883_20260429.pdf,Rechazado,503442
+7117,Viaje urgente programado fuera de la ciudad.,certificado_77168677_20260429.pdf,Pendiente,503462
+7118,Cita médica odontológica programada con anterioridad.,certificado_60735287_20260430.pdf,Pendiente,503567
+7119,Cita médica odontológica programada con anterioridad.,certificado_66173771_20260430.pdf,Rechazado,503595
+7120,Viaje urgente programado fuera de la ciudad.,certificado_69651551_20260430.pdf,Pendiente,503598
+7121,Problemas de salud del alumno (fiebre y malestar general).,certificado_62892821_20260430.pdf,Pendiente,503615
+7122,Problemas familiares de fuerza mayor.,certificado_60138372_20260430.pdf,Pendiente,503768
+7123,Cita médica odontológica programada con anterioridad.,certificado_71808243_20260501.pdf,Aprobado,503955
+7124,Cita médica odontológica programada con anterioridad.,certificado_73225503_20260501.pdf,Aprobado,504120
+7125,Problemas familiares de fuerza mayor.,certificado_65284953_20260501.pdf,Pendiente,504235
+7126,Suspensión de transporte público de su zona.,certificado_62028998_20260501.pdf,Rechazado,504244
+7127,Suspensión de transporte público de su zona.,certificado_73182955_20260504.pdf,Pendiente,504302
+7128,Problemas de salud del alumno (fiebre y malestar general).,certificado_69103665_20260504.pdf,Rechazado,504319
+7129,Problemas familiares de fuerza mayor.,certificado_72861964_20260504.pdf,Rechazado,504434
+7130,Problemas familiares de fuerza mayor.,certificado_71131145_20260505.pdf,Pendiente,504663
+7131,Problemas familiares de fuerza mayor.,certificado_68225093_20260505.pdf,Rechazado,504676
+7132,Viaje urgente programado fuera de la ciudad.,certificado_66173771_20260505.pdf,Aprobado,504690
+7133,Suspensión de transporte público de su zona.,certificado_63152784_20260505.pdf,Pendiente,504796
+7134,Viaje urgente programado fuera de la ciudad.,certificado_60138372_20260505.pdf,Pendiente,504863
+7135,Suspensión de transporte público de su zona.,certificado_70228023_20260505.pdf,Rechazado,504903
+7136,Cita médica odontológica programada con anterioridad.,certificado_70735241_20260506.pdf,Pendiente,505017
+7137,Cita médica odontológica programada con anterioridad.,certificado_62140517_20260506.pdf,Aprobado,505024
+7138,Viaje urgente programado fuera de la ciudad.,certificado_67152970_20260506.pdf,Pendiente,505052
+7139,Suspensión de transporte público de su zona.,certificado_69401745_20260506.pdf,Aprobado,505071
+7140,Viaje urgente programado fuera de la ciudad.,certificado_65690258_20260506.pdf,Rechazado,505141
+7141,Suspensión de transporte público de su zona.,certificado_71654049_20260506.pdf,Aprobado,505182
+7142,Cita médica odontológica programada con anterioridad.,certificado_75421005_20260506.pdf,Rechazado,505189
+7143,Viaje urgente programado fuera de la ciudad.,certificado_64475216_20260506.pdf,Aprobado,505194
+7144,Cita médica odontológica programada con anterioridad.,certificado_76461656_20260506.pdf,Rechazado,505217
+7145,Problemas familiares de fuerza mayor.,certificado_60138372_20260506.pdf,Pendiente,505228
+7146,Viaje urgente programado fuera de la ciudad.,certificado_70874022_20260506.pdf,Pendiente,505259
+7147,Problemas familiares de fuerza mayor.,certificado_78760075_20260506.pdf,Rechazado,505306
+7148,Suspensión de transporte público de su zona.,certificado_65714979_20260507.pdf,Aprobado,505368
+7149,Problemas familiares de fuerza mayor.,certificado_69749816_20260507.pdf,Pendiente,505462
+7150,Viaje urgente programado fuera de la ciudad.,certificado_62630919_20260507.pdf,Rechazado,505542
+7151,Viaje urgente programado fuera de la ciudad.,certificado_79126954_20260507.pdf,Rechazado,505634
+7152,Problemas familiares de fuerza mayor.,certificado_65284953_20260507.pdf,Rechazado,505695
+7153,Cita médica odontológica programada con anterioridad.,certificado_60735287_20260508.pdf,Pendiente,505757
+7154,Suspensión de transporte público de su zona.,certificado_66173771_20260508.pdf,Pendiente,505785
+7155,Problemas de salud del alumno (fiebre y malestar general).,certificado_68684579_20260508.pdf,Aprobado,505853
+7156,Problemas familiares de fuerza mayor.,certificado_74864763_20260511.pdf,Aprobado,506161
+7157,Problemas de salud del alumno (fiebre y malestar general).,certificado_62615189_20260511.pdf,Aprobado,506183
+7158,Suspensión de transporte público de su zona.,certificado_66093610_20260511.pdf,Aprobado,506209
+7159,Suspensión de transporte público de su zona.,certificado_67452197_20260511.pdf,Rechazado,506232
+7160,Problemas familiares de fuerza mayor.,certificado_60561236_20260511.pdf,Rechazado,506280
+7161,Cita médica odontológica programada con anterioridad.,certificado_70197504_20260511.pdf,Aprobado,506341
+7162,Viaje urgente programado fuera de la ciudad.,certificado_73039212_20260512.pdf,Rechazado,506464
+7163,Cita médica odontológica programada con anterioridad.,certificado_60735287_20260512.pdf,Rechazado,506487
+7164,Viaje urgente programado fuera de la ciudad.,certificado_77096740_20260512.pdf,Rechazado,506511
+7165,Viaje urgente programado fuera de la ciudad.,certificado_64006430_20260512.pdf,Aprobado,506614
+7166,Viaje urgente programado fuera de la ciudad.,certificado_77135451_20260512.pdf,Aprobado,506627
+7167,Problemas familiares de fuerza mayor.,certificado_72627498_20260512.pdf,Aprobado,506815
+7168,Problemas familiares de fuerza mayor.,certificado_68225093_20260513.pdf,Pendiente,506866
+7169,Suspensión de transporte público de su zona.,certificado_72842268_20260513.pdf,Pendiente,506914
+7170,Cita médica odontológica programada con anterioridad.,certificado_70694364_20260513.pdf,Pendiente,507022
+7171,Suspensión de transporte público de su zona.,certificado_63616018_20260513.pdf,Aprobado,507038
+7172,Cita médica odontológica programada con anterioridad.,certificado_70220611_20260513.pdf,Rechazado,507110
+7173,Suspensión de transporte público de su zona.,certificado_68836535_20260514.pdf,Pendiente,507301
+7174,Viaje urgente programado fuera de la ciudad.,certificado_73210947_20260514.pdf,Pendiente,507404
+7175,Suspensión de transporte público de su zona.,certificado_78004127_20260514.pdf,Pendiente,507415
+7176,Problemas familiares de fuerza mayor.,certificado_60138372_20260514.pdf,Pendiente,507418
+7177,Suspensión de transporte público de su zona.,certificado_67394803_20260514.pdf,Aprobado,507424
+7178,Problemas familiares de fuerza mayor.,certificado_77539282_20260514.pdf,Aprobado,507489
+7179,Viaje urgente programado fuera de la ciudad.,certificado_68118095_20260515.pdf,Aprobado,507603
+7180,Problemas familiares de fuerza mayor.,certificado_74306582_20260515.pdf,Pendiente,507688
+7181,Problemas de salud del alumno (fiebre y malestar general).,certificado_67748133_20260515.pdf,Aprobado,507694
+7182,Problemas familiares de fuerza mayor.,certificado_67427309_20260515.pdf,Pendiente,507726
+7183,Problemas familiares de fuerza mayor.,certificado_61630307_20260515.pdf,Rechazado,507735
+7184,Problemas familiares de fuerza mayor.,certificado_66624235_20260515.pdf,Rechazado,507760
+7185,Problemas familiares de fuerza mayor.,certificado_68305783_20260515.pdf,Aprobado,507778
+7186,Problemas de salud del alumno (fiebre y malestar general).,certificado_68391369_20260515.pdf,Aprobado,507851
+7187,Cita médica odontológica programada con anterioridad.,certificado_74865021_20260518.pdf,Pendiente,508122
+7188,Cita médica odontológica programada con anterioridad.,certificado_69515804_20260518.pdf,Aprobado,508196
+7189,Cita médica odontológica programada con anterioridad.,certificado_66170196_20260518.pdf,Aprobado,508257
+7190,Cita médica odontológica programada con anterioridad.,certificado_71512406_20260519.pdf,Aprobado,508364
+7191,Problemas familiares de fuerza mayor.,certificado_75447447_20260519.pdf,Aprobado,508377
+7192,Problemas familiares de fuerza mayor.,certificado_63231757_20260519.pdf,Rechazado,508491
+7193,Cita médica odontológica programada con anterioridad.,certificado_79180974_20260519.pdf,Pendiente,508518
+7194,Problemas de salud del alumno (fiebre y malestar general).,certificado_78795543_20260520.pdf,Rechazado,508834
+7195,Problemas familiares de fuerza mayor.,certificado_72076827_20260520.pdf,Rechazado,508879
+7196,Suspensión de transporte público de su zona.,certificado_79335152_20260520.pdf,Pendiente,508922
+7197,Problemas familiares de fuerza mayor.,certificado_73957073_20260520.pdf,Pendiente,508941
+7198,Cita médica odontológica programada con anterioridad.,certificado_72842268_20260521.pdf,Pendiente,509104
+7199,Problemas de salud del alumno (fiebre y malestar general).,certificado_62630919_20260521.pdf,Pendiente,509192
+7200,Problemas de salud del alumno (fiebre y malestar general).,certificado_61630307_20260521.pdf,Aprobado,509195
+7201,Suspensión de transporte público de su zona.,certificado_60022680_20260521.pdf,Rechazado,509309
+7202,Viaje urgente programado fuera de la ciudad.,certificado_74559591_20260521.pdf,Rechazado,509378
+7203,Suspensión de transporte público de su zona.,certificado_76260777_20260522.pdf,Rechazado,509387
+7204,Problemas de salud del alumno (fiebre y malestar general).,certificado_68118095_20260522.pdf,Aprobado,509428
+7205,Suspensión de transporte público de su zona.,certificado_63953671_20260522.pdf,Aprobado,509463
+7206,Cita médica odontológica programada con anterioridad.,certificado_61630307_20260522.pdf,Pendiente,509560
+7207,Cita médica odontológica programada con anterioridad.,certificado_66941315_20260522.pdf,Aprobado,509638
+7208,Problemas de salud del alumno (fiebre y malestar general).,certificado_63953671_20260525.pdf,Pendiente,509828
+7209,Problemas de salud del alumno (fiebre y malestar general).,certificado_76689080_20260525.pdf,Aprobado,509901
+7210,Problemas familiares de fuerza mayor.,certificado_62403973_20260525.pdf,Pendiente,509938
+7211,Problemas familiares de fuerza mayor.,certificado_63627386_20260525.pdf,Rechazado,510079
+7212,Problemas de salud del alumno (fiebre y malestar general).,certificado_76740024_20260525.pdf,Aprobado,510098
+7213,Suspensión de transporte público de su zona.,certificado_70799284_20260526.pdf,Aprobado,510226
+7214,Cita médica odontológica programada con anterioridad.,certificado_60138372_20260526.pdf,Pendiente,510338
+7215,Problemas familiares de fuerza mayor.,certificado_78760075_20260526.pdf,Aprobado,510416
+7216,Problemas de salud del alumno (fiebre y malestar general).,certificado_73182955_20260527.pdf,Rechazado,510507
+7217,Suspensión de transporte público de su zona.,certificado_66527182_20260527.pdf,Aprobado,510678
+7218,Problemas familiares de fuerza mayor.,certificado_78443617_20260527.pdf,Rechazado,510741
+7219,Suspensión de transporte público de su zona.,certificado_68181481_20260527.pdf,Rechazado,510794
+7220,Viaje urgente programado fuera de la ciudad.,certificado_64452366_20260528.pdf,Aprobado,510871
+7221,Problemas familiares de fuerza mayor.,certificado_77135451_20260528.pdf,Aprobado,511007
+7222,Problemas de salud del alumno (fiebre y malestar general).,certificado_72498756_20260528.pdf,Rechazado,511122
+7223,Problemas de salud del alumno (fiebre y malestar general).,certificado_78257839_20260528.pdf,Rechazado,511148
+7224,Problemas familiares de fuerza mayor.,certificado_69131306_20260528.pdf,Pendiente,511152
+7225,Problemas de salud del alumno (fiebre y malestar general).,certificado_72209302_20260528.pdf,Aprobado,511153
+7226,Problemas familiares de fuerza mayor.,certificado_69723504_20260529.pdf,Pendiente,511215
+7227,Problemas de salud del alumno (fiebre y malestar general).,certificado_63651817_20260529.pdf,Pendiente,511221
+7228,Cita médica odontológica programada con anterioridad.,certificado_68823126_20260529.pdf,Aprobado,511283
+7229,Suspensión de transporte público de su zona.,certificado_61266858_20260529.pdf,Pendiente,511296
+7230,Suspensión de transporte público de su zona.,certificado_73183418_20260529.pdf,Aprobado,511300
+7231,Cita médica odontológica programada con anterioridad.,certificado_60828986_20260529.pdf,Rechazado,511569
+7232,Problemas familiares de fuerza mayor.,certificado_73182955_20260601.pdf,Aprobado,511602
+7233,Problemas de salud del alumno (fiebre y malestar general).,certificado_72750683_20260601.pdf,Aprobado,511612
+7234,Problemas de salud del alumno (fiebre y malestar general).,certificado_76066353_20260601.pdf,Aprobado,511615
+7235,Suspensión de transporte público de su zona.,certificado_77318337_20260601.pdf,Rechazado,511637
+7236,Cita médica odontológica programada con anterioridad.,certificado_68823126_20260601.pdf,Rechazado,511648
+7237,Viaje urgente programado fuera de la ciudad.,certificado_76461656_20260601.pdf,Aprobado,511787
+7238,Cita médica odontológica programada con anterioridad.,certificado_70228023_20260601.pdf,Aprobado,511838
+7239,Problemas de salud del alumno (fiebre y malestar general).,certificado_73959573_20260601.pdf,Rechazado,511868
+7240,Cita médica odontológica programada con anterioridad.,certificado_67526975_20260601.pdf,Aprobado,511875
+7241,Suspensión de transporte público de su zona.,certificado_78257839_20260601.pdf,Rechazado,511878
+7242,Cita médica odontológica programada con anterioridad.,certificado_66093610_20260602.pdf,Aprobado,512049
+7243,Viaje urgente programado fuera de la ciudad.,certificado_60617016_20260602.pdf,Rechazado,512084
+7244,Viaje urgente programado fuera de la ciudad.,certificado_70027430_20260602.pdf,Aprobado,512125
+7245,Problemas familiares de fuerza mayor.,certificado_70874022_20260602.pdf,Rechazado,512194
+7246,Viaje urgente programado fuera de la ciudad.,certificado_73787181_20260602.pdf,Rechazado,512267
+7247,Suspensión de transporte público de su zona.,certificado_63419443_20260602.pdf,Pendiente,512281
+7248,Suspensión de transporte público de su zona.,certificado_61630307_20260603.pdf,Aprobado,512480
+7249,Problemas familiares de fuerza mayor.,certificado_70566447_20260603.pdf,Aprobado,512486
+7250,Problemas familiares de fuerza mayor.,certificado_62842044_20260603.pdf,Rechazado,512508
+7251,Suspensión de transporte público de su zona.,certificado_72094204_20260603.pdf,Rechazado,512532
+7252,Viaje urgente programado fuera de la ciudad.,certificado_76689062_20260603.pdf,Pendiente,512535
+7253,Problemas familiares de fuerza mayor.,certificado_68328840_20260603.pdf,Aprobado,512622
+7254,Viaje urgente programado fuera de la ciudad.,certificado_64452366_20260604.pdf,Aprobado,512696
+7255,Viaje urgente programado fuera de la ciudad.,certificado_61266858_20260604.pdf,Aprobado,512756
+7256,Suspensión de transporte público de su zona.,certificado_62842044_20260604.pdf,Rechazado,512873
+7257,Viaje urgente programado fuera de la ciudad.,certificado_68328840_20260604.pdf,Rechazado,512987
+7258,Cita médica odontológica programada con anterioridad.,certificado_68836549_20260604.pdf,Rechazado,513013
+7259,Cita médica odontológica programada con anterioridad.,certificado_63706561_20260605.pdf,Pendiente,513060
+7260,Suspensión de transporte público de su zona.,certificado_77096740_20260605.pdf,Rechazado,513081
+7261,Viaje urgente programado fuera de la ciudad.,certificado_78524707_20260605.pdf,Aprobado,513135
+7262,Problemas familiares de fuerza mayor.,certificado_70694364_20260605.pdf,Rechazado,513227
+7263,Viaje urgente programado fuera de la ciudad.,certificado_74559591_20260605.pdf,Rechazado,513393
+7264,Suspensión de transporte público de su zona.,certificado_60828986_20260605.pdf,Pendiente,513394
+7265,Cita médica odontológica programada con anterioridad.,certificado_70894857_20260608.pdf,Pendiente,513505
+7266,Problemas de salud del alumno (fiebre y malestar general).,certificado_75137265_20260608.pdf,Aprobado,513507
+7267,Suspensión de transporte público de su zona.,certificado_65495758_20260608.pdf,Rechazado,513542
+7268,Viaje urgente programado fuera de la ciudad.,certificado_76284037_20260608.pdf,Aprobado,513568
+7269,Cita médica odontológica programada con anterioridad.,certificado_62403973_20260608.pdf,Pendiente,513588
+7270,Problemas de salud del alumno (fiebre y malestar general).,certificado_76461656_20260608.pdf,Rechazado,513612
+7271,Suspensión de transporte público de su zona.,certificado_76883555_20260608.pdf,Rechazado,513626
+7272,Problemas familiares de fuerza mayor.,certificado_65200666_20260608.pdf,Rechazado,513675
+7273,Viaje urgente programado fuera de la ciudad.,certificado_63419443_20260608.pdf,Rechazado,513741
+7274,Cita médica odontológica programada con anterioridad.,certificado_70665578_20260609.pdf,Rechazado,513823
+7275,Problemas de salud del alumno (fiebre y malestar general).,certificado_64006430_20260609.pdf,Aprobado,513914
+7276,Cita médica odontológica programada con anterioridad.,certificado_66391775_20260609.pdf,Pendiente,513920
+7277,Problemas de salud del alumno (fiebre y malestar general).,certificado_66624235_20260609.pdf,Rechazado,513965
+7278,Problemas de salud del alumno (fiebre y malestar general).,certificado_61653930_20260609.pdf,Pendiente,514016
+7279,Suspensión de transporte público de su zona.,certificado_63953671_20260610.pdf,Aprobado,514208
+7280,Cita médica odontológica programada con anterioridad.,certificado_64384065_20260610.pdf,Aprobado,514253
+7281,Suspensión de transporte público de su zona.,certificado_70370100_20260610.pdf,Aprobado,514427
+7282,Cita médica odontológica programada con anterioridad.,certificado_72019960_20260610.pdf,Rechazado,514482
+7283,Problemas de salud del alumno (fiebre y malestar general).,certificado_63995855_20260611.pdf,Rechazado,514677
+7284,Problemas de salud del alumno (fiebre y malestar general).,certificado_74865021_20260611.pdf,Pendiente,514692
+7285,Cita médica odontológica programada con anterioridad.,certificado_69472646_20260612.pdf,Rechazado,515010
+7286,Cita médica odontológica programada con anterioridad.,certificado_71339739_20260615.pdf,Aprobado,515245
+7287,Suspensión de transporte público de su zona.,certificado_64006430_20260615.pdf,Aprobado,515374
+7288,Viaje urgente programado fuera de la ciudad.,certificado_61645219_20260615.pdf,Rechazado,515499
+7289,Problemas de salud del alumno (fiebre y malestar general).,certificado_72209302_20260615.pdf,Rechazado,515533
+7290,Cita médica odontológica programada con anterioridad.,certificado_72557067_20260615.pdf,Pendiente,515555
+7291,Suspensión de transporte público de su zona.,certificado_63419443_20260615.pdf,Rechazado,515566
+7292,Viaje urgente programado fuera de la ciudad.,certificado_65265608_20260615.pdf,Aprobado,515585
+7293,Problemas familiares de fuerza mayor.,certificado_67452197_20260616.pdf,Aprobado,515722
+7294,Viaje urgente programado fuera de la ciudad.,certificado_61630307_20260616.pdf,Aprobado,515765
+7295,Viaje urgente programado fuera de la ciudad.,certificado_64475216_20260616.pdf,Rechazado,515779
+7296,Cita médica odontológica programada con anterioridad.,certificado_76461656_20260616.pdf,Aprobado,515802
+7297,Cita médica odontológica programada con anterioridad.,certificado_78004127_20260616.pdf,Aprobado,515810
+7298,Cita médica odontológica programada con anterioridad.,certificado_79126954_20260616.pdf,Rechazado,515854
+7299,Problemas familiares de fuerza mayor.,certificado_72209302_20260616.pdf,Aprobado,515898
+7300,Problemas familiares de fuerza mayor.,certificado_75810523_20260617.pdf,Pendiente,516011
+7301,Problemas familiares de fuerza mayor.,certificado_70665578_20260617.pdf,Aprobado,516013
+7302,Cita médica odontológica programada con anterioridad.,certificado_65812795_20260617.pdf,Aprobado,516096
+7303,Problemas familiares de fuerza mayor.,certificado_72861964_20260617.pdf,Rechazado,516114
+7304,Problemas familiares de fuerza mayor.,certificado_76461656_20260617.pdf,Pendiente,516167
+7305,Suspensión de transporte público de su zona.,certificado_73402770_20260617.pdf,Pendiente,516259
+7306,Viaje urgente programado fuera de la ciudad.,certificado_75222999_20260617.pdf,Rechazado,516261
+7307,Problemas de salud del alumno (fiebre y malestar general).,certificado_74572837_20260617.pdf,Aprobado,516273
+7308,Viaje urgente programado fuera de la ciudad.,certificado_72557067_20260617.pdf,Rechazado,516285
+7309,Cita médica odontológica programada con anterioridad.,certificado_68118095_20260618.pdf,Aprobado,516363
+7310,Cita médica odontológica programada con anterioridad.,certificado_78853731_20260618.pdf,Aprobado,516371
+7311,Suspensión de transporte público de su zona.,certificado_61946613_20260618.pdf,Pendiente,516496
+7312,Suspensión de transporte público de su zona.,certificado_63431728_20260618.pdf,Pendiente,516681
+7313,Cita médica odontológica programada con anterioridad.,certificado_71131145_20260619.pdf,Pendiente,516708
+7314,Problemas de salud del alumno (fiebre y malestar general).,certificado_62610757_20260619.pdf,Aprobado,516761
+7315,Cita médica odontológica programada con anterioridad.,certificado_63152784_20260619.pdf,Pendiente,516841
+7316,Cita médica odontológica programada con anterioridad.,certificado_62630919_20260619.pdf,Aprobado,516857
+7317,Problemas familiares de fuerza mayor.,certificado_64241673_20260619.pdf,Pendiente,516868
+7318,Suspensión de transporte público de su zona.,certificado_61034119_20260622.pdf,Aprobado,517059
+7319,Viaje urgente programado fuera de la ciudad.,certificado_71339739_20260622.pdf,Aprobado,517070
+7320,Suspensión de transporte público de su zona.,certificado_66063152_20260622.pdf,Rechazado,517080
+7321,Problemas de salud del alumno (fiebre y malestar general).,certificado_77318337_20260622.pdf,Aprobado,517112
+7322,Viaje urgente programado fuera de la ciudad.,certificado_64974651_20260622.pdf,Rechazado,517175
+7323,Cita médica odontológica programada con anterioridad.,certificado_76737911_20260622.pdf,Pendiente,517189
+7324,Suspensión de transporte público de su zona.,certificado_76461656_20260622.pdf,Aprobado,517262
+7325,Cita médica odontológica programada con anterioridad.,certificado_60022680_20260622.pdf,Aprobado,517339
+7326,Cita médica odontológica programada con anterioridad.,certificado_63616018_20260623.pdf,Aprobado,517623
+7327,Suspensión de transporte público de su zona.,certificado_72557067_20260623.pdf,Aprobado,517745
+7328,Problemas de salud del alumno (fiebre y malestar general).,certificado_78795543_20260624.pdf,Aprobado,517959
+7329,Suspensión de transporte público de su zona.,certificado_69750229_20260624.pdf,Aprobado,517993
+7330,Cita médica odontológica programada con anterioridad.,certificado_78004127_20260624.pdf,Aprobado,518000
+7331,Problemas familiares de fuerza mayor.,certificado_79765173_20260624.pdf,Pendiente,518093
+7332,Problemas familiares de fuerza mayor.,certificado_71498139_20260624.pdf,Rechazado,518127
+7333,Cita médica odontológica programada con anterioridad.,certificado_64974651_20260625.pdf,Pendiente,518270
+7334,Cita médica odontológica programada con anterioridad.,certificado_63231757_20260625.pdf,Rechazado,518346
+7335,Problemas familiares de fuerza mayor.,certificado_66459643_20260625.pdf,Aprobado,518359
+7336,Suspensión de transporte público de su zona.,certificado_68838264_20260625.pdf,Pendiente,518362
+7337,Viaje urgente programado fuera de la ciudad.,certificado_76689062_20260625.pdf,Aprobado,518375
+7338,Suspensión de transporte público de su zona.,certificado_66063152_20260626.pdf,Rechazado,518540
+7339,Suspensión de transporte público de su zona.,certificado_72861964_20260626.pdf,Pendiente,518669
+7340,Cita médica odontológica programada con anterioridad.,certificado_76689062_20260626.pdf,Pendiente,518740
+7341,Suspensión de transporte público de su zona.,certificado_61991718_20260626.pdf,Pendiente,518775
+7342,Problemas familiares de fuerza mayor.,certificado_78760075_20260626.pdf,Pendiente,518811
+7343,Problemas familiares de fuerza mayor.,certificado_62550749_20260626.pdf,Rechazado,518815
+7344,Suspensión de transporte público de su zona.,certificado_67071676_20260626.pdf,Pendiente,518865
+7345,Cita médica odontológica programada con anterioridad.,certificado_73182955_20260629.pdf,Rechazado,518902
+7346,Problemas de salud del alumno (fiebre y malestar general).,certificado_79658706_20260629.pdf,Pendiente,518929
+7347,Problemas familiares de fuerza mayor.,certificado_62664386_20260629.pdf,Rechazado,518966
+7348,Problemas de salud del alumno (fiebre y malestar general).,certificado_66801907_20260629.pdf,Pendiente,518978
+7349,Problemas familiares de fuerza mayor.,certificado_76128405_20260629.pdf,Rechazado,519096
+7350,Viaje urgente programado fuera de la ciudad.,certificado_77539282_20260629.pdf,Aprobado,519169
+7351,Problemas familiares de fuerza mayor.,certificado_71512406_20260630.pdf,Pendiente,519314
+7352,Problemas familiares de fuerza mayor.,certificado_78911435_20260701.pdf,Rechazado,519638
+7353,Problemas de salud del alumno (fiebre y malestar general).,certificado_66173771_20260701.pdf,Rechazado,519655
+7354,Problemas de salud del alumno (fiebre y malestar general).,certificado_60617016_20260701.pdf,Pendiente,519749
+7355,Suspensión de transporte público de su zona.,certificado_75827101_20260701.pdf,Aprobado,519753
+7356,Problemas de salud del alumno (fiebre y malestar general).,certificado_68340859_20260701.pdf,Aprobado,519821
+7357,Problemas familiares de fuerza mayor.,certificado_66561509_20260701.pdf,Pendiente,519907
+7358,Cita médica odontológica programada con anterioridad.,certificado_73039212_20260702.pdf,Rechazado,519969
+7359,Problemas de salud del alumno (fiebre y malestar general).,certificado_65210143_20260702.pdf,Rechazado,520099
+7360,Problemas familiares de fuerza mayor.,certificado_65495758_20260702.pdf,Aprobado,520112
+7361,Cita médica odontológica programada con anterioridad.,certificado_70874022_20260702.pdf,Aprobado,520224
+7362,Viaje urgente programado fuera de la ciudad.,certificado_79413063_20260702.pdf,Aprobado,520268
+7363,Problemas de salud del alumno (fiebre y malestar general).,certificado_62943446_20260703.pdf,Aprobado,520336
+7364,Problemas familiares de fuerza mayor.,certificado_76883555_20260703.pdf,Rechazado,520561
+7365,Suspensión de transporte público de su zona.,certificado_76588250_20260703.pdf,Rechazado,520684
+7366,Viaje urgente programado fuera de la ciudad.,certificado_73479483_20260703.pdf,Aprobado,520691
+7367,Suspensión de transporte público de su zona.,certificado_74893193_20260706.pdf,Pendiente,520700
+7368,Suspensión de transporte público de su zona.,certificado_68118095_20260706.pdf,Rechazado,520743
+7369,Problemas familiares de fuerza mayor.,certificado_62389603_20260706.pdf,Aprobado,520789
+7370,Cita médica odontológica programada con anterioridad.,certificado_72049802_20260706.pdf,Pendiente,520820
+7371,Suspensión de transporte público de su zona.,certificado_63231757_20260706.pdf,Rechazado,520901
+7372,Cita médica odontológica programada con anterioridad.,certificado_65596165_20260706.pdf,Rechazado,520932
+7373,Problemas familiares de fuerza mayor.,certificado_63651817_20260707.pdf,Pendiente,521076
+7374,Suspensión de transporte público de su zona.,certificado_68455673_20260707.pdf,Aprobado,521218
+7375,Problemas de salud del alumno (fiebre y malestar general).,certificado_70874022_20260707.pdf,Rechazado,521319
+7376,Suspensión de transporte público de su zona.,certificado_73069513_20260707.pdf,Pendiente,521404
+7377,Problemas familiares de fuerza mayor.,certificado_76183036_20260707.pdf,Aprobado,521409
+7378,Problemas familiares de fuerza mayor.,certificado_60735287_20260708.pdf,Rechazado,521452
+7379,Problemas de salud del alumno (fiebre y malestar general).,certificado_79533904_20260708.pdf,Pendiente,521501
+7380,Problemas familiares de fuerza mayor.,certificado_74472809_20260708.pdf,Pendiente,521587
+7381,Problemas familiares de fuerza mayor.,certificado_78095488_20260708.pdf,Rechazado,521623
+7382,Problemas de salud del alumno (fiebre y malestar general).,certificado_76883555_20260708.pdf,Aprobado,521656
+7383,Viaje urgente programado fuera de la ciudad.,certificado_60022680_20260708.pdf,Aprobado,521719
+7384,Viaje urgente programado fuera de la ciudad.,certificado_75137265_20260709.pdf,Aprobado,521902
+7385,Problemas de salud del alumno (fiebre y malestar general).,certificado_70599902_20260709.pdf,Rechazado,521981
+7386,Problemas familiares de fuerza mayor.,certificado_79126954_20260709.pdf,Rechazado,522059
+7387,Problemas de salud del alumno (fiebre y malestar general).,certificado_63627386_20260709.pdf,Rechazado,522124
+7388,Viaje urgente programado fuera de la ciudad.,certificado_66173771_20260710.pdf,Pendiente,522210
+7389,Suspensión de transporte público de su zona.,certificado_73047163_20260710.pdf,Pendiente,522248
+7390,Suspensión de transporte público de su zona.,certificado_70599902_20260710.pdf,Pendiente,522346
+7391,Problemas de salud del alumno (fiebre y malestar general).,certificado_78321524_20260710.pdf,Rechazado,522436
+7392,Problemas familiares de fuerza mayor.,certificado_73402770_20260710.pdf,Pendiente,522464
+7393,Problemas familiares de fuerza mayor.,certificado_73479483_20260710.pdf,Pendiente,522516
+7394,Cita médica odontológica programada con anterioridad.,certificado_60735287_20260713.pdf,Aprobado,522547
+7395,Suspensión de transporte público de su zona.,certificado_64974651_20260713.pdf,Aprobado,522650
+7396,Cita médica odontológica programada con anterioridad.,certificado_64241673_20260713.pdf,Rechazado,522708
+7397,Viaje urgente programado fuera de la ciudad.,certificado_72588694_20260713.pdf,Aprobado,522712
+7398,Problemas familiares de fuerza mayor.,certificado_62826917_20260713.pdf,Pendiente,522720
+7399,Problemas familiares de fuerza mayor.,certificado_69814522_20260713.pdf,Rechazado,522798
+7400,Suspensión de transporte público de su zona.,certificado_66170196_20260713.pdf,Rechazado,522857
+7401,Problemas de salud del alumno (fiebre y malestar general).,certificado_60828986_20260713.pdf,Rechazado,522884
+7402,Problemas de salud del alumno (fiebre y malestar general).,certificado_71117158_20260714.pdf,Pendiente,522953
+7403,Problemas de salud del alumno (fiebre y malestar general).,certificado_70874022_20260714.pdf,Aprobado,523144
+7404,Problemas familiares de fuerza mayor.,certificado_79126954_20260714.pdf,Rechazado,523154
+7405,Problemas familiares de fuerza mayor.,certificado_70963920_20260714.pdf,Rechazado,523173
+7406,Suspensión de transporte público de su zona.,certificado_79658706_20260715.pdf,Pendiente,523309
+7407,Suspensión de transporte público de su zona.,certificado_64974651_20260715.pdf,Aprobado,523380
+7408,Problemas de salud del alumno (fiebre y malestar general).,certificado_64006430_20260715.pdf,Rechazado,523404
+7409,Problemas familiares de fuerza mayor.,certificado_74552940_20260715.pdf,Rechazado,523428
+7410,Viaje urgente programado fuera de la ciudad.,certificado_68120882_20260715.pdf,Aprobado,523534
+7411,Problemas familiares de fuerza mayor.,certificado_64643746_20260716.pdf,Rechazado,523697
+7412,Problemas familiares de fuerza mayor.,certificado_76689080_20260716.pdf,Aprobado,523771
+7413,Suspensión de transporte público de su zona.,certificado_62382767_20260716.pdf,Aprobado,523966
+7414,Cita médica odontológica programada con anterioridad.,certificado_74478630_20260717.pdf,Pendiente,524013
+7415,Problemas de salud del alumno (fiebre y malestar general).,certificado_60138372_20260717.pdf,Aprobado,524208
+7416,Viaje urgente programado fuera de la ciudad.,certificado_72094204_20260717.pdf,Rechazado,524212
+7417,Problemas familiares de fuerza mayor.,certificado_75447447_20260720.pdf,Aprobado,524437
+7418,Viaje urgente programado fuera de la ciudad.,certificado_61746602_20260720.pdf,Aprobado,524447
+7419,Problemas de salud del alumno (fiebre y malestar general).,certificado_74865021_20260720.pdf,Pendiente,524547
+7420,Viaje urgente programado fuera de la ciudad.,certificado_70874022_20260720.pdf,Pendiente,524604
+7421,Problemas familiares de fuerza mayor.,certificado_73402770_20260720.pdf,Aprobado,524654

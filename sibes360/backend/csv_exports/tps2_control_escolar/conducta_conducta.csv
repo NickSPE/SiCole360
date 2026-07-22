@@ -1,0 +1,715 @@
+id,fecha,tipo,descripcion,estudiante_id
+3692,2024-09-06,Positiva,"Excelente aporte en el taller de ciencias, ayudando a integrar a compañeros nuevos.",9074
+3693,2024-10-09,Positiva,Representación sobresaliente de la institución en las Olimpiadas de Matemáticas.,9074
+3694,2024-03-01,Grave,Escribir grafitis en el mobiliario escolar dentro del aula de clases.,9271
+3695,2024-03-11,Grave,Agresión física menor en el patio durante el horario de salida.,9271
+3696,2024-09-20,Leve,Conversación reiterativa e interrupción durante la explicación del docente.,9271
+3697,2024-11-07,Grave,Falta de respeto verbal a un compañero de aula durante las horas de recreo.,8950
+3698,2024-03-19,Grave,Agresión física menor en el patio durante el horario de salida.,9141
+3699,2024-06-10,Grave,Agresión física menor en el patio durante el horario de salida.,9141
+3700,2024-03-18,Positiva,Representación sobresaliente de la institución en las Olimpiadas de Matemáticas.,9128
+3701,2024-04-09,Grave,Retiro del aula de clases sin autorización previa del docente a cargo.,9128
+3702,2024-04-15,Grave,Falta de respeto verbal a un compañero de aula durante las horas de recreo.,9137
+3703,2024-03-15,Grave,Retiro del aula de clases sin autorización previa del docente a cargo.,9137
+3704,2024-03-04,Positiva,Representación sobresaliente de la institución en las Olimpiadas de Matemáticas.,9069
+3705,2024-04-23,Leve,Conversación reiterativa e interrupción durante la explicación del docente.,9069
+3706,2024-09-25,Positiva,Representación sobresaliente de la institución en las Olimpiadas de Matemáticas.,9069
+3707,2024-06-06,Grave,Agresión física menor en el patio durante el horario de salida.,9013
+3708,2024-03-05,Positiva,Apoyo solidario voluntario en el mantenimiento de las áreas verdes del colegio.,9013
+3709,2024-08-05,Grave,Falta de respeto verbal a un compañero de aula durante las horas de recreo.,9270
+3710,2024-10-01,Positiva,Representación sobresaliente de la institución en las Olimpiadas de Matemáticas.,9178
+3711,2024-04-08,Leve,Uso indebido de celular dentro del aula de clases a pesar de advertencia previa.,9025
+3712,2024-04-09,Grave,Falta de respeto verbal a un compañero de aula durante las horas de recreo.,9025
+3713,2024-06-25,Leve,Llegada tardía al aula tras el toque de timbre del receso escolar.,8987
+3714,2024-10-21,Leve,Conversación reiterativa e interrupción durante la explicación del docente.,8987
+3715,2024-07-02,Leve,Incumplimiento de la entrega de tareas asignadas en dos sesiones consecutivas.,9066
+3716,2024-06-17,Grave,Falta de respeto verbal a un compañero de aula durante las horas de recreo.,9062
+3717,2024-09-23,Grave,Falta de respeto verbal a un compañero de aula durante las horas de recreo.,9062
+3718,2024-09-12,Leve,Conversación reiterativa e interrupción durante la explicación del docente.,9062
+3719,2024-05-20,Leve,Llegada tardía al aula tras el toque de timbre del receso escolar.,9096
+3720,2024-10-14,Grave,Falta de respeto verbal a un compañero de aula durante las horas de recreo.,9000
+3721,2024-05-27,Grave,Falta de respeto verbal a un compañero de aula durante las horas de recreo.,9000
+3722,2024-03-12,Grave,Falta de respeto verbal a un compañero de aula durante las horas de recreo.,8957
+3723,2024-09-02,Grave,Escribir grafitis en el mobiliario escolar dentro del aula de clases.,8957
+3724,2024-04-25,Positiva,"Excelente aporte en el taller de ciencias, ayudando a integrar a compañeros nuevos.",8957
+3725,2024-08-12,Grave,Escribir grafitis en el mobiliario escolar dentro del aula de clases.,8948
+3726,2024-11-11,Positiva,Apoyo solidario voluntario en el mantenimiento de las áreas verdes del colegio.,9064
+3727,2024-04-16,Positiva,Mostró liderazgo positivo ordenando el aula de cómputo tras finalizar la sesión.,9064
+3728,2024-10-04,Leve,Llegada tardía al aula tras el toque de timbre del receso escolar.,9065
+3729,2024-07-24,Grave,Falta de respeto verbal a un compañero de aula durante las horas de recreo.,9020
+3730,2024-11-15,Leve,Conversación reiterativa e interrupción durante la explicación del docente.,8947
+3731,2024-10-09,Grave,Falta de respeto verbal a un compañero de aula durante las horas de recreo.,9192
+3732,2024-04-22,Grave,Retiro del aula de clases sin autorización previa del docente a cargo.,9192
+3733,2024-09-23,Grave,Retiro del aula de clases sin autorización previa del docente a cargo.,9192
+3734,2024-04-08,Grave,Agresión física menor en el patio durante el horario de salida.,9220
+3735,2024-05-06,Leve,Conversación reiterativa e interrupción durante la explicación del docente.,9220
+3736,2024-03-06,Positiva,Apoyo solidario voluntario en el mantenimiento de las áreas verdes del colegio.,9220
+3737,2024-11-06,Leve,Llegada tardía al aula tras el toque de timbre del receso escolar.,8964
+3738,2024-11-08,Leve,Uso indebido de celular dentro del aula de clases a pesar de advertencia previa.,8964
+3739,2024-04-18,Grave,Escribir grafitis en el mobiliario escolar dentro del aula de clases.,9194
+3740,2024-09-19,Grave,Falta de respeto verbal a un compañero de aula durante las horas de recreo.,9194
+3741,2024-05-20,Leve,Llegada tardía al aula tras el toque de timbre del receso escolar.,9031
+3742,2024-09-23,Leve,Uso indebido de celular dentro del aula de clases a pesar de advertencia previa.,9031
+3743,2024-08-05,Positiva,Representación sobresaliente de la institución en las Olimpiadas de Matemáticas.,9203
+3744,2024-06-21,Positiva,Representación sobresaliente de la institución en las Olimpiadas de Matemáticas.,9203
+3745,2024-11-22,Positiva,Apoyo solidario voluntario en el mantenimiento de las áreas verdes del colegio.,9164
+3746,2024-03-15,Grave,Agresión física menor en el patio durante el horario de salida.,9164
+3747,2024-05-20,Positiva,Mostró liderazgo positivo ordenando el aula de cómputo tras finalizar la sesión.,9287
+3748,2024-11-11,Leve,Uso indebido de celular dentro del aula de clases a pesar de advertencia previa.,9110
+3749,2024-03-18,Grave,Escribir grafitis en el mobiliario escolar dentro del aula de clases.,9110
+3750,2024-09-19,Positiva,"Excelente aporte en el taller de ciencias, ayudando a integrar a compañeros nuevos.",9232
+3751,2024-10-10,Grave,Agresión física menor en el patio durante el horario de salida.,9232
+3752,2024-05-13,Leve,Llegada tardía al aula tras el toque de timbre del receso escolar.,9232
+3753,2024-11-08,Leve,Llegada tardía al aula tras el toque de timbre del receso escolar.,9328
+3754,2024-04-01,Positiva,Representación sobresaliente de la institución en las Olimpiadas de Matemáticas.,9037
+3755,2024-07-04,Leve,Uso indebido de celular dentro del aula de clases a pesar de advertencia previa.,8998
+3756,2024-04-10,Positiva,Apoyo solidario voluntario en el mantenimiento de las áreas verdes del colegio.,8998
+3757,2024-06-17,Grave,Retiro del aula de clases sin autorización previa del docente a cargo.,9148
+3758,2024-08-09,Positiva,"Excelente aporte en el taller de ciencias, ayudando a integrar a compañeros nuevos.",9230
+3759,2024-08-19,Leve,Uso indebido de celular dentro del aula de clases a pesar de advertencia previa.,9230
+3760,2024-11-04,Grave,Agresión física menor en el patio durante el horario de salida.,9282
+3761,2024-03-25,Grave,Agresión física menor en el patio durante el horario de salida.,9282
+3762,2024-08-12,Positiva,Apoyo solidario voluntario en el mantenimiento de las áreas verdes del colegio.,9282
+3763,2024-11-07,Grave,Falta de respeto verbal a un compañero de aula durante las horas de recreo.,9002
+3764,2024-08-15,Grave,Falta de respeto verbal a un compañero de aula durante las horas de recreo.,9002
+3765,2024-05-08,Positiva,"Excelente aporte en el taller de ciencias, ayudando a integrar a compañeros nuevos.",9133
+3766,2024-09-02,Leve,Llegada tardía al aula tras el toque de timbre del receso escolar.,9133
+3767,2024-04-12,Grave,Escribir grafitis en el mobiliario escolar dentro del aula de clases.,8986
+3768,2024-07-17,Leve,Conversación reiterativa e interrupción durante la explicación del docente.,8986
+3769,2024-09-11,Positiva,"Excelente aporte en el taller de ciencias, ayudando a integrar a compañeros nuevos.",8986
+3770,2024-09-23,Leve,Llegada tardía al aula tras el toque de timbre del receso escolar.,9134
+3771,2024-11-04,Grave,Retiro del aula de clases sin autorización previa del docente a cargo.,9134
+3772,2024-03-11,Grave,Falta de respeto verbal a un compañero de aula durante las horas de recreo.,9105
+3773,2024-08-05,Leve,Uso indebido de celular dentro del aula de clases a pesar de advertencia previa.,9105
+3774,2024-09-02,Leve,Incumplimiento de la entrega de tareas asignadas en dos sesiones consecutivas.,9086
+3775,2024-10-09,Positiva,Mostró liderazgo positivo ordenando el aula de cómputo tras finalizar la sesión.,9197
+3776,2024-07-02,Positiva,"Excelente aporte en el taller de ciencias, ayudando a integrar a compañeros nuevos.",9197
+3777,2024-05-16,Grave,Agresión física menor en el patio durante el horario de salida.,9197
+3778,2024-04-15,Grave,Falta de respeto verbal a un compañero de aula durante las horas de recreo.,9316
+3779,2024-08-26,Leve,Uso indebido de celular dentro del aula de clases a pesar de advertencia previa.,9316
+3780,2024-03-25,Positiva,Apoyo solidario voluntario en el mantenimiento de las áreas verdes del colegio.,9238
+3781,2024-05-14,Grave,Escribir grafitis en el mobiliario escolar dentro del aula de clases.,9238
+3782,2024-09-02,Grave,Agresión física menor en el patio durante el horario de salida.,9238
+3783,2024-04-24,Positiva,Apoyo solidario voluntario en el mantenimiento de las áreas verdes del colegio.,8976
+3784,2024-07-15,Leve,Incumplimiento de la entrega de tareas asignadas en dos sesiones consecutivas.,8976
+3785,2024-06-24,Positiva,"Excelente aporte en el taller de ciencias, ayudando a integrar a compañeros nuevos.",9339
+3786,2024-07-08,Positiva,"Excelente aporte en el taller de ciencias, ayudando a integrar a compañeros nuevos.",9184
+3787,2024-10-01,Positiva,Mostró liderazgo positivo ordenando el aula de cómputo tras finalizar la sesión.,9184
+3788,2024-10-04,Positiva,Representación sobresaliente de la institución en las Olimpiadas de Matemáticas.,9184
+3789,2024-03-15,Leve,Llegada tardía al aula tras el toque de timbre del receso escolar.,9277
+3790,2024-06-20,Positiva,Representación sobresaliente de la institución en las Olimpiadas de Matemáticas.,9277
+3791,2024-06-21,Grave,Retiro del aula de clases sin autorización previa del docente a cargo.,9277
+3792,2024-10-09,Grave,Falta de respeto verbal a un compañero de aula durante las horas de recreo.,8944
+3793,2024-04-22,Grave,Escribir grafitis en el mobiliario escolar dentro del aula de clases.,8944
+3794,2024-04-15,Positiva,Apoyo solidario voluntario en el mantenimiento de las áreas verdes del colegio.,8944
+3795,2024-06-10,Leve,Llegada tardía al aula tras el toque de timbre del receso escolar.,9021
+3796,2024-05-14,Leve,Llegada tardía al aula tras el toque de timbre del receso escolar.,9021
+3797,2024-07-18,Positiva,"Excelente aporte en el taller de ciencias, ayudando a integrar a compañeros nuevos.",9021
+3798,2024-06-10,Grave,Falta de respeto verbal a un compañero de aula durante las horas de recreo.,8980
+3799,2024-05-13,Leve,Incumplimiento de la entrega de tareas asignadas en dos sesiones consecutivas.,8978
+3800,2024-04-15,Leve,Llegada tardía al aula tras el toque de timbre del receso escolar.,8978
+3801,2024-03-13,Leve,Incumplimiento de la entrega de tareas asignadas en dos sesiones consecutivas.,9047
+3802,2024-07-22,Positiva,Representación sobresaliente de la institución en las Olimpiadas de Matemáticas.,9047
+3803,2024-10-14,Grave,Retiro del aula de clases sin autorización previa del docente a cargo.,9272
+3804,2024-06-25,Grave,Escribir grafitis en el mobiliario escolar dentro del aula de clases.,9272
+3805,2024-03-08,Grave,Agresión física menor en el patio durante el horario de salida.,9272
+3806,2024-07-15,Leve,Conversación reiterativa e interrupción durante la explicación del docente.,9067
+3807,2024-09-23,Positiva,"Excelente aporte en el taller de ciencias, ayudando a integrar a compañeros nuevos.",9067
+3808,2024-04-15,Grave,Falta de respeto verbal a un compañero de aula durante las horas de recreo.,9236
+3809,2024-10-04,Grave,Escribir grafitis en el mobiliario escolar dentro del aula de clases.,9247
+3810,2024-08-12,Grave,Retiro del aula de clases sin autorización previa del docente a cargo.,9036
+3811,2024-05-06,Grave,Retiro del aula de clases sin autorización previa del docente a cargo.,9011
+3812,2024-05-01,Leve,Incumplimiento de la entrega de tareas asignadas en dos sesiones consecutivas.,9011
+3813,2024-04-15,Grave,Escribir grafitis en el mobiliario escolar dentro del aula de clases.,9281
+3814,2024-03-21,Positiva,Mostró liderazgo positivo ordenando el aula de cómputo tras finalizar la sesión.,9281
+3815,2024-03-21,Positiva,Representación sobresaliente de la institución en las Olimpiadas de Matemáticas.,9281
+3816,2024-09-02,Grave,Falta de respeto verbal a un compañero de aula durante las horas de recreo.,9244
+3817,2024-09-05,Leve,Uso indebido de celular dentro del aula de clases a pesar de advertencia previa.,9244
+3818,2024-11-11,Leve,Conversación reiterativa e interrupción durante la explicación del docente.,9244
+3819,2024-11-18,Grave,Escribir grafitis en el mobiliario escolar dentro del aula de clases.,9034
+3820,2024-06-12,Grave,Falta de respeto verbal a un compañero de aula durante las horas de recreo.,9034
+3821,2024-06-11,Leve,Llegada tardía al aula tras el toque de timbre del receso escolar.,9034
+3822,2024-11-06,Positiva,Representación sobresaliente de la institución en las Olimpiadas de Matemáticas.,9026
+3823,2024-08-20,Leve,Llegada tardía al aula tras el toque de timbre del receso escolar.,9026
+3824,2024-05-20,Leve,Llegada tardía al aula tras el toque de timbre del receso escolar.,9026
+3825,2024-08-12,Leve,Conversación reiterativa e interrupción durante la explicación del docente.,8960
+3826,2024-04-18,Grave,Agresión física menor en el patio durante el horario de salida.,8960
+3827,2024-05-13,Grave,Agresión física menor en el patio durante el horario de salida.,9055
+3828,2024-08-05,Leve,Incumplimiento de la entrega de tareas asignadas en dos sesiones consecutivas.,9055
+3829,2024-10-09,Leve,Llegada tardía al aula tras el toque de timbre del receso escolar.,9149
+3830,2024-06-06,Leve,Incumplimiento de la entrega de tareas asignadas en dos sesiones consecutivas.,9149
+3831,2024-11-18,Grave,Retiro del aula de clases sin autorización previa del docente a cargo.,8997
+3832,2024-10-07,Leve,Incumplimiento de la entrega de tareas asignadas en dos sesiones consecutivas.,8997
+3833,2024-06-03,Leve,Conversación reiterativa e interrupción durante la explicación del docente.,9256
+3834,2024-05-20,Positiva,Mostró liderazgo positivo ordenando el aula de cómputo tras finalizar la sesión.,9256
+3835,2024-03-11,Positiva,Apoyo solidario voluntario en el mantenimiento de las áreas verdes del colegio.,9256
+3836,2024-10-22,Positiva,Representación sobresaliente de la institución en las Olimpiadas de Matemáticas.,9330
+3837,2024-09-04,Leve,Conversación reiterativa e interrupción durante la explicación del docente.,9330
+3838,2024-03-25,Leve,Uso indebido de celular dentro del aula de clases a pesar de advertencia previa.,8943
+3839,2024-11-05,Grave,Retiro del aula de clases sin autorización previa del docente a cargo.,8966
+3840,2024-08-05,Grave,Retiro del aula de clases sin autorización previa del docente a cargo.,8966
+3841,2024-08-08,Grave,Falta de respeto verbal a un compañero de aula durante las horas de recreo.,8977
+3842,2024-04-17,Positiva,Representación sobresaliente de la institución en las Olimpiadas de Matemáticas.,9058
+3843,2024-04-22,Leve,Llegada tardía al aula tras el toque de timbre del receso escolar.,9058
+3844,2024-08-12,Positiva,Apoyo solidario voluntario en el mantenimiento de las áreas verdes del colegio.,9268
+3845,2024-03-21,Positiva,Mostró liderazgo positivo ordenando el aula de cómputo tras finalizar la sesión.,8956
+3846,2024-04-15,Grave,Falta de respeto verbal a un compañero de aula durante las horas de recreo.,8956
+3847,2024-06-20,Leve,Uso indebido de celular dentro del aula de clases a pesar de advertencia previa.,9173
+3848,2024-09-12,Leve,Llegada tardía al aula tras el toque de timbre del receso escolar.,9173
+3849,2024-05-23,Leve,Incumplimiento de la entrega de tareas asignadas en dos sesiones consecutivas.,9108
+3850,2024-10-03,Grave,Retiro del aula de clases sin autorización previa del docente a cargo.,9226
+3851,2024-07-17,Positiva,Apoyo solidario voluntario en el mantenimiento de las áreas verdes del colegio.,9226
+3852,2024-08-15,Leve,Llegada tardía al aula tras el toque de timbre del receso escolar.,8946
+3853,2024-03-04,Grave,Agresión física menor en el patio durante el horario de salida.,9023
+3854,2024-07-03,Grave,Retiro del aula de clases sin autorización previa del docente a cargo.,9023
+3855,2024-06-10,Grave,Escribir grafitis en el mobiliario escolar dentro del aula de clases.,9044
+3856,2024-08-07,Grave,Retiro del aula de clases sin autorización previa del docente a cargo.,9044
+3857,2024-06-24,Grave,Retiro del aula de clases sin autorización previa del docente a cargo.,9158
+3858,2024-10-15,Leve,Conversación reiterativa e interrupción durante la explicación del docente.,9294
+3859,2024-05-17,Positiva,"Excelente aporte en el taller de ciencias, ayudando a integrar a compañeros nuevos.",9294
+3860,2024-10-14,Leve,Llegada tardía al aula tras el toque de timbre del receso escolar.,9200
+3861,2024-08-15,Leve,Llegada tardía al aula tras el toque de timbre del receso escolar.,9200
+3862,2024-11-04,Positiva,Apoyo solidario voluntario en el mantenimiento de las áreas verdes del colegio.,9200
+3863,2024-06-25,Positiva,Mostró liderazgo positivo ordenando el aula de cómputo tras finalizar la sesión.,8952
+3864,2024-11-25,Positiva,Mostró liderazgo positivo ordenando el aula de cómputo tras finalizar la sesión.,9340
+3865,2024-07-05,Leve,Llegada tardía al aula tras el toque de timbre del receso escolar.,9340
+3866,2024-05-06,Leve,Incumplimiento de la entrega de tareas asignadas en dos sesiones consecutivas.,9340
+3867,2024-08-01,Positiva,Apoyo solidario voluntario en el mantenimiento de las áreas verdes del colegio.,9214
+3868,2024-10-25,Positiva,"Excelente aporte en el taller de ciencias, ayudando a integrar a compañeros nuevos.",8953
+3869,2024-08-19,Grave,Agresión física menor en el patio durante el horario de salida.,8953
+3870,2024-07-09,Grave,Escribir grafitis en el mobiliario escolar dentro del aula de clases.,8993
+3871,2024-07-09,Positiva,"Excelente aporte en el taller de ciencias, ayudando a integrar a compañeros nuevos.",8993
+3872,2024-03-07,Leve,Llegada tardía al aula tras el toque de timbre del receso escolar.,9291
+3873,2024-05-03,Positiva,Mostró liderazgo positivo ordenando el aula de cómputo tras finalizar la sesión.,9309
+3874,2024-08-12,Grave,Retiro del aula de clases sin autorización previa del docente a cargo.,9276
+3875,2024-06-06,Grave,Escribir grafitis en el mobiliario escolar dentro del aula de clases.,9332
+3876,2024-10-23,Grave,Agresión física menor en el patio durante el horario de salida.,9332
+3877,2024-10-25,Positiva,Representación sobresaliente de la institución en las Olimpiadas de Matemáticas.,9076
+3878,2024-03-19,Positiva,Mostró liderazgo positivo ordenando el aula de cómputo tras finalizar la sesión.,9076
+3879,2024-05-14,Grave,Agresión física menor en el patio durante el horario de salida.,9140
+3880,2024-05-13,Leve,Incumplimiento de la entrega de tareas asignadas en dos sesiones consecutivas.,9140
+3881,2024-07-12,Grave,Falta de respeto verbal a un compañero de aula durante las horas de recreo.,9140
+3882,2024-05-13,Grave,Escribir grafitis en el mobiliario escolar dentro del aula de clases.,9168
+3883,2024-08-02,Positiva,Mostró liderazgo positivo ordenando el aula de cómputo tras finalizar la sesión.,9102
+3884,2024-05-09,Grave,Escribir grafitis en el mobiliario escolar dentro del aula de clases.,9006
+3885,2024-09-02,Leve,Conversación reiterativa e interrupción durante la explicación del docente.,9006
+3886,2024-09-04,Positiva,"Excelente aporte en el taller de ciencias, ayudando a integrar a compañeros nuevos.",9049
+3887,2024-04-18,Grave,Retiro del aula de clases sin autorización previa del docente a cargo.,9049
+3888,2024-09-09,Leve,Incumplimiento de la entrega de tareas asignadas en dos sesiones consecutivas.,9049
+3889,2024-08-01,Grave,Retiro del aula de clases sin autorización previa del docente a cargo.,9114
+3890,2024-10-21,Grave,Falta de respeto verbal a un compañero de aula durante las horas de recreo.,9114
+3891,2024-04-08,Leve,Llegada tardía al aula tras el toque de timbre del receso escolar.,9174
+3892,2024-04-09,Grave,Agresión física menor en el patio durante el horario de salida.,9174
+3893,2024-10-21,Leve,Uso indebido de celular dentro del aula de clases a pesar de advertencia previa.,9174
+3894,2024-06-21,Positiva,Representación sobresaliente de la institución en las Olimpiadas de Matemáticas.,9107
+3895,2024-03-04,Leve,Llegada tardía al aula tras el toque de timbre del receso escolar.,9107
+3896,2024-06-10,Positiva,Mostró liderazgo positivo ordenando el aula de cómputo tras finalizar la sesión.,9107
+3897,2024-06-06,Positiva,Mostró liderazgo positivo ordenando el aula de cómputo tras finalizar la sesión.,9138
+3898,2024-07-18,Positiva,"Excelente aporte en el taller de ciencias, ayudando a integrar a compañeros nuevos.",9274
+3899,2024-04-12,Grave,Falta de respeto verbal a un compañero de aula durante las horas de recreo.,9274
+3900,2024-05-17,Leve,Conversación reiterativa e interrupción durante la explicación del docente.,9274
+3901,2024-04-19,Positiva,Mostró liderazgo positivo ordenando el aula de cómputo tras finalizar la sesión.,9092
+3902,2024-09-12,Positiva,Mostró liderazgo positivo ordenando el aula de cómputo tras finalizar la sesión.,9092
+3903,2024-04-15,Grave,Falta de respeto verbal a un compañero de aula durante las horas de recreo.,9097
+3904,2024-09-25,Leve,Llegada tardía al aula tras el toque de timbre del receso escolar.,9267
+3905,2024-08-23,Positiva,Mostró liderazgo positivo ordenando el aula de cómputo tras finalizar la sesión.,9267
+3906,2024-10-24,Leve,Incumplimiento de la entrega de tareas asignadas en dos sesiones consecutivas.,9146
+3907,2024-03-22,Leve,Uso indebido de celular dentro del aula de clases a pesar de advertencia previa.,9146
+3908,2024-04-15,Grave,Escribir grafitis en el mobiliario escolar dentro del aula de clases.,9113
+3909,2024-04-17,Grave,Escribir grafitis en el mobiliario escolar dentro del aula de clases.,9113
+3910,2024-09-19,Leve,Conversación reiterativa e interrupción durante la explicación del docente.,9113
+3911,2024-03-11,Positiva,Apoyo solidario voluntario en el mantenimiento de las áreas verdes del colegio.,9117
+3912,2024-05-06,Grave,Escribir grafitis en el mobiliario escolar dentro del aula de clases.,9117
+3913,2024-08-14,Positiva,Mostró liderazgo positivo ordenando el aula de cómputo tras finalizar la sesión.,9117
+3914,2024-11-14,Leve,Incumplimiento de la entrega de tareas asignadas en dos sesiones consecutivas.,9080
+3915,2024-09-03,Positiva,Mostró liderazgo positivo ordenando el aula de cómputo tras finalizar la sesión.,9080
+3916,2024-10-15,Positiva,Representación sobresaliente de la institución en las Olimpiadas de Matemáticas.,9080
+3917,2024-07-24,Grave,Falta de respeto verbal a un compañero de aula durante las horas de recreo.,9115
+3918,2024-09-04,Leve,Incumplimiento de la entrega de tareas asignadas en dos sesiones consecutivas.,9115
+3919,2024-10-11,Positiva,"Excelente aporte en el taller de ciencias, ayudando a integrar a compañeros nuevos.",9071
+3920,2024-09-18,Grave,Falta de respeto verbal a un compañero de aula durante las horas de recreo.,9278
+3921,2024-07-02,Grave,Agresión física menor en el patio durante el horario de salida.,9278
+3922,2024-07-22,Leve,Uso indebido de celular dentro del aula de clases a pesar de advertencia previa.,9126
+3923,2024-04-22,Leve,Uso indebido de celular dentro del aula de clases a pesar de advertencia previa.,9126
+3924,2024-04-24,Leve,Uso indebido de celular dentro del aula de clases a pesar de advertencia previa.,8958
+3925,2024-03-18,Grave,Agresión física menor en el patio durante el horario de salida.,8958
+3926,2024-04-24,Grave,Falta de respeto verbal a un compañero de aula durante las horas de recreo.,9070
+3927,2024-05-16,Leve,Conversación reiterativa e interrupción durante la explicación del docente.,9070
+3928,2024-03-22,Grave,Agresión física menor en el patio durante el horario de salida.,9070
+3929,2025-05-12,Grave,Retiro del aula de clases sin autorización previa del docente a cargo.,9168
+3930,2025-05-05,Leve,Incumplimiento de la entrega de tareas asignadas en dos sesiones consecutivas.,9168
+3931,2025-05-06,Leve,Uso indebido de celular dentro del aula de clases a pesar de advertencia previa.,9168
+3932,2025-04-02,Positiva,"Excelente aporte en el taller de ciencias, ayudando a integrar a compañeros nuevos.",9255
+3933,2025-10-06,Grave,Falta de respeto verbal a un compañero de aula durante las horas de recreo.,9255
+3934,2025-11-06,Leve,Uso indebido de celular dentro del aula de clases a pesar de advertencia previa.,9255
+3935,2025-06-23,Positiva,Apoyo solidario voluntario en el mantenimiento de las áreas verdes del colegio.,8957
+3936,2025-11-10,Positiva,Apoyo solidario voluntario en el mantenimiento de las áreas verdes del colegio.,8957
+3937,2025-05-06,Leve,Uso indebido de celular dentro del aula de clases a pesar de advertencia previa.,8957
+3938,2025-07-25,Leve,Incumplimiento de la entrega de tareas asignadas en dos sesiones consecutivas.,9150
+3939,2025-10-07,Grave,Retiro del aula de clases sin autorización previa del docente a cargo.,9293
+3940,2025-11-19,Grave,Falta de respeto verbal a un compañero de aula durante las horas de recreo.,9293
+3941,2025-05-26,Positiva,Representación sobresaliente de la institución en las Olimpiadas de Matemáticas.,9051
+3942,2025-07-08,Positiva,Mostró liderazgo positivo ordenando el aula de cómputo tras finalizar la sesión.,9051
+3943,2025-11-03,Leve,Llegada tardía al aula tras el toque de timbre del receso escolar.,9118
+3944,2025-03-03,Grave,Escribir grafitis en el mobiliario escolar dentro del aula de clases.,9118
+3945,2025-11-14,Leve,Conversación reiterativa e interrupción durante la explicación del docente.,9025
+3946,2025-05-22,Positiva,"Excelente aporte en el taller de ciencias, ayudando a integrar a compañeros nuevos.",9025
+3947,2025-04-21,Positiva,Mostró liderazgo positivo ordenando el aula de cómputo tras finalizar la sesión.,9279
+3948,2025-08-19,Grave,Escribir grafitis en el mobiliario escolar dentro del aula de clases.,9125
+3949,2025-11-17,Positiva,Apoyo solidario voluntario en el mantenimiento de las áreas verdes del colegio.,9114
+3950,2025-09-08,Grave,Agresión física menor en el patio durante el horario de salida.,9114
+3951,2025-09-08,Leve,Incumplimiento de la entrega de tareas asignadas en dos sesiones consecutivas.,9224
+3952,2025-11-04,Grave,Escribir grafitis en el mobiliario escolar dentro del aula de clases.,9224
+3953,2025-11-17,Positiva,"Excelente aporte en el taller de ciencias, ayudando a integrar a compañeros nuevos.",9240
+3954,2025-05-16,Positiva,Mostró liderazgo positivo ordenando el aula de cómputo tras finalizar la sesión.,9240
+3955,2025-07-08,Grave,Falta de respeto verbal a un compañero de aula durante las horas de recreo.,9151
+3956,2025-07-22,Positiva,"Excelente aporte en el taller de ciencias, ayudando a integrar a compañeros nuevos.",9151
+3957,2025-03-07,Grave,Escribir grafitis en el mobiliario escolar dentro del aula de clases.,9151
+3958,2025-11-05,Leve,Conversación reiterativa e interrupción durante la explicación del docente.,9281
+3959,2025-05-26,Leve,Conversación reiterativa e interrupción durante la explicación del docente.,9010
+3960,2025-11-20,Positiva,"Excelente aporte en el taller de ciencias, ayudando a integrar a compañeros nuevos.",9044
+3961,2025-05-19,Grave,Agresión física menor en el patio durante el horario de salida.,9044
+3962,2025-09-08,Grave,Escribir grafitis en el mobiliario escolar dentro del aula de clases.,9044
+3963,2025-03-03,Positiva,Representación sobresaliente de la institución en las Olimpiadas de Matemáticas.,9110
+3964,2025-11-03,Positiva,Apoyo solidario voluntario en el mantenimiento de las áreas verdes del colegio.,9110
+3965,2025-06-23,Positiva,Representación sobresaliente de la institución en las Olimpiadas de Matemáticas.,9110
+3966,2025-05-16,Positiva,"Excelente aporte en el taller de ciencias, ayudando a integrar a compañeros nuevos.",9254
+3967,2025-04-14,Leve,Uso indebido de celular dentro del aula de clases a pesar de advertencia previa.,9254
+3968,2025-08-07,Grave,Escribir grafitis en el mobiliario escolar dentro del aula de clases.,9143
+3969,2025-08-08,Grave,Retiro del aula de clases sin autorización previa del docente a cargo.,9143
+3970,2025-10-20,Positiva,"Excelente aporte en el taller de ciencias, ayudando a integrar a compañeros nuevos.",9181
+3971,2025-09-05,Leve,Uso indebido de celular dentro del aula de clases a pesar de advertencia previa.,9187
+3972,2025-04-21,Positiva,Mostró liderazgo positivo ordenando el aula de cómputo tras finalizar la sesión.,9187
+3973,2025-11-21,Grave,Escribir grafitis en el mobiliario escolar dentro del aula de clases.,9165
+3974,2025-10-16,Leve,Llegada tardía al aula tras el toque de timbre del receso escolar.,9103
+3975,2025-11-10,Positiva,Mostró liderazgo positivo ordenando el aula de cómputo tras finalizar la sesión.,8977
+3976,2025-11-03,Positiva,"Excelente aporte en el taller de ciencias, ayudando a integrar a compañeros nuevos.",8977
+3977,2025-10-03,Leve,Incumplimiento de la entrega de tareas asignadas en dos sesiones consecutivas.,8977
+3978,2025-08-15,Grave,Escribir grafitis en el mobiliario escolar dentro del aula de clases.,9068
+3979,2025-10-06,Grave,Falta de respeto verbal a un compañero de aula durante las horas de recreo.,9175
+3980,2025-09-08,Grave,Escribir grafitis en el mobiliario escolar dentro del aula de clases.,9175
+3981,2025-04-14,Grave,Agresión física menor en el patio durante el horario de salida.,9132
+3982,2025-10-06,Leve,Uso indebido de celular dentro del aula de clases a pesar de advertencia previa.,9200
+3983,2025-10-07,Positiva,Representación sobresaliente de la institución en las Olimpiadas de Matemáticas.,9200
+3984,2025-11-10,Positiva,Apoyo solidario voluntario en el mantenimiento de las áreas verdes del colegio.,9016
+3985,2025-11-10,Grave,Falta de respeto verbal a un compañero de aula durante las horas de recreo.,9016
+3986,2025-03-10,Grave,Agresión física menor en el patio durante el horario de salida.,9016
+3987,2025-09-22,Leve,Incumplimiento de la entrega de tareas asignadas en dos sesiones consecutivas.,9007
+3988,2025-10-09,Positiva,"Excelente aporte en el taller de ciencias, ayudando a integrar a compañeros nuevos.",9007
+3989,2025-03-20,Grave,Retiro del aula de clases sin autorización previa del docente a cargo.,9189
+3990,2025-06-09,Leve,Llegada tardía al aula tras el toque de timbre del receso escolar.,9189
+3991,2025-04-14,Leve,Incumplimiento de la entrega de tareas asignadas en dos sesiones consecutivas.,9189
+3992,2025-09-15,Positiva,Mostró liderazgo positivo ordenando el aula de cómputo tras finalizar la sesión.,9228
+3993,2025-09-08,Positiva,Representación sobresaliente de la institución en las Olimpiadas de Matemáticas.,9156
+3994,2025-07-18,Leve,Incumplimiento de la entrega de tareas asignadas en dos sesiones consecutivas.,9298
+3995,2025-04-23,Leve,Incumplimiento de la entrega de tareas asignadas en dos sesiones consecutivas.,9298
+3996,2025-09-17,Grave,Retiro del aula de clases sin autorización previa del docente a cargo.,9298
+3997,2025-06-09,Leve,Conversación reiterativa e interrupción durante la explicación del docente.,9242
+3998,2025-10-03,Leve,Llegada tardía al aula tras el toque de timbre del receso escolar.,9242
+3999,2025-03-03,Leve,Uso indebido de celular dentro del aula de clases a pesar de advertencia previa.,9242
+4000,2025-11-04,Positiva,Representación sobresaliente de la institución en las Olimpiadas de Matemáticas.,9093
+4001,2025-10-20,Leve,Conversación reiterativa e interrupción durante la explicación del docente.,9093
+4002,2025-04-14,Grave,Retiro del aula de clases sin autorización previa del docente a cargo.,9310
+4003,2025-06-16,Positiva,Mostró liderazgo positivo ordenando el aula de cómputo tras finalizar la sesión.,9310
+4004,2025-09-09,Grave,Agresión física menor en el patio durante el horario de salida.,9310
+4005,2025-03-24,Leve,Uso indebido de celular dentro del aula de clases a pesar de advertencia previa.,9075
+4006,2025-11-10,Positiva,Apoyo solidario voluntario en el mantenimiento de las áreas verdes del colegio.,9204
+4007,2025-04-22,Leve,Llegada tardía al aula tras el toque de timbre del receso escolar.,9073
+4008,2025-05-13,Leve,Llegada tardía al aula tras el toque de timbre del receso escolar.,8944
+4009,2025-08-13,Grave,Escribir grafitis en el mobiliario escolar dentro del aula de clases.,8944
+4010,2025-04-14,Grave,Agresión física menor en el patio durante el horario de salida.,9324
+4011,2025-03-07,Positiva,Representación sobresaliente de la institución en las Olimpiadas de Matemáticas.,9324
+4012,2025-03-06,Leve,Conversación reiterativa e interrupción durante la explicación del docente.,9324
+4013,2025-04-21,Leve,Conversación reiterativa e interrupción durante la explicación del docente.,8965
+4014,2025-09-08,Positiva,Apoyo solidario voluntario en el mantenimiento de las áreas verdes del colegio.,8965
+4015,2025-08-19,Leve,Incumplimiento de la entrega de tareas asignadas en dos sesiones consecutivas.,8965
+4016,2025-10-20,Leve,Llegada tardía al aula tras el toque de timbre del receso escolar.,9122
+4017,2025-06-16,Grave,Escribir grafitis en el mobiliario escolar dentro del aula de clases.,9122
+4018,2025-05-05,Leve,Conversación reiterativa e interrupción durante la explicación del docente.,9122
+4019,2025-09-18,Grave,Escribir grafitis en el mobiliario escolar dentro del aula de clases.,9069
+4020,2025-11-25,Leve,Uso indebido de celular dentro del aula de clases a pesar de advertencia previa.,9069
+4021,2025-08-25,Positiva,Apoyo solidario voluntario en el mantenimiento de las áreas verdes del colegio.,9069
+4022,2025-09-23,Grave,Escribir grafitis en el mobiliario escolar dentro del aula de clases.,9231
+4023,2025-05-05,Leve,Incumplimiento de la entrega de tareas asignadas en dos sesiones consecutivas.,9225
+4024,2025-09-15,Positiva,"Excelente aporte en el taller de ciencias, ayudando a integrar a compañeros nuevos.",9246
+4025,2025-10-01,Grave,Falta de respeto verbal a un compañero de aula durante las horas de recreo.,9291
+4026,2025-08-11,Grave,Escribir grafitis en el mobiliario escolar dentro del aula de clases.,9291
+4027,2025-10-10,Positiva,Representación sobresaliente de la institución en las Olimpiadas de Matemáticas.,9136
+4028,2025-03-18,Grave,Falta de respeto verbal a un compañero de aula durante las horas de recreo.,9136
+4029,2025-10-16,Leve,Uso indebido de celular dentro del aula de clases a pesar de advertencia previa.,9136
+4030,2025-06-04,Leve,Incumplimiento de la entrega de tareas asignadas en dos sesiones consecutivas.,8983
+4031,2025-10-07,Leve,Incumplimiento de la entrega de tareas asignadas en dos sesiones consecutivas.,8983
+4032,2025-07-21,Grave,Retiro del aula de clases sin autorización previa del docente a cargo.,8983
+4033,2025-05-26,Leve,Conversación reiterativa e interrupción durante la explicación del docente.,9062
+4034,2025-07-08,Leve,Uso indebido de celular dentro del aula de clases a pesar de advertencia previa.,9028
+4035,2025-04-03,Leve,Uso indebido de celular dentro del aula de clases a pesar de advertencia previa.,9028
+4036,2025-03-25,Positiva,Representación sobresaliente de la institución en las Olimpiadas de Matemáticas.,9028
+4037,2025-08-21,Leve,Conversación reiterativa e interrupción durante la explicación del docente.,9119
+4038,2025-06-02,Grave,Escribir grafitis en el mobiliario escolar dentro del aula de clases.,9119
+4039,2025-06-23,Positiva,Mostró liderazgo positivo ordenando el aula de cómputo tras finalizar la sesión.,9195
+4040,2025-11-14,Leve,Incumplimiento de la entrega de tareas asignadas en dos sesiones consecutivas.,9196
+4041,2025-04-23,Positiva,"Excelente aporte en el taller de ciencias, ayudando a integrar a compañeros nuevos.",8989
+4042,2025-05-07,Leve,Llegada tardía al aula tras el toque de timbre del receso escolar.,8989
+4043,2025-07-08,Grave,Escribir grafitis en el mobiliario escolar dentro del aula de clases.,8992
+4044,2025-07-07,Leve,Incumplimiento de la entrega de tareas asignadas en dos sesiones consecutivas.,8992
+4045,2025-11-05,Grave,Escribir grafitis en el mobiliario escolar dentro del aula de clases.,8992
+4046,2025-10-24,Leve,Conversación reiterativa e interrupción durante la explicación del docente.,9174
+4047,2025-09-08,Positiva,Apoyo solidario voluntario en el mantenimiento de las áreas verdes del colegio.,9174
+4048,2025-06-19,Positiva,Apoyo solidario voluntario en el mantenimiento de las áreas verdes del colegio.,9284
+4049,2025-11-17,Leve,Incumplimiento de la entrega de tareas asignadas en dos sesiones consecutivas.,9284
+4050,2025-03-18,Grave,Agresión física menor en el patio durante el horario de salida.,9238
+4051,2025-04-03,Leve,Incumplimiento de la entrega de tareas asignadas en dos sesiones consecutivas.,9141
+4052,2025-07-03,Positiva,Representación sobresaliente de la institución en las Olimpiadas de Matemáticas.,9141
+4053,2025-10-10,Grave,Escribir grafitis en el mobiliario escolar dentro del aula de clases.,9141
+4054,2025-04-25,Grave,Agresión física menor en el patio durante el horario de salida.,9034
+4055,2025-05-12,Positiva,Mostró liderazgo positivo ordenando el aula de cómputo tras finalizar la sesión.,9034
+4056,2025-10-10,Positiva,Representación sobresaliente de la institución en las Olimpiadas de Matemáticas.,9034
+4057,2025-10-10,Grave,Escribir grafitis en el mobiliario escolar dentro del aula de clases.,9146
+4058,2025-06-23,Grave,Falta de respeto verbal a un compañero de aula durante las horas de recreo.,9146
+4059,2025-07-21,Grave,Escribir grafitis en el mobiliario escolar dentro del aula de clases.,9095
+4060,2025-08-04,Positiva,Apoyo solidario voluntario en el mantenimiento de las áreas verdes del colegio.,9095
+4061,2025-06-04,Leve,Llegada tardía al aula tras el toque de timbre del receso escolar.,9340
+4062,2025-11-17,Grave,Agresión física menor en el patio durante el horario de salida.,9340
+4063,2025-11-10,Leve,Incumplimiento de la entrega de tareas asignadas en dos sesiones consecutivas.,9155
+4064,2025-11-14,Leve,Conversación reiterativa e interrupción durante la explicación del docente.,9112
+4065,2025-07-03,Grave,Falta de respeto verbal a un compañero de aula durante las horas de recreo.,8966
+4066,2025-11-07,Leve,Uso indebido de celular dentro del aula de clases a pesar de advertencia previa.,8966
+4067,2025-03-19,Grave,Escribir grafitis en el mobiliario escolar dentro del aula de clases.,8966
+4068,2025-07-04,Positiva,Apoyo solidario voluntario en el mantenimiento de las áreas verdes del colegio.,8942
+4069,2025-08-18,Positiva,Representación sobresaliente de la institución en las Olimpiadas de Matemáticas.,8942
+4070,2025-08-18,Grave,Escribir grafitis en el mobiliario escolar dentro del aula de clases.,9319
+4071,2025-10-20,Leve,Uso indebido de celular dentro del aula de clases a pesar de advertencia previa.,9033
+4072,2025-07-07,Grave,Retiro del aula de clases sin autorización previa del docente a cargo.,9033
+4073,2025-11-14,Positiva,"Excelente aporte en el taller de ciencias, ayudando a integrar a compañeros nuevos.",9088
+4074,2025-09-17,Positiva,Representación sobresaliente de la institución en las Olimpiadas de Matemáticas.,9088
+4075,2025-03-10,Positiva,Representación sobresaliente de la institución en las Olimpiadas de Matemáticas.,9088
+4076,2025-04-04,Positiva,"Excelente aporte en el taller de ciencias, ayudando a integrar a compañeros nuevos.",9013
+4077,2025-04-14,Leve,Llegada tardía al aula tras el toque de timbre del receso escolar.,9013
+4078,2025-10-14,Positiva,Apoyo solidario voluntario en el mantenimiento de las áreas verdes del colegio.,9050
+4079,2025-11-21,Leve,Conversación reiterativa e interrupción durante la explicación del docente.,9050
+4080,2025-03-10,Positiva,Apoyo solidario voluntario en el mantenimiento de las áreas verdes del colegio.,9111
+4081,2025-11-24,Grave,Agresión física menor en el patio durante el horario de salida.,9111
+4082,2025-04-23,Leve,Conversación reiterativa e interrupción durante la explicación del docente.,8986
+4083,2025-08-05,Grave,Escribir grafitis en el mobiliario escolar dentro del aula de clases.,8986
+4084,2025-11-18,Positiva,"Excelente aporte en el taller de ciencias, ayudando a integrar a compañeros nuevos.",8986
+4085,2025-04-21,Leve,Incumplimiento de la entrega de tareas asignadas en dos sesiones consecutivas.,9268
+4086,2025-08-21,Positiva,Apoyo solidario voluntario en el mantenimiento de las áreas verdes del colegio.,8960
+4087,2025-03-21,Positiva,Apoyo solidario voluntario en el mantenimiento de las áreas verdes del colegio.,8960
+4088,2025-04-07,Grave,Retiro del aula de clases sin autorización previa del docente a cargo.,8960
+4089,2025-08-18,Leve,Conversación reiterativa e interrupción durante la explicación del docente.,9316
+4090,2025-09-05,Positiva,Mostró liderazgo positivo ordenando el aula de cómputo tras finalizar la sesión.,9316
+4091,2025-11-17,Leve,Conversación reiterativa e interrupción durante la explicación del docente.,8984
+4092,2025-08-15,Grave,Falta de respeto verbal a un compañero de aula durante las horas de recreo.,8984
+4093,2025-11-17,Leve,Uso indebido de celular dentro del aula de clases a pesar de advertencia previa.,9167
+4094,2025-10-22,Positiva,Apoyo solidario voluntario en el mantenimiento de las áreas verdes del colegio.,9167
+4095,2025-09-22,Grave,Retiro del aula de clases sin autorización previa del docente a cargo.,9235
+4096,2025-09-22,Grave,Agresión física menor en el patio durante el horario de salida.,9235
+4097,2025-11-07,Grave,Falta de respeto verbal a un compañero de aula durante las horas de recreo.,9235
+4098,2025-03-04,Positiva,Apoyo solidario voluntario en el mantenimiento de las áreas verdes del colegio.,8981
+4099,2025-11-03,Leve,Incumplimiento de la entrega de tareas asignadas en dos sesiones consecutivas.,8981
+4100,2025-03-13,Grave,Falta de respeto verbal a un compañero de aula durante las horas de recreo.,9199
+4101,2025-09-22,Leve,Uso indebido de celular dentro del aula de clases a pesar de advertencia previa.,9199
+4102,2025-07-14,Positiva,Apoyo solidario voluntario en el mantenimiento de las áreas verdes del colegio.,9199
+4103,2025-04-04,Positiva,Mostró liderazgo positivo ordenando el aula de cómputo tras finalizar la sesión.,9054
+4104,2025-03-20,Positiva,Representación sobresaliente de la institución en las Olimpiadas de Matemáticas.,9040
+4105,2025-07-21,Grave,Retiro del aula de clases sin autorización previa del docente a cargo.,9304
+4106,2025-08-08,Leve,Conversación reiterativa e interrupción durante la explicación del docente.,9304
+4107,2025-06-02,Grave,Retiro del aula de clases sin autorización previa del docente a cargo.,8982
+4108,2025-09-23,Grave,Agresión física menor en el patio durante el horario de salida.,8982
+4109,2025-04-14,Grave,Falta de respeto verbal a un compañero de aula durante las horas de recreo.,8982
+4110,2025-05-16,Grave,Falta de respeto verbal a un compañero de aula durante las horas de recreo.,9116
+4111,2025-10-27,Leve,Incumplimiento de la entrega de tareas asignadas en dos sesiones consecutivas.,9116
+4112,2025-08-25,Leve,Incumplimiento de la entrega de tareas asignadas en dos sesiones consecutivas.,9116
+4113,2025-08-18,Grave,Agresión física menor en el patio durante el horario de salida.,9186
+4114,2025-03-13,Grave,Agresión física menor en el patio durante el horario de salida.,9186
+4115,2025-05-12,Leve,Conversación reiterativa e interrupción durante la explicación del docente.,9056
+4116,2025-03-24,Leve,Conversación reiterativa e interrupción durante la explicación del docente.,9056
+4117,2025-11-14,Positiva,Representación sobresaliente de la institución en las Olimpiadas de Matemáticas.,9056
+4118,2025-09-15,Leve,Uso indebido de celular dentro del aula de clases a pesar de advertencia previa.,9177
+4119,2025-04-02,Positiva,Representación sobresaliente de la institución en las Olimpiadas de Matemáticas.,9177
+4120,2025-06-03,Leve,Conversación reiterativa e interrupción durante la explicación del docente.,9164
+4121,2025-08-04,Positiva,Apoyo solidario voluntario en el mantenimiento de las áreas verdes del colegio.,9164
+4122,2025-04-24,Positiva,Representación sobresaliente de la institución en las Olimpiadas de Matemáticas.,9164
+4123,2025-10-13,Leve,Conversación reiterativa e interrupción durante la explicación del docente.,9144
+4124,2025-03-17,Leve,Incumplimiento de la entrega de tareas asignadas en dos sesiones consecutivas.,9144
+4125,2025-09-10,Positiva,"Excelente aporte en el taller de ciencias, ayudando a integrar a compañeros nuevos.",9144
+4126,2025-08-14,Positiva,"Excelente aporte en el taller de ciencias, ayudando a integrar a compañeros nuevos.",8987
+4127,2025-05-01,Positiva,Apoyo solidario voluntario en el mantenimiento de las áreas verdes del colegio.,8987
+4128,2025-11-03,Grave,Retiro del aula de clases sin autorización previa del docente a cargo.,9057
+4129,2025-03-10,Leve,Uso indebido de celular dentro del aula de clases a pesar de advertencia previa.,9057
+4130,2025-07-02,Grave,Falta de respeto verbal a un compañero de aula durante las horas de recreo.,9057
+4131,2025-09-08,Grave,Escribir grafitis en el mobiliario escolar dentro del aula de clases.,9192
+4132,2025-07-24,Grave,Retiro del aula de clases sin autorización previa del docente a cargo.,9192
+4133,2025-06-05,Positiva,Representación sobresaliente de la institución en las Olimpiadas de Matemáticas.,9192
+4134,2025-04-04,Grave,Escribir grafitis en el mobiliario escolar dentro del aula de clases.,9084
+4135,2025-04-22,Grave,Retiro del aula de clases sin autorización previa del docente a cargo.,9282
+4136,2025-06-19,Grave,Retiro del aula de clases sin autorización previa del docente a cargo.,8999
+4137,2025-11-07,Positiva,"Excelente aporte en el taller de ciencias, ayudando a integrar a compañeros nuevos.",8999
+4138,2025-04-21,Leve,Llegada tardía al aula tras el toque de timbre del receso escolar.,9241
+4139,2025-05-09,Positiva,Apoyo solidario voluntario en el mantenimiento de las áreas verdes del colegio.,9241
+4140,2025-11-10,Positiva,Apoyo solidario voluntario en el mantenimiento de las áreas verdes del colegio.,9241
+4141,2025-10-06,Positiva,Mostró liderazgo positivo ordenando el aula de cómputo tras finalizar la sesión.,9046
+4142,2025-05-09,Leve,Uso indebido de celular dentro del aula de clases a pesar de advertencia previa.,9046
+4143,2025-06-16,Leve,Uso indebido de celular dentro del aula de clases a pesar de advertencia previa.,9046
+4144,2025-11-07,Leve,Incumplimiento de la entrega de tareas asignadas en dos sesiones consecutivas.,9194
+4145,2025-10-15,Grave,Retiro del aula de clases sin autorización previa del docente a cargo.,9194
+4146,2025-06-03,Positiva,Mostró liderazgo positivo ordenando el aula de cómputo tras finalizar la sesión.,9194
+4147,2025-05-02,Leve,Conversación reiterativa e interrupción durante la explicación del docente.,9299
+4148,2025-08-22,Positiva,Mostró liderazgo positivo ordenando el aula de cómputo tras finalizar la sesión.,9299
+4149,2025-11-24,Positiva,Apoyo solidario voluntario en el mantenimiento de las áreas verdes del colegio.,8952
+4150,2025-04-17,Grave,Escribir grafitis en el mobiliario escolar dentro del aula de clases.,8952
+4151,2025-09-25,Leve,Conversación reiterativa e interrupción durante la explicación del docente.,9035
+4152,2025-05-15,Leve,Uso indebido de celular dentro del aula de clases a pesar de advertencia previa.,9035
+4153,2025-11-11,Leve,Uso indebido de celular dentro del aula de clases a pesar de advertencia previa.,9123
+4154,2025-09-16,Positiva,Mostró liderazgo positivo ordenando el aula de cómputo tras finalizar la sesión.,9259
+4155,2025-05-13,Grave,Escribir grafitis en el mobiliario escolar dentro del aula de clases.,9259
+4156,2025-03-10,Grave,Retiro del aula de clases sin autorización previa del docente a cargo.,9259
+4157,2025-04-16,Leve,Incumplimiento de la entrega de tareas asignadas en dos sesiones consecutivas.,9131
+4158,2025-05-05,Leve,Conversación reiterativa e interrupción durante la explicación del docente.,9131
+4159,2025-07-18,Leve,Uso indebido de celular dentro del aula de clases a pesar de advertencia previa.,9258
+4160,2025-08-18,Leve,Conversación reiterativa e interrupción durante la explicación del docente.,9258
+4161,2025-03-05,Grave,Escribir grafitis en el mobiliario escolar dentro del aula de clases.,9278
+4162,2025-04-25,Positiva,Mostró liderazgo positivo ordenando el aula de cómputo tras finalizar la sesión.,9278
+4163,2025-03-25,Leve,Incumplimiento de la entrega de tareas asignadas en dos sesiones consecutivas.,9278
+4164,2025-08-25,Leve,Conversación reiterativa e interrupción durante la explicación del docente.,9172
+4165,2025-03-03,Grave,Retiro del aula de clases sin autorización previa del docente a cargo.,9172
+4166,2025-08-21,Leve,Incumplimiento de la entrega de tareas asignadas en dos sesiones consecutivas.,9172
+4167,2025-04-23,Positiva,"Excelente aporte en el taller de ciencias, ayudando a integrar a compañeros nuevos.",9303
+4168,2025-10-13,Grave,Falta de respeto verbal a un compañero de aula durante las horas de recreo.,9086
+4169,2025-10-23,Leve,Uso indebido de celular dentro del aula de clases a pesar de advertencia previa.,9086
+4170,2025-09-23,Positiva,Representación sobresaliente de la institución en las Olimpiadas de Matemáticas.,9086
+4171,2025-09-12,Grave,Escribir grafitis en el mobiliario escolar dentro del aula de clases.,9087
+4172,2025-03-13,Grave,Falta de respeto verbal a un compañero de aula durante las horas de recreo.,9087
+4173,2025-06-09,Grave,Falta de respeto verbal a un compañero de aula durante las horas de recreo.,9300
+4174,2025-10-16,Positiva,"Excelente aporte en el taller de ciencias, ayudando a integrar a compañeros nuevos.",9188
+4175,2025-05-02,Leve,Conversación reiterativa e interrupción durante la explicación del docente.,9188
+4176,2025-08-08,Grave,Escribir grafitis en el mobiliario escolar dentro del aula de clases.,9188
+4177,2025-05-05,Grave,Retiro del aula de clases sin autorización previa del docente a cargo.,9071
+4178,2025-11-10,Positiva,Apoyo solidario voluntario en el mantenimiento de las áreas verdes del colegio.,9071
+4179,2025-05-16,Positiva,"Excelente aporte en el taller de ciencias, ayudando a integrar a compañeros nuevos.",9071
+4180,2026-08-11,Positiva,Apoyo solidario voluntario en el mantenimiento de las áreas verdes del colegio.,9114
+4181,2026-09-14,Grave,Escribir grafitis en el mobiliario escolar dentro del aula de clases.,9114
+4182,2026-07-01,Grave,Agresión física menor en el patio durante el horario de salida.,9114
+4183,2026-11-25,Leve,Llegada tardía al aula tras el toque de timbre del receso escolar.,9116
+4184,2026-03-23,Leve,Incumplimiento de la entrega de tareas asignadas en dos sesiones consecutivas.,8968
+4185,2026-09-22,Leve,Llegada tardía al aula tras el toque de timbre del receso escolar.,8968
+4186,2026-06-19,Leve,Conversación reiterativa e interrupción durante la explicación del docente.,8968
+4187,2026-08-03,Positiva,Apoyo solidario voluntario en el mantenimiento de las áreas verdes del colegio.,9017
+4188,2026-11-19,Grave,Falta de respeto verbal a un compañero de aula durante las horas de recreo.,9017
+4189,2026-08-05,Leve,Llegada tardía al aula tras el toque de timbre del receso escolar.,9017
+4190,2026-10-06,Positiva,"Excelente aporte en el taller de ciencias, ayudando a integrar a compañeros nuevos.",9152
+4191,2026-03-16,Leve,Llegada tardía al aula tras el toque de timbre del receso escolar.,9109
+4192,2026-05-11,Positiva,Mostró liderazgo positivo ordenando el aula de cómputo tras finalizar la sesión.,9109
+4193,2026-07-06,Grave,Retiro del aula de clases sin autorización previa del docente a cargo.,8965
+4194,2026-05-07,Positiva,Representación sobresaliente de la institución en las Olimpiadas de Matemáticas.,8965
+4195,2026-09-07,Positiva,"Excelente aporte en el taller de ciencias, ayudando a integrar a compañeros nuevos.",9052
+4196,2026-07-20,Positiva,Mostró liderazgo positivo ordenando el aula de cómputo tras finalizar la sesión.,9052
+4197,2026-04-07,Leve,Llegada tardía al aula tras el toque de timbre del receso escolar.,9052
+4198,2026-03-05,Positiva,Apoyo solidario voluntario en el mantenimiento de las áreas verdes del colegio.,8963
+4199,2026-04-24,Leve,Uso indebido de celular dentro del aula de clases a pesar de advertencia previa.,8963
+4200,2026-05-22,Leve,Uso indebido de celular dentro del aula de clases a pesar de advertencia previa.,8963
+4201,2026-10-23,Leve,Llegada tardía al aula tras el toque de timbre del receso escolar.,9075
+4202,2026-11-19,Grave,Retiro del aula de clases sin autorización previa del docente a cargo.,9219
+4203,2026-07-09,Positiva,"Excelente aporte en el taller de ciencias, ayudando a integrar a compañeros nuevos.",9219
+4204,2026-09-11,Grave,Escribir grafitis en el mobiliario escolar dentro del aula de clases.,9219
+4205,2026-04-03,Grave,Retiro del aula de clases sin autorización previa del docente a cargo.,9318
+4206,2026-08-17,Leve,Incumplimiento de la entrega de tareas asignadas en dos sesiones consecutivas.,9318
+4207,2026-03-09,Positiva,"Excelente aporte en el taller de ciencias, ayudando a integrar a compañeros nuevos.",8975
+4208,2026-03-17,Grave,Retiro del aula de clases sin autorización previa del docente a cargo.,9099
+4209,2026-08-17,Grave,Escribir grafitis en el mobiliario escolar dentro del aula de clases.,9099
+4210,2026-10-19,Grave,Agresión física menor en el patio durante el horario de salida.,9099
+4211,2026-08-24,Leve,Llegada tardía al aula tras el toque de timbre del receso escolar.,9169
+4212,2026-08-20,Positiva,Apoyo solidario voluntario en el mantenimiento de las áreas verdes del colegio.,9074
+4213,2026-03-09,Leve,Incumplimiento de la entrega de tareas asignadas en dos sesiones consecutivas.,9074
+4214,2026-06-19,Grave,Agresión física menor en el patio durante el horario de salida.,9074
+4215,2026-10-26,Positiva,Mostró liderazgo positivo ordenando el aula de cómputo tras finalizar la sesión.,9332
+4216,2026-03-02,Grave,Agresión física menor en el patio durante el horario de salida.,9332
+4217,2026-05-11,Leve,Llegada tardía al aula tras el toque de timbre del receso escolar.,9332
+4218,2026-07-17,Leve,Incumplimiento de la entrega de tareas asignadas en dos sesiones consecutivas.,9338
+4219,2026-05-08,Grave,Agresión física menor en el patio durante el horario de salida.,9098
+4220,2026-03-04,Grave,Retiro del aula de clases sin autorización previa del docente a cargo.,9098
+4221,2026-08-17,Positiva,Mostró liderazgo positivo ordenando el aula de cómputo tras finalizar la sesión.,9098
+4222,2026-05-13,Grave,Agresión física menor en el patio durante el horario de salida.,9064
+4223,2026-05-04,Leve,Uso indebido de celular dentro del aula de clases a pesar de advertencia previa.,9064
+4224,2026-09-15,Positiva,"Excelente aporte en el taller de ciencias, ayudando a integrar a compañeros nuevos.",9064
+4225,2026-06-23,Positiva,Apoyo solidario voluntario en el mantenimiento de las áreas verdes del colegio.,9214
+4226,2026-04-20,Grave,Retiro del aula de clases sin autorización previa del docente a cargo.,9214
+4227,2026-05-18,Positiva,Representación sobresaliente de la institución en las Olimpiadas de Matemáticas.,9214
+4228,2026-10-12,Leve,Llegada tardía al aula tras el toque de timbre del receso escolar.,9083
+4229,2026-08-14,Grave,Escribir grafitis en el mobiliario escolar dentro del aula de clases.,9083
+4230,2026-05-18,Positiva,Mostró liderazgo positivo ordenando el aula de cómputo tras finalizar la sesión.,9016
+4231,2026-11-19,Grave,Escribir grafitis en el mobiliario escolar dentro del aula de clases.,9337
+4232,2026-08-11,Leve,Uso indebido de celular dentro del aula de clases a pesar de advertencia previa.,9337
+4233,2026-08-24,Positiva,Representación sobresaliente de la institución en las Olimpiadas de Matemáticas.,9313
+4234,2026-03-17,Leve,Uso indebido de celular dentro del aula de clases a pesar de advertencia previa.,9313
+4235,2026-11-23,Grave,Escribir grafitis en el mobiliario escolar dentro del aula de clases.,9027
+4236,2026-08-13,Grave,Falta de respeto verbal a un compañero de aula durante las horas de recreo.,9027
+4237,2026-05-25,Grave,Falta de respeto verbal a un compañero de aula durante las horas de recreo.,9027
+4238,2026-06-15,Grave,Agresión física menor en el patio durante el horario de salida.,9292
+4239,2026-03-19,Leve,Llegada tardía al aula tras el toque de timbre del receso escolar.,9292
+4240,2026-07-20,Grave,Retiro del aula de clases sin autorización previa del docente a cargo.,9077
+4241,2026-08-13,Grave,Escribir grafitis en el mobiliario escolar dentro del aula de clases.,9287
+4242,2026-03-09,Grave,Agresión física menor en el patio durante el horario de salida.,9287
+4243,2026-05-25,Leve,Incumplimiento de la entrega de tareas asignadas en dos sesiones consecutivas.,9133
+4244,2026-07-20,Leve,Uso indebido de celular dentro del aula de clases a pesar de advertencia previa.,9133
+4245,2026-03-02,Positiva,Apoyo solidario voluntario en el mantenimiento de las áreas verdes del colegio.,9133
+4246,2026-05-12,Grave,Falta de respeto verbal a un compañero de aula durante las horas de recreo.,8971
+4247,2026-10-06,Positiva,"Excelente aporte en el taller de ciencias, ayudando a integrar a compañeros nuevos.",8971
+4248,2026-07-23,Positiva,Representación sobresaliente de la institución en las Olimpiadas de Matemáticas.,8971
+4249,2026-03-16,Positiva,Apoyo solidario voluntario en el mantenimiento de las áreas verdes del colegio.,9069
+4250,2026-05-12,Positiva,Representación sobresaliente de la institución en las Olimpiadas de Matemáticas.,9218
+4251,2026-09-25,Positiva,"Excelente aporte en el taller de ciencias, ayudando a integrar a compañeros nuevos.",9218
+4252,2026-04-13,Leve,Incumplimiento de la entrega de tareas asignadas en dos sesiones consecutivas.,9186
+4253,2026-06-12,Leve,Uso indebido de celular dentro del aula de clases a pesar de advertencia previa.,9186
+4254,2026-10-22,Positiva,Apoyo solidario voluntario en el mantenimiento de las áreas verdes del colegio.,8983
+4255,2026-11-19,Positiva,Mostró liderazgo positivo ordenando el aula de cómputo tras finalizar la sesión.,9072
+4256,2026-05-18,Leve,Conversación reiterativa e interrupción durante la explicación del docente.,9072
+4257,2026-06-15,Grave,Falta de respeto verbal a un compañero de aula durante las horas de recreo.,9072
+4258,2026-06-12,Leve,Incumplimiento de la entrega de tareas asignadas en dos sesiones consecutivas.,9290
+4259,2026-07-07,Grave,Escribir grafitis en el mobiliario escolar dentro del aula de clases.,9340
+4260,2026-06-04,Positiva,"Excelente aporte en el taller de ciencias, ayudando a integrar a compañeros nuevos.",9340
+4261,2026-07-13,Grave,Retiro del aula de clases sin autorización previa del docente a cargo.,9340
+4262,2026-06-11,Positiva,"Excelente aporte en el taller de ciencias, ayudando a integrar a compañeros nuevos.",8982
+4263,2026-06-16,Grave,Agresión física menor en el patio durante el horario de salida.,8982
+4264,2026-04-10,Leve,Uso indebido de celular dentro del aula de clases a pesar de advertencia previa.,9228
+4265,2026-10-19,Positiva,Mostró liderazgo positivo ordenando el aula de cómputo tras finalizar la sesión.,9228
+4266,2026-06-19,Leve,Incumplimiento de la entrega de tareas asignadas en dos sesiones consecutivas.,8998
+4267,2026-06-15,Positiva,Mostró liderazgo positivo ordenando el aula de cómputo tras finalizar la sesión.,9306
+4268,2026-07-06,Positiva,Apoyo solidario voluntario en el mantenimiento de las áreas verdes del colegio.,9306
+4269,2026-10-21,Positiva,Representación sobresaliente de la institución en las Olimpiadas de Matemáticas.,9306
+4270,2026-06-12,Grave,Agresión física menor en el patio durante el horario de salida.,9203
+4271,2026-03-09,Positiva,Apoyo solidario voluntario en el mantenimiento de las áreas verdes del colegio.,9203
+4272,2026-06-04,Grave,Escribir grafitis en el mobiliario escolar dentro del aula de clases.,9227
+4273,2026-05-01,Leve,Uso indebido de celular dentro del aula de clases a pesar de advertencia previa.,9227
+4274,2026-03-16,Positiva,"Excelente aporte en el taller de ciencias, ayudando a integrar a compañeros nuevos.",9197
+4275,2026-04-06,Grave,Escribir grafitis en el mobiliario escolar dentro del aula de clases.,9138
+4276,2026-08-03,Grave,Retiro del aula de clases sin autorización previa del docente a cargo.,9138
+4277,2026-11-02,Grave,Falta de respeto verbal a un compañero de aula durante las horas de recreo.,9051
+4278,2026-03-25,Positiva,Mostró liderazgo positivo ordenando el aula de cómputo tras finalizar la sesión.,9309
+4279,2026-06-18,Grave,Falta de respeto verbal a un compañero de aula durante las horas de recreo.,9309
+4280,2026-11-09,Grave,Retiro del aula de clases sin autorización previa del docente a cargo.,9268
+4281,2026-07-15,Grave,Falta de respeto verbal a un compañero de aula durante las horas de recreo.,9006
+4282,2026-09-07,Leve,Incumplimiento de la entrega de tareas asignadas en dos sesiones consecutivas.,9278
+4283,2026-07-06,Leve,Uso indebido de celular dentro del aula de clases a pesar de advertencia previa.,9278
+4284,2026-06-24,Positiva,Apoyo solidario voluntario en el mantenimiento de las áreas verdes del colegio.,9278
+4285,2026-05-12,Positiva,Apoyo solidario voluntario en el mantenimiento de las áreas verdes del colegio.,9125
+4286,2026-08-03,Positiva,Apoyo solidario voluntario en el mantenimiento de las áreas verdes del colegio.,9094
+4287,2026-09-25,Positiva,"Excelente aporte en el taller de ciencias, ayudando a integrar a compañeros nuevos.",9238
+4288,2026-05-11,Leve,Uso indebido de celular dentro del aula de clases a pesar de advertencia previa.,8946
+4289,2026-05-11,Positiva,Apoyo solidario voluntario en el mantenimiento de las áreas verdes del colegio.,8946
+4290,2026-06-19,Grave,Falta de respeto verbal a un compañero de aula durante las horas de recreo.,9121
+4291,2026-09-25,Leve,Conversación reiterativa e interrupción durante la explicación del docente.,9315
+4292,2026-10-15,Grave,Falta de respeto verbal a un compañero de aula durante las horas de recreo.,9315
+4293,2026-08-03,Grave,Retiro del aula de clases sin autorización previa del docente a cargo.,9329
+4294,2026-11-05,Positiva,"Excelente aporte en el taller de ciencias, ayudando a integrar a compañeros nuevos.",9329
+4295,2026-11-04,Grave,Agresión física menor en el patio durante el horario de salida.,9178
+4296,2026-09-14,Positiva,Mostró liderazgo positivo ordenando el aula de cómputo tras finalizar la sesión.,8969
+4297,2026-11-11,Positiva,"Excelente aporte en el taller de ciencias, ayudando a integrar a compañeros nuevos.",8969
+4298,2026-06-16,Leve,Incumplimiento de la entrega de tareas asignadas en dos sesiones consecutivas.,9080
+4299,2026-07-01,Positiva,Mostró liderazgo positivo ordenando el aula de cómputo tras finalizar la sesión.,9080
+4300,2026-08-17,Leve,Uso indebido de celular dentro del aula de clases a pesar de advertencia previa.,9080
+4301,2026-08-12,Leve,Incumplimiento de la entrega de tareas asignadas en dos sesiones consecutivas.,9095
+4302,2026-04-08,Grave,Falta de respeto verbal a un compañero de aula durante las horas de recreo.,9095
+4303,2026-10-14,Positiva,Representación sobresaliente de la institución en las Olimpiadas de Matemáticas.,9223
+4304,2026-08-24,Positiva,Apoyo solidario voluntario en el mantenimiento de las áreas verdes del colegio.,9223
+4305,2026-06-04,Leve,Incumplimiento de la entrega de tareas asignadas en dos sesiones consecutivas.,9223
+4306,2026-07-20,Positiva,"Excelente aporte en el taller de ciencias, ayudando a integrar a compañeros nuevos.",9230
+4307,2026-05-07,Positiva,Representación sobresaliente de la institución en las Olimpiadas de Matemáticas.,9230
+4308,2026-07-20,Leve,Incumplimiento de la entrega de tareas asignadas en dos sesiones consecutivas.,9333
+4309,2026-07-13,Grave,Agresión física menor en el patio durante el horario de salida.,9333
+4310,2026-07-03,Leve,Incumplimiento de la entrega de tareas asignadas en dos sesiones consecutivas.,9260
+4311,2026-08-19,Grave,Retiro del aula de clases sin autorización previa del docente a cargo.,9260
+4312,2026-11-18,Leve,Uso indebido de celular dentro del aula de clases a pesar de advertencia previa.,9260
+4313,2026-09-14,Leve,Conversación reiterativa e interrupción durante la explicación del docente.,9322
+4314,2026-08-17,Leve,Incumplimiento de la entrega de tareas asignadas en dos sesiones consecutivas.,9322
+4315,2026-04-10,Positiva,"Excelente aporte en el taller de ciencias, ayudando a integrar a compañeros nuevos.",9322
+4316,2026-10-01,Positiva,Representación sobresaliente de la institución en las Olimpiadas de Matemáticas.,8964
+4317,2026-11-09,Leve,Conversación reiterativa e interrupción durante la explicación del docente.,9127
+4318,2026-08-10,Grave,Agresión física menor en el patio durante el horario de salida.,9127
+4319,2026-08-10,Grave,Agresión física menor en el patio durante el horario de salida.,9204
+4320,2026-07-06,Grave,Retiro del aula de clases sin autorización previa del docente a cargo.,9204
+4321,2026-10-07,Grave,Falta de respeto verbal a un compañero de aula durante las horas de recreo.,9198
+4322,2026-10-12,Positiva,"Excelente aporte en el taller de ciencias, ayudando a integrar a compañeros nuevos.",9303
+4323,2026-05-18,Grave,Escribir grafitis en el mobiliario escolar dentro del aula de clases.,9042
+4324,2026-04-21,Leve,Incumplimiento de la entrega de tareas asignadas en dos sesiones consecutivas.,9194
+4325,2026-09-04,Positiva,"Excelente aporte en el taller de ciencias, ayudando a integrar a compañeros nuevos.",9194
+4326,2026-09-15,Positiva,Apoyo solidario voluntario en el mantenimiento de las áreas verdes del colegio.,8970
+4327,2026-03-02,Positiva,Apoyo solidario voluntario en el mantenimiento de las áreas verdes del colegio.,8970
+4328,2026-06-15,Positiva,"Excelente aporte en el taller de ciencias, ayudando a integrar a compañeros nuevos.",8945
+4329,2026-11-18,Leve,Uso indebido de celular dentro del aula de clases a pesar de advertencia previa.,8966
+4330,2026-04-06,Leve,Conversación reiterativa e interrupción durante la explicación del docente.,8966
+4331,2026-05-11,Positiva,Mostró liderazgo positivo ordenando el aula de cómputo tras finalizar la sesión.,9028
+4332,2026-09-11,Grave,Falta de respeto verbal a un compañero de aula durante las horas de recreo.,9028
+4333,2026-11-18,Grave,Escribir grafitis en el mobiliario escolar dentro del aula de clases.,9028
+4334,2026-11-12,Positiva,"Excelente aporte en el taller de ciencias, ayudando a integrar a compañeros nuevos.",8957
+4335,2026-03-09,Positiva,Mostró liderazgo positivo ordenando el aula de cómputo tras finalizar la sesión.,9199
+4336,2026-10-09,Grave,Agresión física menor en el patio durante el horario de salida.,9199
+4337,2026-08-04,Positiva,"Excelente aporte en el taller de ciencias, ayudando a integrar a compañeros nuevos.",9199
+4338,2026-08-25,Grave,Agresión física menor en el patio durante el horario de salida.,9079
+4339,2026-09-07,Grave,Retiro del aula de clases sin autorización previa del docente a cargo.,8986
+4340,2026-06-22,Grave,Escribir grafitis en el mobiliario escolar dentro del aula de clases.,8986
+4341,2026-08-11,Leve,Uso indebido de celular dentro del aula de clases a pesar de advertencia previa.,9291
+4342,2026-03-20,Leve,Uso indebido de celular dentro del aula de clases a pesar de advertencia previa.,9271
+4343,2026-09-21,Grave,Retiro del aula de clases sin autorización previa del docente a cargo.,9118
+4344,2026-11-02,Positiva,Apoyo solidario voluntario en el mantenimiento de las áreas verdes del colegio.,9118
+4345,2026-09-21,Leve,Uso indebido de celular dentro del aula de clases a pesar de advertencia previa.,8978
+4346,2026-09-23,Leve,Uso indebido de celular dentro del aula de clases a pesar de advertencia previa.,8978
+4347,2026-11-18,Grave,Falta de respeto verbal a un compañero de aula durante las horas de recreo.,8978
+4348,2026-09-07,Positiva,"Excelente aporte en el taller de ciencias, ayudando a integrar a compañeros nuevos.",9253
+4349,2026-05-11,Leve,Conversación reiterativa e interrupción durante la explicación del docente.,9078
+4350,2026-06-05,Leve,Conversación reiterativa e interrupción durante la explicación del docente.,9031
+4351,2026-05-05,Positiva,Apoyo solidario voluntario en el mantenimiento de las áreas verdes del colegio.,9031
+4352,2026-05-06,Positiva,"Excelente aporte en el taller de ciencias, ayudando a integrar a compañeros nuevos.",9031
+4353,2026-03-23,Leve,Llegada tardía al aula tras el toque de timbre del receso escolar.,9245
+4354,2026-06-22,Leve,Incumplimiento de la entrega de tareas asignadas en dos sesiones consecutivas.,9302
+4355,2026-11-19,Grave,Retiro del aula de clases sin autorización previa del docente a cargo.,9302
+4356,2026-05-08,Positiva,Apoyo solidario voluntario en el mantenimiento de las áreas verdes del colegio.,9191
+4357,2026-10-19,Positiva,"Excelente aporte en el taller de ciencias, ayudando a integrar a compañeros nuevos.",9191
+4358,2026-09-10,Leve,Incumplimiento de la entrega de tareas asignadas en dos sesiones consecutivas.,9159
+4359,2026-03-23,Leve,Uso indebido de celular dentro del aula de clases a pesar de advertencia previa.,9159
+4360,2026-05-14,Positiva,"Excelente aporte en el taller de ciencias, ayudando a integrar a compañeros nuevos.",9050
+4361,2026-08-24,Leve,Llegada tardía al aula tras el toque de timbre del receso escolar.,9050
+4362,2026-08-03,Positiva,Apoyo solidario voluntario en el mantenimiento de las áreas verdes del colegio.,9050
+4363,2026-08-24,Leve,Incumplimiento de la entrega de tareas asignadas en dos sesiones consecutivas.,9334
+4364,2026-11-13,Grave,Falta de respeto verbal a un compañero de aula durante las horas de recreo.,9060
+4365,2026-03-18,Leve,Uso indebido de celular dentro del aula de clases a pesar de advertencia previa.,9060
+4366,2026-10-16,Positiva,"Excelente aporte en el taller de ciencias, ayudando a integrar a compañeros nuevos.",9261
+4367,2026-07-27,Leve,Llegada tardía al aula tras el toque de timbre del receso escolar.,9091
+4368,2026-10-05,Leve,Llegada tardía al aula tras el toque de timbre del receso escolar.,8955
+4369,2026-03-16,Leve,Llegada tardía al aula tras el toque de timbre del receso escolar.,9254
+4370,2026-04-14,Positiva,Representación sobresaliente de la institución en las Olimpiadas de Matemáticas.,9254
+4371,2026-09-18,Grave,Falta de respeto verbal a un compañero de aula durante las horas de recreo.,9102
+4372,2026-11-10,Leve,Llegada tardía al aula tras el toque de timbre del receso escolar.,9142
+4373,2026-03-19,Leve,Conversación reiterativa e interrupción durante la explicación del docente.,8987
+4374,2026-04-16,Positiva,Mostró liderazgo positivo ordenando el aula de cómputo tras finalizar la sesión.,8987
+4375,2026-07-08,Grave,Retiro del aula de clases sin autorización previa del docente a cargo.,9151
+4376,2026-03-17,Leve,Conversación reiterativa e interrupción durante la explicación del docente.,9151
+4377,2026-09-07,Grave,Falta de respeto verbal a un compañero de aula durante las horas de recreo.,9317
+4378,2026-07-20,Leve,Uso indebido de celular dentro del aula de clases a pesar de advertencia previa.,9317
+4379,2026-06-23,Grave,Agresión física menor en el patio durante el horario de salida.,9170
+4380,2026-07-20,Positiva,Mostró liderazgo positivo ordenando el aula de cómputo tras finalizar la sesión.,8967
+4381,2026-11-13,Leve,Conversación reiterativa e interrupción durante la explicación del docente.,8967
+4382,2026-04-13,Grave,Retiro del aula de clases sin autorización previa del docente a cargo.,9136
+4383,2026-07-21,Grave,Falta de respeto verbal a un compañero de aula durante las horas de recreo.,9013
+4384,2026-05-18,Leve,Incumplimiento de la entrega de tareas asignadas en dos sesiones consecutivas.,9128
+4385,2026-07-06,Leve,Conversación reiterativa e interrupción durante la explicación del docente.,9119
+4386,2026-03-03,Grave,Retiro del aula de clases sin autorización previa del docente a cargo.,9119
+4387,2026-08-07,Grave,Escribir grafitis en el mobiliario escolar dentro del aula de clases.,9119
+4388,2026-09-22,Leve,Llegada tardía al aula tras el toque de timbre del receso escolar.,9082
+4389,2026-11-05,Leve,Incumplimiento de la entrega de tareas asignadas en dos sesiones consecutivas.,9082
+4390,2026-05-13,Leve,Incumplimiento de la entrega de tareas asignadas en dos sesiones consecutivas.,9149
+4391,2026-11-16,Positiva,Representación sobresaliente de la institución en las Olimpiadas de Matemáticas.,9149
+4392,2026-09-22,Leve,Incumplimiento de la entrega de tareas asignadas en dos sesiones consecutivas.,9149
+4393,2026-04-13,Positiva,"Excelente aporte en el taller de ciencias, ayudando a integrar a compañeros nuevos.",9087
+4394,2026-05-11,Positiva,"Excelente aporte en el taller de ciencias, ayudando a integrar a compañeros nuevos.",9246
+4395,2026-06-15,Positiva,Mostró liderazgo positivo ordenando el aula de cómputo tras finalizar la sesión.,9246
+4396,2026-10-19,Leve,Incumplimiento de la entrega de tareas asignadas en dos sesiones consecutivas.,9246
+4397,2026-08-10,Positiva,"Excelente aporte en el taller de ciencias, ayudando a integrar a compañeros nuevos.",8961
+4398,2026-09-21,Positiva,Apoyo solidario voluntario en el mantenimiento de las áreas verdes del colegio.,8961
+4399,2026-06-22,Positiva,"Excelente aporte en el taller de ciencias, ayudando a integrar a compañeros nuevos.",8960
+4400,2026-08-03,Leve,Conversación reiterativa e interrupción durante la explicación del docente.,8960
+4401,2026-08-10,Leve,Uso indebido de celular dentro del aula de clases a pesar de advertencia previa.,9181
+4402,2026-11-25,Leve,Incumplimiento de la entrega de tareas asignadas en dos sesiones consecutivas.,9233
+4403,2026-10-09,Positiva,Representación sobresaliente de la institución en las Olimpiadas de Matemáticas.,9233
+4404,2026-07-01,Positiva,Mostró liderazgo positivo ordenando el aula de cómputo tras finalizar la sesión.,9282
+4405,2026-04-07,Grave,Escribir grafitis en el mobiliario escolar dentro del aula de clases.,9282

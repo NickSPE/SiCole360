@@ -1,0 +1,41 @@
+id,fecha,motivo,asistencia,apoderado_id,estudiante_id
+444,2026-07-18 20:30:00,Reunión para coordinar apoyo en el curso de Matematica debido a bajo rendimiento (Nota: 10.75).,Falto,8166,9122
+445,2026-07-22 20:30:00,Reunión para coordinar apoyo en el curso de Matematica debido a bajo rendimiento (Nota: 10.85).,Falto,8303,9293
+446,2026-07-18 20:30:00,Reunión para coordinar apoyo en el curso de Matematica debido a bajo rendimiento (Nota: 9.85).,Falto,8106,9038
+447,2026-07-17 20:30:00,Reunión para coordinar apoyo en el curso de Matematica debido a bajo rendimiento (Nota: 10.20).,Asistio,8100,9030
+448,2026-07-21 20:30:00,Reunión para coordinar apoyo en el curso de Matematica debido a bajo rendimiento (Nota: 10.35).,Asistio,8240,9216
+449,2026-07-20 20:30:00,Reunión para coordinar apoyo en el curso de Matematica debido a bajo rendimiento (Nota: 9.75).,Falto,8331,9337
+450,2026-07-14 20:30:00,Reunión para coordinar apoyo en el curso de Matematica debido a bajo rendimiento (Nota: 10.65).,Falto,8119,9059
+451,2026-07-19 20:30:00,Reunión para coordinar apoyo en el curso de Matematica debido a bajo rendimiento (Nota: 10.50).,Asistio,8103,9035
+452,2026-07-18 20:30:00,Reunión para coordinar apoyo en el curso de Matematica debido a bajo rendimiento (Nota: 10.75).,Pendiente,8131,9076
+453,2026-07-15 20:30:00,Reunión para coordinar apoyo en el curso de Matematica debido a bajo rendimiento (Nota: 10.85).,Pendiente,8163,9116
+454,2026-07-17 20:30:00,Reunión para coordinar apoyo en el curso de Matematica debido a bajo rendimiento (Nota: 9.85).,Falto,8295,9283
+455,2026-07-17 20:30:00,Reunión para coordinar apoyo en el curso de Matematica debido a bajo rendimiento (Nota: 10.10).,Asistio,8041,8954
+456,2026-07-17 20:30:00,Reunión para coordinar apoyo en el curso de Matematica debido a bajo rendimiento (Nota: 10.30).,Falto,8037,8949
+457,2026-07-18 20:30:00,Reunión para coordinar apoyo en el curso de Matematica debido a bajo rendimiento (Nota: 10.85).,Asistio,8164,9117
+458,2026-07-15 20:30:00,Reunión para coordinar apoyo en el curso de Matematica debido a bajo rendimiento (Nota: 9.95).,Falto,8156,9106
+459,2026-07-18 20:30:00,Reunión para coordinar apoyo en el curso de Matematica debido a bajo rendimiento (Nota: 9.75).,Asistio,8181,9140
+460,2026-07-17 20:30:00,Reunión para coordinar apoyo en el curso de Matematica debido a bajo rendimiento (Nota: 9.55).,Asistio,8293,9281
+461,2026-07-22 20:30:00,Reunión para coordinar apoyo en el curso de Matematica debido a bajo rendimiento (Nota: 9.85).,Pendiente,8148,9097
+462,2026-07-13 20:30:00,Reunión para coordinar apoyo en el curso de Matematica debido a bajo rendimiento (Nota: 9.50).,Pendiente,8154,9103
+463,2026-07-17 20:30:00,Reunión para coordinar apoyo en el curso de Matematica debido a bajo rendimiento (Nota: 10.35).,Falto,8113,9049
+464,2026-07-13 20:30:00,Reunión para coordinar apoyo en el curso de Matematica debido a bajo rendimiento (Nota: 10.85).,Asistio,8249,9226
+465,2026-07-12 20:30:00,Reunión para coordinar apoyo en el curso de Matematica debido a bajo rendimiento (Nota: 10.05).,Asistio,8180,9139
+466,2026-07-22 20:30:00,Reunión para coordinar apoyo en el curso de Comunicacion debido a bajo rendimiento (Nota: 10.55).,Pendiente,8074,8995
+467,2026-07-13 20:30:00,Reunión para coordinar apoyo en el curso de Comunicacion debido a bajo rendimiento (Nota: 10.50).,Pendiente,8100,9030
+468,2026-07-13 20:30:00,Reunión para coordinar apoyo en el curso de Comunicacion debido a bajo rendimiento (Nota: 10.85).,Asistio,8256,9234
+469,2026-07-18 20:30:00,Reunión para coordinar apoyo en el curso de Comunicacion debido a bajo rendimiento (Nota: 10.85).,Pendiente,8331,9337
+470,2026-07-21 20:30:00,Reunión para coordinar apoyo en el curso de Comunicacion debido a bajo rendimiento (Nota: 10.50).,Pendiente,8041,8954
+471,2026-07-14 20:30:00,Reunión para coordinar apoyo en el curso de Comunicacion debido a bajo rendimiento (Nota: 10.85).,Asistio,8156,9106
+472,2026-07-13 20:30:00,Reunión para coordinar apoyo en el curso de Comunicacion debido a bajo rendimiento (Nota: 10.50).,Asistio,8293,9281
+473,2026-07-13 20:30:00,Reunión para coordinar apoyo en el curso de Comunicacion debido a bajo rendimiento (Nota: 10.40).,Asistio,8148,9097
+474,2026-07-20 20:30:00,Reunión para coordinar apoyo en el curso de Ciencia y Tecnologia debido a bajo rendimiento (Nota: 10.85).,Falto,8100,9030
+475,2026-07-17 20:30:00,Reunión para coordinar apoyo en el curso de Ciencia y Tecnologia debido a bajo rendimiento (Nota: 10.95).,Asistio,8331,9337
+476,2026-07-18 20:30:00,Reunión para coordinar apoyo en el curso de Ciencia y Tecnologia debido a bajo rendimiento (Nota: 10.95).,Asistio,8119,9059
+477,2026-07-21 20:30:00,Reunión para coordinar apoyo en el curso de Ciencia y Tecnologia debido a bajo rendimiento (Nota: 10.95).,Pendiente,8153,9102
+478,2026-07-17 20:30:00,Reunión para coordinar apoyo en el curso de Ciencia y Tecnologia debido a bajo rendimiento (Nota: 10.75).,Asistio,8163,9116
+479,2026-07-22 20:30:00,Reunión para coordinar apoyo en el curso de Ciencia y Tecnologia debido a bajo rendimiento (Nota: 10.50).,Pendiente,8041,8954
+480,2026-07-17 20:30:00,Reunión para coordinar apoyo en el curso de Ciencia y Tecnologia debido a bajo rendimiento (Nota: 10.60).,Falto,8037,8949
+481,2026-07-13 20:30:00,Reunión para coordinar apoyo en el curso de Ciencia y Tecnologia debido a bajo rendimiento (Nota: 10.85).,Asistio,8156,9106
+482,2026-07-14 20:30:00,Reunión para coordinar apoyo en el curso de Ciencia y Tecnologia debido a bajo rendimiento (Nota: 10.90).,Pendiente,8181,9140
+483,2026-07-21 20:30:00,Reunión para coordinar apoyo en el curso de Ciencia y Tecnologia debido a bajo rendimiento (Nota: 10.95).,Asistio,8133,9078
