@@ -688,30 +688,40 @@ def main():
             
             conductas_batch = []
             desc_cond = [
-                ("Felicitación", "Excelente aporte en el taller de ciencias, ayudando a integrar a compañeros nuevos."),
+                ("Positiva", "Excelente aporte en el taller de ciencias, ayudando a integrar a compañeros nuevos."),
                 ("Positiva", "Mostró liderazgo positivo ordenando el aula de cómputo tras finalizar la sesión."),
-                ("Llamado de atención", "Uso indebido de celular dentro del aula de clases a pesar de advertencia previa."),
-                ("Leve", "Conversación reiterativa e interrupción durante la explicación del docente de matemáticas."),
-                ("Grave", "Falta de respeto verbal a un compañero de aula en horas de recreo."),
-                ("Negativa", "No presentó las actividades de clase por segunda vez consecutiva.")
+                ("Positiva", "Representación sobresaliente de la institución en las Olimpiadas de Matemáticas."),
+                ("Positiva", "Apoyo solidario voluntario en el mantenimiento de las áreas verdes del colegio."),
+                ("Leve", "Uso indebido de celular dentro del aula de clases a pesar de advertencia previa."),
+                ("Leve", "Conversación reiterativa e interrupción durante la explicación del docente."),
+                ("Leve", "Llegada tardía al aula tras el toque de timbre del receso escolar."),
+                ("Leve", "Incumplimiento de la entrega de tareas asignadas en dos sesiones consecutivas."),
+                ("Grave", "Falta de respeto verbal a un compañero de aula durante las horas de recreo."),
+                ("Grave", "Escribir grafitis en el mobiliario escolar dentro del aula de clases."),
+                ("Grave", "Retiro del aula de clases sin autorización previa del docente a cargo."),
+                ("Grave", "Agresión física menor en el patio durante el horario de salida.")
             ]
             
-            alumnos_cond = random.sample(estudiantes_data, 60)
-            for est in alumnos_cond:
-                t, desc = random.choice(desc_cond)
-                fecha_cond = date(2026, random.randint(3, 7), random.randint(1, 20))
-                while fecha_cond.weekday() >= 5:
-                    fecha_cond += timedelta(days=1)
-                    
-                conductas_batch.append(Conducta(
-                    estudiante=est,
-                    fecha=fecha_cond,
-                    tipo=t,
-                    descripcion=desc
-                ))
+            for anio_c in [2024, 2025, 2026]:
+                pool_c = pools_por_anio[anio_c]
+                alumnos_cond = random.sample(pool_c, min(120, len(pool_c)))
+                for est in alumnos_cond:
+                    num_incidencias = random.randint(1, 3)
+                    for _ in range(num_incidencias):
+                        t, desc = random.choice(desc_cond)
+                        fecha_cond = date(anio_c, random.randint(3, 11), random.randint(1, 25))
+                        while fecha_cond.weekday() >= 5:
+                            fecha_cond += timedelta(days=1)
+                            
+                        conductas_batch.append(Conducta(
+                            estudiante=est,
+                            fecha=fecha_cond,
+                            tipo=t,
+                            descripcion=desc
+                        ))
                 
             Conducta.objects.bulk_create(conductas_batch)
-            print(f"  ✅ {len(conductas_batch)} reportes de conducta ingresados.")
+            print(f"  ✅ {len(conductas_batch)} reportes de conducta ingresados para 2024-2026.")
 
             # ----------------------------------------------------
             # 11. FINANZAS: PENSIONES Y PAGOS REALISTAS

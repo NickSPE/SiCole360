@@ -1,6 +1,17 @@
 import React, { createContext, useState, useEffect, useContext } from 'react';
 import axios from 'axios';
 
+// Intercept responses to unwrap paginated results from the backend automatically
+axios.interceptors.response.use(
+  (response) => {
+    if (response.data && typeof response.data === 'object' && 'results' in response.data && 'count' in response.data) {
+      response.data = response.data.results;
+    }
+    return response;
+  },
+  (error) => Promise.reject(error)
+);
+
 const AuthContext = createContext(null);
 
 export const useAuth = () => {
