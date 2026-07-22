@@ -526,29 +526,27 @@ def main():
             print("[8/14] Generando Notas y Promedios coherentes...")
             
             DIFICULTAD = {
-                "Matematica": (11.2, 3.8),
-                "Ciencia y Tecnologia": (12.4, 3.4),
-                "Comunicacion": (12.8, 3.0),
-                "Personal Social": (13.2, 2.8),
-                "Ingles": (12.0, 3.5),
-                "Computacion": (13.8, 2.5),
-                "Arte y Cultura": (14.8, 2.2),
-                "Educacion Fisica": (15.8, 1.8),
+                "Matematica": (14.2, 2.2),
+                "Ciencia y Tecnologia": (14.8, 2.0),
+                "Comunicacion": (15.2, 1.8),
+                "Personal Social": (15.5, 1.5),
+                "Ingles": (14.5, 2.1),
+                "Computacion": (16.0, 1.5),
+                "Arte y Cultura": (16.5, 1.2),
+                "Educacion Fisica": (17.0, 1.0),
             }
             
             perfil_talento = {}
             for est in estudiantes_data:
                 r = random.random()
-                if r < 0.15:
-                    perfil_talento[est.id] = random.uniform(2.5, 4.5)
-                elif r < 0.35:
-                    perfil_talento[est.id] = random.uniform(0.8, 2.5)
+                if r < 0.25:
+                    perfil_talento[est.id] = random.uniform(2.0, 3.5) # Destacado (17-20)
                 elif r < 0.70:
-                    perfil_talento[est.id] = random.uniform(-1.0, 0.8)
-                elif r < 0.90:
-                    perfil_talento[est.id] = random.uniform(-3.0, -1.0)
+                    perfil_talento[est.id] = random.uniform(0.5, 2.0) # Previsto (14-16)
+                elif r < 0.88:
+                    perfil_talento[est.id] = random.uniform(-1.5, 0.5) # En proceso (11-13)
                 else:
-                    perfil_talento[est.id] = random.uniform(-5.0, -3.0)
+                    perfil_talento[est.id] = random.uniform(-4.0, -1.5) # En inicio / Riesgo (<11)
             
             notas_batch = []
             promedios_batch = []
