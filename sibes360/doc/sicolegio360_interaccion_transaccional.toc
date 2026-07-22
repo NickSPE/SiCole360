@@ -1,0 +1,63 @@
+\babel@toc {spanish}{}\relax 
+\contentsline {chapter}{Resumen}{1}{chapter*.1}%
+\contentsline {chapter}{Abstract}{2}{chapter*.2}%
+\contentsline {chapter}{Introducción}{8}{chapter*.3}%
+\contentsline {chapter}{\numberline {1}Marco Conceptual: Arquitectura ERP y Base de Datos Centralizada en SICOLEGIO 360}{9}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Evolución Histórica y Justificación Socio-Tecnológica del Ed-ERP}{9}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Mapeo de la Pirámide Organizacional Escolar (Modelo de Laudon \& Laudon)}{10}{section.1.2}%
+\contentsline {section}{\numberline {1.3}La Base de Datos Relacional Centralizada como Única Fuente de Verdad (SSOT)}{11}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Catálogo Detallado de Módulos Funcionales y Reglas de Negocio}{12}{section.1.4}%
+\contentsline {subsection}{\numberline {1.4.1}1. Módulo de Secretaría Académica}{14}{subsection.1.4.1}%
+\contentsline {subsection}{\numberline {1.4.2}2. Módulo de Tesorería y Administración}{14}{subsection.1.4.2}%
+\contentsline {subsection}{\numberline {1.4.3}3. Módulo de Docencia y Aula}{14}{subsection.1.4.3}%
+\contentsline {subsection}{\numberline {1.4.4}4. Módulo Psicopedagógico y Tutoría}{15}{subsection.1.4.4}%
+\contentsline {subsection}{\numberline {1.4.5}5. Módulo de Dirección Estratégica}{15}{subsection.1.4.5}%
+\contentsline {subsection}{\numberline {1.4.6}6. Portal de Apoderados y Estudiantes}{15}{subsection.1.4.6}%
+\contentsline {section}{\numberline {1.5}Arquitectura de Procesamiento de Datos: OLTP vs. OLAP}{16}{section.1.5}%
+\contentsline {chapter}{\numberline {2}Ingeniería Transaccional Interdepartamental: Secretaría Académica -- Tesorería}{17}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Diagnóstico de la Interacción entre Secretaría Académica y Tesorería}{17}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Mapeo de Entidades y Datos Compartidos}{18}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Flujo de Procesos Integrados bajo el Estándar BPMN (To-Be)}{19}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Matriz de Transacciones Cruzadas en el TPS}{20}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Mecanismos de Consistencia TPS y Propiedades ACID}{21}{section.2.5}%
+\contentsline {chapter}{\numberline {3}Diseño de la Capa de Métricas, KPIs y Requerimientos de Información Institucionales}{23}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Taxonomía de Indicadores en la Gestión Escolar Privada}{23}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Catálogo Formalizado de KPIs Institucionales}{24}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}1. Tasa de Ocupación de Vacantes por Sección ($\text {TOV}_i$)}{24}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}2. Índice de Morosidad por Grado ($\text {IMG}_g$)}{24}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}3. Tiempo Promedio de Liquidación de Matrícula ($\text {TPLM}$)}{24}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.4}4. Ingreso Anual Recurrente Educativo ($\text {ARR}_{\text {educativo}}$)}{25}{subsection.3.2.4}%
+\contentsline {subsection}{\numberline {3.2.5}5. Tasa de Retención Estudiantil Anual ($\text {TRA}$)}{25}{subsection.3.2.5}%
+\contentsline {section}{\numberline {3.3}Matriz de Requerimientos de Información por Perfil de Usuario (RBAC)}{25}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Framework de Filtros Temporales Jerárquicos (Año, Semestre, Trimestre, Bimestre, Mes)}{26}{section.3.4}%
+\contentsline {chapter}{\numberline {4}Dashboards Operativos Nativos en el Código Web de SICOLEGIO 360 (Nivel MIS / Reporting Web)}{28}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Módulo de Reportes Integrado en la Aplicación Web}{28}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Protocolos Operativos de Ventanilla Única}{28}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Dashboard Operativo 1: Control de Matrículas y Aforo en Vivo (Secretaría)}{29}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Dashboard Operativo 2: Control Diario de Caja y Cobranzas (Tesorería)}{30}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Dashboard Operativo 3: Ficha Consolidada y Estado de Cuenta del Estudiante}{32}{section.4.5}%
+\contentsline {chapter}{\numberline {5}Modelado e Integración Analítica en Power BI (Nivel DSS / BI Estratégico)}{34}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Del Modelo Transaccional (OLTP) al Modelo Analítico (OLAP)}{34}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Pipeline ETL y Vistas SQL de Extracción}{34}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Modelado Dimensional en Estrella (Star Schema)}{35}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Desarrollo de Expresiones DAX para KPIs Estratégicos}{36}{section.5.4}%
+\contentsline {paragraph}{1. Recaudación Total Acumulada:}{36}{paragraph*.10}%
+\contentsline {paragraph}{2. Porcentaje de Morosidad por Grado/Nivel:}{36}{paragraph*.11}%
+\contentsline {paragraph}{3. Tasa de Ocupación de Vacantes por Sección:}{36}{paragraph*.12}%
+\contentsline {paragraph}{4. ARR Educativo (Ingreso Anual Recurrente Proyectado):}{36}{paragraph*.13}%
+\contentsline {section}{\numberline {5.5}Dashboards Estratégicos en Power BI para la Alta Dirección}{37}{section.5.5}%
+\contentsline {subsection}{\numberline {5.5.1}Dashboard Power BI 1: Radar de Salud Financiera y Morosidad por Grado}{37}{subsection.5.5.1}%
+\contentsline {subsection}{\numberline {5.5.2}Dashboard Power BI 2: Matriz de Eficiencia Operativa y Viabilidad por Sección}{39}{subsection.5.5.2}%
+\contentsline {subsection}{\numberline {5.5.3}Dashboard Power BI 3: Embudo de Conversión de Matrícula (Pipeline de Admisión)}{40}{subsection.5.5.3}%
+\contentsline {subsection}{\numberline {5.5.4}Dashboard Power BI 4: Correlación Rendimiento Académico vs. Regularidad de Pago}{42}{subsection.5.5.4}%
+\contentsline {subsection}{\numberline {5.5.5}Dashboard Power BI 5: Proyección Financiera Anual e Ingreso Recurrente (ARR Educativo)}{43}{subsection.5.5.5}%
+\contentsline {subsection}{\numberline {5.5.6}Dashboard Power BI 6: Panel de Fidelización y Retención Estudiantil (Análisis de Churn)}{45}{subsection.5.5.6}%
+\contentsline {section}{\numberline {5.6}Seguridad y Gobernanza de Datos: Row-Level Security (RLS)}{47}{section.5.6}%
+\contentsline {section}{\numberline {5.7}Plan de Mejora Continua y Eficiencia Operativa}{47}{section.5.7}%
+\contentsline {section}{\numberline {5.8}Matriz de Gestión de Riesgos Socio-Técnicos y Mitigación}{48}{section.5.8}%
+\contentsline {section}{\numberline {5.9}Cumplimiento Legal y Protección de Datos Personales (Ley N° 29733)}{49}{section.5.9}%
+\contentsline {chapter}{Conclusiones}{50}{chapter*.20}%
+\contentsline {chapter}{Recomendaciones}{51}{chapter*.21}%
+\contentsline {chapter}{Recomendaciones}{52}{chapter*.22}%
+\contentsline {chapter}{Referencias Bibliográficas}{53}{chapter*.23}%
+\contentsline {chapter}{Anexos}{54}{chapter*.24}%
