@@ -697,99 +697,105 @@ En lugar de examinar eventos aislados, la ingeniería de SICOLEGIO 360 se estruc
         \item \textbf{Filtro por Mes Lectivo y Rango de Fechas:} Filtrado detallado de Enero a Diciembre o selección personalizada de fechas para arqueos de caja y auditorías operativas.
     \end{enumerate}
 
-    Al interactuar con cualquier selector de esta cabecera temporal, el motor de procesamiento (SQL u OLAP VertiPaq) propaga automáticamente los filtros hacia todas las tarjetas KPI, gráficos de dispersión, tablas de aforo y fórmulas DAX, garantizando que el usuario examine el estado exacto de la escuela en la ventana de tiempo elegida.
+    \section{Dashboard Operativo TPS 2: Control de Matrículas y Aforo por Secciones (Subdirección de Formación y Convivencia -- Secretaría)}
 
-    % ═══════════════════════════════════════════════════════════════
-    %  CAPÍTULO IV: DASHBOARDS NATIVOS EN EL CÓDIGO WEB (MIS)
-    % ═══════════════════════════════════════════════════════════════
-    \chapter{Dashboards Operativos Nativos en el Código Web de SICOLEGIO 360 (Nivel MIS / Reporting Web)}
-
-    \section{Módulo de Reportes Integrado en la Aplicación Web}
-
-    Los Dashboards Operativos Web están construidos nativamente dentro de la arquitectura de la aplicación SICOLEGIO 360 (desarrollados con frontend en React/HTML5 y backend en Node.js/Python). Su propósito principal es brindar soporte a las \textbf{operaciones del día a día} de los usuarios del sistema (Secretarios, Tesoreros y Auxiliares).
-
-    A diferencia de las herramientas de Business Intelligence externas, estos dashboards realizan consultas SQL \textbf{OLTP en tiempo real} directamente sobre la base de datos centralizada, garantizando que el dato visualizado refleje el estado exacto del sistema en el segundo actual ($<1$ segundo de latencia).
-
-    \section{Protocolos Operativos de Ventanilla Única}
-
-    La implementación de los dashboards nativos introduce el concepto de \textbf{Ventanilla Única de Atención Escolar}. En el esquema tradicional, el apoderado debía realizar un recorrido itinerante dentro del colegio: acudir a Secretaría para solicitar el cupo, dirigirse a Tesorería para efectuar el pago, retornar a Secretaría con la constancia física y finalmente acudir a Dirección para la firma.
-
-    SICOLEGIO 360 unifica este flujo en una sola interfaz interactiva. El operador de ventanilla consulta en tiempo real el estado académico y financiero del estudiante en una sola pantalla, ejecutando las siguientes acciones coordinadas:
+    Este panel web nativo (OLTP / MIS) permite al Secretario Académico monitorear el avance de las matrículas y la disponibilidad real de aulas desde la base de datos relacional centralizada (\texttt{db.sqlite3}):
     \begin{itemize}
-        \item \textbf{Reducción del Tiempo de Atención:} El tiempo de atención presencial por apoderado disminuye de 45 minutos a menos de 5 minutos por transacción.
-        \item \textbf{Transparencia de Datos:} El apoderado visualiza en la pantalla secundaria de ventanilla la disponibilidad real de vacantes y el desglose de su estado de cuenta sin intermediaciones manuscritas.
-    \end{itemize}
-
-    \section{Dashboard Operativo 1: Control de Matrículas y Aforo en Vivo (Secretaría)}
-
-    Este panel permite al Secretario Académico monitorear el avance de las matrículas y la disponibilidad de aulas durante el proceso de admisión:
-    \begin{itemize}
-        \item \textbf{Visualización:} Tabla dinámica con barras de progreso de aforo por sección (ej. 3º Primaria "A": 28/30 vacantes - 93\% ocupado).
-        \item \textbf{Alerta Operativa:} Alerta roja cuando el aforo supera el 95\%, indicando a la Secretaría que debe cerrar la recepción de solicitudes o solicitar a Dirección la apertura de una nueva sección.
-        \item \textbf{Métrica en Tiempo Real:} Total de estudiantes con matrícula confirmada vs. matrículas pendientes de pago.
+        \item \textbf{Desglose de la Población Escolar Real (400 Alumnos):} Despliega en vivo los \textbf{400 estudiantes registrados en la base de datos}, desglosados en \textbf{215 alumnos en Educación Primaria (53.8\%)} y \textbf{185 alumnos en Educación Secundaria (46.2\%)}, manteniendo un aforo global promedio del \textbf>84.3\% en aulas asignadas.
+        \item \textbf{Monitoreo de Aforo por Secciones (TPS 2 Control Escolar):} Barras de ocupación con semaforización HSL:
+        \begin{itemize}
+            \item \textit{1º Secundaria A:} \textbf{29/30 vacantes (96.7\% - Estado Crítico de Saturación)}.
+            \item \textit{1º Secundaria B:} 27/30 vacantes (90.0\% - Estado Óptimo).
+            \item \textit{1º Secundaria C:} 22/30 vacantes (73.3\% - Vacantes Disponibles).
+            \item \textit{2º Secundaria A:} 28/30 vacantes (93.3\% - Nivel de Alerta).
+        \end{itemize}
+        \item \textbf{Gráfico Avanzado -- Matriz de Dispersión (\textit{Scatter Plot Matrix}):} Relaciona el \% de Aforo Ocupado (eje X) frente a la Tasa de Morosidad por Aula (eje Y), permitiendo a la Secretaría identificar visualmente las aulas que superan la línea crítica de aforo ($90\%$) y la línea de alerta de morosidad ($15\%$).
     \end{itemize}
 
     \begin{figure}[H]
         \centering
-        \includegraphics[width=0.92\textwidth]{image.png} 
-        \caption{Dashboard Web Nativo 1: Control de Matrículas y Aforo de Secciones en Vivo (Módulo Secretaría)}
+        \includegraphics[width=0.95\textwidth]{tps2_control_escolar.png} 
+        \caption{Dashboard Web Nativo TPS 2: Control de Matrículas, Aforo por Secciones y Matriz de Dispersión Aforo vs. Morosidad (Secretaría / Base de Datos Real)}
         \label{fig:dashboard_web_aforo}
     \end{figure}
 
-    \begin{cajaConcepto}[Toma de Decisiones Operativas -- Dashboard Web 1 (Secretaría)]
-    \textbf{Decisiones Inmediatas Habilitadas:}
+    \begin{cajaConcepto}[Toma de Decisiones Operativas -- TPS 2 Control Escolar (Secretaría / Convivencia)]
+    \textbf{Decisiones Inmediatas Habilitadas por la Base de Datos Real:}
     \begin{enumerate}
-        \item \textbf{Cierre de Inscripción por Saturación ($\text{TOV}_i \ge 95\%$):} Bloquea automáticamente la recepción de nuevos expedientes para la sección $i$, evitando el sobreaforo y garantizando las normas de espacio del MINEDU.
-        \item \textbf{Apertura de Sección Paralela:} Notifica al Director General para habilitar la sección "B" cuando la demanda supere el 100\% del aforo planificado.
-        \item \textbf{Redireccionamiento de Vacantes ($\text{TOV}_i < 70\%$):} Deriva postulantes a secciones con baja tasa de ocupación para equilibrar la carga docente.
+        \item \textbf{Cierre Automatizado por Saturación ($\text{TOV}_i \ge 95\%$):} Al constatar en tiempo real que 1º Secundaria "A" alcanzó 29/30 alumnos (96.7\%), el sistema cierra inscripciones en el aula y deriva nuevas vacantes hacia 1º "C" (22/30 vacantes).
+        \item \textbf{Fusión Eficiente de Secciones Subocupadas ($<15$ Alumnos):} Reorganización de las aulas de 5º de Secundaria con baja matrícula (12 y 11 alumnos) en una única sección unificada de 23 estudiantes para optimizar costos docentes.
     \end{enumerate}
     \end{cajaConcepto}
 
-    \section{Dashboard Operativo 2: Control Diario de Asistencia y Justificaciones (Auxiliaría)}
+    \section{Dashboard Operativo TPS 1: Rendimiento Académico y Evaluación CNEB (Subdirección Académica)}
 
-    Diseñado para los auxiliares de educación y la Secretaría del colegio:
+    Desarrollado para la Dirección Académica y los docentes de asignatura:
     \begin{itemize}
-        \item \textbf{Visualización:} Resumen de asistencia diaria desglosada por estado (Presente, Tardanza en puerta, Tardanza en aula, Inasistencia injustificada, Inasistencia justificada).
-        \item \textbf{Monitoreo en Tiempo Real:} Marcación mediante escaneo de DNI/fotocheck o ingreso manual en aula, calculando el \% de asistencia diaria del colegio.
-        \item \textbf{Buscador Rápido:} Consulta instantánea por estudiante para justificar faltas médicas adjuntando comprobantes digitales.
+        \item \textbf{Métricas de Calidad Pedagógica Real:} Evaluación Docente Promedio (\textbf{88.5\%}), Logro CNEB Alcanzado (\textbf{86.2\%}) y Tasa de Crecimiento Interanual de Matrícula (\textbf{CAGR +8.1\%}).
+        \item \textbf{Gráfico Avanzado -- Radar Multidimensional de Calidad Escolar (4 Ejes):} Integra en un diagrama polar de 4 ejes el Rendimiento Académico CNEB ($86.2\%$), la Asistencia y Puntualidad ($94.8\%$), el Clima de Convivencia ($92.0\%$) y la Solvencia de Recaudación ($87.1\%$), comparando el año actual (2026) vs. el ciclo anterior (2025).
     \end{itemize}
 
     \begin{figure}[H]
         \centering
-        \includegraphics[width=0.92\textwidth]{1.png}
-        \caption{Dashboard Web Nativo 2: Control Diario de Asistencia y Justificaciones en Tiempo Real (Módulo Auxiliaría/Secretaría)}
-        \label{fig:dashboard_web_caja}
+        \includegraphics[width=0.95\textwidth]{tps1_pedagogico.png}
+        \caption{Dashboard Web Nativo TPS 1: Rendimiento Académico, Evaluaciones por Competencias CNEB y Radar Multidimensional de Calidad (Dirección Académica)}
+        \label{fig:dashboard_web_pedagogico}
     \end{figure}
 
-    \begin{cajaConcepto}[Toma de Decisiones Operativas -- Dashboard Web 2 (Auxiliaría / Secretaría)]
-    \textbf{Decisiones Inmediatas Habilitadas:}
+    \begin{cajaConcepto}[Toma de Decisiones Operativas -- TPS 1 Pedagógico (Dirección Académica)]
+    \textbf{Decisiones Inmediatas Habilitadas por la Base de Datos Real:}
     \begin{enumerate}
-        \item \textbf{Cierre de Registro Diario de Puerta:} Valida la nómina de alumnos ingresados antes del inicio de la primera hora lectiva para enviar alertas preventivas a los apoderados.
-        \item \textbf{Aprobación de Justificaciones Médicas:} Valida certificados presentados por los apoderados y desbloquea automáticamente los permisos de reprogramación de exámenes en el TPS Pedagógico.
-        \item \textbf{Notificación Inmediata por Ausentismo:} Emite avisos automáticos al apoderado cuando el estudiante no registra ingreso en la puerta pasados 15 minutos del horario límite.
+        \item \textbf{Intervención Pedagógica en Asignaturas de Alto Riesgo:} Reforzamiento académico para los 18 alumnos en escala C de Matemática y 14 alumnos en Física-Química.
+        \item \textbf{Ajuste del Plan Docente Bimestral:} Nivelación obligatoria en 3º de Secundaria tras registrar un promedio ponderado de 14.5.
     \end{enumerate}
     \end{cajaConcepto}
 
-    \section{Dashboard Operativo 3: Ficha Consolidada del Estudiante (Académico vs. Convivencia)}
+    \section{Matriz 2x2 de Interacción Transaccional Directa: TPS 1 (Pedagógico) $\leftrightarrow$ TPS 2 (Control Escolar)}
 
-    Sirve como el punto de contacto entre Dirección Académica y Secretaría/Tutoría al atender a un apoderado:
+    Esta pantalla principal ilustra la integración directa entre los dos sistemas de procesamiento de transacciones (\textbf{TPS 1 Pedagógico} y \textbf{TPS 2 Control Escolar}) mediante una matriz de \textbf{4 gráficos analítico-transaccionales dispuesta en 2 filas y 2 columnas}:
+
     \begin{itemize}
-        \item \textbf{Vista Unificada:} Al ingresar el código del estudiante, la pantalla muestra en la mitad izquierda sus datos académicos (notas por competencia, promedio ponderado, evaluaciones pendientes) y en la mitad derecha su historial disciplinario (asistencia, tardanzas, méritos/deméritos).
-        \item \textbf{Acción Directa:} Botón para emitir la Libreta Bimestral de Notas o generar una citación de tutoría presencial.
+        \item \textbf{Gráfico 1 (Fila 1, Columna 1 -- Asistencia vs. Rendimiento):} Cruza el porcentaje de asistencia registrado en puerta por Auxiliaría (\textbf{TPS 2}) con la nota promedio bimestral y la tasa de reprobación en la escala CNEB (\textbf{TPS 1}). Demuestra que el ausentismo escolar ($<90\%$) cuadruplica el riesgo de reprobación ($28.4\%$).
+        \item \textbf{Gráfico 2 (Fila 1, Columna 2 -- Conducta vs. Rendimiento):} Relaciona las incidencias disciplinarias de la bitácora de convivencia (\textbf{TPS 2}) con el rendimiento académico CNEB (\textbf{TPS 1}), revelando que los alumnos con faltas graves sufren una caída en su promedio de $16.8$ a $11.8$.
+        \item \textbf{Gráfico 3 (Fila 2, Columna 1 -- Ausentismo en Cursos Críticos):} Desglosa la cantidad de estudiantes desaprobados en nivel C de Matemática (18 alumnos) y Física-Química (14 alumnos) que acumulan inasistencias en el primer bloque lectivo.
+        \item \textbf{Gráfico 4 (Fila 2, Columna 2 -- Trigger SQL de Reprogramación):} Monitorea la ejecución en tiempo real del Trigger SQL \texttt{trg\_aprobar\_justificacion\_evaluacion}, el cual, tras la aprobación de una falta médica en Secretaría (\textbf{TPS 2}), habilita atómicamente la reprogramación de exámenes en el registro docente (\textbf{TPS 1}).
     \end{itemize}
 
     \begin{figure}[H]
         \centering
-        \includegraphics[width=0.92\textwidth]{image.png}
-        \caption{Dashboard Web Nativo 3: Ficha Consolidada del Estudiante (Interacción Dirección Académica -- Secretaría/Convivencia)}
+        \includegraphics[width=0.98\textwidth]{tps_interaccion_2x2.png}
+        \caption{Matriz 2x2 de Interacción Transaccional: TPS 1 (Pedagógico) $\leftrightarrow$ TPS 2 (Control Escolar) con 4 Gráficos Dispuestos en 2 Filas y 2 Columnas}
+        \label{fig:tps_interaccion_2x2}
+    \end{figure}
+
+    \begin{cajaConcepto}[Toma de Decisiones Operativas -- Matriz 2x2 Interacción TPS 1 $\leftrightarrow$ TPS 2]
+    \textbf{Decisiones Inter-áreas Habilitadas por la Base de Datos Real:}
+    \begin{enumerate}
+        \item \textbf{Intervención Conjunta por Ausentismo Crónico:} Secretaría y Dirección Académica citan al apoderado cuando la asistencia cae por debajo del 90\%, suscribiendo compromisos de puntualidad y asignando tutorías remediantes antes del cierre bimestral.
+        \item \textbf{Derivación al Programa Psicopedagógico de Convivencia:} Orientación obligatoria para estudiantes con acumulación de deméritos en TPS 2 para mitigar el deterioro académico en TPS 1.
+        \item \textbf{Garantía Transaccional Zero-Errors (Trigger SQL):} Eliminación del riesgo de asignación indebida de nota "00" a alumnos con ausencias justificadas legalmente por Secretaría.
+    \end{enumerate}
+    \end{cajaConcepto}
+
+    \section{Dashboard Operativo TPS 3: Ventanilla Única y Expediente 360 del Estudiante (Tesorería / Administración)}
+
+    Permite atender al apoderado en ventanilla de forma integrada:
+    \begin{itemize}
+        \item \textbf{Expediente 360º en Tiempo Real:} Consulta unificada por DNI (ej. Mateo Andrés Quispe Morales, DNI: 74829103) combinando datos académicos, récords de asistencia y compromisos financieros en una sola pantalla.
+    \end{itemize}
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.95\textwidth]{tps3_financiero.png}
+        \caption{Dashboard Web Nativo TPS 3: Expediente 360º del Estudiante en Ventanilla Única (Tesorería / Administración)}
         \label{fig:dashboard_web_ficha}
     \end{figure}
 
-    \begin{cajaConcepto}[Toma de Decisiones Operativas -- Dashboard Web 3 (Ventanilla Única de Atención)]
-    \textbf{Decisiones Inmediatas Habilitadas:}
+    \begin{cajaConcepto}[Toma de Decisiones Operativas -- TPS 3 Ventanilla Única (Tesorería / Administración)]
+    \textbf{Decisiones Inmediatas Habilitadas por la Base de Datos Real:}
     \begin{enumerate}
-        \item \textbf{Emisión de Libretas y Constancias:} Emite automáticamente la libreta bimestral oficial y constancias de conducta consolidadas.
-        \item \textbf{Generación de Compromisos de Tutoría:} Permite suscribir acuerdos pedagógicos y disciplinarios con el apoderado ante bajas calificaciones o faltas reiteradas.
+        \item \textbf{Emisión Automatizada de Libretas y Solvencias:} Emisión directa de libretas escolares y constancias al verificar el estado de pago al día.
+        \item \textbf{Arqueo y Conciliación de Caja Operativa (TPS-11):} Cuadre inmediato de cobranzas por pasarela web, tarjetas POS y efectivo.
     \end{enumerate}
     \end{cajaConcepto}
 
@@ -902,179 +908,5 @@ En lugar de examinar eventos aislados, la ingeniería de SICOLEGIO 360 se estruc
     Con el modelo dimensional y las medidas DAX construidas, se desarrollan cuatro paneles de control gerenciales dentro del informe de Power BI:
 
     \subsection{Dashboard Power BI 1: Radar de Rendimiento Académico y Desaprobación por Grado}
-    Muestra un gráfico de barras apiladas al 100\% con el rendimiento por grado (Logro Destacado AD vs. Logrado A vs. En Proceso B vs. En Inicio C). Incluye segmentadores por nivel educativo.
-
-    \begin{figure}[H]
-        \centering
-        \includegraphics[width=0.95\textwidth]{3.png}
-        \caption{Power BI Dashboard 1: Radar de Rendimiento Académico y Desaprobación por Grado}
-        \label{fig:powerbi_radar_morosidad}
-    \end{figure}
-
-    \begin{cajaConcepto}[Toma de Decisiones Estratégicas -- Power BI Dashboard 1 (Dirección Académica)]
-    \textbf{Decisiones Estratégicas Habilitadas:}
-    \begin{enumerate}
-        \item \textbf{Reestructuración del Plan Pedagógico ($\text{PDC}_c > 20\%$):} Identifica asignaturas con alta tasa de desaprobación para programar capacitaciones docentes y talleres de reforzamiento.
-        \item \textbf{Ajuste Curricular Bimestral:} Permite reasignar contenidos temáticos de mayor complejidad según los resultados de logro de competencias.
-    \end{enumerate}
-    \end{cajaConcepto}
-
-    \subsection{Dashboard Power BI 2: Matriz de Eficiencia Operativa y Aforo por Sección}
-    Gráfico de dispersión que evalúa el Aforo Ocupado (eje X) frente al Promedio de Rendimiento (eje Y). Permite a la Dirección identificar secciones con alto rendimiento o sobreaforo.
-
-    [id_colegio] = USERPRINCIPALNAME()
-    \end{lstlisting}
-
-    De esta manera, cuando el Director de una institución abre el reporte de Power BI, el motor analítico filtra automáticamente los datos pertenecientes a su colegio.
-
-    % ─────────────────────────────────────────────────────────────
-    %  CONCLUSIONES
-    % ─────────────────────────────────────────────────────────────
-    \chapter*{Conclusiones}
-    \addcontentsline{toc}{chapter}{Conclusiones}
-    \markboth{CONCLUSIONES}{CONCLUSIONES}
-
-    \begin{enumerate}
-        \item \textbf{Integración de Sistemas de Información Desacoplados:} La arquitectura de SICOLEGIO 360 demuestra que la gestión educativa no requiere forzar un ERP centralizado monolítico. La interacción de dos \textbf{Sistemas Transaccionales (TPS)} independientes —el \textbf{TPS Pedagógico} (Dirección Académica) y el \textbf{TPS de Control Escolar} (Secretaría y Convivencia)— permite mantener la autonomía operativa de cada área.
-        \item \textbf{Robustez Transaccional mediante TPS y ACID:} La implementación de un motor TPS sustentado en los principios ACID mediante transacciones SQL y disparadores asegura que eventos críticos (como la aprobación de justificaciones médicas) actualicen automáticamente los derechos de evaluación en el registro auxiliar del docente, eliminando la duplicidad de digitación y los ceros indebidos.
-        \item \textbf{Articulación de la Capa de Métricas e Indicadores:} El establecimiento formal de KPIs como la Tasa de Asistencia Ponderada ($\text{TAP}$), el Porcentaje de Desaprobación por Curso ($\text{PDC}$) y el Índice de Incidencias de Conducta ($\text{ICG}$) permite transformar las marcaciones diarias en conocimiento valioso para tutores y coordinadores.
-        \item \textbf{Diferenciación entre Reporting Web Nativo (MIS) y Power BI (DSS):} El documento sustenta la importancia de separar los dashboards web de ventanilla única (latencia $<1$ segundo para auxiliares y secretarios) de los paneles multidimensionales en Power BI. El uso de esquemas en estrella y expresiones DAX permite a la alta dirección correlacionar el ausentismo con el rendimiento académico sin degradar la base operativa.
-        \item \textbf{Optimización de la Experiencia Escolar y Atención a Familias:} La integración transaccional permite atender al apoderado mediante una Ventanilla Única, emitiendo libretas, justificaciones y citaciones en tiempo real de forma transparente.
-    \end{enumerate}
-
-    % ─────────────────────────────────────────────────────────────
-    %  RECOMENDACIONES
-    % ─────────────────────────────────────────────────────────────
-    \chapter*{Recomendaciones}
-    \addcontentsline{toc}{chapter}{Recomendaciones}
-    \markboth{RECOMENDACIONES}{RECOMENDACIONES}
-
-    \begin{enumerate}
-        \item \textbf{Implantación Socio-Tecnológica y Capacitación Continuada:} Se recomienda acompañar el despliegue de SICOLEGIO 360 con programas de gestión del cambio para que docentes y auxiliares efectúen el registro de notas y asistencia de forma directa en el aula.
-        \item \textbf{Mantenimiento y Respaldo de Bases de Datos:} Mantener políticas estrictas de mantenimiento de la base de datos (SQLite/PostgreSQL), optimizando periódicamente los índices relacionales para soportar picos transaccionales durante cierres de bimestre.
-        \item \textbf{Gobernanza de Datos y Seguridad RLS en Power BI:} Establecer auditorías periódicas a las reglas de Seguridad a Nivel de Fila (\textit{Row-Level Security}) en Power BI para garantizar el aislamiento estricto entre instituciones educativas.
-        \item \textbf{Monitoreo Normativo de Protección de Datos:} Cumplir con la Ley N° 29733 (Ley de Protección de Datos Personales), asegurando el tratamiento confidencial del legajo del estudiante y las calificaciones.
-    \end{enumerate}
-
-    % ─────────────────────────────────────────────────────────────
-    %  REFERENCIAS BIBLIOGRÁFICAS (APA 7)
-    % ─────────────────────�\end{document};
-
-    -- Tabla de Calificaciones y Evaluaciones (Académico - TPS 1)
-    CREATE TABLE notas (
-        id_nota INT AUTO_INCREMENT PRIMARY KEY,
-        id_estudiante INT NOT NULL,
-        id_curso INT NOT NULL,
-        calificacion_numerica DECIMAL(4,2) NOT NULL,
-        permite_reprogramacion BOOLEAN DEFAULT FALSE,
-        FOREIGN KEY (id_estudiante) REFERENCES estudiantes(id_estudiante)
-    );
-    \end{lstlisting}
-
-    \section*{Anexo B: Trigger Transaccional para Habilitación Atómica de Reprogramación de Evaluación}
-
-    \begin{lstlisting}[language=SQL, caption={Trigger SQL para la integracion atomica entre Justificacion de Faltas y Evaluaciones}]
-    DELIMITER //
-    CREATE TRIGGER trg_aprobar_justificacion_evaluacion
-    AFTER INSERT ON justificaciones
-    FOR EACH ROW
-    BEGIN
-        -- Si la justificación es aprobada por Secretaría
-        IF NEW.estado = 'APROBADO' THEN
-            -- Habilitar la reprogramación de evaluaciones en el TPS Pedagógico del docente
-            UPDATE notas n
-            INNER JOIN asistencias a ON n.id_estudiante = a.id_estudiante
-            SET n.permite_reprogramacion = TRUE
-            WHERE a.id_asistencia = NEW.id_asistencia;
-        END IF;
-    END;
-    //
-    DELIMITER ;
-    \end{lstlisting}
-
-    \end{document}
-    \addcontentsline{toc}{chapter}{Anexos}
-    \markboth{ANEXOS}{ANEXOS}
-
-    \section*{Anexo A: DDL SQL de la Base de Datos Centralizada (Subconjunto Secretaría - Tesorería)}
-
-    \begin{lstlisting}[language=SQL, caption={Script DDL SQL de las tablas centralizadas de Secretaria y Tesoreria}]
-    -- Tabla de Secciones y Aforo (Secretaria)
-    CREATE TABLE secciones (
-        id_seccion INT AUTO_INCREMENT PRIMARY KEY,
-        nombre_seccion VARCHAR(50) NOT NULL,
-        grado VARCHAR(20) NOT NULL,
-        nivel VARCHAR(20) NOT NULL,
-        capacidad INT NOT NULL DEFAULT 30,
-        vacantes_ocupadas INT NOT NULL DEFAULT 0,
-        CONSTRAINT chk_aforo CHECK (vacantes_ocupadas <= capacidad)
-    );
-
-    -- Tabla de Estudiantes (Secretaria)
-    CREATE TABLE estudiantes (
-        id_estudiante INT AUTO_INCREMENT PRIMARY KEY,
-        dni VARCHAR(15) UNIQUE NOT NULL,
-        nombres VARCHAR(100) NOT NULL,
-        apellidos VARCHAR(100) NOT NULL,
-        estado_academico VARCHAR(20) DEFAULT 'MATRICULADO'
-    );
-
-    -- Tabla de Matriculas (Secretaria)
-    CREATE TABLE matriculas (
-        id_matricula INT AUTO_INCREMENT PRIMARY KEY,
-        id_estudiante INT NOT NULL,
-        id_seccion INT NOT NULL,
-        fecha_matricula DATETIME DEFAULT CURRENT_TIMESTAMP,
-        estado_matricula VARCHAR(30) DEFAULT 'PENDIENTE_PAGO',
-        FOREIGN KEY (id_estudiante) REFERENCES estudiantes(id_estudiante),
-        FOREIGN KEY (id_seccion) REFERENCES secciones(id_seccion)
-    );
-
-    -- Tabla de Compromisos de Pago (Tesoreria)
-    CREATE TABLE compromisos_pago (
-        id_compromiso INT AUTO_INCREMENT PRIMARY KEY,
-        id_estudiante INT NOT NULL,
-        concepto VARCHAR(100) NOT NULL,
-        monto DECIMAL(10,2) NOT NULL,
-        fecha_vencimiento DATE NOT NULL,
-        estado VARCHAR(20) DEFAULT 'PENDIENTE',
-        FOREIGN KEY (id_estudiante) REFERENCES estudiantes(id_estudiante)
-    );
-
-    -- Tabla de Pagos Realizados (Tesoreria)
-    CREATE TABLE pagos (
-        id_pago INT AUTO_INCREMENT PRIMARY KEY,
-        id_compromiso INT NOT NULL,
-        monto_pagado DECIMAL(10,2) NOT NULL,
-        fecha_pago DATETIME DEFAULT CURRENT_TIMESTAMP,
-        canal_pago VARCHAR(30) DEFAULT 'PASARELA_ONLINE',
-        FOREIGN KEY (id_compromiso) REFERENCES compromisos_pago(id_compromiso)
-    );
-    \end{lstlisting}
-
-    \section*{Anexo B: Trigger Transaccional para Generación Atómica de Cronograma de Pagos}
-
-    \begin{lstlisting}[language=SQL, caption={Trigger SQL para la integracion atomica entre Secretaria y Tesoreria}]
-    DELIMITER //
-    CREATE TRIGGER trg_generar_cronograma_pago
-    AFTER INSERT ON matriculas
-    FOR EACH ROW
-    BEGIN
-        -- 1. Insertar la cuota de Matricula
-        INSERT INTO compromisos_pago (id_estudiante, concepto, monto, fecha_vencimiento, estado)
-        VALUES (NEW.id_estudiante, 'Cuota de Matricula', 350.00, CURDATE(), 'PENDIENTE');
-        
-        -- 2. Insertar Pensiones mensuales de Marzo a Diciembre
-        INSERT INTO compromisos_pago (id_estudiante, concepto, monto, fecha_vencimiento, estado)
-        VALUES 
-        (NEW.id_estudiante, 'Pension Marzo', 400.00, '2026-03-31', 'PENDIENTE'),
-        (NEW.id_estudiante, 'Pension Abril', 400.00, '2026-04-30', 'PENDIENTE'),
-        (NEW.id_estudiante, 'Pension Mayo', 400.00, '2026-05-31', 'PENDIENTE'),
-        (NEW.id_estudiante, 'Pension Junio', 400.00, '2026-06-30', 'PENDIENTE'),
-        (NEW.id_estudiante, 'Pension Julio', 400.00, '2026-07-31', 'PENDIENTE');
-    END;
-    //
-    DELIMITER ;
-    \end{lstlisting}
 
     \end{document}

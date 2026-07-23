@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.9)  21 JUL 2026 21:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.9)  22 JUL 2026 16:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -735,7 +735,7 @@ Package hyperref Info: Link coloring ON on input line 148.
 \openout3 = `sicolegio360_interaccion_transaccional.out'.
 
 \c@lstlisting=\count351
-<logounas.png, id=237, 501.875pt x 501.875pt>
+<logounas.png, id=172, 501.875pt x 501.875pt>
 File: logounas.png Graphic file (type png)
 <use logounas.png>
 Package pdftex.def Info: logounas.png  used on input line 164.
@@ -786,7 +786,7 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 165
 (c:/texlive/2026/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<LOGO-FIIS-1000x1000-TR.png, id=238, 597.23125pt x 845.1575pt>
+<LOGO-FIIS-1000x1000-TR.png, id=173, 597.23125pt x 845.1575pt>
 File: LOGO-FIIS-1000x1000-TR.png Graphic file (type png)
 <use LOGO-FIIS-1000x1000-TR.png>
 Package pdftex.def Info: LOGO-FIIS-1000x1000-TR.png  used on input line 169.
@@ -800,599 +800,648 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.216 \chapter
-              *{Abstract} [1
+l.216     \chapter
+                  *{Abstract} [1
 
-] [2
+]
+! Misplaced alignment tab character &.
+<argument> School Control &
+                            Coexistence TPS
+l.220 ...\textbf{School Control & Coexistence TPS}
+                                                   (Secretariat/Discipline O...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
 
-] (./sicolegio360_interaccion_transaccional.toc [3] [4{c:/texlive/2026/texmf-di
-st/fonts/enc/dvips/lm/lm-mathit.enc}]
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 5
-8.
+! Misplaced alignment tab character &.
+<argument> School Control &
+                            Coexistence
+l.222 ...and \textbf{School Control & Coexistence}
+                                                   (in charge of admissions,...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+[2
+
+] (./sicolegio360_interaccion_transaccional.toc [3])
+\tf@toc=\write4
+\openout4 = `sicolegio360_interaccion_transaccional.toc'.
+
+ [4{c:/texlive/2026/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{c:/texlive/202
+6/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}] (./sicolegio360_interaccion_tra
+nsaccional.lot)
+\tf@lot=\write5
+\openout5 = `sicolegio360_interaccion_transaccional.lot'.
+
+ [5]
+(./sicolegio360_interaccion_transaccional.lof
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 1
+2.
 
 (c:/texlive/2026/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 ))
-\tf@toc=\write4
-\openout4 = `sicolegio360_interaccion_transaccional.toc'.
-
- [5]
-(./sicolegio360_interaccion_transaccional.lot)
-\tf@lot=\write5
-\openout5 = `sicolegio360_interaccion_transaccional.lot'.
-
- [6]
-(./sicolegio360_interaccion_transaccional.lof)
 \tf@lof=\write6
 \openout6 = `sicolegio360_interaccion_transaccional.lof'.
 
- [7] [8
+ [6] [7
 
 ]
 \bbl@ensure@spanish {Cap\'\i tulo} 1.
 
-Package natbib Warning: Citation `laudon2016' on page 9 undefined on input line
+Package natbib Warning: Citation `laudon2016' on page 8 undefined on input line
  265.
 
-[9
+[8
 
-]
+] [9]
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 31
+1.
+ (c:/texlive/2026/texmf-dist/tex/latex/psnfss/t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+)
+Underfull \hbox (badness 1371) in paragraph at lines 312--313
+[]\T1/ptm/b/n/12 Subdirección de For-ma-ción y Con-vi-ven-cia (Área 2): \T1/ptm
+/m/n/12 Res-pon-sa-ble de la ges-tión
+ []
+
 
 Package natbib Warning: Citation `laudon2016' on page 10 undefined on input lin
-e 272.
+e 317.
 
 [10] [11]
 
 Package natbib Warning: Citation `date2004' on page 12 undefined on input line 
-311.
+356.
 
-LaTeX Font Info:    Trying to load font information for T1+pcr on input line 31
-1.
-(c:/texlive/2026/texmf-dist/tex/latex/psnfss/t1pcr.fd
-File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-)
-Underfull \hbox (badness 10000) in paragraph at lines 351--351
+[12]
+Underfull \hbox (badness 10000) in paragraph at lines 396--396
+[]|\T1/ptm/m/n/12 Coordinador Aca-dé-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 396--396
+\T1/ptm/m/n/12 mi-co, Do-cen-tes de
+ []
+
+
+Underfull \hbox (badness 1960) in paragraph at lines 396--396
+[]|\T1/ptm/b/n/12 Secretaría y Ma-trí-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 396--396
 []|\T1/ptm/m/n/12 Secretario Aca-dé-mi-co,
  []
 
 
-Underfull \hbox (badness 2644) in paragraph at lines 351--351
-[]|\T1/ptm/b/n/12 Dirección Es-tra-té-gi-
+Underfull \hbox (badness 1565) in paragraph at lines 396--396
+[]|\T1/ptm/b/n/12 Control de Asis-ten-
  []
 
 
-Underfull \hbox (badness 2027) in paragraph at lines 351--351
-[]|\T1/ptm/m/n/12 Supervisión del ren-di-mien-to ins-ti-tu-
+Underfull \hbox (badness 10000) in paragraph at lines 396--396
+[]|\T1/ptm/m/n/12 Auxiliares de Edu-ca-
  []
 
 
-Underfull \hbox (badness 3579) in paragraph at lines 351--351
-[]|\T1/ptm/m/n/12 Director Ge-ne-ral, Pro-
- []
-
-
-Underfull \hbox (badness 2142) in paragraph at lines 351--351
+Underfull \hbox (badness 2142) in paragraph at lines 396--396
 []|\T1/ptm/b/n/12 Portal de Apo-de-ra-
  []
 
-[12]
-Underfull \hbox (badness 10000) in paragraph at lines 357--358
+
+Underfull \hbox (badness 3724) in paragraph at lines 396--396
+[]|\T1/ptm/m/n/12 Estudiantes, Pa-dres de
+ []
+
+
+ignored: Infinite glue shrinkage found in box being split [13]
+Underfull \hbox (badness 10000) in paragraph at lines 409--410
 []\T1/ptm/b/n/12 Entradas de In-for-ma-ción: \T1/ptm/m/n/12 Fi-cha del pos-tu-l
 an-te, do-cu-men-tos de iden-ti-dad
  []
 
-[13] [14] [15]
-Underfull \hbox (badness 10000) in paragraph at lines 420--420
-[]|\T1/ptm/b/n/10.95 Operaciones Do-mi-
+[14] [15]
+Underfull \hbox (badness 10000) in paragraph at lines 460--461
+[]\T1/ptm/m/it/12 Tablas Re-la-cio-na-les: \T1/pcr/m/n/12 asistencia_asistencia
+\T1/ptm/m/n/12 ,
  []
 
 
-Underfull \hbox (badness 1184) in paragraph at lines 420--420
-[]|\T1/ptm/m/n/10.95 Inserciones (\T1/pcr/m/n/10.95 INSERT\T1/ptm/m/n/10.95 ), 
-Ac-tua-li-za-
+Underfull \hbox (badness 10000) in paragraph at lines 460--461
+\T1/pcr/m/n/12 asistencia_justificacion\T1/ptm/m/n/12 , \T1/pcr/m/n/12 conducta
+_conducta\T1/ptm/m/n/12 ,
  []
 
 
-Underfull \hbox (badness 1831) in paragraph at lines 420--420
-[]|\T1/ptm/m/n/10.95 Consultas de lec-tu-ra ma-si-va con
+Underfull \hbox (badness 10000) in paragraph at lines 460--461
+\T1/pcr/m/n/12 matricula_matricula\T1/ptm/m/n/12 , \T1/pcr/m/n/12 estudiantes\T
+1/ptm/m/n/12 , \T1/pcr/m/n/12 apoderados\T1/ptm/m/n/12 ,
  []
 
-
-Underfull \hbox (badness 1221) in paragraph at lines 420--420
-\T1/ptm/m/n/10.95 agre-ga-cio-nes (\T1/pcr/m/n/10.95 SUM\T1/ptm/m/n/10.95 , \T1
-/pcr/m/n/10.95 AVG\T1/ptm/m/n/10.95 , \T1/pcr/m/n/10.95 GROUP
- []
-
-
-Underfull \hbox (badness 4846) in paragraph at lines 420--420
-[]|\T1/ptm/b/n/10.95 Rendimiento y La-
- []
-
-
-Underfull \hbox (badness 6461) in paragraph at lines 420--420
-[]|\T1/ptm/b/n/10.95 Capa en SI-CO-LE-
- []
-
-[16]
+[16] [17] [18]
 \bbl@ensure@spanish {Cap\'\i tulo} 2.
-[17
 
-]
-Underfull \hbox (badness 10000) in paragraph at lines 476--476
-[]|\T1/pcr/m/n/12 id_estudiante\T1/ptm/m/n/12 ,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 476--476
-\T1/pcr/m/n/12 dni\T1/ptm/m/n/12 , \T1/pcr/m/n/12 nombres\T1/ptm/m/n/12 ,
- []
-
-
-Underfull \hbox (badness 6927) in paragraph at lines 476--476
-\T1/ptm/m/n/12 de com-pro-mi-sos de
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 476--476
-[]|\T1/pcr/m/n/12 id_matricula\T1/ptm/m/n/12 ,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 476--476
-\T1/pcr/m/n/12 id_estudiante\T1/ptm/m/n/12 ,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 476--476
-\T1/pcr/m/n/12 id_seccion\T1/ptm/m/n/12 ,
- []
-
-
-Underfull \hbox (badness 1092) in paragraph at lines 476--476
-[]|\T1/ptm/m/n/12 Tesorería: Dis-pa-ra-dor
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 476--476
-[]|\T1/pcr/m/n/12 id_seccion\T1/ptm/m/n/12 ,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 476--476
-\T1/pcr/m/n/12 capacidad\T1/ptm/m/n/12 ,
- []
-
-
-Overfull \hbox (9.64964pt too wide) in paragraph at lines 476--476
-\T1/pcr/m/n/12 vacantes_ocupadas| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 476--476
-\T1/ptm/m/n/12 lí-mi-te fi-nan-cie-ro y
- []
-
-
-Overfull \hbox (24.15123pt too wide) in paragraph at lines 476--476
-[]|\T1/pcr/m/n/12 compromisos_pago| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 476--476
-[]|\T1/pcr/m/n/12 id_compromiso\T1/ptm/m/n/12 ,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 476--476
-\T1/pcr/m/n/12 id_estudiante\T1/ptm/m/n/12 ,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 476--476
-[]|\T1/ptm/m/n/12 Secretaría: Ha-bi-li-ta-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 476--476
-[]|\T1/pcr/m/n/12 id_pago\T1/ptm/m/n/12 ,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 476--476
-\T1/pcr/m/n/12 id_compromiso\T1/ptm/m/n/12 ,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 476--476
-\T1/pcr/m/n/12 monto_pagado\T1/ptm/m/n/12 ,
- []
-
-
-ignored: Infinite glue shrinkage found in box being split [18] [19]
-Underfull \hbox (badness 1490) in paragraph at lines 524--524
+Underfull \hbox (badness 1490) in paragraph at lines 531--531
 []|\T1/ptm/b/n/12 Evento Dis-pa-ra-dor /
  []
 
 
-Underfull \hbox (badness 1490) in paragraph at lines 524--524
+Underfull \hbox (badness 1490) in paragraph at lines 531--531
 []|\T1/ptm/b/n/12 Evento Dis-pa-ra-dor /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 524--524
-[]|\T1/ptm/m/n/12 Tesorería: Ge-ne-ra-ción
+Underfull \hbox (badness 10000) in paragraph at lines 531--531
+[]|\T1/ptm/m/n/12 Académico: Ha-bi-li-ta-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 524--524
-\T1/ptm/m/n/12 au-to-má-ti-ca de com-
+Underfull \hbox (badness 1527) in paragraph at lines 531--531
+[]|\T1/ptm/m/n/12 Registro de in-asis-ten-
  []
 
 
-Underfull \hbox (badness 5475) in paragraph at lines 524--524
-\T1/ptm/m/n/12 pro-mi-sos de pa-go en
+Underfull \hbox (badness 10000) in paragraph at lines 531--531
+[]|\T1/ptm/m/n/12 Aprobación de jus-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 524--524
-[]|\T1/ptm/m/n/12 Secretaría: Cam-
+Underfull \hbox (badness 10000) in paragraph at lines 531--531
+\T1/ptm/m/n/12 ti-fi-ca-ción mé-di-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 524--524
-\T1/ptm/m/n/12 bio de es-ta-do a
+Underfull \hbox (badness 1546) in paragraph at lines 531--531
+\T1/ptm/m/n/12 apro-ba-to-ria crí-ti-ca ($\OML/lmm/m/it/12 <
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 524--524
-\T1/pcr/m/n/12 'MATRICULADO'
+Underfull \hbox (badness 10000) in paragraph at lines 531--531
+[]|\T1/ptm/m/n/12 Convivencia: No-ti-fi-
  []
 
 
-Underfull \hbox (badness 3271) in paragraph at lines 524--524
-[]|\T1/ptm/m/n/12 Registro de pa-go de
+Underfull \hbox (badness 3954) in paragraph at lines 531--531
+\T1/ptm/m/n/12 ca-ción a Tu-to-ría pa-ra
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 524--524
-[]|\T1/ptm/m/n/12 Secretaría: Ac-tua-li-za-
+Underfull \hbox (badness 10000) in paragraph at lines 531--531
+\T1/ptm/m/n/12 se-gui-mien-to socio-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 524--524
-[]|\T1/ptm/m/n/12 Tesorería: Can-ce-la-ción
+Underfull \hbox (badness 10000) in paragraph at lines 531--531
+[]|\T1/ptm/m/n/12 Académico: Ac-tua-li-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 524--524
-[]|\T1/ptm/m/n/12 Secretaría: Blo-queo
+Underfull \hbox (badness 3792) in paragraph at lines 531--531
+\T1/ptm/m/n/12 za-ción de la no-ta de
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 524--524
-\T1/ptm/m/n/12 ad-mi-nis-tra-ti-vo pa-ra
+Underfull \hbox (badness 10000) in paragraph at lines 531--531
+\T1/ptm/m/n/12 apre-cia-ción con-duc-tual
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 524--524
-\T1/ptm/m/n/12 emi-sión de cer-ti-fi-ca-
+ignored: Infinite glue shrinkage found in box being split [19
+
+{c:/texlive/2026/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}]
+LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <12> not available
+(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 543.
+
+
+LaTeX Warning: Command \' invalid in math mode on input line 543.
+
+
+! LaTeX Error: Command \item invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.544         \item
+                    \textit{TransacciÃ³n Asistencia (\texttt{TX-AUX-01}):} E...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.544         \item \textit
+                           {TransacciÃ³n Asistencia (\texttt{TX-AUX-01}):} E...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 543--544
+[]\T1/ptm/m/it/12 Transacción Ma-trí-cu-la (\T1/pcr/m/sl/12 TX-SEC-01\T1/ptm/m/
+it/12 ): \T1/ptm/m/n/12 Va-li-da afo-ro en \T1/pcr/m/n/12 secciones \T1/ptm/m/n
+/12 ( <
  []
 
 
-Underfull \hbox (badness 1748) in paragraph at lines 524--524
-\T1/ptm/m/n/12 dos no ofi-cia-les se-gún
+Underfull \hbox (badness 10000) in paragraph at lines 563--564
+[]\T1/ptm/m/it/12 Pipeline ETL: \T1/ptm/m/n/12 Ex-trae vis-tas des-nor-ma-li-za
+-das de am-bos TPS
  []
 
-
-ignored: Infinite glue shrinkage found in box being split [20{c:/texlive/2026/texmf-dist
-/fonts/enc/dvips/lm/lm-rm.enc}]
+[20]
 
 Package natbib Warning: Citation `silberschatz2020' on page 21 undefined on inp
-ut line 528.
+ut line 572.
 
-[21] [22]
+[21]
+! Misplaced \noalign.
+\hline ->\noalign 
+                  {\ifnum 0=`}\fi \let \hskip \vskip \let \vrule \hrule \let...
+l.580     \hline
+                
+I expect to see \noalign only after the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 579--580
+
+ []
+
+! Misplaced alignment tab character &.
+l.581     \texttt{TX-SEC-02} &
+                               SecretarÃ­a & AnulaciÃ³n o retiro de estudian...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.581     \texttt{TX-SEC-02} & SecretarÃ­a &
+                                             AnulaciÃ³n o retiro de estudian...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.581 ...­a & AnulaciÃ³n o retiro de estudiante. &
+                                                   TesorerÃ­a: CancelaciÃ³n ...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced \noalign.
+\hline ->\noalign 
+                  {\ifnum 0=`}\fi \let \hskip \vskip \let \vrule \hrule \let...
+l.582     \hline
+                
+I expect to see \noalign only after the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 581--582
+
+ []
+
+! Misplaced alignment tab character &.
+l.583     \texttt{TX-TES-03} &
+                               TesorerÃ­a & DeclaraciÃ³n de morosidad por ve...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.583     \texttt{TX-TES-03} & TesorerÃ­a &
+                                            DeclaraciÃ³n de morosidad por ve...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.583 ...orosidad por vencimiento ($>60$ dÃ­as). &
+                                                   SecretarÃ­a: Bloqueo admi...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+! LaTeX Error: \begin{tabularx} ended by \end{xltabular}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.584     \end{xltabular}
+                         
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Extra \endgroup.
+\end  ...end#1\endcsname \@checkend {#1}\endgroup 
+                                                  \UseHook {env/#1/after}\if...
+l.584     \end{xltabular}
+                         
+Things are pretty mixed up, but I think the worst is over.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 583--585
+
+ []
+
+
+Package natbib Warning: Citation `silberschatz2020' on page 22 undefined on inp
+ut line 588.
+
+[22] [23]
 \bbl@ensure@spanish {Cap\'\i tulo} 3.
-[23
+[24
 
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 558.
+(hyperref)                removing `math shift' on input line 618.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 558.
+(hyperref)                removing `subscript' on input line 618.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 558.
+(hyperref)                removing `math shift' on input line 618.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 565.
+(hyperref)                removing `math shift' on input line 625.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 565.
+(hyperref)                removing `subscript' on input line 625.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 565.
+(hyperref)                removing `math shift' on input line 625.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 572.
+(hyperref)                removing `math shift' on input line 632.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 572.
+(hyperref)                removing `subscript' on input line 632.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 579.
+(hyperref)                removing `math shift' on input line 632.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 579.
+(hyperref)                removing `math shift' on input line 639.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 579.
-
-[24{c:/texlive/2026/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{c:/texlive/202
-6/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 586.
+(hyperref)                removing `subscript' on input line 639.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 586.
+(hyperref)                removing `math shift' on input line 639.
+
+[25{c:/texlive/2026/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 646.
 
 
-Underfull \hbox (badness 1755) in paragraph at lines 623--623
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 646.
+
+
+Underfull \hbox (badness 1755) in paragraph at lines 684--684
 []|\T1/ptm/b/n/12 Capa Ana-lí-ti-ca de
  []
 
 
-Underfull \hbox (badness 1755) in paragraph at lines 623--623
+Underfull \hbox (badness 1755) in paragraph at lines 684--684
 []|\T1/ptm/b/n/12 Capa Ana-lí-ti-ca de
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 623--623
+Underfull \hbox (badness 10000) in paragraph at lines 684--684
 []|\T1/ptm/m/n/12 Aforo de sec-cio-nes
  []
 
 
-Underfull \hbox (badness 2486) in paragraph at lines 623--623
-\T1/ptm/m/n/12 da-ción ($[]$), cu-pos
+Underfull \hbox (badness 10000) in paragraph at lines 684--684
+\T1/ptm/m/n/12 ($[]$), jus-ti-fi-ca-cio-nes
  []
 
 
-Underfull \hbox (badness 4556) in paragraph at lines 623--623
-[]|\T1/ptm/m/n/12 Recaudación dia-ria de
+Underfull \hbox (badness 10000) in paragraph at lines 684--684
+[]|\T1/ptm/b/n/12 Coordinador
  []
 
 
-Underfull \hbox (badness 4927) in paragraph at lines 623--623
-\T1/ptm/m/n/12 ca-ja, pen-sio-nes co-bra-
+Underfull \hbox (badness 1033) in paragraph at lines 684--684
+\T1/ptm/m/n/12 ción ($[]$), pro-me-dios
  []
 
 
-Underfull \hbox (badness 1946) in paragraph at lines 623--623
+Underfull \hbox (badness 1946) in paragraph at lines 684--684
 []|\T1/ptm/m/n/12 Analítica en Po-wer
  []
 
 
-Underfull \hbox (badness 2111) in paragraph at lines 623--623
-[]|\T1/ptm/b/n/12 Promotora / Di-
- []
-
-
-Underfull \hbox (badness 1946) in paragraph at lines 623--623
+Underfull \hbox (badness 1946) in paragraph at lines 684--684
 []|\T1/ptm/m/n/12 Analítica en Po-wer
  []
 
-[25] [26]
-Underfull \hbox (badness 10000) in paragraph at lines 629--630
+[26] [27]
+Underfull \hbox (badness 10000) in paragraph at lines 690--691
 []\T1/ptm/m/n/12 La di-men-sión tem-po-ral re-la-cio-nal y mul-ti-di-men-sio-na
 l (\T1/pcr/m/n/12 DimTiempo \T1/ptm/m/n/12 /
  []
 
-[27]
+[28]
+<tps2_control_escolar.png, id=424, 1927.2pt x 915.42pt>
+File: tps2_control_escolar.png Graphic file (type png)
+<use tps2_control_escolar.png>
+Package pdftex.def Info: tps2_control_escolar.png  used on input line 717.
+(pdftex.def)             Requested size: 430.31847pt x 204.39618pt.
+ [29 <./tps2_control_escolar.png (PNG copy)>]
+<tps1_pedagogico.png, id=431, 1927.2pt x 915.42pt>
+File: tps1_pedagogico.png Graphic file (type png)
+<use tps1_pedagogico.png>
+Package pdftex.def Info: tps1_pedagogico.png  used on input line 740.
+(pdftex.def)             Requested size: 430.31847pt x 204.39618pt.
+ [30 <./tps1_pedagogico.png (PNG copy)>]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <14.4> on input line 753.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 753.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 753.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 753.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\leftrightarrow' on input line 753.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 753.
+
+<tps_interaccion_2x2.png, id=439, 1927.2pt x 914.41624pt>
+File: tps_interaccion_2x2.png Graphic file (type png)
+<use tps_interaccion_2x2.png>
+Package pdftex.def Info: tps_interaccion_2x2.png  used on input line 766.
+(pdftex.def)             Requested size: 443.90695pt x 210.61827pt.
+[31] [32 <./tps_interaccion_2x2.png (PNG copy)>]
+<tps3_financiero.png, id=451, 1927.2pt x 915.42pt>
+File: tps3_financiero.png Graphic file (type png)
+<use tps3_financiero.png>
+Package pdftex.def Info: tps3_financiero.png  used on input line 789.
+(pdftex.def)             Requested size: 430.31847pt x 204.39618pt.
+ [33 <./tps3_financiero.png (PNG copy)>]
 \bbl@ensure@spanish {Cap\'\i tulo} 4.
-[28
-
-]
-<image.png, id=516, 1444.64719pt x 182.93344pt>
-File: image.png Graphic file (type png)
-<use image.png>
-Package pdftex.def Info: image.png  used on input line 673.
-(pdftex.def)             Requested size: 416.72997pt x 52.7702pt.
- [29 <./image.png>]
-<1.png, id=525, 313.14429pt x 341.60493pt>
-File: 1.png Graphic file (type png)
-<use 1.png>
-Package pdftex.def Info: 1.png  used on input line 698.
-(pdftex.def)             Requested size: 416.72997pt x 454.63115pt.
- [30]
-Underfull \hbox (badness 10000) in paragraph at lines 708--709
-[]\T1/ptm/b/n/12 Activación de Avi-sos Pre-ven-ti-vos: \T1/ptm/m/n/12 Emi-te no
--ti-fi-ca-cio-nes au-to-má-ti-cas vía
- []
-
-
-Underfull \hbox (badness 1635) in paragraph at lines 708--709
-\T1/ptm/m/n/12 WhatsApp/Correo a apo-de-ra-dos con pen-sio-nes que ven-cen en l
-os pró-xi-mos 3
- []
-
-[31 <./1.png (PNG copy)>]
-File: image.png Graphic file (type png)
-<use image.png>
-Package pdftex.def Info: image.png  used on input line 722.
-(pdftex.def)             Requested size: 416.72997pt x 52.7702pt.
- [32] [33]
-\bbl@ensure@spanish {Cap\'\i tulo} 5.
 (c:/texlive/2026/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2025/11/14 1.11b listings language file
 )
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 750.
- [34
+nput line 817.
+
+
+! LaTeX Error: Invalid UTF-8 byte sequence (Ã\lst@EC³).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.819 ...Pipeline ETL y Vistas SQL de ExtracciÃ³n}
+                                                  
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! LaTeX Error: Invalid UTF-8 byte sequence (Ã\lst@EC©).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.821 ...ia} desnormaliza los eventos acadÃ©micos 
+                                                  y el registro de control e...
+
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+[34
 
 ]
-Underfull \hbox (badness 2426) in paragraph at lines 777--778
-[]\T1/pcr/m/n/12 FactMatriculaPagos \T1/ptm/m/n/12 (\T1/ptm/m/it/12 mon-to_pres
-upuestado, mon-to_recaudado, dias_atraso,
+
+! LaTeX Error: Invalid UTF-8 byte sequence (Ã\lst@EC³).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.823 ...e=SQL, caption={Vista SQL de extracciÃ³n 
+                                                  ETL para la Tabla de Hecho...
+
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+[35]
+Underfull \hbox (badness 10000) in paragraph at lines 859--860
+[]\T1/pcr/m/n/12 FactRendimientoAsistencia \T1/ptm/m/n/12 (\T1/ptm/m/it/12 no-t
+a_obtenida, es_desaprobado, to-
  []
 
-[35] [36]
-<3.png, id=603, 313.14429pt x 341.60493pt>
-File: 3.png Graphic file (type png)
-<use 3.png>
-Package pdftex.def Info: 3.png  used on input line 836.
-(pdftex.def)             Requested size: 430.31847pt x 469.4554pt.
- [37] [38 <./3.png (PNG copy)>]
-File: 3.png Graphic file (type png)
-<use 3.png>
-Package pdftex.def Info: 3.png  used on input line 854.
-(pdftex.def)             Requested size: 430.31847pt x 469.4554pt.
- [39]
-File: 3.png Graphic file (type png)
-<use 3.png>
-Package pdftex.def Info: 3.png  used on input line 872.
-(pdftex.def)             Requested size: 430.31847pt x 469.4554pt.
- [40] [41]
-File: 3.png Graphic file (type png)
-<use 3.png>
-Package pdftex.def Info: 3.png  used on input line 890.
-(pdftex.def)             Requested size: 430.31847pt x 469.4554pt.
- [42]
-File: 3.png Graphic file (type png)
-<use 3.png>
-Package pdftex.def Info: 3.png  used on input line 908.
-(pdftex.def)             Requested size: 430.31847pt x 469.4554pt.
- [43] [44]
-File: 3.png Graphic file (type png)
-<use 3.png>
-Package pdftex.def Info: 3.png  used on input line 926.
-(pdftex.def)             Requested size: 430.31847pt x 469.4554pt.
- [45]
-[46] [47]
-Underfull \hbox (badness 1117) in paragraph at lines 989--989
-[]|\T1/ptm/b/n/12 Nivel de Im-
- []
-
-
-Underfull \hbox (badness 1117) in paragraph at lines 989--989
-[]|\T1/ptm/b/n/12 Nivel de Im-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 989--989
-[]|\T1/ptm/b/n/12 Resistencia al
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 989--989
-\T1/ptm/b/n/12 Cam-bio del
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 989--989
-[]|\T1/ptm/m/n/12 Tecnológico /
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 989--989
-[]|\T1/ptm/b/n/12 Fuga o Di-vul-
- []
-
-
-Underfull \hbox (badness 2393) in paragraph at lines 989--989
-\T1/ptm/b/n/12 ga-ción de Da-tos
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 989--989
-[]|\T1/ptm/b/n/12 Resistencia de
- []
-
-
-Underfull \hbox (badness 7981) in paragraph at lines 989--989
-\T1/ptm/b/n/12 Pa-dres al Pa-go
- []
-
-
-Underfull \hbox (badness 1902) in paragraph at lines 989--989
-[]|\T1/ptm/m/n/12 Módulos ins-truc-cio-na-les bre-ves
- []
-
-
-Underfull \hbox (badness 1924) in paragraph at lines 989--989
-\T1/ptm/m/n/12 en el por-tal y ha-bi-li-ta-ción de
- []
-
-[48] [49] [50
-
-] [51
-
-] [52
-
-] [53
-
-]
-LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <10.95> not available
-(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 1072.
- [54
-
-] [55] [56]
+[36]
 
 Package natbib Warning: There were undefined citations.
 
-[57] (./sicolegio360_interaccion_transaccional.aux)
+
+! LaTeX Error: \begin{tabularx} ended by \end{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.912     \end{document}
+                        
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[37] (./sicolegio360_interaccion_transaccional.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
  ***********
-
-
-Package rerunfilecheck Warning: File `sicolegio360_interaccion_transaccional.ou
-t' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `sicolegio360_interaccion_transaccio
-nal.out':
-(rerunfilecheck)             Before: 5517A1AB827C185F9974E9537E368503;19834
-(rerunfilecheck)             After:  9902D52B332A47B82820F3C4AD19F74C;19894.
+Package rerunfilecheck Info: File `sicolegio360_interaccion_transaccional.out' 
+has not changed.
+(rerunfilecheck)             Checksum: 6B06B722B41FB39F68961761BD487FCB;16401.
  ) 
 Here is how much of TeX's memory you used:
- 18538 strings out of 467525
- 287596 string characters out of 5423210
- 1003684 words of memory out of 5000000
- 46844 multiletter control sequences out of 15000+600000
- 694804 words of font info for 106 fonts, out of 8000000 for 9000
+ 18415 strings out of 467525
+ 286339 string characters out of 5423210
+ 1069600 words of memory out of 5000000
+ 46847 multiletter control sequences out of 15000+600000
+ 696759 words of font info for 113 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,14n,83p,1518b,2272s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,13n,83p,1522b,2277s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2026/texmf-dist/fonts/type1/public/lm/lmex10.pfb><c:/texlive/2026
 /texmf-dist/fonts/type1/public/lm/lmmi12.pfb><c:/texlive/2026/texmf-dist/fonts/
 type1/public/lm/lmmi8.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/lm/lmr
-12.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/texlive/2
-026/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/texlive/2026/texmf-dist/fon
-ts/type1/public/lm/lmsy8.pfb><c:/texlive/2026/texmf-dist/fonts/type1/urw/courie
-r/ucrb8a.pfb><c:/texlive/2026/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb><c:
-/texlive/2026/texmf-dist/fonts/type1/urw/courier/ucrro8a.pfb><c:/texlive/2026/t
-exmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/2026/texmf-dist/fonts/ty
-pe1/urw/times/utmbi8a.pfb><c:/texlive/2026/texmf-dist/fonts/type1/urw/times/utm
-r8a.pfb><c:/texlive/2026/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on sicolegio360_interaccion_transaccional.pdf (58 pages, 3663971
+12.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/texlive
+/2026/texmf-dist/fonts/type1/urw/courier/ucrb8a.pfb><c:/texlive/2026/texmf-dist
+/fonts/type1/urw/courier/ucrr8a.pfb><c:/texlive/2026/texmf-dist/fonts/type1/urw
+/courier/ucrro8a.pfb><c:/texlive/2026/texmf-dist/fonts/type1/urw/times/utmb8a.p
+fb><c:/texlive/2026/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb><c:/texlive/20
+26/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2026/texmf-dist/font
+s/type1/urw/times/utmri8a.pfb>
+Output written on sicolegio360_interaccion_transaccional.pdf (38 pages, 1458972
  bytes).
 PDF statistics:
- 931 PDF objects out of 1000 (max. 8388607)
- 827 compressed objects within 9 object streams
- 311 named destinations out of 1000 (max. 500000)
- 490 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 633 PDF objects out of 1000 (max. 8388607)
+ 556 compressed objects within 6 object streams
+ 184 named destinations out of 1000 (max. 500000)
+ 367 words of extra memory for PDF output out of 10000 (max. 10000000)
 
