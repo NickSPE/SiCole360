@@ -1,1150 +1,1080 @@
-% ============================================================
-%  SICOLEGIO 360 --- Documento Académico Integrado
-%  Tema: Integración ERP, Procesamiento TPS y Analítica en Power BI
-%  Curso: Sistemas de Información  |  Ciclo 7
-%  Elaborado con LaTeX (clase report) - Estilo APA 7
-% ============================================================
-\documentclass[12pt,a4paper,oneside]{report}
+    % ============================================================
+    %  SICOLEGIO 360 --- Documento Académico Integrado
+    %  Tema: Integración ERP, Procesamiento TPS y Analítica en Power BI
+    %  Curso: Sistemas de Información  |  Ciclo 7
+    %  Elaborado con LaTeX (clase report) - Estilo APA 7
+    % ============================================================
+    \documentclass[12pt,a4paper,oneside]{report}
 
-% -- Paquetes esenciales -------------------------------------
-\usepackage[T1]{fontenc}
-\usepackage[utf8]{inputenc}
-\usepackage[provide=*,spanish]{babel}
-\addto\captionsspanish{\renewcommand{\tablename}{Tabla}}
-\addto\captionsspanish{\renewcommand{\listtablename}{\'Indice de Tablas}}
-\addto\captionsspanish{\renewcommand{\listfigurename}{\'Indice de Figuras}}
-\addto\captionsspanish{\renewcommand{\appendixname}{Anexo}}
-\addto\captionsspanish{\renewcommand{\contentsname}{\'Indice General}}
-\usepackage{lmodern}
+    % -- Paquetes esenciales -------------------------------------
+    \usepackage[T1]{fontenc}
+    \usepackage[utf8]{inputenc}
+    \usepackage[provide=*,spanish]{babel}
+    \addto\captionsspanish{\renewcommand{\tablename}{Tabla}}
+    \addto\captionsspanish{\renewcommand{\listtablename}{\'Indice de Tablas}}
+    \addto\captionsspanish{\renewcommand{\listfigurename}{\'Indice de Figuras}}
+    \addto\captionsspanish{\renewcommand{\appendixname}{Anexo}}
+    \addto\captionsspanish{\renewcommand{\contentsname}{\'Indice General}}
+    \usepackage{lmodern}
 
-% -- Geometría -----------------------------------------------
-\usepackage[
-  top=2.54cm, bottom=2.54cm,
-  left=2.54cm, right=2.54cm,
-  headheight=28pt
-]{geometry}
+    % -- Geometría -----------------------------------------------
+    \usepackage[
+    top=2.54cm, bottom=2.54cm,
+    left=2.54cm, right=2.54cm,
+    headheight=28pt
+    ]{geometry}
 
-% -- Colores -------------------------------------------------
-\usepackage[table]{xcolor}
-\definecolor{azulOscuro}{RGB}{10,47,97}
-\definecolor{azulMedio}{RGB}{28,100,180}
-\definecolor{verdInst}{RGB}{34,120,80}
-\definecolor{grisClaro}{RGB}{245,246,248}
-\definecolor{grisTabla}{RGB}{220,225,232}
-\definecolor{dorado}{RGB}{180,140,20}
+    % -- Colores -------------------------------------------------
+    \usepackage[table]{xcolor}
+    \definecolor{azulOscuro}{RGB}{10,47,97}
+    \definecolor{azulMedio}{RGB}{28,100,180}
+    \definecolor{verdInst}{RGB}{34,120,80}
+    \definecolor{grisClaro}{RGB}{245,246,248}
+    \definecolor{grisTabla}{RGB}{220,225,232}
+    \definecolor{dorado}{RGB}{180,140,20}
 
-% -- Tipografía (Times New Roman para APA 7) -----------------
-\usepackage{times}
+    % -- Tipografía (Times New Roman para APA 7) -----------------
+    \usepackage{times}
 
-% -- Encabezados y pies (Formato APA 7 sin colores ni líneas) -
-\usepackage{fancyhdr}
-\pagestyle{fancy}
-\fancyhf{}
-\fancyhead[L]{\small\MakeUppercase{SICOLEGIO 360: ERP Educativo \& Analítica Power BI}}
-\fancyhead[R]{\thepage}
-\fancyfoot{}
-\renewcommand{\headrulewidth}{0pt}
+    % -- Encabezados y pies (Formato APA 7 sin colores ni líneas) -
+    \usepackage{fancyhdr}
+    \pagestyle{fancy}
+    \fancyhf{}
+    \fancyhead[L]{\small\MakeUppercase{SICOLEGIO 360: ERP Educativo \& Analítica Power BI}}
+    \fancyhead[R]{\thepage}
+    \fancyfoot{}
+    \renewcommand{\headrulewidth}{0pt}
 
-% -- Secciones en formato APA 7 ------------------------------
-\usepackage{titlesec}
-\titleformat{\chapter}
-  {\normalfont\bfseries\Large\centering}
-  {\thechapter\quad}
-  {0pt}
-  {}
-\titlespacing*{\chapter}{0pt}{-25pt}{15pt}
-\titleformat{\section}
-  {\normalfont\bfseries\large}{\thesection}{1em}{}
-\titleformat{\subsection}
-  {\normalfont\bfseries\itshape\normalsize}{\thesubsection}{1em}{}
-\titleformat{\subsubsection}
-  {\normalfont\bfseries\normalsize}{\thesubsubsection}{1em}{}
+    % -- Secciones en formato APA 7 ------------------------------
+    \usepackage{titlesec}
+    \titleformat{\chapter}
+    {\normalfont\bfseries\Large\centering}
+    {\thechapter\quad}
+    {0pt}
+    {}
+    \titlespacing*{\chapter}{0pt}{-25pt}{15pt}
+    \titleformat{\section}
+    {\normalfont\bfseries\large}{\thesection}{1em}{}
+    \titleformat{\subsection}
+    {\normalfont\bfseries\itshape\normalsize}{\thesubsection}{1em}{}
+    \titleformat{\subsubsection}
+    {\normalfont\bfseries\normalsize}{\thesubsubsection}{1em}{}
 
-% -- Listas --------------------------------------------------
-\usepackage{enumitem}
-\setlist[itemize]{leftmargin=1.5em,itemsep=2pt,topsep=4pt}
-\setlist[enumerate]{leftmargin=1.5em,itemsep=2pt,topsep=4pt}
+    % -- Listas --------------------------------------------------
+    \usepackage{enumitem}
+    \setlist[itemize]{leftmargin=1.5em,itemsep=2pt,topsep=4pt}
+    \setlist[enumerate]{leftmargin=1.5em,itemsep=2pt,topsep=4pt}
 
-% -- Tablas --------------------------------------------------
-\usepackage{booktabs}
-\usepackage{longtable}
-\usepackage{array}
-\usepackage{multirow}
-\usepackage{tabularx}
-\usepackage{xltabular}
-\renewcommand{\arraystretch}{1.35}
+    % -- Tablas --------------------------------------------------
+    \usepackage{booktabs}
+    \usepackage{longtable}
+    \usepackage{array}
+    \usepackage{multirow}
+    \usepackage{tabularx}
+    \usepackage{xltabular}
+    \renewcommand{\arraystretch}{1.35}
 
-% -- Figuras y Captions al estilo APA 7 ----------------------
-\usepackage{graphicx}
-\usepackage{float}
-\usepackage{caption}
-\usepackage{subcaption}
-\captionsetup[table]{labelfont=bf,textfont=it,labelsep=newline,singlelinecheck=off,justification=raggedright}
-\captionsetup[figure]{labelfont=bf,textfont=it,labelsep=newline,singlelinecheck=off,justification=raggedright}
+    % -- Figuras y Captions al estilo APA 7 ----------------------
+    \usepackage{graphicx}
+    \usepackage{float}
+    \usepackage{caption}
+    \usepackage{subcaption}
+    \captionsetup[table]{labelfont=bf,textfont=it,labelsep=newline,singlelinecheck=off,justification=raggedright}
+    \captionsetup[figure]{labelfont=bf,textfont=it,labelsep=newline,singlelinecheck=off,justification=raggedright}
 
-% -- Hiperenlaces --------------------------------------------
-\usepackage{hyperref}
-\hypersetup{
-  colorlinks=true,
-  linkcolor=black,
-  citecolor=black,
-  urlcolor=black,
-  pdftitle={SICOLEGIO 360 — ERP Educativo, TPS y Analítica Power BI},
-  pdfauthor={Curso Sistemas de Información},
-  pdfsubject={Proyecto académico de integración transaccional y analítica gerencial},
-}
+    % -- Hiperenlaces --------------------------------------------
+    \usepackage{hyperref}
+    \hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    citecolor=black,
+    urlcolor=black,
+    pdftitle={SICOLEGIO 360 — ERP Educativo, TPS y Analítica Power BI},
+    pdfauthor={Curso Sistemas de Información},
+    pdfsubject={Proyecto académico de integración transaccional y analítica gerencial},
+    }
 
-% -- Bibliografía APA 7 --------------------------------------
-\usepackage[authoryear]{natbib}
-\setcitestyle{authoryear,round,aysep={,}}
+    % -- Bibliografía APA 7 --------------------------------------
+    \usepackage[authoryear]{natbib}
+    \setcitestyle{authoryear,round,aysep={,}}
 
-% -- Utilidades ----------------------------------------------
-\usepackage{amsmath}
-\usepackage{amssymb}
-\usepackage{tocloft}
-\setcounter{tocdepth}{2}
-\renewcommand{\cfttoctitlefont}{\hfill\normalfont\bfseries\Large}
-\renewcommand{\cftaftertoctitle}{\hfill}
-\renewcommand{\cftlottitlefont}{\hfill\normalfont\bfseries\Large}
-\renewcommand{\cftafterlottitle}{\hfill}
-\renewcommand{\cftloftitlefont}{\hfill\normalfont\bfseries\Large}
-\renewcommand{\cftafterloftitle}{\hfill}
-\renewcommand{\cftchapleader}{\cftdotfill{\cftdotsep}}
-\setlength{\cftbeforetoctitleskip}{-25pt}
-\setlength{\cftaftertoctitleskip}{15pt}
-\setlength{\cftbeforelottitleskip}{-25pt}
-\setlength{\cftafterlottitleskip}{15pt}
-\setlength{\cftbeforeloftitleskip}{-25pt}
-\setlength{\cftafterloftitleskip}{15pt}
-\usepackage{rotating}
-\usepackage{framed}
-\usepackage{setspace}
-\usepackage{listings}
-\usepackage{xcolor}
+    % -- Utilidades ----------------------------------------------
+    \usepackage{amsmath}
+    \usepackage{amssymb}
+    \usepackage{tocloft}
+    \setcounter{tocdepth}{2}
+    \renewcommand{\cfttoctitlefont}{\hfill\normalfont\bfseries\Large}
+    \renewcommand{\cftaftertoctitle}{\hfill}
+    \renewcommand{\cftlottitlefont}{\hfill\normalfont\bfseries\Large}
+    \renewcommand{\cftafterlottitle}{\hfill}
+    \renewcommand{\cftloftitlefont}{\hfill\normalfont\bfseries\Large}
+    \renewcommand{\cftafterloftitle}{\hfill}
+    \renewcommand{\cftchapleader}{\cftdotfill{\cftdotsep}}
+    \setlength{\cftbeforetoctitleskip}{-25pt}
+    \setlength{\cftaftertoctitleskip}{15pt}
+    \setlength{\cftbeforelottitleskip}{-25pt}
+    \setlength{\cftafterlottitleskip}{15pt}
+    \setlength{\cftbeforeloftitleskip}{-25pt}
+    \setlength{\cftafterloftitleskip}{15pt}
+    \usepackage{rotating}
+    \usepackage{framed}
+    \usepackage{setspace}
+    \usepackage{listings}
+    \usepackage{xcolor}
 
-\lstset{
-    basicstyle=\ttfamily\small,
-    breaklines=true,
-    breakatwhitespace=true,
-    frame=single,
-    columns=fullflexible,
-    keepspaces=true,
-    keywordstyle=\bfseries\color{blue},
-    commentstyle=\itshape\color{gray},
-    stringstyle=\color{teal}
-}
+    \lstset{
+        basicstyle=\ttfamily\small,
+        breaklines=true,
+        breakatwhitespace=true,
+        frame=single,
+        columns=fullflexible,
+        keepspaces=true,
+        keywordstyle=\bfseries\color{blue},
+        commentstyle=\itshape\color{gray},
+        stringstyle=\color{teal}
+    }
 
-% -- Espaciado y Sangrías APA 7 -----------------------------
-\usepackage{indentfirst}
-\setlength{\parskip}{0pt}
-\setlength{\parindent}{1.27cm}
+    % -- Espaciado y Sangrías APA 7 -----------------------------
+    \usepackage{indentfirst}
+    \setlength{\parskip}{0pt}
+    \setlength{\parindent}{1.27cm}
 
-% -- Caja destacada ------------------------------------------
-\newenvironment{cajaConcepto}[1][]{%
-  \begin{framed}\noindent{\bfseries #1}\par\smallskip
-}{\end{framed}}
+    % -- Caja destacada ------------------------------------------
+    \newenvironment{cajaConcepto}[1][]{%
+    \begin{framed}\noindent{\bfseries #1}\par\smallskip
+    }{\end{framed}}
 
-% ═══════════════════════════════════════════════════════════════
-\begin{document}
-\sloppy
-\doublespacing
+    % ═══════════════════════════════════════════════════════════════
+    \begin{document}
+    \sloppy
+    \doublespacing
 
-% ─────────────────────────────────────────────────────────────
-%  PORTADA (Estilo APA 7 - Sobrio)
-% ─────────────────────────────────────────────────────────────
-\begin{titlepage}
-    \begin{center}
-        \setstretch{1.1}
-        {\fontsize{14}{16}\selectfont\textbf{UNIVERSIDAD NACIONAL AGRARIA DE LA SELVA}} \\[0.3cm]
-        {\fontsize{13}{15}\selectfont\textbf{FACULTAD DE INGENIERÍA EN INFORMÁTICA Y SISTEMAS}} \\[0.2cm]
-        {\fontsize{12}{14}\selectfont\textbf{ESCUELA PROFESIONAL DE INGENIERÍA DE SISTEMAS}} \\[0.4cm]
-        
-        \begin{minipage}{0.45\textwidth}
-            \centering
-            \includegraphics[height=7.5cm,keepaspectratio]{logounas.png}
-        \end{minipage}
-        \hfill
-        \begin{minipage}{0.45\textwidth}
-            \centering
-            \includegraphics[height=4.8cm,keepaspectratio]{LOGO-FIIS-1000x1000-TR.png}
-        \end{minipage}\\[0 cm]
-        
-        \rule{\linewidth}{1.5pt} \\[0.6cm]
-        
-        {\fontsize{13}{16}\selectfont\textbf{INTEGRACIÓN ERP, TRANSACCIONES TPS Y ANALÍTICA DE NEGOCIOS EN POWER BI: ANÁLISIS DE LA INTERACCIÓN ENTRE SECRETARÍA ACADÉMICA Y TESORERÍA EN SICOLEGIO 360}} \\[0.6cm]
-        
-        \rule{\linewidth}{1.5pt} \\[1.2cm]
-        
-        \setstretch{1.5}
-        \begin{minipage}{0.85\textwidth}
-            \begin{flushleft}
-                \begin{tabular}{@{}p{3.5cm}p{9.5cm}@{}}
-                    \textbf{Curso:} & Sistemas de Información \\[0.2cm]
-                    \textbf{Autores:} & Evaristo Jara, Jose Junior \\
-                                      & Tapullima Serna, Meselemias \\[0.2cm]
-                    \textbf{Docente:} & Docente del Curso \\[0.2cm]
-                    \textbf{Ciclo:} & Séptimo \\[0.2cm]
-                \end{tabular}
-            \end{flushleft}
-        \end{minipage}
-        
-        \vfill
-        
-        {\fontsize{12}{14}\selectfont\textbf{Tingo María -- Perú}} \\[0.2cm]
-        {\fontsize{12}{14}\selectfont\textbf{2026}}
-    \end{center}
-\end{titlepage}
+    % ─────────────────────────────────────────────────────────────
+    %  PORTADA (Estilo APA 7 - Sobrio)
+    % ─────────────────────────────────────────────────────────────
+    \begin{titlepage}
+        \begin{center}
+            \setstretch{1.1}
+            {\fontsize{14}{16}\selectfont\textbf{UNIVERSIDAD NACIONAL AGRARIA DE LA SELVA}} \\[0.3cm]
+            {\fontsize{13}{15}\selectfont\textbf{FACULTAD DE INGENIERÍA EN INFORMÁTICA Y SISTEMAS}} \\[0.2cm]
+            {\fontsize{12}{14}\selectfont\textbf{ESCUELA PROFESIONAL DE INGENIERÍA DE SISTEMAS}} \\[0.4cm]
+            
+            \begin{minipage}{0.45\textwidth}
+                \centering
+                \includegraphics[height=7.5cm,keepaspectratio]{logounas.png}
+            \end{minipage}
+            \hfill
+            \begin{minipage}{0.45\textwidth}
+                \centering
+                \includegraphics[height=4.8cm,keepaspectratio]{LOGO-FIIS-1000x1000-TR.png}
+            \end{minipage}\\[0 cm]
+            
+            \rule{\linewidth}{1.5pt} \\[0.6cm]
+            
+            {\fontsize{13}{16}\selectfont\textbf{INTEGRACIÓN DE SISTEMAS DE INFORMACIÓN, PROCESAMIENTO DE TRANSACCIONES TPS Y ANALÍTICA DE NEGOCIOS EN POWER BI: ANÁLISIS DE LA INTERACCIÓN ENTRE LA DIRECCIÓN ACADÉMICA Y EL CONTROL ESCOLAR EN SICOLEGIO 360}} \\[0.6cm]
+            
+            \rule{\linewidth}{1.5pt} \\[1.2cm]
+            
+            \setstretch{1.5}
+            \begin{minipage}{0.85\textwidth}
+                \begin{flushleft}
+                    \begin{tabular}{@{}p{3.5cm}p{9.5cm}@{}}
+                        \textbf{Curso:} & Sistemas de Información \\[0.2cm]
+                        \textbf{Autores:} & Evaristo Jara, Jose Junior \\
+                                        & Tapullima Serna, Meselemias \\[0.2cm]
+                        \textbf{Docente:} & Docente del Curso \\[0.2cm]
+                        \textbf{Ciclo:} & Séptimo \\[0.2cm]
+                    \end{tabular}
+                \end{flushleft}
+            \end{minipage}
+            
+            \vfill
+            
+            {\fontsize{12}{14}\selectfont\textbf{Tingo María -- Perú}} \\[0.2cm]
+            {\fontsize{12}{14}\selectfont\textbf{2026}}
+        \end{center}
+    \end{titlepage}
 
-% ─────────────────────────────────────────────────────────────
-%  RESUMEN
-% ─────────────────────────────────────────────────────────────
-\chapter*{Resumen}
-\addcontentsline{toc}{chapter}{Resumen}
-\markboth{RESUMEN}{RESUMEN}
+    % ─────────────────────────────────────────────────────────────
+    %  RESUMEN
+    % ─────────────────────────────────────────────────────────────
+    \chapter*{Resumen}
+    \addcontentsline{toc}{chapter}{Resumen}
+    \markboth{RESUMEN}{RESUMEN}
 
-El presente estudio académico aborda el diseño, integración e ingeniería analítica de \textbf{SICOLEGIO 360}, concebido como una plataforma de Planificación de Recursos Empresariales para el sector educativo (\textbf{Ed-ERP}) sustentada sobre una arquitectura relacional centralizada. Frente al diagnóstico de desarticulación operativa en colegios privados medianos y pequeños —caracterizados por islas de información entre la gestión académica y la tesorería—, este documento demuestra el valor de acoplar atómicamente el procesamiento de transacciones operativas (\textbf{TPS}) con dos niveles analíticos diferenciados: la reportería operativa web nativa (\textbf{MIS}) y la inteligencia de negocios estratégica mediante \textbf{Power BI} (\textbf{DSS/BI}).
+    El presente estudio académico aborda el diseño, integración e ingeniería analítica de \textbf{SICOLEGIO 360}, concebido como una plataforma de gestión para el sector educativo sustentada sobre una arquitectura de sistemas transaccionales desacoplados e integración en Business Intelligence. Frente al diagnóstico de desarticulación operativa en instituciones educativas —caracterizadas por la falta de sincronización entre el rendimiento pedagógico del aula y el control de asistencia y disciplina de los alumnos—, este documento demuestra el valor de acoplar operativamente dos Sistemas de Procesamiento de Transacciones (\textbf{TPS}): el \textbf{TPS Pedagógico} (Dirección Académica) y el \textbf{TPS de Control Escolar y Convivencia} (Secretaría/Auxiliaría).
 
-El trabajo profundiza en la interacción transaccional entre dos áreas críticas: la \textbf{Secretaría Académica} (encargada de la admisión, vacantes, asignación de secciones y registro de matrícula) y la \textbf{Tesorería / Administración} (encargada del control financiero, generación de deudas, cobranzas y comprobantes). Se analiza el flujo acoplado de datos garantizando las propiedades ACID (Atomicidad, Consistencia, Aislamiento y Durabilidad) mediante \textit{Stored Procedures} y \textit{Triggers} SQL que evitan descuadres, sobreaforo y morosidad no detectada.
+    El trabajo profundiza en la interacción transaccional entre ambas áreas: la \textbf{Dirección Académica} (encargada del registro de evaluaciones, notas, promedios bimestrales, libretas y horarios) y la \textbf{Secretaría Escolar y Convivencia} (encargada de la admisión, matrículas, marcación diaria de asistencia, justificaciones, registro disciplinario y citaciones). Se analiza el flujo de datos garantizando las propiedades ACID mediante transacciones SQL y disparadores que automatizan la justificación de evaluaciones y las alertas por desaprobación o inasistencias acumuladas.
 
-Asimismo, la investigación diferencia explícitamente los reportes operativos en tiempo real integrados en el código de la aplicación web de SICOLEGIO 360 frente a la capa de Business Intelligence desarrollada en Power BI. En esta última se establece la arquitectura ETL, el modelado dimensional en estrella (\textit{Star Schema}), la creación de medidas en lenguaje DAX (días de mora, tasa de ocupación de vacantes, ARR educativo y retención) y la aplicación de políticas de seguridad a nivel de fila (\textit{Row-Level Security - RLS}). Finalmente, se consolida una matriz de toma de decisiones que conecta los indicadores operativos con la planificación estratégica de la institución.
+    Asimismo, la investigación diferencia explícitamente los reportes operativos en tiempo real integrados en el código de la aplicación web de SICOLEGIO 360 (\textbf{MIS}) de la capa de Business Intelligence desarrollada en \textbf{Power BI} (\textbf{DSS/BI}). En esta última se establece la arquitectura ETL, el modelado dimensional en estrella (\textit{Star Schema}), la creación de medidas en lenguaje DAX (tasa de asistencia ponderada, porcentaje de desaprobación, índice de incidencias y correlación asistencia-rendimiento) y la aplicación de políticas de seguridad a nivel de fila (\textit{Row-Level Security - RLS}). Finalmente, se consolida una matriz de toma de decisiones que conecta los indicadores operativos con la planificación estratégica del colegio.
 
-\textbf{Palabras clave:} ERP Educativo, Ed-ERP, TPS, Base de Datos Centralizada, Propiedades ACID, Secretaría Académica, Tesorería, Power BI, Modelo en Estrella, DAX, Row-Level Security, MIS, DSS.
+    \textbf{Palabras clave:} Sistemas de Información, TPS Pedagógico, TPS Control Escolar, Desacoplamiento Transaccional, Propiedades ACID, Dirección Académica, Convivencia Escolar, Power BI, Modelo en Estrella, DAX, Row-Level Security, MIS, DSS.
 
-% ─────────────────────────────────────────────────────────────
-%  ABSTRACT
-% ─────────────────────────────────────────────────────────────
-\chapter*{Abstract}
-\addcontentsline{toc}{chapter}{Abstract}
-\markboth{ABSTRACT}{ABSTRACT}
+    % ─────────────────────────────────────────────────────────────
+    %  ABSTRACT
+    % ─────────────────────────────────────────────────────────────
+    \chapter*{Abstract}
+    \addcontentsline{toc}{chapter}{Abstract}
+    \markboth{ABSTRACT}{ABSTRACT}
 
-This academic research addresses the design, integration, and analytical engineering of \textbf{SICOLEGIO 360}, conceived as an Educational Enterprise Resource Planning (\textbf{Ed-ERP}) platform backed by a centralized relational database architecture. Based on the diagnosis of operational fragmentation in small and medium private schools —characterized by isolated data silos between academic management and treasury— this paper demonstrates the value of atomically coupling Transaction Processing Systems (\textbf{TPS}) with two distinct analytical levels: native web operational reporting (\textbf{MIS}) and strategic business intelligence using \textbf{Power BI} (\textbf{DSS/BI}).
+    This academic research addresses the design, integration, and analytical engineering of \textbf{SICOLEGIO 360}, conceived as an educational management platform backed by a decoupled Transaction Processing System architecture integrated with Business Intelligence. Based on the diagnosis of operational fragmentation in schools —characterized by unaligned data between classroom pedagogical performance and daily attendance and behavioral control— this paper demonstrates the value of coupling two Transaction Processing Systems (\textbf{TPS}): the \textbf{Pedagogical TPS} (Academic Directorate) and the \textbf{School Control & Coexistence TPS} (Secretariat/Discipline Office).
 
-The paper delves into the transactional interaction between two critical departments: \textbf{Academic Secretariat} (in charge of admissions, vacancies, section assignments, and enrollment registration) and \textbf{Treasury / Administration} (responsible for financial control, debt generation, collection, and invoicing). The coupled data flow is analyzed while guaranteeing ACID properties (Atomicity, Consistency, Isolation, and Durability) through SQL Stored Procedures and Triggers that prevent financial mismatches, over-capacity, and undetected delinquency.
+    The paper delves into the transactional interaction between both departments: \textbf{Academic Directorate} (responsible for evaluation records, grades, bimonthly averages, report cards, and schedules) and \textbf{School Control & Coexistence} (in charge of admissions, enrollments, daily attendance tracking, absence justifications, behavioral records, and parent summons). The data flow is analyzed while guaranteeing ACID properties through SQL transactions and triggers that automate assessment rescheduling and alerts for cumulative absences or academic failure.
 
-Furthermore, this study explicitly differentiates real-time operational reporting embedded within the SICOLEGIO 360 web application codebase from the Business Intelligence layer engineered in Power BI. The latter establishes ETL architecture, Star Schema dimensional modeling, DAX measure calculations (delinquency days, vacancy occupancy rates, educational ARR, and retention rates), and Row-Level Security (RLS) policies for multi-institution data governance. Finally, a decision-making matrix is consolidated to bridge operational indicators with executive institutional planning.
+    Furthermore, this study explicitly differentiates real-time operational reporting embedded within the SICOLEGIO 360 web application codebase (\textbf{MIS}) from the Business Intelligence layer engineered in \textbf{Power BI} (\textbf{DSS/BI}). The latter establishes ETL architecture, Star Schema dimensional modeling, DAX measure calculations (weighted attendance rate, failure percentage, disciplinary incident index, and attendance-performance correlation), and Row-Level Security (RLS) policies for multi-tenant data governance. Finally, a decision-making matrix is consolidated to bridge operational indicators with executive institutional planning.
 
-\textbf{Keywords:} Educational ERP, Ed-ERP, TPS, Centralized Database, ACID Properties, Academic Secretariat, Treasury, Power BI, Star Schema, DAX, Row-Level Security, MIS, DSS.
+    \textbf{Keywords:} Information Systems, Pedagogical TPS, School Control TPS, Transactional Decoupling, ACID Properties, Academic Management, School Coexistence, Power BI, Star Schema, DAX, Row-Level Security, MIS, DSS.
 
-% ─────────────────────────────────────────────────────────────
-%  ÍNDICES
-% ─────────────────────────────────────────────────────────────
-\newpage 
-\tableofcontents
-\newpage
-\listoftables
-\newpage
-\listoffigures
+    % ─────────────────────────────────────────────────────────────
+    %  ÍNDICES
+    % ─────────────────────────────────────────────────────────────
+    \newpage 
+    \tableofcontents
+    \newpage
+    \listoftables
+    \newpage
+    \listoffigures
 
-% ─────────────────────────────────────────────────────────────
-%  INTRODUCCIÓN
-% ─────────────────────────────────────────────────────────────
-\chapter*{Introducción}
-\addcontentsline{toc}{chapter}{Introducción}
-\markboth{INTRODUCCIÓN}{INTRODUCCIÓN}
+    % ─────────────────────────────────────────────────────────────
+    %  INTRODUCCIÓN
+    % ─────────────────────────────────────────────────────────────
+    \chapter*{Introducción}
+    \addcontentsline{toc}{chapter}{Introducción}
+    \markboth{INTRODUCCIÓN}{INTRODUCCIÓN}
 
-En el sector educativo privado de nivel básico regular en el Perú y América Latina, la eficiencia institucional depende críticamente de la capacidad de sincronizar los flujos académicos con la sostenibilidad financiera. Históricamente, las instituciones educativas privadas de tamaño pequeño y mediano han operado bajo esquemas fragmentados: la Secretaría Académica gestiona las fichas de los estudiantes y el control de aula en cuadernos de notas o archivos locales de Excel, mientras que la Tesorería maneja la cobranza de pensiones en comprobantes físicos o software contable no acoplado.
+    En el sector educativo privado de nivel básico regular en el Perú y América Latina, la eficiencia institucional depende críticamente de la capacidad de sincronizar los flujos académicos con la sostenibilidad financiera. Históricamente, las instituciones educativas privadas de tamaño pequeño y mediano han operado bajo esquemas fragmentados: la Secretaría Académica gestiona las fichas de los estudiantes y el control de aula en cuadernos de notas o archivos locales de Excel, mientras que la Tesorería maneja la cobranza de pensiones en comprobantes físicos o software contable no acoplado.
 
-Esta desarticulación genera graves "islas de información". La consecuencia inmediata es la aparición de cuellos de botella operativos: alumnos matriculados sin la validación de compromisos financieros, sobreaforo en aulas por falta de control en tiempo real, morosidad detectada tardíamente al cierre del año lectivo y la imposibilidad de la alta dirección para tomar decisiones estratégicas basadas en evidencia cuantitativa confiable.
+    Esta desarticulación genera graves "islas de información". La consecuencia inmediata es la aparición de cuellos de botella operativos: alumnos matriculados sin la validación de compromisos financieros, sobreaforo en aulas por falta de control en tiempo real, morosidad detectada tardíamente al cierre del año lectivo y la imposibilidad de la alta dirección para tomar decisiones estratégicas basadas en evidencia cuantitativa confiable.
 
-El presente trabajo de investigación académica presenta una solución integral estructurada en la plataforma \textbf{SICOLEGIO 360}. El proyecto demuestra cómo un \textbf{ERP Educativo (Ed-ERP)}, sustentado en una \textbf{base de datos relacional centralizada}, actúa como la única fuente de verdad (\textit{Single Source of Truth - SSOT}) de la institución. Sobre este núcleo se ejecutan las transacciones operativas diarias (\textbf{TPS}) garantizando la rigurosidad de las propiedades ACID (Atomicidad, Consistencia, Aislamiento y Durabilidad).
+    El presente trabajo de investigación académica presenta una solución integral estructurada en la plataforma \textbf{SICOLEGIO 360}. El proyecto demuestra cómo un \textbf{ERP Educativo (Ed-ERP)}, sustentado en una \textbf{base de datos relacional centralizada}, actúa como la única fuente de verdad (\textit{Single Source of Truth - SSOT}) de la institución. Sobre este núcleo se ejecutan las transacciones operativas diarias (\textbf{TPS}) garantizando la rigurosidad de las propiedades ACID (Atomicidad, Consistencia, Aislamiento y Durabilidad).
 
-El documento se estructura en seis capítulos sistemáticos: el \textbf{Capítulo I} desarrolla el marco conceptual de los Ed-ERP y la base de datos centralizada; el \textbf{Capítulo II} detalla la ingeniería transaccional y los flujos BPMN entre Secretaría y Tesorería; el \textbf{Capítulo III} diseña la capa de métricas, KPIs y requerimientos de información por rol; el \textbf{Capítulo IV} expone la reportería operativa nativa en el software web (MIS); el \textbf{Capítulo V} fundamenta la arquitectura analítica avanzada en Power BI (DSS/BI); y el \textbf{Capítulo VI} consolida la matriz de toma de decisiones y el plan de mejora continua, finalizando con las conclusiones, recomendaciones y referencias bibliográficas en formato APA 7.
+    El documento se estructura en seis capítulos sistemáticos: el \textbf{Capítulo I} desarrolla el marco conceptual de los Ed-ERP y la base de datos centralizada; el \textbf{Capítulo II} detalla la ingeniería transaccional y los flujos BPMN entre Secretaría y Tesorería; el \textbf{Capítulo III} diseña la capa de métricas, KPIs y requerimientos de información por rol; el \textbf{Capítulo IV} expone la reportería operativa nativa en el software web (MIS); el \textbf{Capítulo V} fundamenta la arquitectura analítica avanzada en Power BI (DSS/BI); y el \textbf{Capítulo VI} consolida la matriz de toma de decisiones y el plan de mejora continua, finalizando con las conclusiones, recomendaciones y referencias bibliográficas en formato APA 7.
 
-% ═══════════════════════════════════════════════════════════════
-%  CAPÍTULO I: ARQUITECTURA ERP Y BASE DE DATOS CENTRALIZADA
-% ═══════════════════════════════════════════════════════════════
-\chapter{Marco Conceptual: Arquitectura ERP y Base de Datos Centralizada en SICOLEGIO 360}
+    % ═══════════════════════════════════════════════════════════════
+    %  CAPÍTULO I: ARQUITECTURA ERP Y BASE DE DATOS CENTRALIZADA
+    % ═══════════════════════════════════════════════════════════════
+    \chapter{Marco Conceptual: Arquitectura ERP y Base de Datos Centralizada en SICOLEGIO 360}
 
-\section{Evolución Histórica y Justificación Socio-Tecnológica del Ed-ERP}
+    \section{Evolución Histórica y Justificación Socio-Tecnológica del Ed-ERP}
 
-La gestión de la información en las instituciones educativas privadas de nivel básico regular en el Perú y América Latina ha atravesado una evolución caracterizada por tres etapas históricas marcadas por el nivel de madurez tecnológica:
+    La gestión de la información en las instituciones educativas privadas de nivel básico regular en el Perú y América Latina ha atravesado una evolución caracterizada por tres etapas históricas marcadas por el nivel de madurez tecnológica:
 
+    \begin{enumerate}
+        \item \textbf{Era de los Registros Manuales (Antes de 1995):} La administración escolar dependía exclusivamente de archivos físicos, libretas de papel, carpetas colgantes y libros contables manuscritos. La velocidad de procesamiento era extremadamente lenta, la búsqueda de antecedentes tomaba días y el riesgo de pérdida o deterioro físico por causas ambientales o humanas era muy elevado.
+        \item \textbf{Era de la Ofimática Desconectada (1995 - 2015):} Con la masificación de los computadores personales, los colegios migraron sus archivos a procesadores de texto y hojas de cálculo locales (Excel). Si bien este paso aceleró la mecanización del trabajo, introdujo el fenómeno de las \textit{"islas de información"}. Cada departamento (Secretaría, Tesorería, Docencia) mantenía sus propios archivos de Excel en computadores independientes, generando múltiples versiones contradictorias del mismo estudiante, duplicidad de digitación y frecuentes descuadres de caja.
+        \item \textbf{Era de los Sistemas de Planificación de Recursos Empresariales Educativos (Ed-ERP) (2015 en adelante):} Frente a la complejidad operativa actual, surge la necesidad de adoptar la filosofía de Planificación de Recursos Empresariales (ERP, por sus siglas en inglés \textit{Enterprise Resource Planning}) adaptada al entorno escolar. Un \textbf{Ed-ERP} se define como una suite de software modular integradora que automatiza y coordina la totalidad de las actividades académicas, administrativas, financieras y pedagógicas de la institución a través de una arquitectura de software unificada y un repositorio de datos común \citep{laudon2016}.
+    \end{enumerate}
+
+    SICOLEGIO 360 se fundamenta en el \textbf{Enfoque Socio-Tecnológico}, el cual sostiene que el rendimiento de un sistema de información no depende únicamente de la sofisticación técnica del software o hardware, sino del ajuste armónico entre la dimensión técnica (base de datos relacional, pasarelas de pago, servidores web) y la dimensión social (personal administrativo, plana docente, equipo directivo, estudiantes y apoderados). La introducción de SICOLEGIO 360 no busca imponer herramientas complejas, sino aplanar la estructura jerárquica escolar, descentralizar la entrada de datos en la fuente y automatizar las tareas repetitivas para que el personal se enfoque en la calidad educativa y la atención humana.
+
+    \section{Estructura Jerárquica del Sistema SICOLEGIO 360 y Delimitación del Alcance}
+
+La institución educativa opera bajo una estructura organizacional integral que articula la gestión estratégica, administrativa y pedagógica. La Figura~\ref{fig:estructura_jerarquica} describe el organigrama general de la institución:
+
+\begin{figure}[H]
+    \centering
+    \begin{cajaConcepto}[Estructura Jerárquica e Institucional del Colegio]
+    \textbf{1. Dirección y Promotoría (Nivel Superior):}
+    \begin{itemize}
+        \item \textit{Órgano Promotor y Directorio:} Define las políticas institucionales y de inversión.
+        \item \textit{Dirección General / Director:} Supervisa el cumplimiento de metas y gestiona la analítica estratégica en Power BI.
+        \item \textit{Área de Sistemas, Datos y Análisis SICOLEGIO 360:} Soporte técnico y gestión de la plataforma.
+    \end{itemize}
+
+    \textbf{2. Staff de Gestión y Control (Nivel Soporte):}
+    \begin{itemize}
+        \item Secretaría General, Administración y Tesorería, Consejo Directivo y Asesoría Contable.
+    \end{itemize}
+
+    \textbf{3. Subdirección Académica (Área 1 -- Alcance TPS Pedagógico):}
+    \begin{itemize}
+        \item Coordinación de los Niveles Inicial, Primaria y Secundaria, y el Cuerpo Docente de aula.
+    \end{itemize}
+
+    \textbf{4. Subdirección de Formación y Convivencia (Área 2 -- Alcance TPS Control Escolar):}
+    \begin{itemize}
+        \item Departamento Psicopedagógico, Tutoría, Convivencia Escolar, Auxiliares de Educación y Consejo Escolar.
+    \end{itemize}
+
+    \textbf{5. Comunidad Escolar e Interacción Externa:}
+    \begin{itemize}
+        \item Estudiantes y Padres de Familia / Apoderados.
+    \end{itemize}
+    \end{cajaConcepto}
+    \caption{Estructura jerárquica organizacional de la institución educativa SICOLEGIO 360}
+    \label{fig:estructura_jerarquica}
+\end{figure}
+
+\paragraph{Delimitación del Alcance Técnico del Proyecto:}
+Si bien el organigrama representa la totalidad de las dependencias institucionales, la presente investigación delimita formalmente su alcance técnico al análisis del procesamiento transaccional (\textbf{TPS}) e interacción interdepartamental entre dos áreas clave:
 \begin{enumerate}
-    \item \textbf{Era de los Registros Manuales (Antes de 1995):} La administración escolar dependía exclusivamente de archivos físicos, libretas de papel, carpetas colgantes y libros contables manuscritos. La velocidad de procesamiento era extremadamente lenta, la búsqueda de antecedentes tomaba días y el riesgo de pérdida o deterioro físico por causas ambientales o humanas era muy elevado.
-    \item \textbf{Era de la Ofimática Desconectada (1995 - 2015):} Con la masificación de los computadores personales, los colegios migraron sus archivos a procesadores de texto y hojas de cálculo locales (Excel). Si bien este paso aceleró la mecanización del trabajo, introdujo el fenómeno de las \textit{"islas de información"}. Cada departamento (Secretaría, Tesorería, Docencia) mantenía sus propios archivos de Excel en computadores independientes, generando múltiples versiones contradictorias del mismo estudiante, duplicidad de digitación y frecuentes descuadres de caja.
-    \item \textbf{Era de los Sistemas de Planificación de Recursos Empresariales Educativos (Ed-ERP) (2015 en adelante):} Frente a la complejidad operativa actual, surge la necesidad de adoptar la filosofía de Planificación de Recursos Empresariales (ERP, por sus siglas en inglés \textit{Enterprise Resource Planning}) adaptada al entorno escolar. Un \textbf{Ed-ERP} se define como una suite de software modular integradora que automatiza y coordina la totalidad de las actividades académicas, administrativas, financieras y pedagógicas de la institución a través de una arquitectura de software unificada y un repositorio de datos común \citep{laudon2016}.
+    \item \textbf{Subdirección Académica (Área 1):} Responsable de la gestión del \textbf{TPS Pedagógico y Evaluativo} (\texttt{notas}, \texttt{evaluaciones}, \texttt{promedios}, \texttt{horarios}).
+    \item \textbf{Subdirección de Formación y Convivencia (Área 2):} Responsable de la gestión del \textbf{TPS de Control Escolar} (\texttt{matriculas}, \texttt{asistencias}, \texttt{justificaciones}, \texttt{conducta}, \texttt{citaciones}).
 \end{enumerate}
-
-SICOLEGIO 360 se fundamenta en el \textbf{Enfoque Socio-Tecnológico}, el cual sostiene que el rendimiento de un sistema de información no depende únicamente de la sofisticación técnica del software o hardware, sino del ajuste armónico entre la dimensión técnica (base de datos relacional, pasarelas de pago, servidores web) y la dimensión social (personal administrativo, plana docente, equipo directivo, estudiantes y apoderados). La introducción de SICOLEGIO 360 no busca imponer herramientas complejas, sino aplanar la estructura jerárquica escolar, descentralizar la entrada de datos en la fuente y automatizar las tareas repetitivas para que el personal se enfoque en la calidad educativa y la atención humana.
 
 \section{Mapeo de la Pirámide Organizacional Escolar (Modelo de Laudon \& Laudon)}
 
-Para comprender la articulación de SICOLEGIO 360 dentro de la estructura jerárquica de una institución educativa, el sistema proyecta sus funciones a lo largo de los cuatro niveles tradicionales de la pirámide organizacional descrita por \citet{laudon2016}:
+    Para comprender la articulación de SICOLEGIO 360 dentro de la estructura jerárquica de una institución educativa, el sistema proyecta sus funciones a lo largo de los cuatro niveles tradicionales de la pirámide organizacional descrita por \citet{laudon2016}:
+
+    \begin{figure}[H]
+        \centering
+        \begin{cajaConcepto}[Mapeo de Sistemas de Información en la Pirámide Escolar]
+        \textbf{1. Nivel Estratégico (Dirección General / Promotora):}
+        \begin{itemize}
+            \item \textit{Sistema Evaluado:} Executive Support Systems (ESS) / Decision Support Systems (DSS) en Power BI.
+            \item \textit{Función:} Análisis de proyecciones de recaudación (ARR), retención estudiantil e inversión institucional.
+        \end{itemize}
+        \textbf{2. Nivel Táctico / Administrativo (Administración / Dirección Académica):}
+        \begin{itemize}
+            \item \textit{Sistema Evaluado:} Management Information Systems (MIS) / Dashboards Web Nativos.
+            \item \textit{Función:} Monitoreo diario del aforo de aulas, cuadre de caja, avance del sílabo y control de mora.
+        \end{itemize}
+        \textbf{3. Nivel de Conocimiento (Plana Docente / Psicopedagogía):}
+        \begin{itemize}
+            \item \textit{Sistema Evaluado:} Knowledge Work Systems (KWS) / Módulo de Evaluación por Competencias.
+            \item \textit{Función:} Registro de calificaciones CNEB, diseño de unidades didácticas y bitácora psicopedagógica.
+        \end{itemize}
+        \textbf{4. Nivel Operativo (Secretaría Académica / Tesorería / Cajeros):}
+        \begin{itemize}
+            \item \textit{Sistema Evaluado:} Transaction Processing Systems (TPS).
+            \item \textit{Función:} Ejecución masiva de transacciones atómicas (matricular alumno, cobrar pensión, emitir recibo).
+        \end{itemize}
+        \end{cajaConcepto}
+        \caption{Mapeo funcional de SICOLEGIO 360 en la pirámide organizacional escolar}
+        \label{fig:piramide_organizacional}
+    \end{figure}
+
+    Esta visión piramidal demuestra cómo los datos recopilados en el nivel operativo básico (TPS) por secretarios y tesoreros fluyen hacia arriba de forma sintetizada hacia los reportes tácticos (MIS) y finalmente alimentan los dashboards analíticos avanzados (DSS/BI) utilizados por los dueños y directores del colegio.
+
+    \section{La Base de Datos Relacional Centralizada como Única Fuente de Verdad (SSOT)}
+
+    El núcleo ingenieril que sustenta la propuesta de SICOLEGIO 360 es su **base de datos relacional centralizada**. En las organizaciones escolares no integradas, la fragmentación de repositorios locales conduce a la presencia de datos incongruentes. El principio de la **Única Fuente de Verdad** (\textit{Single Source of Truth - SSOT}) establece que cada entidad de información del colegio (estudiante, apoderado, sección, pensión) debe almacenarse en un único lugar lógico dentro de la base de datos relacional.
+
+    Para lograr este objetivo sin generar vulnerabilidades de integridad, la arquitectura de datos de SICOLEGIO 360 se rige por tres pilares teóricos:
+
+    \begin{enumerate}
+        \item \textbf{Normalización Relacional Estricta (Tercera Forma Normal - 3FN):} El diseño relacional se encuentra estructurado bajo las reglas de normalización enunciadas por \citet{date2004}. Esto elimina las redundancias de datos y previene las anomalías de inserción, actualización y borrado. Por ejemplo, la información personal de un apoderado se almacena en la tabla \texttt{apoderados} de forma única, aunque dicho apoderado tenga tres hijos matriculados en distintos grados.
+        \item \textbf{Arquitectura Multi-Tenant (Multiinstitucional):} Como plataforma SaaS, SICOLEGIO 360 gestiona múltiples colegios desde una sola infraestructura relacional. La privacidad y el aislamiento de datos se garantizan mediante discriminadores lógicos institucionales (\texttt{id\_colegio}) en cada tabla, respaldados por políticas de seguridad RLS (\textit{Row-Level Security}).
+        \item \textbf{Gobierno de Datos y Trazabilidad (RBAC):} El control de acceso basado en roles (\textit{Role-Based Access Control}) restringe las operaciones de lectura y escritura según el perfil del usuario autenticado (Secretario, Tesorero, Docente, Padre). Todas las transacciones modificatorias registran metadatos de auditoría (usuario, marca de tiempo \texttt{TIMESTAMP}, dirección IP).
+    \end{enumerate}
+
+    \section{Catálogo Detallado de Módulos Funcionales y Reglas de Negocio}
+
+    La Plataforma SICOLEGIO 360 articula las operaciones de la institución a través de seis módulos funcionales especializados que interactúan dinámicamente. La Tabla~\ref{tab:modulos_erp} presenta el catálogo modular completo con sus actores y responsabilidades.
+
+    \begin{xltabular}{\textwidth}{|p{3.8cm}|X|p{4.2cm}|}
+    \caption{Módulos funcionales y distribución por TPS en SICOLEGIO 360} \label{tab:modulos_erp} \\
+    \hline
+    \textbf{Módulo del Sistema} & \textbf{Función Principal y TPS Asignado} & \textbf{Actores Involucrados} \\
+    \hline
+    \endfirsthead
+
+    \multicolumn{3}{c}{{\bfseries Tabla \thetable{} -- Continuación de la página anterior}} \\
+    \hline
+    \textbf{Módulo del Sistema} & \textbf{Función Principal y TPS Asignado} & \textbf{Actores Involucrados} \\
+    \hline
+    \endhead
+
+    \hline
+    \multicolumn{3}{r}{\textit{Continúa en la siguiente página...}} \\
+    \endfoot
+
+    \hline
+    \endlastfoot
+
+    \textbf{Dirección Académica y Evaluación} & **TPS 1 (Pedagógico):** Carga de notas por competencias, evaluaciones bimestrales, promedios y generación de libretas escolares. & Coordinador Académico, Docentes de asignatura. \\
+    \hline
+    \textbf{Gestión Curricular y Horarios} & **TPS 1 (Pedagógico):** Malla curricular, asignación de cursos por grado, secciones y bloques de horarios docentes. & Jefe de Estudios, Profesores. \\
+    \hline
+    \textbf{Secretaría y Matrícula} & **TPS 2 (Control Escolar):** Registro de admisión, expedientes de estudiantes, asignación de aforo y matrículas. & Secretario Académico, Auxiliar de Secretaría. \\
+    \hline
+    \textbf{Control de Asistencia y Justificaciones} & **TPS 2 (Control Escolar):** Registro diario de asistencia en puerta/aula, tardanzas y justificaciones presentadas por familias. & Auxiliares de Educación, Apoderados. \\
+    \hline
+    \textbf{Convivencia y Tutoría} & **TPS 2 (Control Escolar):** Bitácora de conducta (méritos/deméritos), citaciones a apoderados y seguimiento de tutoría. & Tutor de aula, Auxiliar disciplinario, Psicólogo. \\
+    \hline
+    \textbf{Portal de Apoderados y Alumnos} & **Interfaz de Consulta:** Acceso en tiempo real a libretas de notas, récord de asistencia, conducta y comunicados oficiales. & Estudiantes, Padres de Familia / Apoderados. \\
+    \end{xltabular}
+
+    A continuación se detallan las reglas de negocio e interacción de cada uno de los módulos principales:
+
+    \subsection{1. Módulo de Dirección Académica y Evaluación (TPS Pedagógico)}
+    \begin{itemize}
+        \item \textbf{Entradas de Información:} Calificaciones por competencias (CNEB: AD, A, B, C), ponderaciones de exámenes, instrumentos de evaluación y avances silábicos.
+        \item \textbf{Salidas de Información:} Registro auxiliar docente, promedios bimestrales calculados automáticamente y Libretas Oficiales de Calificaciones.
+        \item \textbf{Regla de Negocio Principal:} El ingreso y modificación de calificaciones por parte de los docentes se bloquea automáticamente al vencer el plazo de cierre de actas dictado por la Dirección Académica.
+    \end{itemize}
+
+    \subsection{2. Módulo de Secretaría Escolar y Matrículas (TPS Control Escolar)}
+    \begin{itemize}
+        \item \textbf{Entradas de Información:} Ficha del postulante, documentos de identidad (DNI/Pasaporte), certificados de estudios previos y datos de apoderados.
+        \item \textbf{Salidas de Información:} Nómina oficial de matriculados, asignación de secciones, carpetas pedagógicas y constancias de estudios.
+        \item \textbf{Regla de Negocio Principal:} Ningún estudiante puede ser matriculado o asignado a una sección si el número de vacantes ocupadas ha alcanzado la capacidad máxima física del aula.
+    \end{itemize}
+
+    \subsection{3. Módulo de Control de Asistencia y Justificaciones (TPS Control Escolar)}
+    \begin{itemize}
+        \item \textbf{Entradas de Información:} Marcación diaria de ingreso/salida, registro de tardanzas en aula y solicitudes de justificación presentadas por los apoderados.
+        \item \textbf{Salidas de Información:} Reportes diarios de inasistencia, consolidado mensual de puntualidad y alertas de riesgo por ausentismo recurrente.
+        \item \textbf{Regla de Negocio Principal:} La justificación médica aprobada por Secretaría en este módulo autoriza automáticamente la reprogramación de evaluaciones desaprobadas o no rendidas en el TPS Pedagógico.
+    \end{itemize}
+
+    \subsection{4. Módulo de Convivencia y Tutoría (TPS Control Escolar)}
+    \begin{itemize}
+        \item \textbf{Entradas de Información:} Reportes de conducta (partes disciplinarios), registro de méritos/deméritos, compromisos de tutoría y citaciones a padres.
+        \item \textbf{Salidas de Información:} Ficha de seguimiento de convivencia, citaciones firmadas y reportes de comportamiento por aula.
+        \item \textbf{Regla de Negocio Principal:} La acumulación de tres deméritos graves en el registro de conducta dispara automáticamente la emisión de una citación obligatoria presencial para el apoderado.
+    \end{itemize}
+
+    \subsection{5. Módulo de Dirección Estratégica (Capa BI en Power BI)}
+    \begin{itemize}
+        \item \textbf{Entradas de Información:} Datos consolidados de ambos TPS (promedios académicos, tasa de asistencia, incidencias disciplinarias y aforo por sección).
+        \item \textbf{Salidas de Información:} Dashboards analíticos multidimensionales, análisis de correlación asistencia-rendimiento y plan de tutoría preventiva.
+        \item \textbf{Regla de Negocio Principal:} Las decisiones de reestructuración curricular o acompañamiento psicológico prioritario se basan en el cruce analítico en Power BI entre el rendimiento académico del TPS 1 y el ausentismo/conducta del TPS 2.
+    \end{itemize}
+
+    \subsection{Sustentación Empírica del Volumen de Datos en db.sqlite3}
+
+Para fundamentar la elección de los dos Sistemas de Procesamiento de Transacciones (TPS) seleccionados (TPS Pedagógico y TPS Control Escolar) y demostrar que la división responde a la operación real del software y no a una propuesta abstracta, se realizó una auditoría directa a la base de datos relacional del sistema (\texttt{db.sqlite3}).
+
+La inspección empírica confirma la existencia de un volumen de más de \textbf{196,000 registros transaccionales}, distribuidos de forma equilibrada entre ambos motores:
 
 \begin{figure}[H]
     \centering
-    \begin{cajaConcepto}[Mapeo de Sistemas de Información en la Pirámide Escolar]
-    \textbf{1. Nivel Estratégico (Dirección General / Promotora):}
+    \begin{cajaConcepto}[Métricas Reales del Volumen Transaccional por TPS en db.sqlite3]
+    \textbf{1. TPS 1: Pedagógico y Evaluativo (Área Dirección Académica):}
     \begin{itemize}
-        \item \textit{Sistema Evaluado:} Executive Support Systems (ESS) / Decision Support Systems (DSS) en Power BI.
-        \item \textit{Función:} Análisis de proyecciones de recaudación (ARR), retención estudiantil e inversión institucional.
+        \item \textit{Tablas Relacionales:} \texttt{notas\_nota}, \texttt{notas\_evaluacion}, \texttt{notas\_promedio}, \texttt{libretas\_libreta}, \texttt{horarios\_horario}, \texttt{docentes}.
+        \item \textit{Volumen Real Medido:} 
+        \begin{itemize}
+            \item \textbf{101,760} registros de Notas de tareas, trabajos y exámenes.
+            \item \textbf{33,920} Promedios bimestrales calculados acumulados.
+            \item \textbf{3,145} Libretas de calificaciones consolidadas emitidas.
+            \item \textbf{176} Registros de horarios y mallas docentes.
+        \end{itemize}
+        \item \textit{Total Transaccional TPS 1:} \textbf{+138,000 registros transaccionales}.
+        \item \textit{Característica Operativa:} Carga intensiva periódica (cierres de unidad/bimestre).
     \end{itemize}
-    \textbf{2. Nivel Táctico / Administrativo (Administración / Dirección Académica):}
+
+    \textbf{2. TPS 2: Control Escolar y Convivencia (Área Secretaría / Auxiliaría):}
     \begin{itemize}
-        \item \textit{Sistema Evaluado:} Management Information Systems (MIS) / Dashboards Web Nativos.
-        \item \textit{Función:} Monitoreo diario del aforo de aulas, cuadre de caja, avance del sílabo y control de mora.
-    \end{itemize}
-    \textbf{3. Nivel de Conocimiento (Plana Docente / Psicopedagogía):}
-    \begin{itemize}
-        \item \textit{Sistema Evaluado:} Knowledge Work Systems (KWS) / Módulo de Evaluación por Competencias.
-        \item \textit{Función:} Registro de calificaciones CNEB, diseño de unidades didácticas y bitácora psicopedagógica.
-    \end{itemize}
-    \textbf{4. Nivel Operativo (Secretaría Académica / Tesorería / Cajeros):}
-    \begin{itemize}
-        \item \textit{Sistema Evaluado:} Transaction Processing Systems (TPS).
-        \item \textit{Función:} Ejecución masiva de transacciones atómicas (matricular alumno, cobrar pensión, emitir recibo).
+        \item \textit{Tablas Relacionales:} \texttt{asistencia\_asistencia}, \texttt{asistencia\_justificacion}, \texttt{conducta\_conducta}, \texttt{matricula\_matricula}, \texttt{estudiantes}, \texttt{apoderados}, \texttt{comunicacion\_citacion}.
+        \item \textit{Volumen Real Medido:}
+        \begin{itemize}
+            \item \textbf{52,155} registros de Asistencia diaria marcados en puerta.
+            \item \textbf{797} Justificaciones de faltas procesadas por Secretaría.
+            \item \textbf{714} Registros de conducta (méritos/deméritos).
+            \item \textbf{4,240} Historiales de matrículas procesados.
+            \item \textbf{400} Estudiantes y \textbf{303} Apoderados vinculados.
+        \end{itemize}
+        \item \textit{Total Transaccional TPS 2:} \textbf{+58,000 registros transaccionales}.
+        \item \textit{Característica Operativa:} Operación transaccional diaria de alta frecuencia.
     \end{itemize}
     \end{cajaConcepto}
-    \caption{Mapeo funcional de SICOLEGIO 360 en la pirámide organizacional escolar}
-    \label{fig:piramide_organizacional}
+    \caption{Volumen de datos real medido en db.sqlite3 por cada TPS}
+    \label{fig:volumen_datos_tps}
 \end{figure}
 
-Esta visión piramidal demuestra cómo los datos recopilados en el nivel operativo básico (TPS) por secretarios y tesoreros fluyen hacia arriba de forma sintetizada hacia los reportes tácticos (MIS) y finalmente alimentan los dashboards analíticos avanzados (DSS/BI) utilizados por los dueños y directores del colegio.
-
-\section{La Base de Datos Relacional Centralizada como Única Fuente de Verdad (SSOT)}
-
-El núcleo ingenieril que sustenta la propuesta de SICOLEGIO 360 es su **base de datos relacional centralizada**. En las organizaciones escolares no integradas, la fragmentación de repositorios locales conduce a la presencia de datos incongruentes. El principio de la **Única Fuente de Verdad** (\textit{Single Source of Truth - SSOT}) establece que cada entidad de información del colegio (estudiante, apoderado, sección, pensión) debe almacenarse en un único lugar lógico dentro de la base de datos relacional.
-
-Para lograr este objetivo sin generar vulnerabilidades de integridad, la arquitectura de datos de SICOLEGIO 360 se rige por tres pilares teóricos:
-
+\paragraph{Justificación Técnica de la Elección y Desacoplamiento:}
+Las métricas obtenidas aportan tres justificaciones ingenieriles clave:
 \begin{enumerate}
-    \item \textbf{Normalización Relacional Estricta (Tercera Forma Normal - 3FN):} El diseño relacional se encuentra estructurado bajo las reglas de normalización enunciadas por \citet{date2004}. Esto elimina las redundancias de datos y previene las anomalías de inserción, actualización y borrado. Por ejemplo, la información personal de un apoderado se almacena en la tabla \texttt{apoderados} de forma única, aunque dicho apoderado tenga tres hijos matriculados en distintos grados.
-    \item \textbf{Arquitectura Multi-Tenant (Multiinstitucional):} Como plataforma SaaS, SICOLEGIO 360 gestiona múltiples colegios desde una sola infraestructura relacional. La privacidad y el aislamiento de datos se garantizan mediante discriminadores lógicos institucionales (\texttt{id\_colegio}) en cada tabla, respaldados por políticas de seguridad RLS (\textit{Row-Level Security}).
-    \item \textbf{Gobierno de Datos y Trazabilidad (RBAC):} El control de acceso basado en roles (\textit{Role-Based Access Control}) restringe las operaciones de lectura y escritura según el perfil del usuario autenticado (Secretario, Tesorero, Docente, Padre). Todas las transacciones modificatorias registran metadatos de auditoría (usuario, marca de tiempo \texttt{TIMESTAMP}, dirección IP).
+    \item \textbf{Equilibrio de Carga Operativa:} No existe un TPS "secundario" o de relleno. El TPS Pedagógico procesa más de 138,000 registros y el TPS de Control Escolar procesa más de 58,000 registros, demostrando la alta demanda de ambas áreas.
+    \item \textbf{Independencia Relacional (Desacoplamiento):} Las tablas relacionales del TPS 1 no tienen claves foráneas directas hacia las tablas de asistencia o conducta del TPS 2. El único punto de intersección es la entidad central \texttt{id\_estudiante}.
+    \item \textbf{Viabilidad de Separación Física:} Demuestra que si la institución requiere separar físicamente \texttt{db.sqlite3} en dos motores relacionales independientes ($\text{BD}_{\text{Academica}}$ y $\text{BD}_{\text{ControlEscolar}}$), el código no se rompe y se cruzan limpiamente en Power BI.
 \end{enumerate}
-
-\section{Catálogo Detallado de Módulos Funcionales y Reglas de Negocio}
-
-La Plataforma SICOLEGIO 360 articula las operaciones de la institución a través de seis módulos funcionales especializados que interactúan dinámicamente. La Tabla~\ref{tab:modulos_erp} presenta el catálogo modular completo con sus actores y responsabilidades.
-
-\begin{xltabular}{\textwidth}{|p{3.8cm}|X|p{4.2cm}|}
-\caption{Módulos funcionales del Ed-ERP SICOLEGIO 360} \label{tab:modulos_erp} \\
-\hline
-\textbf{Módulo ERP} & \textbf{Función Principal} & \textbf{Actores Involucrados} \\
-\hline
-\endfirsthead
-
-\multicolumn{3}{c}{{\bfseries Tabla \thetable{} -- Continuación de la página anterior}} \\
-\hline
-\textbf{Módulo ERP} & \textbf{Función Principal} & \textbf{Actores Involucrados} \\
-\hline
-\endhead
-
-\hline
-\multicolumn{3}{r}{\textit{Continúa en la siguiente página...}} \\
-\endfoot
-
-\hline
-\endlastfoot
-
-\textbf{Secretaría Académica} & Gestión de admisión, fichas de matrícula, expedientes, asignación de vacantes, secciones y emisión de constancias. & Secretario Académico, Auxiliar de Secretaría. \\
-\hline
-\textbf{Tesorería y Administración} & Administración del plan de cuentas, generación de cronogramas de pago, recaudación, caja chica, morosidad y comprobantes. & Tesorero, Contador, Cajero. \\
-\hline
-\textbf{Docencia y Aula} & Control de asistencia diaria, registro de evaluaciones por competencias, carga de sílabos y diario de clase. & Docentes de aula, Profesores de curso. \\
-\hline
-\textbf{Psicopedagogía y Tutoría} & Bitácora disciplinaria, registro de incidencias, seguimiento conductual y citación a apoderados. & Psicólogo escolar, Tutor de sección. \\
-\hline
-\textbf{Dirección Estratégica} & Supervisión del rendimiento institucional, aprobación de becas, analítica MIS/DSS y control general. & Director General, Promotora. \\
-\hline
-\textbf{Portal de Apoderados} & Consulta de notas, estado de cuenta, pago en línea mediante pasarela y recepción de comunicados. & Padres de familia, Apoderados. \\
-\end{xltabular}
-
-A continuación se detallan las reglas de negocio e interacción de cada uno de los seis módulos:
-
-\subsection{1. Módulo de Secretaría Académica}
-\begin{itemize}
-    \item \textbf{Entradas de Información:} Ficha del postulante, documentos de identidad (DNI/Pasaporte), certificados de estudios previos y constancia de no adeudamiento.
-    \item \textbf{Salidas de Información:} Registro oficial de matriculados, listas de clase por sección, expedientes académicos y constancias de estudios.
-    \item \textbf{Regla de Negocio Principal:} Ningún estudiante puede ser asignado a una sección si el número de vacantes ocupadas ha alcanzado la capacidad física máxima establecida para dicha aula.
-\end{itemize}
-
-\subsection{2. Módulo de Tesorería y Administración}
-\begin{itemize}
-    \item \textbf{Entradas de Información:} Estudiantes matriculados, arancel de pensiones, cuotas de ingreso, comprobantes de pago y transferencias bancarias.
-    \item \textbf{Salidas de Información:} Cronogramas de pago individuales, comprobantes de pago electrónicos (boletas/facturas), reportes de caja diaria y padrones de morosidad.
-    \item \textbf{Regla de Negocio Principal:} La confirmación de una matrícula requiere la emisión y validación del compromiso financiero inicial. El incumplimiento del pago dentro de las fechas límite activa automáticamente el recargo por mora normado por la institución.
-\end{itemize}
-
-\subsection{3. Módulo de Docencia y Aula}
-\begin{itemize}
-    \item \textbf{Entradas de Información:} Asistencia de estudiantes, calificaciones por competencias (CNEB: AD, A, B, C), avance programático del sílabo y observaciones pedagógicas.
-    \item \textbf{Salidas de Información:} Libreta de calificaciones bimestrales/trimestrales, registro auxiliar docente y reporte de asistencia por aula.
-    \item \textbf{Regla de Negocio Principal:} Las calificaciones registradas por los docentes quedan bloqueadas para edición una vez finalizado el plazo oficial de cierre de actas dictado por la Dirección Académica.
-\end{itemize}
-
-\subsection{4. Módulo Psicopedagógico y Tutoría}
-\begin{itemize}
-    \item \textbf{Entradas de Información:} Reporte de incidencias conductuales de aula, citaciones a padres, notas de entrevista y evaluaciones psicométricas.
-    \item \textbf{Salidas de Información:} Bitácora conductual del estudiante, informes psicopedagógicos y compromise firmados por los apoderados.
-    \item \textbf{Regla de Negocio Principal:} El registro de tres incidencias conductuales graves en el módulo activa automáticamente la notificación al apoderado y la solicitud de entrevista presencial con la Dirección.
-\end{itemize}
-
-\subsection{5. Módulo de Dirección Estratégica}
-\begin{itemize}
-    \item \textbf{Entradas de Información:} Datos consolidados de todos los módulos (aforos, recaudación, morosidad, deserción, rendimiento académico).
-    \item \textbf{Salidas de Información:} Aprobación de becas/descuentos, cuadro de horas docentes, plan de inversión anual y políticas institucionales.
-    \item \textbf{Regla de Negocio Principal:} La concesión de becas o descuentos especiales requiere la validación combinada de un rendimiento académico superior a la media y la evaluación socioeconómica emitida por Tesorería.
-\end{itemize}
 
 \subsection{6. Portal de Apoderados y Estudiantes}
-\begin{itemize}
-    \item \textbf{Entradas de Información:} Solicitud de justificante de faltas, pagos mediante pasarela en línea y recepción de comunicados firmados digitalmente.
-    \item \textbf{Salidas de Información:} Visualización de libretas de notas, descarga de estados de cuenta, constancias de pago y alertas institucionales.
-    \item \textbf{Regla de Negocio Principal:} Los apoderados solo pueden visualizar la información correspondiente a sus menores hijos tutelados, restringiendo el acceso mediante autenticación única y encriptación de datos en tránsito (TLS/HTTPS).
-\end{itemize}
+    \begin{itemize}
+        \item \textbf{Entradas de Información:} Solicitud digital de justificación de inasistencias y confirmación de recepción de citaciones institucionales.
+        \item \textbf{Salidas de Información:} Consulta de libretas de notas, informe diario de asistencia, semáforo disciplinario y comunicados del colegio.
+        \item \textbf{Regla de Negocio Principal:} Los apoderados solo pueden visualizar la información correspondiente a sus menores hijos tutelados, garantizando la privacidad mediante autenticación única (RBAC).
+    \end{itemize}
 
-\section{Arquitectura de Procesamiento de Datos: OLTP vs. OLAP}
-
-Un error común en el diseño de sistemas de información consiste en utilizar la misma estructura relacional tanto para la ejecución de transacciones operativas como para la generación de informes gerenciales complejos. SICOLEGIO 360 resuelve este desafío mediante la separación clara de dos arquitecturas de procesamiento de datos:
-
-\begin{table}[H]
-\centering
-\caption{Comparativa técnica entre la arquitectura OLTP y OLAP en SICOLEGIO 360}
-\label{tab:oltp_vs_olap}
-\small
-\begin{tabularx}{\textwidth}{|p{3.5cm}|X|X|}
-\hline
-\textbf{Característica} & \textbf{Base de Datos Operativa (OLTP)} & \textbf{Base de Datos Analítica (OLAP / Power BI)} \\
-\hline
-\textbf{Propósito} & Procesamiento eficiente de transacciones cotidianas en tiempo real. & Análisis multidimensional y toma de decisiones estratégicas. \\
-\hline
-\textbf{Diseño de Datos} & Esquema relacional altamente normalizado (3FN / BCNF). & Esquema desnormalizado en Estrella (\textit{Star Schema}). \\
-\hline
-\textbf{Operaciones Dominantes} & Inserciones (\texttt{INSERT}), Actualizaciones (\texttt{UPDATE}), Lectura puntual. & Consultas de lectura masiva con agregaciones (\texttt{SUM}, \texttt{AVG}, \texttt{GROUP BY}). \\
-\hline
-\textbf{Rendimiento y Latencia} & Respuestas sub-segundo para miles de usuarios concurrentes. & Procesamiento en lotes (\textit{Batch}) o consultas DirectQuery. \\
-\hline
-\textbf{Capa en SICOLEGIO 360} & Motor TPS y Dashboards Web Nativos (MIS). & Modelo analítico externo en Power BI (DSS). \\
-\hline
-\end{tabularx}
-\end{table}
-
-La separación entre la capa \textbf{OLTP} (\textit{Online Transaction Processing}) y la capa \textbf{OLAP} (\textit{Online Analytical Processing}) garantiza que la base de datos centralizada de la escuela mantenga un rendimiento óptimo durante las horas lectivas pico, derivando la carga analítica pesada hacia la infraestructura optimizada de Power BI.
-
-% ═══════════════════════════════════════════════════════════════
-%  CAPÍTULO II: INGENIERÍA TRANSACCIONAL INTERDEPARTAMENTAL
-% ═══════════════════════════════════════════════════════════════
-\chapter{Ingeniería Transaccional Interdepartamental: Secretaría Académica -- Tesorería}
-
-\section{Diagnóstico de la Interacción entre Secretaría Académica y Tesorería}
-
-En las instituciones educativas privadas tradicionales de nivel básico regular, la relación entre la Secretaría Académica y la Tesorería se caracteriza por la fricción operativa y la falta de sincronización de datos. En un modelo fragmentado, la Secretaría procesa la admisión y la ficha de matrícula de un estudiante en un archivo local de Excel. Posteriormente, entrega al apoderado un formato impreso para que se apersone a Tesorería a cancelar la cuota de ingreso o matrícula.
-
-Esta desarticulación genera tres problemas críticos de gestión:
-\begin{enumerate}
-    \item \textbf{Bloqueo Indebido de Vacantes sin Respaldo Financiero:} Ocurre cuando la Secretaría asigna una vacante a un alumno que posteriormente no concreta el pago de la matrícula en Tesorería. El colegio mantiene el aula reservada sin percibir ingresos, perdiendo la oportunidad de matricular a otros postulantes.
-    \item \textbf{Descuadre del Padrón de Morosidad:} Tesorería registra la cobranza en cuadernos físicos o sistemas contables aislados. Al momento de la evaluación de fin de periodo, la Secretaría emite libretas de notas a estudiantes con morosidad severa por falta de actualización en tiempo real del estado de cuenta.
-    \item \textbf{Duplicidad de Carga Operativa:} La información básica del estudiante y del apoderado es digitada dos veces: primero por la secretaria al armar el legajo y luego por la tesorera al emitir el comprobante de pago.
-\end{enumerate}
-
-En SICOLEGIO 360, ambas áreas interactúan mediante un \textbf{flujo transaccional acoplado}. La matrícula no se considera formalizada ni se asigna la vacante definitiva en el registro de clase hasta que el motor de transacciones (\textbf{TPS}) valide simultáneamente los requisitos académicos (documentos aprobados, vacante física disponible) y la liquidación del compromiso financiero inicial.
-
-\section{Mapeo de Entidades y Datos Compartidos}
-
-La interacción entre ambas áreas requiere el uso compartido y la modificación coordinada de un subconjunto específico de tablas dentro de la base de datos relacional centralizada. La Tabla~\ref{tab:entidades_compartidas} presenta la matriz de entidades y atributos compartidos estructurada en un formato multipágina para su consulta detallada.
-
-\begin{xltabular}{\textwidth}{|p{3.2cm}|p{3.2cm}|X|p{3.8cm}|}
-\caption{Matriz de entidades y atributos compartidos entre Secretaría y Tesorería} \label{tab:entidades_compartidas} \\
-\hline
-\textbf{Entidad} & \textbf{Área Origen} & \textbf{Atributos Clave Compartidos} & \textbf{Uso en el Área Destino} \\
-\hline
-\endfirsthead
-
-\multicolumn{4}{c}{{\bfseries Tabla \thetable{} -- Continuación de la página anterior}} \\
-\hline
-\textbf{Entidad} & \textbf{Área Origen} & \textbf{Atributos Clave Compartidos} & \textbf{Uso en el Área Destino} \\
-\hline
-\endhead
-
-\hline
-\multicolumn{4}{r}{\textit{Continúa en la siguiente página...}} \\
-\endfoot
-
-\hline
-\endlastfoot
-
-\texttt{estudiantes} & Secretaría & \texttt{id\_estudiante}, \texttt{dni}, \texttt{nombres}, \texttt{estado} & Tesorería: Vinculación de compromisos de pago y facturación. \\
-\hline
-\texttt{matriculas} & Secretaría & \texttt{id\_matricula}, \texttt{id\_estudiante}, \texttt{id\_seccion}, \texttt{fecha} & Tesorería: Disparador de la generación automática del plan de cuotas. \\
-\hline
-\texttt{secciones} & Secretaría & \texttt{id\_seccion}, \texttt{capacidad}, \texttt{vacantes\_ocupadas} & Tesorería: Control del límite financiero y aforo de aula. \\
-\hline
-\texttt{compromisos\_pago} & Tesorería & \texttt{id\_compromiso}, \texttt{id\_estudiante}, \texttt{monto}, \texttt{estado} & Secretaría: Habilitación para emisión de libretas y certificados. \\
-\hline
-\texttt{pagos} & Tesorería & \texttt{id\_pago}, \texttt{id\_compromiso}, \texttt{monto\_pagado}, \texttt{fecha\_pago} & Secretaría: Validación para la ratificación definitiva de matrícula. \\
-\end{xltabular}
-
-\section{Flujo de Procesos Integrados bajo el Estándar BPMN (To-Be)}
-
-El flujo automatizado de matrícula y recaudación bajo la notación BPMN (Business Process Model and Notation) sincroniza las tareas de Secretaría Académica y Tesorería en seis etapas atómicas consecutivas:
-
-\begin{enumerate}
-    \item \textbf{Etapa 1: Solicitud y Validación de Expediente (Secretaría):} El apoderado o la secretaria registra la ficha digital del postulante. El sistema valida automáticamente que el DNI no registre duplicidad y que la documentación adjunta cumpla con la normativa del MINEDU.
-    \item \textbf{Etapa 2: Verificación de Aforo y Reserva de Vacante (Sistema):} El motor de base de datos consulta la disponibilidad en la tabla \texttt{secciones}. Si las vacantes ocupadas son menores a la capacidad del aula, el sistema genera una reserva de vacante temporal con tiempo de caducidad (ej. 48 horas).
-    \item \textbf{Etapa 3: Generación del Plan de Cuotas (Tesorería):} Al generarse el registro en \texttt{matriculas} con estado de cuota pendiente, el sistema dispara automáticamente la inserción del cronograma anual de pagos (Matrícula y 10 pensiones mensuales de marzo a diciembre) en la tabla \texttt{compromisos\_pago}.
-    \item \textbf{Etapa 4: Liquidación del Pago (Tesorería / Pasarela):} El apoderado realiza el pago presencial en la caja del colegio o mediante la pasarela de pagos digital integrada en el portal. Tesorería emite la boleta de venta electrónica.
-    \item \textbf{Etapa 5: Ratificación de Matrícula y Confirmación de Vacante (Secretaría):} Al confirmarse la recepción del pago, el estado de la matrícula se actualiza automáticamente a \texttt{'MATRICULADO'} y se incrementa en $+1$ la cuenta de vacantes ocupadas en la sección respectiva.
-    \item \textbf{Etapa 6: Habilitación de Servicios Escolares (Sistema):} El estudiante queda registrado de forma inmediata en las listas de clase de los docentes, en el sistema de control de asistencia y en el aula virtual institucional.
-\end{enumerate}
+    % ═══════════════════════════════════════════════════════════════
+    %  CAPÍTULO II: INGENIERÍA TRANSACCIONAL INTERDEPARTAMENTAL
+    % ═══════════════════════════════════════════════════════════════
+    \chapter{Ingeniería Transaccional Interdepartamental: Dirección Académica -- Secretaría y Convivencia Escolar}
 
 \section{Matriz de Transacciones Cruzadas en el TPS}
 
-Para entender el comportamiento operativo del sistema, la Tabla~\ref{tab:transacciones_cruzadas} mapea las principales transacciones que cruzan los límites funcionales entre Secretaría y Tesorería:
+    La Tabla~\ref{tab:transacciones_cruzadas} mapea las principales transacciones que cruzan los límites funcionales entre Dirección Académica y Secretaría/Convivencia:
 
-\begin{xltabular}{\textwidth}{|p{2.8cm}|p{3.2cm}|X|p{4.2cm}|}
-\caption{Matriz de transacciones operativas cruzadas entre Secretaría y Tesorería} \label{tab:transacciones_cruzadas} \\
-\hline
-\textbf{Código TX} & \textbf{Área Iniciadora} & \textbf{Evento Disparador / Descripción} & \textbf{Efecto en el Área Destino} \\
-\hline
-\endfirsthead
+    \begin{xltabular}{\textwidth}{|p{2.8cm}|p{3.2cm}|X|p{4.2cm}|}
+    \caption{Matriz de transacciones operativas cruzadas entre Dirección Académica y Secretaría/Convivencia} \label{tab:transacciones_cruzadas} \\
+    \hline
+    \textbf{Código TX} & \textbf{Área Iniciadora} & \textbf{Evento Disparador / Descripción} & \textbf{Efecto en el Área Destino} \\
+    \hline
+    \endfirsthead
 
-\multicolumn{4}{c}{{\bfseries Tabla \thetable{} -- Continuación de la página anterior}} \\
-\hline
-\textbf{Código TX} & \textbf{Área Iniciadora} & \textbf{Evento Disparador / Descripción} & \textbf{Efecto en el Área Destino} \\
-\hline
-\endhead
+    \multicolumn{4}{c}{{\bfseries Tabla \thetable{} -- Continuación de la página anterior}} \\
+    \hline
+    \textbf{Código TX} & \textbf{Área Iniciadora} & \textbf{Evento Disparador / Descripción} & \textbf{Efecto en el Área Destino} \\
+    \hline
+    \endhead
 
-\hline
-\multicolumn{4}{r}{\textit{Continúa en la siguiente página...}} \\
-\endfoot
+    \hline
+    \multicolumn{4}{r}{\textit{Continúa en la siguiente página...}} \\
+    \endfoot
 
-\hline
-\endlastfoot
+    \hline
+    \endlastfoot
 
-\texttt{TX-SEC-01} & Secretaría & Registro de nueva ficha de matrícula. & Tesorería: Generación automática de compromisos de pago en \texttt{compromisos\_pago}. \\
-\hline
-\texttt{TX-TES-01} & Tesorería & Confirmación del pago de matrícula. & Secretaría: Cambio de estado a \texttt{'MATRICULADO'} e incremento de aforo en \texttt{secciones}. \\
-\hline
-\texttt{TX-TES-02} & Tesorería & Registro de pago de pensión mensual. & Secretaría: Actualización en vivo del estado financiero en la ficha del alumno. \\
-\hline
-\texttt{TX-SEC-02} & Secretaría & Anulación o retiro de estudiante. & Tesorería: Cancelación de compromisos de pago futuros y liquidación de saldo a favor/contra. \\
-\hline
-\texttt{TX-TES-03} & Tesorería & Declaración de morosidad por vencimiento ($>60$ días). & Secretaría: Bloqueo administrativo para emisión de certificados no oficiales según reglamento. \\
-\end{xltabular}
+    \texttt{TX-SEC-01} & Secretaría & Confirmación de matrícula del estudiante. & Académico: Habilitación en listas docentes y carga de asignaturas. \\
+    \hline
+    \texttt{TX-AUX-01} & Auxiliaría & Registro de inasistencia/tardanza diaria. & Académico: Inclusión de marcas en el registro de asistencia del curso. \\
+    \hline
+    \texttt{TX-SEC-02} & Secretaría & Aprobación de justificación médica/personal. & Académico: Desbloqueo y autorización para reprogramar evaluación. \\
+    \hline
+    \texttt{TX-ACA-01} & Académico & Registro de nota desaprobatoria crítica ($<11$ o $C$). & Convivencia: Notificación a Tutoría para seguimiento socio-pedagógico. \\
+    \hline
+    \texttt{TX-CON-01} & Convivencia & Registro de demérito o falta grave de conducta. & Académico: Actualización de la nota de apreciación conductual en libreta. \\
+    \hline
+    \end{xltabular}
+
+    \section{Arquitectura y Ciclo de Vida de los 2 TPS Seleccionados}
+
+En lugar de examinar eventos aislados, la ingeniería de SICOLEGIO 360 se estructura formalmente sobre el **ciclo de vida transaccional de 2 TPS (Sistemas de Procesamiento de Transacciones)** desacoplados. La Figura~\ref{fig:hilo_transaccional} describe la arquitectura de procesamiento de ambos motores transaccionales:
+
+\begin{figure}[H]
+    \centering
+    \begin{cajaConcepto}[Arquitectura y Ciclo de Vida Transaccional de los TPS en SICOLEGIO 360]
+    \textbf{1. TPS DE CONTROL ESCOLAR Y CONVIVENCIA (TPS 1):}
+    \begin{itemize}
+        \item \textit{Entradas (Inputs):} Solicitudes de matrícula, marcación de asistencia en puerta, justificaciones médicas y partes de conducta.
+        \item \textit{Transacción Matrícula (\texttt{TX-SEC-01}):} Valida aforo en \texttt{secciones} ( < capacidad$) e inserta el registro atómico en \texttt{matriculas}.
+        \item \textit{Transacción Asistencia (\texttt{TX-AUX-01}):} Ejecuta inserciones masivas de presencia diaria en la tabla \texttt{asistencias}.
+        \item \textit{Transacción Justificación (\texttt{TX-SEC-02}):} Inserta el registro en \texttt{justificaciones} y dispara un token de autorización.
+    \end{itemize}
+
+    \textbf{2. MOTOR DISPARADOR Y COMUNICACIÓN INTER-TPS (ACID):}
+    \begin{itemize}
+        \item \textit{Trigger SQL:} Al aprobarse una justificación en el TPS de Control Escolar, un disparador automático modifica el flag \texttt{permite\_reprogramacion = TRUE} en el TPS Pedagógico.
+    \end{itemize}
+
+    \textbf{3. TPS PEDAGÓGICO Y EVALUATIVO (TPS 2):}
+    \begin{itemize}
+        \item \textit{Entradas (Inputs):} Asignación de horarios, carga de notas por competencias, evaluaciones reprogramadas y actas bimestrales.
+        \item \textit{Transacción Evaluación (\texttt{TX-ACA-01}):} Valida la existencia de matrícula activa e inserta las calificaciones en la tabla \texttt{notas}.
+        \item \textit{Transacción Reprogramación (\texttt{TX-ACA-02}):} Habilita el registro de exámenes pendientes previa validación del token del TPS de Control Escolar.
+        \item \textit{Transacción Cierre Bimestral (\texttt{TX-ACA-03}):} Calcula automáticamente los promedios en \texttt{promedios} y ejecuta el bloqueo atómico de edicion de actas.
+    \end{itemize}
+
+    \textbf{4. CAPA DE INTEGRACIÓN ANALÍTICA (POWER BI -- DSS):}
+    \begin{itemize}
+        \item \textit{Pipeline ETL:} Extrae vistas desnormalizadas de ambos TPS (\texttt{vw\_FactRendimientoAsistencia}) sin interferir con las operaciones OLTP en tiempo real.
+    \end{itemize}
+    \end{cajaConcepto}
+    \caption{Arquitectura y ciclo de vida del procesamiento transaccional de los 2 TPS en SICOLEGIO 360}
+    \label{fig:hilo_transaccional}
+\end{figure}
 
 \section{Mecanismos de Consistencia TPS y Propiedades ACID}
 
-La confiabilidad del procesamiento de transacciones operativas (\textbf{TPS}) en SICOLEGIO 360 se basa en la ejecución estricta de los cuatro principios ACID enunciados por \citet{silberschatz2020}:
+    La confiabilidad del procesamiento de transacciones operativas (\textbf{TPS}) entre ambas áreas en SICOLEGIO 360 se basa en la ejecución estricta de los cuatro principios ACID enunciados por \citet{silberschatz2020}:
 
-\begin{itemize}
-    \item \textbf{Atomicidad (Atomicity):} Las operaciones interdepartamentales se empaquetan en bloques transaccionales indivisibles (\textit{All-or-Nothing}). Si la inserción del pago en Tesorería se completa pero ocurre un fallo de conexión antes de actualizar la matrícula en Secretaría, el motor SQL ejecuta un \texttt{ROLLBACK} automático, devolviendo la base de datos a su estado consistente previo.
-    \item \textbf{Consistencia (Consistency):} El sistema exige el cumplimiento constante de las reglas e invariantes de negocio. Las restricciones avanzadas (\texttt{CHECK}) impiden que la variable \texttt{vacantes\_ocupadas} supere la \texttt{capacidad} máxima del aula o que un compromiso de pago registre montos negativos.
-    \item \textbf{Aislamiento (Isolation):} Durante periodos de alta demanda (días centrales de matrícula), cientos de apoderados interactúan simultáneamente con el sistema. SICOLEGIO 360 utiliza el nivel de aislamiento \texttt{READ COMMITTED} combinado con bloqueos pesimistas a nivel de fila (\textit{Pessimistic Row Locking}). Esto evita condiciones de carrera (\textit{Race Conditions}), garantizando que dos secretarias no puedan asignar la última vacante disponible al mismo tiempo.
-    \item \textbf{Durabilidad (Durability):} Una vez que una transacción interdepartamental ha sido confirmada mediante un \texttt{COMMIT}, los cambios quedan registrados de forma permanente en el almacenamiento físico a través del mecanismo WAL (\textit{Write-Ahead Logging}), garantizando la supervivencia de los datos ante cortes imprevistos de energía eléctrica en el servidor.
-\end{itemize}
-
-% ═══════════════════════════════════════════════════════════════
-%  CAPÍTULO III: DISEÑO DE LA CAPA DE MÉTRICAS Y KPIS INSTITUCIONALES
-% ═══════════════════════════════════════════════════════════════
-\chapter{Diseño de la Capa de Métricas, KPIs y Requerimientos de Información Institucionales}
-
-\section{Taxonomía de Indicadores en la Gestión Escolar Privada}
-
-Antes de abordar el diseño de interfaces y paneles de control, la ingeniería del sistema exige formalizar la \textbf{Capa de Métricas e Indicadores Clave de Rendimiento} (KPI, por sus siglas en inglés \textit{Key Performance Indicators}). En una institución educativa privada, las transacciones registradas por el motor TPS no adquieren valor gerencial hasta que son procesadas, agregadas y estructuradas bajo un marco de medición bien definido.
-
-SICOLEGIO 360 establece una taxonomía tridimensional para clasificar los indicadores del colegio:
-
-\begin{enumerate}
-    \item \textbf{Métricas Operativas (Nivel TPS / Tiempo Real):} Indicadores de flujo continuo que miden la ejecución de tareas diarias. Su latencia de actualización es en tiempo real ($<1$ segundo). Ejemplos: número de matrículas procesadas por hora, cuadre de caja chica diaria y comprobantes de pago emitidos.
-    \item \textbf{Métricas Tácticas (Nivel MIS / Control Bimestral):} Indicadores de rendimiento departamental que permiten a los mandos medios (Secretario Académico, Tesorero, Coordinador Pedagógico) evaluar el cumplimiento de metas de corto y mediano plazo. Su latencia de actualización es periódica (diaria o semanal). Ejemplos: porcentaje de aforo ocupado por sección, tasa de desaprobación bimestral por materia y morosidad por grado.
-    \item \textbf{Métricas Estratégicas (Nivel DSS / Proyección Anual):} Indicadores de alto nivel orientados a la Promotora y a la Dirección General para respaldar decisiones de inversión, planificación financiera y sostenibilidad del modelo educativo. Su latencia se basa en análisis de series temporales (mensual, anual o interanual). Ejemplos: Ingreso Anual Recurrente (\textit{ARR Educativo}), tasa de retención de alumnado y rentabilidad por sección.
-\end{enumerate}
-
-\section{Catálogo Formalizado de KPIs Institucionales}
-
-A continuación se definen matemáticamente los cinco indicadores principales de la interacción entre Secretaría Académica y Tesorería:
-
-\subsection{1. Tasa de Ocupación de Vacantes por Sección ($\text{TOV}_i$)}
-Mide el porcentaje de eficiencia en el uso de la capacidad instalada física de cada aula $i$:
-\begin{equation}
-\text{TOV}_i = \left( \frac{\text{Vacantes Ocupadas}_i}{\text{Capacidad Máxima}_i} \right) \times 100\%
-\end{equation}
-\textit{Interpretación:} Si $\text{TOV}_i < 70\%$, la sección es candidata a fusión por inviabilidad económica; si $\text{TOV}_i \ge 95\%$, la sección se encuentra en nivel de alerta roja por saturación de aforo.
-
-\subsection{2. Índice de Morosidad por Grado ($\text{IMG}_g$)}
-Mide la proporción de la deuda acumulada no recaudada respecto al total de la facturación presupuestada para el grado $g$:
-\begin{equation}
-\text{IMG}_g = \left( \frac{\sum \text{Monto Vencido no Pagado}_g}{\sum \text{Monto Total Presupuestado}_g} \right) \times 100\%
-\end{equation}
-\textit{Interpretación:} Un $\text{IMG}_g > 15\%$ indica una falla crítica en la gestión de cobranza o un riesgo socioeconómico concentrado en las familias de dicho grado.
-
-\subsection{3. Tiempo Promedio de Liquidación de Matrícula ($\text{TPLM}$)}
-Calcula la latencia temporal en días transcurridos desde que la Secretaría genera la ficha de pre-matrícula hasta que Tesorería valida el pago en caja o pasarela:
-\begin{equation}
-\text{TPLM} = \frac{1}{N} \sum_{k=1}^{N} \left( \text{Fecha Pago}_k - \text{Fecha Reserva}_k \right)
-\end{equation}
-\textit{Interpretación:} Un $\text{TPLM}$ menor a 2 días indica un proceso de admisión fluido; un $\text{TPLM} > 5$ días señala cuellos de botella en la atención presencial o pasarelas de pago no adoptadas por los apoderados.
-
-\subsection{4. Ingreso Anual Recurrente Educativo ($\text{ARR}_{\text{educativo}}$)}
-Proyecta la facturación bruta total esperada por concepto de pensiones mensuales para el año lectivo vigente:
-\begin{equation}
-\text{ARR}_{\text{educativo}} = \sum_{m=1}^{10} \sum_{j=1}^{M} \text{Cuota Pensión}_{j,m}
-\end{equation}
-donde $M$ es la cantidad de alumnos matriculados confirmados y $m$ representa los 10 meses del año lectivo (marzo a diciembre).
-
-\subsection{5. Tasa de Retención Estudiantil Anual ($\text{TRA}$)}
-Mide el porcentaje de alumnos del año académico anterior ($t-1$) que renovaron su matrícula de forma efectiva en el presente año académico ($t$):
-\begin{equation}
-\text{TRA} = \left( \frac{\text{Alumnos Re-matriculados}_t}{\text{Total Alumnos Activos}_{t-1} - \text{Egresados}_{t-1}} \right) \times 100\%
-\end{equation}
-
-\section{Matriz de Requerimientos de Información por Perfil de Usuario (RBAC)}
-
-La Tabla~\ref{tab:requerimientos_informacion} establece el mapa de consumo de información dentro del ERP SICOLEGIO 360, alineando cada rol institucional con sus métricas correspondientes, la frecuencia requerida y la capa analítica de procesamiento.
-
-\begin{xltabular}{\textwidth}{|p{3.2cm}|p{4.2cm}|p{3.2cm}|X|}
-\caption{Matriz de requerimientos de información por rol institucional} \label{tab:requerimientos_informacion} \\
-\hline
-\textbf{Rol Institucional} & \textbf{Métricas y KPIs Clave} & \textbf{Frecuencia} & \textbf{Capa Analítica de Destino} \\
-\hline
-\endfirsthead
-
-\multicolumn{4}{c}{{\bfseries Tabla \thetable{} -- Continuación de la página anterior}} \\
-\hline
-\textbf{Rol Institucional} & \textbf{Métricas y KPIs Clave} & \textbf{Frecuencia} & \textbf{Capa Analítica de Destino} \\
-\hline
-\endhead
-
-\hline
-\multicolumn{4}{r}{\textit{Continúa en la siguiente página...}} \\
-\endfoot
-
-\hline
-\endlastfoot
-
-\textbf{Secretario Académico} & Aforo de secciones ($\text{TOV}$), tiempo de liquidación ($\text{TPLM}$), cupos disponibles. & Tiempo Real ($<1$ s). & Dashboards Web Nativos (MIS / OLTP). \\
-\hline
-\textbf{Tesorero / Cajero} & Recaudación diaria de caja, pensiones cobradas vs. vencidas, boletas emitidas. & Tiempo Real ($<1$ s). & Dashboards Web Nativos (MIS / OLTP). \\
-\hline
-\textbf{Director General} & Índice de morosidad por grado ($\text{IMG}$), mapa de calor de rendimiento vs. pago, deserción. & Diario / Semanal. & Analítica en Power BI (DSS / OLAP). \\
-\hline
-\textbf{Promotora / Directorio} & $\text{ARR}_{\text{educativo}}$, tasa de retención ($\text{TRA}$), proyección de caja e inversión en planta física. & Mensual / Anual. & Analítica en Power BI (DSS / OLAP). \\
-\end{xltabular}
-
-\section{Framework de Filtros Temporales Jerárquicos (Año, Semestre, Trimestre, Bimestre, Mes)}
-
-Para garantizar la consistencia en el análisis longitudinal y transversal de la institución educativa, SICOLEGIO 360 implementa un \textbf{Framework de Filtros Temporales Jerárquicos} integrado en las cabeceras de todos los dashboards (tanto en la aplicación Web Nativa como en Microsoft Power BI).
-
-La dimensión temporal relacional y multidimensional (\texttt{DimTiempo} / \texttt{DimCalendario}) habilita cinco niveles de filtrado dinámico acoplados:
-
-\begin{enumerate}
-    \item \textbf{Filtro por Año Lectivo:} Selector multianual (\texttt{2024}, \texttt{2025}, \texttt{2026}) que permite comparar la evolución financiera y académica interanual.
-    \item \textbf{Filtro por Semestre Académico:} División en dos bloques lectivos (\texttt{Semestre 1}: Marzo - Julio; \texttt{Semestre 2}: Agosto - Diciembre) para evaluación de metas de medio año.
-    \item \textbf{Filtro por Trimestre Académico:} División de tres periodos de control de avance curricular e inversiones institucionales.
-    \item \textbf{Filtro por Bimestre Académico (Normativa CNEB / MINEDU):} Estructura oficial de 4 Bimestres lectivos (\texttt{I Bimestre}, \texttt{II Bimestre}, \texttt{III Bimestre}, \texttt{IV Bimestre}) para el cierre de actas de notas y control de morosidad por periodo de evaluación.
-    \item \textbf{Filtro por Mes Lectivo y Rango de Fechas:} Filtrado detallado de Enero a Diciembre o selección personalizada de fechas para arqueos de caja y auditorías operativas.
-\end{enumerate}
-
-Al interactuar con cualquier selector de esta cabecera temporal, el motor de procesamiento (SQL u OLAP VertiPaq) propaga automáticamente los filtros hacia todas las tarjetas KPI, gráficos de dispersión, tablas de aforo y fórmulas DAX, garantizando que el usuario examine el estado exacto de la escuela en la ventana de tiempo elegida.
-
-% ═══════════════════════════════════════════════════════════════
-%  CAPÍTULO IV: DASHBOARDS NATIVOS EN EL CÓDIGO WEB (MIS)
-% ═══════════════════════════════════════════════════════════════
-\chapter{Dashboards Operativos Nativos en el Código Web de SICOLEGIO 360 (Nivel MIS / Reporting Web)}
-
-\section{Módulo de Reportes Integrado en la Aplicación Web}
-
-Los Dashboards Operativos Web están construidos nativamente dentro de la arquitectura de la aplicación SICOLEGIO 360 (desarrollados con frontend en React/HTML5 y backend en Node.js/Python). Su propósito principal es brindar soporte a las \textbf{operaciones del día a día} de los usuarios del sistema (Secretarios, Tesoreros y Auxiliares).
-
-A diferencia de las herramientas de Business Intelligence externas, estos dashboards realizan consultas SQL \textbf{OLTP en tiempo real} directamente sobre la base de datos centralizada, garantizando que el dato visualizado refleje el estado exacto del sistema en el segundo actual ($<1$ segundo de latencia).
-
-\section{Protocolos Operativos de Ventanilla Única}
-
-La implementación de los dashboards nativos introduce el concepto de \textbf{Ventanilla Única de Atención Escolar}. En el esquema tradicional, el apoderado debía realizar un recorrido itinerante dentro del colegio: acudir a Secretaría para solicitar el cupo, dirigirse a Tesorería para efectuar el pago, retornar a Secretaría con la constancia física y finalmente acudir a Dirección para la firma.
-
-SICOLEGIO 360 unifica este flujo en una sola interfaz interactiva. El operador de ventanilla consulta en tiempo real el estado académico y financiero del estudiante en una sola pantalla, ejecutando las siguientes acciones coordinadas:
-\begin{itemize}
-    \item \textbf{Reducción del Tiempo de Atención:} El tiempo de atención presencial por apoderado disminuye de 45 minutos a menos de 5 minutos por transacción.
-    \item \textbf{Transparencia de Datos:} El apoderado visualiza en la pantalla secundaria de ventanilla la disponibilidad real de vacantes y el desglose de su estado de cuenta sin intermediaciones manuscritas.
-\end{itemize}
-
-\section{Dashboard Operativo 1: Control de Matrículas y Aforo en Vivo (Secretaría)}
-
-Este panel permite al Secretario Académico monitorear el avance de las matrículas y la disponibilidad de aulas durante el proceso de admisión:
-\begin{itemize}
-    \item \textbf{Visualización:} Tabla dinámica con barras de progreso de aforo por sección (ej. 3º Primaria "A": 28/30 vacantes - 93\% ocupado).
-    \item \textbf{Alerta Operativa:} Alerta roja cuando el aforo supera el 95\%, indicando a la Secretaría que debe cerrar la recepción de solicitudes o solicitar a Dirección la apertura de una nueva sección.
-    \item \textbf{Métrica en Tiempo Real:} Total de estudiantes con matrícula confirmada vs. matrículas pendientes de pago.
-\end{itemize}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.92\textwidth]{image.png} 
-    \caption{Dashboard Web Nativo 1: Control de Matrículas y Aforo de Secciones en Vivo (Módulo Secretaría)}
-    \label{fig:dashboard_web_aforo}
-\end{figure}
-
-\begin{cajaConcepto}[Toma de Decisiones Operativas -- Dashboard Web 1 (Secretaría)]
-\textbf{Decisiones Inmediatas Habilitadas:}
-\begin{enumerate}
-    \item \textbf{Cierre de Inscripción por Saturación ($\text{TOV}_i \ge 95\%$):} Bloquea automáticamente la recepción de nuevos expedientes para la sección $i$, evitando el sobreaforo y garantizando las normas de espacio del MINEDU.
-    \item \textbf{Apertura de Sección Paralela:} Notifica al Director General para habilitar la sección "B" cuando la demanda supere el 100\% del aforo planificado.
-    \item \textbf{Redireccionamiento de Vacantes ($\text{TOV}_i < 70\%$):} Deriva postulantes a secciones con baja tasa de ocupación para equilibrar la carga docente.
-\end{enumerate}
-\end{cajaConcepto}
-
-\section{Dashboard Operativo 2: Control Diario de Caja y Cobranzas (Tesorería)}
-
-Diseñado para el Tesorero y los cajeros de la institución escolar:
-\begin{itemize}
-    \item \textbf{Visualización:} Resumen de ingresos diarios desglosados por canal de pago (Caja presencial en efectivo, Transferencia bancaria, Pasarela de pagos en línea).
-    \item \textbf{Cuadre de Caja:} Saldo inicial del día $+$ Recaudación del día $-$ Egresos de caja chica $=$ Saldo final a depositar.
-    \item \textbf{Buscador Rápido:} Consulta instantánea por DNI o apellido del estudiante para visualizar comprobantes emitidos y pendientes.
-\end{itemize}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.92\textwidth]{1.png}
-    \caption{Dashboard Web Nativo 2: Control Diario de Caja y Cobranzas en Tiempo Real (Módulo Tesorería)}
-    \label{fig:dashboard_web_caja}
-\end{figure}
-
-\begin{cajaConcepto}[Toma de Decisiones Operativas -- Dashboard Web 2 (Tesorería)]
-\textbf{Decisiones Inmediatas Habilitadas:}
-\begin{enumerate}
-    \item \textbf{Arqueo y Remesa Diaria de Efectivo:} Autoriza la transferencia física de dinero hacia la entidad bancaria cuando el saldo en caja presencial supera el límite de seguridad establecido por la administración.
-    \item \textbf{Conciliación de Pagos Digitales:} Identifica depósitos en ventanilla no conciliados y valida transacciones procesadas mediante la pasarela en línea.
-    \item \textbf{Activación de Avisos Preventivos:} Emite notificaciones automáticas vía WhatsApp/Correo a apoderados con pensiones que vencen en los próximos 3 días.
-\end{enumerate}
-\end{cajaConcepto}
-
-\section{Dashboard Operativo 3: Ficha Consolidada y Estado de Cuenta del Estudiante}
-
-Sirve como el punto de contacto entre Secretaría y Tesorería al atender a un apoderado en ventanilla:
-\begin{itemize}
-    \item \textbf{Vista Unificada:} Al ingresar el código del estudiante, la pantalla muestra en la mitad izquierda sus datos académicos (sección, tutor, promedio ponderado actual) y en la mitad derecha su estado financiero (pensiones pagadas, cuotas vencidas, morosidad acumulada).
-    \item \textbf{Acción Directa:} Botón para emitir la constancia de estudios (si no registra deudas vencidas) o generar el compromiso de refinanciamiento de deuda.
-\end{itemize}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.92\textwidth]{image.png}
-    \caption{Dashboard Web Nativo 3: Ficha Consolidada y Estado de Cuenta del Estudiante (Interacción Secretaría-Tesorería)}
-    \label{fig:dashboard_web_ficha}
-\end{figure}
-
-\begin{cajaConcepto}[Toma de Decisiones Operativas -- Dashboard Web 3 (Ventanilla Única)]
-\textbf{Decisiones Inmediatas Habilitadas:}
-\begin{enumerate}
-    \item \textbf{Emisión / Bloqueo de Documentos Oficiales:} Emite automáticamente constancias de conducta o libretas si el estudiante se encuentra al día, o bloquea la emisión administrativa si registra deudas vencidas conforme al reglamento interno.
-    \item \textbf{Suscripción de Compromiso de Refinanciamiento:} Permite al tesorero fraccionar la deuda vencida en cuotas accesibles, habilitando temporalmente la ficha del alumno para evaluaciones.
-\end{enumerate}
-\end{cajaConcepto}
-
-% ═══════════════════════════════════════════════════════════════
-%  CAPÍTULO V: MODELADO E INTEGRACIÓN ANALÍTICA EN POWER BI (DSS)
-% ═══════════════════════════════════════════════════════════════
-\chapter{Modelado e Integración Analítica en Power BI (Nivel DSS / BI Estratégico)}
-
-\section{Del Modelo Transaccional (OLTP) al Modelo Analítico (OLAP)}
-
-Mientras que los dashboards web nativos del Capítulo III le sirven al secretario y tesorero para operar la jornada diaria, la Promotora y la Dirección General requieren una perspectiva \textbf{analítica, histórica y multidimensional}. Realizar consultas de agregación masiva (\texttt{SUM}, \texttt{AVG}, \texttt{GROUP BY}) sobre la base de datos relacional OLTP degradaría el rendimiento de las transacciones operativas de la escuela.
-
-Por esta razón, SICOLEGIO 360 implementa un pipeline analítico que extrae los datos de la base centralizada mediante \textbf{Vistas SQL especializadas (Capa ETL)} y los carga en el motor analítico \textit{VertiPaq} de \textbf{Microsoft Power BI}, transformando la estructura relacional en un \textbf{Modelo Dimensional en Estrella (\textit{Star Schema})}.
-
-\section{Pipeline ETL y Vistas SQL de Extracción}
-
-Para alimentar a Power BI sin exponer las tablas crudas del sistema, se crean vistas SQL optimizadas en la base de datos centralizada. El Anexo A incluye los scripts DDL de estas vistas. La vista principal \texttt{vw\_FactMatriculaPagos} desnormaliza los eventos financieros y académicos:
-
-\begin{lstlisting}[language=SQL, caption={Vista SQL de extracción ETL para la Tabla de Hechos en Power BI}]
-CREATE VIEW vw_FactMatriculaPagos AS
-SELECT 
-    p.id_pago AS id_hecho_pago,
-    m.id_estudiante,
-    m.id_seccion,
-    cp.id_concepto,
-    CAST(DATE_FORMAT(p.fecha_pago, '%Y%m%d') AS UNSIGNED) AS id_fecha_pago,
-    CAST(DATE_FORMAT(cp.fecha_vencimiento, '%Y%m%d') AS UNSIGNED) AS id_fecha_vencimiento,
-    cp.monto AS monto_presupuestado,
-    p.monto_pagado AS monto_recaudado,
-    DATEDIFF(p.fecha_pago, cp.fecha_vencimiento) AS dias_atraso,
-    CASE WHEN DATEDIFF(p.fecha_pago, cp.fecha_vencimiento) > 0 THEN 1 ELSE 0 END AS es_pago_moroso
-FROM compromisos_pago cp
-INNER JOIN matriculas m ON cp.id_estudiante = m.id_estudiante
-LEFT JOIN pagos p ON cp.id_compromiso = p.id_compromiso;
-\end{lstlisting}
-
-\section{Modelado Dimensional en Estrella (Star Schema)}
-
-El modelo de datos analítico dentro de Power BI está diseñado en un \textbf{Esquema en Estrella} clásico alrededor de la tabla de hechos central \texttt{FactMatriculaPagos}, conectada a cuatro dimensiones mediante relaciones de uno a muchos ($1:*$):
-
-\begin{figure}[H]
-    \centering
-    \begin{cajaConcepto}[Esquema en Estrella de Power BI -- SICOLEGIO 360]
-    \textbf{Tabla de Hechos (Fact Table):}
     \begin{itemize}
-        \item \texttt{FactMatriculaPagos} (\textit{monto\_presupuestado, monto\_recaudado, dias\_atraso, es\_pago\_moroso})
-    \end{itemize}
-    \textbf{Tablas de Dimensiones (Dimension Tables):}
+        \item \textbf{Atomicidad (Atomicity):} Las operaciones interdepartamentales se empaquetan en bloques transaccionales indivisibles (\textit{All-or-Nothing}). Si la aprobación de una justificación se completa en Secretaría pero ocurre un fallo antes de notificar al TPS Pedagógico del docente, el motor SQL ejecuta un \texttt{ROLLBACK} automático para mantener la consistencia.
+        \item \textbf{Consistencia (Consistency):} El sistema exige el cumplimiento constante de las invariantes de negocio. Restricciones avanzadas impiden que la calificación de un estudiante se registre fuera del rango permitido ($0 - 20$ o $AD - C$) o que una inasistencia se justifique dos veces.
+        \item \textbf{Aislamiento (Isolation):} Durante horas lectivas pico, decenas de profesores y auxiliares registran asistencia y notas simultáneamente. SICOLEGIO 360 utiliza el nivel de aislamiento \texttt{READ COMMITTED} con bloqueos pesimistas a nivel de fila (\textit{Pessimistic Row Locking}), evitando condiciones de carrera.
+        \item \textbf{Durabilidad (Durability):} Una vez que una transacción interdepartamental ha sido confirmada mediante un \texttt{COMMIT}, los cambios quedan registrados de forma permanente en el almacenamiento físico a través del mecanismo WAL (\textit{Write-Ahead Logging}).
+    \end{itemize} Secretaría: Actualización en vivo del estado financiero en la ficha del alumno. \\
+    \hline
+    \texttt{TX-SEC-02} & Secretaría & Anulación o retiro de estudiante. & Tesorería: Cancelación de compromisos de pago futuros y liquidación de saldo a favor/contra. \\
+    \hline
+    \texttt{TX-TES-03} & Tesorería & Declaración de morosidad por vencimiento ($>60$ días). & Secretaría: Bloqueo administrativo para emisión de certificados no oficiales según reglamento. \\
+    \end{xltabular}
+
+    \section{Mecanismos de Consistencia TPS y Propiedades ACID}
+
+    La confiabilidad del procesamiento de transacciones operativas (\textbf{TPS}) en SICOLEGIO 360 se basa en la ejecución estricta de los cuatro principios ACID enunciados por \citet{silberschatz2020}:
+
     \begin{itemize}
-        \item \texttt{DimEstudiante} (\textit{id\_estudiante, dni, nombre\_completo, estado\_academico, nivel, grado})
-        \item \texttt{DimSeccion} (\textit{id\_seccion, nombre\_seccion, aforo\_maximo, tutor\_asignado})
-        \item \texttt{DimTiempo} (\textit{id\_fecha, fecha, anio, mes, trimestre, dia\_semana})
-        \item \texttt{DimConceptoPago} (\textit{id\_concepto, descripcion\_concepto, tipo\_cuota})
+        \item \textbf{Atomicidad (Atomicity):} Las operaciones interdepartamentales se empaquetan en bloques transaccionales indivisibles (\textit{All-or-Nothing}). Si la inserción del pago en Tesorería se completa pero ocurre un fallo de conexión antes de actualizar la matrícula en Secretaría, el motor SQL ejecuta un \texttt{ROLLBACK} automático, devolviendo la base de datos a su estado consistente previo.
+        \item \textbf{Consistencia (Consistency):} El sistema exige el cumplimiento constante de las reglas e invariantes de negocio. Las restricciones avanzadas (\texttt{CHECK}) impiden que la variable \texttt{vacantes\_ocupadas} supere la \texttt{capacidad} máxima del aula o que un compromiso de pago registre montos negativos.
+        \item \textbf{Aislamiento (Isolation):} Durante periodos de alta demanda (días centrales de matrícula), cientos de apoderados interactúan simultáneamente con el sistema. SICOLEGIO 360 utiliza el nivel de aislamiento \texttt{READ COMMITTED} combinado con bloqueos pesimistas a nivel de fila (\textit{Pessimistic Row Locking}). Esto evita condiciones de carrera (\textit{Race Conditions}), garantizando que dos secretarias no puedan asignar la última vacante disponible al mismo tiempo.
+        \item \textbf{Durabilidad (Durability):} Una vez que una transacción interdepartamental ha sido confirmada mediante un \texttt{COMMIT}, los cambios quedan registrados de forma permanente en el almacenamiento físico a través del mecanismo WAL (\textit{Write-Ahead Logging}), garantizando la supervivencia de los datos ante cortes imprevistos de energía eléctrica en el servidor.
     \end{itemize}
+
+    % ═══════════════════════════════════════════════════════════════
+    %  CAPÍTULO III: DISEÑO DE LA CAPA DE MÉTRICAS Y KPIS INSTITUCIONALES
+    % ═══════════════════════════════════════════════════════════════
+    \chapter{Diseño de la Capa de Métricas, KPIs y Requerimientos de Información Institucionales}
+
+    \section{Taxonomía de Indicadores en la Gestión Escolar Privada}
+
+    Antes de abordar el diseño de interfaces y paneles de control, la ingeniería del sistema exige formalizar la \textbf{Capa de Métricas e Indicadores Clave de Rendimiento} (KPI, por sus siglas en inglés \textit{Key Performance Indicators}). En una institución educativa privada, las transacciones registradas por el motor TPS no adquieren valor gerencial hasta que son procesadas, agregadas y estructuradas bajo un marco de medición bien definido.
+
+    SICOLEGIO 360 establece una taxonomía tridimensional para clasificar los indicadores del colegio:
+
+    \begin{enumerate}
+        \item \textbf{Métricas Operativas (Nivel TPS / Tiempo Real):} Indicadores de flujo continuo que miden la ejecución de tareas diarias. Su latencia de actualización es en tiempo real ($<1$ segundo). Ejemplos: número de matrículas procesadas por hora, cuadre de caja chica diaria y comprobantes de pago emitidos.
+        \item \textbf{Métricas Tácticas (Nivel MIS / Control Bimestral):} Indicadores de rendimiento departamental que permiten a los mandos medios (Secretario Académico, Tesorero, Coordinador Pedagógico) evaluar el cumplimiento de metas de corto y mediano plazo. Su latencia de actualización es periódica (diaria o semanal). Ejemplos: porcentaje de aforo ocupado por sección, tasa de desaprobación bimestral por materia y morosidad por grado.
+        \item \textbf{Métricas Estratégicas (Nivel DSS / Proyección Anual):} Indicadores de alto nivel orientados a la Promotora y a la Dirección General para respaldar decisiones de inversión, planificación financiera y sostenibilidad del modelo educativo. Su latencia se basa en análisis de series temporales (mensual, anual o interanual). Ejemplos: Ingreso Anual Recurrente (\textit{ARR Educativo}), tasa de retención de alumnado y rentabilidad por sección.
+    \end{enumerate}
+
+    \section{Catálogo Formalizado de KPIs Institucionales}
+
+    A continuación se definen matemáticamente los cinco indicadores principales de la interacción entre la Dirección Académica y Secretaría/Convivencia Escolar:
+
+    \subsection{1. Tasa de Ocupación de Vacantes por Sección ($\text{TOV}_i$)}
+    Mide el porcentaje de eficiencia en el uso de la capacidad instalada física de cada aula $i$:
+    \begin{equation}
+    \text{TOV}_i = \left( \frac{\text{Vacantes Ocupadas}_i}{\text{Capacidad Máxima}_i} \right) \times 100\%
+    \end{equation}
+    \textit{Interpretación:} Si $\text{TOV}_i < 70\%$, la sección se encuentra subutilizada; si $\text{TOV}_i \ge 95\%$, la sección se encuentra en nivel de alerta por saturación de aforo.
+
+    \subsection{2. Tasa de Asistencia Ponderada por Grado ($\text{TAP}_g$)}
+    Mide la proporción de días lectivos asistidos respecto al total de días programados para el grado $g$:
+    \begin{equation}
+    \text{TAP}_g = \left( \frac{\sum \text{Asistencias Confirmadas}_g}{\sum \text{Días Lectivos Programados}_g \times \text{Total Alumnos}_g} \right) \times 100\%
+    \end{equation}
+    \textit{Interpretación:} Un $\text{TAP}_g < 85\%$ alerta sobre ausentismo crítico que impacta directamente en las competencias de aprendizaje del grado.
+
+    \subsection{3. Porcentaje de Desaprobación por Curso ($\text{PDC}_c$)}
+    Mide el nivel de dificultad y riesgo pedagógico en la asignatura $c$:
+    \begin{equation}
+    \text{PDC}_c = \left( \frac{\text{Alumnos con Promedio Bimestral desaprobado}_c}{\text{Total Alumnos Evaluados}_c} \right) \times 100\%
+    \end{equation}
+    \textit{Interpretación:} Si $\text{PDC}_c > 20\%$, la Dirección Académica debe solicitar una revisión metodológica o plan de reforzamiento pedagógico al docente.
+
+    \subsection{4. Índice de Incidencias de Conducta por Grado ($\text{ICG}_g$)}
+    Calcula la densidad de partes disciplinarios acumulados por alumno en el grado $g$:
+    \begin{equation}
+    \text{ICG}_g = \frac{\sum \text{Deméritos de Conducta registrados}_g}{\text{Total Alumnos Activos}_g}
+    \end{equation}
+    \textit{Interpretación:} Permite identificar grados conflictivos que requieren intervención preventiva del departamento de Psicopedagogía y Tutoría.
+
+    \subsection{5. Tasa de Justificación de Inasistencias ($\text{TJI}$)}
+    Mide la proporción de faltas que cuentan con respaldo y aprobación formal por parte de Secretaría:
+    \begin{equation}
+    \text{TJI} = \left( \frac{\text{Inasistencias Justificadas}}{\text{Total de Inasistencias Registradas}} \right) \times 100\%
+    \end{equation}
+    \textit{Interpretación:} Una baja tasa $\text{TJI} < 50\%$ refleja falta de comunicación de los apoderados o incumplimiento en el envío de certificados médicos.
+
+    \section{Matriz de Requerimientos de Información por Perfil de Usuario (RBAC)}
+
+    La Tabla~\ref{tab:requerimientos_informacion} establece el mapa de consumo de información dentro del sistema, alineando cada rol institucional con sus métricas correspondientes y la capa analítica de procesamiento:
+
+    \begin{xltabular}{\textwidth}{|p{3.2cm}|p{4.2cm}|p{3.2cm}|X|}
+    \caption{Matriz de requerimientos de información por rol institucional} \label{tab:requerimientos_informacion} \\
+    \hline
+    \textbf{Rol Institucional} & \textbf{Métricas y KPIs Clave} & \textbf{Frecuencia} & \textbf{Capa Analítica de Destino} \\
+    \hline
+    \endfirsthead
+
+    \multicolumn{4}{c}{{\bfseries Tabla \thetable{} -- Continuación de la página anterior}} \\
+    \hline
+    \textbf{Rol Institucional} & \textbf{Métricas y KPIs Clave} & \textbf{Frecuencia} & \textbf{Capa Analítica de Destino} \\
+    \hline
+    \endhead
+
+    \hline
+    \multicolumn{4}{r}{\textit{Continúa en la siguiente página...}} \\
+    \endfoot
+
+    \hline
+    \endlastfoot
+
+    \textbf{Secretario Académico} & Aforo de secciones ($\text{TOV}$), justificaciones registradas ($\text{TJI}$), estado de matrícula. & Tiempo Real ($<1$ s). & Dashboards Web Nativos (MIS / OLTP). \\
+    \hline
+    \textbf{Auxiliar / Tutor} & Registro diario de asistencia, partes disciplinarios ($\text{ICG}$), citaciones a apoderados. & Tiempo Real ($<1$ s). & Dashboards Web Nativos (MIS / OLTP). \\
+    \hline
+    \textbf{Coordinador Académico} & Porcentaje de desaprobación ($\text{PDC}$), promedios bimestrales por materia, actas de notas. & Diario / Semanal. & Analítica en Power BI (DSS / OLAP). \\
+    \hline
+    \textbf{Director General} & Tasa de asistencia ponderada ($\text{TAP}$), mapa de calor asistencia vs. notas, rendimiento general. & Mensual / Bimestral. & Analítica en Power BI (DSS / OLAP). \\
+    \end{xltabular}
+
+    \section{Framework de Filtros Temporales Jerárquicos (Año, Semestre, Trimestre, Bimestre, Mes)}
+
+    Para garantizar la consistencia en el análisis longitudinal y transversal de la institución educativa, SICOLEGIO 360 implementa un \textbf{Framework de Filtros Temporales Jerárquicos} integrado en las cabeceras de todos los dashboards (tanto en la aplicación Web Nativa como en Microsoft Power BI).
+
+    La dimensión temporal relacional y multidimensional (\texttt{DimTiempo} / \texttt{DimCalendario}) habilita cinco niveles de filtrado dinámico acoplados:
+
+    \begin{enumerate}
+        \item \textbf{Filtro por Año Lectivo:} Selector multianual (\texttt{2024}, \texttt{2025}, \texttt{2026}) que permite comparar la evolución financiera y académica interanual.
+        \item \textbf{Filtro por Semestre Académico:} División en dos bloques lectivos (\texttt{Semestre 1}: Marzo - Julio; \texttt{Semestre 2}: Agosto - Diciembre) para evaluación de metas de medio año.
+        \item \textbf{Filtro por Trimestre Académico:} División de tres periodos de control de avance curricular e inversiones institucionales.
+        \item \textbf{Filtro por Bimestre Académico (Normativa CNEB / MINEDU):} Estructura oficial de 4 Bimestres lectivos (\texttt{I Bimestre}, \texttt{II Bimestre}, \texttt{III Bimestre}, \texttt{IV Bimestre}) para el cierre de actas de notas y control de morosidad por periodo de evaluación.
+        \item \textbf{Filtro por Mes Lectivo y Rango de Fechas:} Filtrado detallado de Enero a Diciembre o selección personalizada de fechas para arqueos de caja y auditorías operativas.
+    \end{enumerate}
+
+    Al interactuar con cualquier selector de esta cabecera temporal, el motor de procesamiento (SQL u OLAP VertiPaq) propaga automáticamente los filtros hacia todas las tarjetas KPI, gráficos de dispersión, tablas de aforo y fórmulas DAX, garantizando que el usuario examine el estado exacto de la escuela en la ventana de tiempo elegida.
+
+    % ═══════════════════════════════════════════════════════════════
+    %  CAPÍTULO IV: DASHBOARDS NATIVOS EN EL CÓDIGO WEB (MIS)
+    % ═══════════════════════════════════════════════════════════════
+    \chapter{Dashboards Operativos Nativos en el Código Web de SICOLEGIO 360 (Nivel MIS / Reporting Web)}
+
+    \section{Módulo de Reportes Integrado en la Aplicación Web}
+
+    Los Dashboards Operativos Web están construidos nativamente dentro de la arquitectura de la aplicación SICOLEGIO 360 (desarrollados con frontend en React/HTML5 y backend en Node.js/Python). Su propósito principal es brindar soporte a las \textbf{operaciones del día a día} de los usuarios del sistema (Secretarios, Tesoreros y Auxiliares).
+
+    A diferencia de las herramientas de Business Intelligence externas, estos dashboards realizan consultas SQL \textbf{OLTP en tiempo real} directamente sobre la base de datos centralizada, garantizando que el dato visualizado refleje el estado exacto del sistema en el segundo actual ($<1$ segundo de latencia).
+
+    \section{Protocolos Operativos de Ventanilla Única}
+
+    La implementación de los dashboards nativos introduce el concepto de \textbf{Ventanilla Única de Atención Escolar}. En el esquema tradicional, el apoderado debía realizar un recorrido itinerante dentro del colegio: acudir a Secretaría para solicitar el cupo, dirigirse a Tesorería para efectuar el pago, retornar a Secretaría con la constancia física y finalmente acudir a Dirección para la firma.
+
+    SICOLEGIO 360 unifica este flujo en una sola interfaz interactiva. El operador de ventanilla consulta en tiempo real el estado académico y financiero del estudiante en una sola pantalla, ejecutando las siguientes acciones coordinadas:
+    \begin{itemize}
+        \item \textbf{Reducción del Tiempo de Atención:} El tiempo de atención presencial por apoderado disminuye de 45 minutos a menos de 5 minutos por transacción.
+        \item \textbf{Transparencia de Datos:} El apoderado visualiza en la pantalla secundaria de ventanilla la disponibilidad real de vacantes y el desglose de su estado de cuenta sin intermediaciones manuscritas.
+    \end{itemize}
+
+    \section{Dashboard Operativo 1: Control de Matrículas y Aforo en Vivo (Secretaría)}
+
+    Este panel permite al Secretario Académico monitorear el avance de las matrículas y la disponibilidad de aulas durante el proceso de admisión:
+    \begin{itemize}
+        \item \textbf{Visualización:} Tabla dinámica con barras de progreso de aforo por sección (ej. 3º Primaria "A": 28/30 vacantes - 93\% ocupado).
+        \item \textbf{Alerta Operativa:} Alerta roja cuando el aforo supera el 95\%, indicando a la Secretaría que debe cerrar la recepción de solicitudes o solicitar a Dirección la apertura de una nueva sección.
+        \item \textbf{Métrica en Tiempo Real:} Total de estudiantes con matrícula confirmada vs. matrículas pendientes de pago.
+    \end{itemize}
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.92\textwidth]{image.png} 
+        \caption{Dashboard Web Nativo 1: Control de Matrículas y Aforo de Secciones en Vivo (Módulo Secretaría)}
+        \label{fig:dashboard_web_aforo}
+    \end{figure}
+
+    \begin{cajaConcepto}[Toma de Decisiones Operativas -- Dashboard Web 1 (Secretaría)]
+    \textbf{Decisiones Inmediatas Habilitadas:}
+    \begin{enumerate}
+        \item \textbf{Cierre de Inscripción por Saturación ($\text{TOV}_i \ge 95\%$):} Bloquea automáticamente la recepción de nuevos expedientes para la sección $i$, evitando el sobreaforo y garantizando las normas de espacio del MINEDU.
+        \item \textbf{Apertura de Sección Paralela:} Notifica al Director General para habilitar la sección "B" cuando la demanda supere el 100\% del aforo planificado.
+        \item \textbf{Redireccionamiento de Vacantes ($\text{TOV}_i < 70\%$):} Deriva postulantes a secciones con baja tasa de ocupación para equilibrar la carga docente.
+    \end{enumerate}
     \end{cajaConcepto}
-    \caption{Modelado dimensional en estrella diseñado para Power BI}
-    \label{fig:star_schema}
-\end{figure}
 
-\section{Desarrollo de Expresiones DAX para KPIs Estratégicos}
+    \section{Dashboard Operativo 2: Control Diario de Asistencia y Justificaciones (Auxiliaría)}
 
-En Power BI, la inteligencia de negocios se construye mediante fórmulas en lenguaje \textbf{DAX (\textit{Data Analysis Expressions})}. A continuación se presentan las medidas clave implementadas para la gestión de SICOLEGIO 360:
+    Diseñado para los auxiliares de educación y la Secretaría del colegio:
+    \begin{itemize}
+        \item \textbf{Visualización:} Resumen de asistencia diaria desglosada por estado (Presente, Tardanza en puerta, Tardanza en aula, Inasistencia injustificada, Inasistencia justificada).
+        \item \textbf{Monitoreo en Tiempo Real:} Marcación mediante escaneo de DNI/fotocheck o ingreso manual en aula, calculando el \% de asistencia diaria del colegio.
+        \item \textbf{Buscador Rápido:} Consulta instantánea por estudiante para justificar faltas médicas adjuntando comprobantes digitales.
+    \end{itemize}
 
-\paragraph{1. Recaudación Total Acumulada:}
-\begin{lstlisting}
-RecaudacionTotal = SUM(FactMatriculaPagos[monto_recaudado])
-\end{lstlisting}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.92\textwidth]{1.png}
+        \caption{Dashboard Web Nativo 2: Control Diario de Asistencia y Justificaciones en Tiempo Real (Módulo Auxiliaría/Secretaría)}
+        \label{fig:dashboard_web_caja}
+    \end{figure}
 
-\paragraph{2. Porcentaje de Morosidad por Grado/Nivel:}
-\begin{lstlisting}
-% Morosidad = 
-VAR TotalDeuda = SUM(FactMatriculaPagos[monto_presupuestado])
-VAR TotalCobrado = SUM(FactMatriculaPagos[monto_recaudado])
-RETURN
-DIVIDE(TotalDeuda - TotalCobrado, TotalDeuda, 0)
-\end{lstlisting}
+    \begin{cajaConcepto}[Toma de Decisiones Operativas -- Dashboard Web 2 (Auxiliaría / Secretaría)]
+    \textbf{Decisiones Inmediatas Habilitadas:}
+    \begin{enumerate}
+        \item \textbf{Cierre de Registro Diario de Puerta:} Valida la nómina de alumnos ingresados antes del inicio de la primera hora lectiva para enviar alertas preventivas a los apoderados.
+        \item \textbf{Aprobación de Justificaciones Médicas:} Valida certificados presentados por los apoderados y desbloquea automáticamente los permisos de reprogramación de exámenes en el TPS Pedagógico.
+        \item \textbf{Notificación Inmediata por Ausentismo:} Emite avisos automáticos al apoderado cuando el estudiante no registra ingreso en la puerta pasados 15 minutos del horario límite.
+    \end{enumerate}
+    \end{cajaConcepto}
 
-\paragraph{3. Tasa de Ocupación de Vacantes por Sección:}
-\begin{lstlisting}
-TasaOcupacionVacantes = 
-VAR VacantesOcupadas = DISTINCTCOUNT(FactMatriculaPagos[id_estudiante])
-VAR AforoTotal = SUM(DimSeccion[aforo_maximo])
-RETURN
-DIVIDE(VacantesOcupadas, AforoTotal, 0)
-\end{lstlisting}
+    \section{Dashboard Operativo 3: Ficha Consolidada del Estudiante (Académico vs. Convivencia)}
 
-\paragraph{4. ARR Educativo (Ingreso Anual Recurrente Proyectado):}
-\begin{lstlisting}
-ARREducativo = 
-CALCULATE(
-    SUM(FactMatriculaPagos[monto_presupuestado]),
-    DimConceptoPago[tipo_cuota] = "Pension_Mensual"
-)
-\end{lstlisting}
+    Sirve como el punto de contacto entre Dirección Académica y Secretaría/Tutoría al atender a un apoderado:
+    \begin{itemize}
+        \item \textbf{Vista Unificada:} Al ingresar el código del estudiante, la pantalla muestra en la mitad izquierda sus datos académicos (notas por competencia, promedio ponderado, evaluaciones pendientes) y en la mitad derecha su historial disciplinario (asistencia, tardanzas, méritos/deméritos).
+        \item \textbf{Acción Directa:} Botón para emitir la Libreta Bimestral de Notas o generar una citación de tutoría presencial.
+    \end{itemize}
 
-\section{Dashboards Estratégicos en Power BI para la Alta Dirección}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.92\textwidth]{image.png}
+        \caption{Dashboard Web Nativo 3: Ficha Consolidada del Estudiante (Interacción Dirección Académica -- Secretaría/Convivencia)}
+        \label{fig:dashboard_web_ficha}
+    \end{figure}
 
-Con el modelo dimensional y las medidas DAX construidas, se desarrollan cuatro paneles de control gerenciales dentro del informe de Power BI. A continuación se detallan sus estructuras y bloques para capturas de pantalla:
+    \begin{cajaConcepto}[Toma de Decisiones Operativas -- Dashboard Web 3 (Ventanilla Única de Atención)]
+    \textbf{Decisiones Inmediatas Habilitadas:}
+    \begin{enumerate}
+        \item \textbf{Emisión de Libretas y Constancias:} Emite automáticamente la libreta bimestral oficial y constancias de conducta consolidadas.
+        \item \textbf{Generación de Compromisos de Tutoría:} Permite suscribir acuerdos pedagógicos y disciplinarios con el apoderado ante bajas calificaciones o faltas reiteradas.
+    \end{enumerate}
+    \end{cajaConcepto}
 
-\subsection{Dashboard Power BI 1: Radar de Salud Financiera y Morosidad por Grado}
-Muestra un gráfico de barras apiladas al 100\% con el estado de pago por grado (Al día vs. Mora Leve vs. Mora Crítica). Incluye segmentadores por nivel educativo (Inicial, Primaria, Secundaria).
+    % ═══════════════════════════════════════════════════════════════
+    %  CAPÍTULO V: MODELADO E INTEGRACIÓN ANALÍTICA EN POWER BI (DSS)
+    % ═══════════════════════════════════════════════════════════════
+    \chapter{Modelado e Integración Analítica en Power BI (Nivel DSS / BI Estratégico)}
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.95\textwidth]{3.png}
-    \caption{Power BI Dashboard 1: Radar de Salud Financiera y Morosidad por Grado}
-    \label{fig:powerbi_radar_morosidad}
-\end{figure}
+    \section{Del Modelo Transaccional (OLTP) al Modelo Analítico (OLAP)}
 
-\begin{cajaConcepto}[Toma de Decisiones Estratégicas -- Power BI Dashboard 1 (Dirección / Promotora)]
-\textbf{Decisiones Estratégicas Habilitadas:}
-\begin{enumerate}
-    \item \textbf{Reestructuración de Politicas de Cobranza ($\text{IMG}_g > 15\%$):} Identifica grados con morosidad crítica para lanzar campañas preventivas de refinanciamiento antes del cierre del periodo bimestral.
-    \item \textbf{Ajuste del Arancel Educativo Anual:} Permite evaluar el impacto de la tarifa de pensiones en la morosidad para ajustar la estructura de precios del siguiente año lectivo.
-\end{enumerate}
-\end{cajaConcepto}
+    Mientras que los dashboards web nativos del Capítulo III le sirven al secretario y tesorero para operar la jornada diaria, la Promotora y la Dirección General requieren una perspectiva \textbf{analítica, histórica y multidimensional}. Realizar consultas de agregación masiva (\texttt{SUM}, \texttt{AVG}, \texttt{GROUP BY}) sobre la base de datos relacional OLTP degradaría el rendimiento de las transacciones operativas de la escuela.
 
-\subsection{Dashboard Power BI 2: Matriz de Eficiencia Operativa y Viabilidad por Sección}
-Gráfico de dispersión que evalúa el Aforo Ocupado (eje X) frente al \% de Morosidad (eje Y). Permite a la Dirección identificar secciones inviables económicamente.
+    Por esta razón, SICOLEGIO 360 implementa un pipeline analítico que extrae los datos de la base centralizada mediante \textbf{Vistas SQL especializadas (Capa ETL)} y los carga en el motor analítico \textit{VertiPaq} de \textbf{Microsoft Power BI}, transformando la estructura relacional en un \textbf{Modelo Dimensional en Estrella (\textit{Star Schema})}.
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.95\textwidth]{3.png}
-    \caption{Power BI Dashboard 2: Matriz de Eficiencia Operativa y Viabilidad por Sección (Aforo vs. Morosidad)}
-    \label{fig:powerbi_aforo_rentabilidad}
-\end{figure}
+    \section{Pipeline ETL y Vistas SQL de Extracción}
 
-\begin{cajaConcepto}[Toma de Decisiones Estratégicas -- Power BI Dashboard 2 (Planificación Institucional)]
-\textbf{Decisiones Estratégicas Habilitadas:}
-\begin{enumerate}
-    \item \textbf{Fusión o Cierre de Secciones Inviables:} Si una sección presenta $\text{TOV}_i < 65\%$ y morosidad $>20\%$, la Dirección dispone su fusión estratégica para reducir costos fijos docentes.
-    \item \textbf{Asignación Eficiente del Cuadro de Horas:} Optimiza la distribución de aulas y laboratorios hacia los grados de mayor rendimiento financiero y aforo completo.
-\end{enumerate}
-\end{cajaConcepto}
+    Para alimentar a Power BI sin exponer las tablas crudas del sistema, se crean vistas SQL optimizadas en la base de datos centralizada. El Anexo A incluye los scripts DDL de estas vistas. La vista principal \texttt{vw\_FactMatriculaPagos} desnormaliza los eventos financieros y académicos:
 
-\subsection{Dashboard Power BI 3: Embudo de Conversión de Matrícula (Pipeline de Admisión)}
-Visualización tipo \textit{Funnel} que rastrea la pérdida de potenciales alumnos desde la ficha de admisión hasta la ratificación con pago en Tesorería.
+    \begin{lstlisting}[language=SQL, caption={Vista SQL de extracción ETL para la Tabla de Hechos en Power BI}]
+    CREATE VIEW vw_FactMatriculaPagos AS
+    \section{Pipeline ETL y Vistas SQL de Extracción}
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.95\textwidth]{3.png}
-    \caption{Power BI Dashboard 3: Embudo de Conversión de Matrícula (Pipeline de Admisión)}
-    \label{fig:powerbi_embudo}
-\end{figure}
+    Para alimentar a Power BI sin exponer las tablas crudas del sistema, se crean vistas SQL optimizadas en la base de datos. La vista principal \texttt{vw\_FactRendimientoAsistencia} desnormaliza los eventos académicos y el registro de control escolar:
 
-\begin{cajaConcepto}[Toma de Decisiones Estratégicas -- Power BI Dashboard 3 (Marketing y Admisión)]
-\textbf{Decisiones Estratégicas Habilitadas:}
-\begin{enumerate}
-    \item \textbf{Redireccionamiento del Presupuesto de Marketing Educativo:} Detecta en qué etapa del proceso de admisión (evaluación psicopedagógica, entrevista o pago) se pierden más postulantes para aplicar correctivos.
-    \item \textbf{Optimización de la Pasarela Digital:} Simplifica los pasos de pago si la fuga de postulantes se concentra en la etapa final de caja.
-\end{enumerate}
-\end{cajaConcepto}
+    \begin{lstlisting}[language=SQL, caption={Vista SQL de extracción ETL para la Tabla de Hechos en Power BI}]
+    CREATE VIEW vw_FactRendimientoAsistencia AS
+    SELECT 
+        n.id_nota AS id_hecho_evaluacion,
+        m.id_estudiante,
+        m.id_seccion,
+        n.id_curso,
+        CAST(DATE_FORMAT(n.fecha_registro, '%Y%m%d') AS UNSIGNED) AS id_fecha_evaluacion,
+        n.calificacion_numerica AS nota_obtenida,
+        CASE WHEN n.calificacion_numerica < 11 THEN 1 ELSE 0 END AS es_desaprobado,
+        COALESCE(a.total_asistencias, 0) AS total_asistencias,
+        COALESCE(a.total_inasistencias, 0) AS total_inasistencias,
+        COALESCE(c.demeritos_acumulados, 0) AS demeritos_conducta
+    FROM notas n
+    INNER JOIN matriculas m ON n.id_estudiante = m.id_estudiante
+    LEFT JOIN (
+        SELECT id_estudiante, 
+            SUM(CASE WHEN estado = 'PRESENTE' THEN 1 ELSE 0 END) AS total_asistencias,
+            SUM(CASE WHEN estado = 'FALTA' THEN 1 ELSE 0 END) AS total_inasistencias
+        FROM asistencias GROUP BY id_estudiante
+    ) a ON m.id_estudiante = a.id_estudiante
+    LEFT JOIN (
+        SELECT id_estudiante, SUM(puntos_demerito) AS demeritos_acumulados
+        FROM conducta GROUP BY id_estudiante
+    ) c ON m.id_estudiante = c.id_estudiante;
+    \end{lstlisting}
 
-\subsection{Dashboard Power BI 4: Correlación Rendimiento Académico vs. Regularidad de Pago}
-Gráfico de cajas y bigotes (\textit{Box Plot}) que evalúa el impacto de la puntualidad financiera en las notas promedio de los alumnos.
+    \section{Modelado Dimensional en Estrella (Star Schema)}
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.95\textwidth]{3.png}
-    \caption{Power BI Dashboard 4: Correlación Rendimiento Académico vs. Regularidad de Pago}
-    \label{fig:powerbi_rendimiento_pago}
-\end{figure}
+    El modelo de datos analítico dentro de Power BI está diseñado en un \textbf{Esquema en Estrella} clásico alrededor de la tabla de hechos central \texttt{FactRendimientoAsistencia}, conectada a cuatro dimensiones mediante relaciones de uno a muchos ($1:*$):
 
-\begin{cajaConcepto}[Toma de Decisiones Estratégicas -- Power BI Dashboard 4 (Bienestar Estudiantil)]
-\textbf{Decisiones Estratégicas Habilitadas:}
-\begin{enumerate}
-    \item \textbf{Asignación Transparente de Becas Socioeconómicas:} Prioriza la entrega de becas de estudio a familias con alto rendimiento académico pero vulnerabilidad económica temporal.
-    \item \textbf{Acompañamiento Psicopedagógico Preventivo:} Brinda contención a estudiantes cuyo rendimiento académico decae debido al estrés financiero familiar.
-\end{enumerate}
-\end{cajaConcepto}
+    \begin{figure}[H]
+        \centering
+        \begin{cajaConcepto}[Esquema en Estrella de Power BI -- SICOLEGIO 360]
+        \textbf{Tabla de Hechos (Fact Table):}
+        \begin{itemize}
+            \item \texttt{FactRendimientoAsistencia} (\textit{nota\_obtenida, es\_desaprobado, total\_asistencias, total\_inasistencias, demeritos\_conducta})
+        \end{itemize}
+        \textbf{Tablas de Dimensiones (Dimension Tables):}
+        \begin{itemize}
+            \item \texttt{DimEstudiante} (\textit{id\_estudiante, dni, nombre\_completo, estado\_academico, grado, seccion})
+            \item \texttt{DimCurso} (\textit{id\_curso, nombre\_curso, area\_curricular, horas\_semanales})
+            \item \texttt{DimSeccion} (\textit{id\_seccion, nombre\_seccion, aforo\_maximo, tutor\_asignado})
+            \item \texttt{DimTiempo} (\textit{id\_fecha, fecha, anio, mes, bimestre, trimestre})
+        \end{itemize}
+        \end{cajaConcepto}
+        \caption{Modelado dimensional en estrella diseñado para Power BI}
+        \label{fig:star_schema}
+    \end{figure}
 
-\subsection{Dashboard Power BI 5: Proyección Financiera Anual e Ingreso Recurrente (ARR Educativo)}
-Visualización tipo \textit{Waterfall Chart} y proyección temporal que analiza la cascada de ingresos por pensiones de marzo a diciembre y el flujo de caja estimado.
+    \section{Desarrollo de Expresiones DAX para KPIs Estratégicos}
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.95\textwidth]{3.png}
-    \caption{Power BI Dashboard 5: Proyección Financiera Anual e Ingreso Recurrente (ARR Educativo)}
-    \label{fig:powerbi_arr_proyeccion}
-\end{figure}
+    En Power BI, la inteligencia de negocios se construye mediante fórmulas en lenguaje \textbf{DAX (\textit{Data Analysis Expressions})}. A continuación se presentan las medidas clave implementadas para la gestión de SICOLEGIO 360:
 
-\begin{cajaConcepto}[Toma de Decisiones Estratégicas -- Power BI Dashboard 5 (Planificación Financiera)]
-\textbf{Decisiones Estratégicas Habilitadas:}
-\begin{enumerate}
-    \item \textbf{Aprobación del Plan de Inversión Anual:} Determina el techo presupuestal para equipamiento de laboratorios, mejoras en infraestructura física y aumentos salariales docentes basados en el $\text{ARR}$ confirmado.
-    \item \textbf{Gestión de Línea de Crédito Preventiva:} Anticipa meses de baja liquidez para programar financiamientos bancarios de corto plazo antes del vencimiento de compromisos laborales.
-\end{enumerate}
-\end{cajaConcepto}
+    \paragraph{1. Promedio General de Rendimiento Académico:}
+    \begin{lstlisting}
+    PromedioGeneralRendimiento = AVERAGE(FactRendimientoAsistencia[nota_obtenida])
+    \end{lstlisting}
 
-\subsection{Dashboard Power BI 6: Panel de Fidelización y Retención Estudiantil (Análisis de Churn)}
-Visualización de cohortes y gráfico de dona que analiza las tasas de retención de alumnado ($\text{TRA}$), traslados y motivos de retiro institucional.
+    \paragraph{2. Porcentaje de Desaprobación por Asignatura:}
+    \begin{lstlisting}
+    % Desaprobacion = 
+    VAR TotalEvaluados = COUNT(FactRendimientoAsistencia[id_hecho_evaluacion])
+    VAR TotalDesaprobados = SUM(FactRendimientoAsistencia[es_desaprobado])
+    RETURN
+    DIVIDE(TotalDesaprobados, TotalEvaluados, 0)
+    \end{lstlisting}
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.95\textwidth]{3.png}
-    \caption{Power BI Dashboard 6: Panel de Fidelización y Retención Estudiantil (Análisis de Churn)}
-    \label{fig:powerbi_retencion_churn}
-\end{figure}
+    \paragraph{3. Tasa de Asistencia Ponderada:}
+    \begin{lstlisting}
+    TasaAsistenciaPonderada = 
+    VAR TotalAsist = SUM(FactRendimientoAsistencia[total_asistencias])
+    VAR TotalFaltas = SUM(FactRendimientoAsistencia[total_inasistencias])
+    RETURN
+    DIVIDE(TotalAsist, TotalAsist + TotalFaltas, 0)
+    \end{lstlisting}
 
-\begin{cajaConcepto}[Toma de Decisiones Estratégicas -- Power BI Dashboard 6 (Directorio / Promotora)]
-\textbf{Decisiones Estratégicas Habilitadas:}
-\begin{enumerate}
-    \item \textbf{Corrección de Causas de Retiro Estudiantil:} Permite intervenir sobre factores de insatisfacción pedagógica o problemas económicos antes de la pérdida definitiva de matrícula.
-    \item \textbf{Programa de Fidelización de Familias Antiguas:} Diseña descuentos de continuidad para familias con más de dos hijos matriculados o con más de 5 años en la institución.
-\end{enumerate}
-\end{cajaConcepto}
+    \paragraph{4. Índice Promedio de Incidencias de Conducta:}
+    \begin{lstlisting}
+    IndiceDemeritosConducta = 
+    AVERAGE(FactRendimientoAsistencia[demeritos_conducta])
+    \end{lstlisting}
 
-\section{Seguridad y Gobernanza de Datos: Row-Level Security (RLS)}
+    \section{Dashboards Estratégicos en Power BI para la Alta Dirección}
 
-Al ser SICOLEGIO 360 una plataforma SaaS multiinstitucional, es imperativo garantizar que los directivos de un colegio no puedan visualizar los datos financieros o académicos de otra institución educativa dentro del mismo reporte de Power BI.
+    Con el modelo dimensional y las medidas DAX construidas, se desarrollan cuatro paneles de control gerenciales dentro del informe de Power BI:
 
-Para lograr esto, se configura la característica de \textbf{Seguridad a Nivel de Fila} (\textit{Row-Level Security - RLS}) en Power BI mediante el filtrado DAX automático por el atributo del colegio correspondiente al usuario autenticado:
+    \subsection{Dashboard Power BI 1: Radar de Rendimiento Académico y Desaprobación por Grado}
+    Muestra un gráfico de barras apiladas al 100\% con el rendimiento por grado (Logro Destacado AD vs. Logrado A vs. En Proceso B vs. En Inicio C). Incluye segmentadores por nivel educativo.
 
-\begin{lstlisting}
-[id_colegio] = USERPRINCIPALNAME()
-\end{lstlisting}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.95\textwidth]{3.png}
+        \caption{Power BI Dashboard 1: Radar de Rendimiento Académico y Desaprobación por Grado}
+        \label{fig:powerbi_radar_morosidad}
+    \end{figure}
 
-De esta manera, cuando el Director del "Colegio San José" abre el reporte de Power BI, el motor analít\section{Plan de Mejora Continua y Eficiencia Operativa}
+    \begin{cajaConcepto}[Toma de Decisiones Estratégicas -- Power BI Dashboard 1 (Dirección Académica)]
+    \textbf{Decisiones Estratégicas Habilitadas:}
+    \begin{enumerate}
+        \item \textbf{Reestructuración del Plan Pedagógico ($\text{PDC}_c > 20\%$):} Identifica asignaturas con alta tasa de desaprobación para programar capacitaciones docentes y talleres de reforzamiento.
+        \item \textbf{Ajuste Curricular Bimestral:} Permite reasignar contenidos temáticos de mayor complejidad según los resultados de logro de competencias.
+    \end{enumerate}
+    \end{cajaConcepto}
 
-La implementación de este enfoque integrado desencadena un ciclo de mejora continua en la institución educativa:
-\begin{enumerate}
-    \item \textbf{Reducción del 95\% en Errores de Transcripción:} Al eliminarse las fichas manuales de papel y cuadernos de Excel, la tasa de error en nombres, DNI y montos se reduce drásticamente.
-    \item \textbf{Optimización de la Liquidez:} El control preventivo de la morosidad a través de los dashboards en Power BI permite recuperar cartera vencida antes de la finalización del año escolar.
-    \item \textbf{Transparencia y Confianza Familiar:} Los padres de familia acceden a sus estados de cuenta e historiales académicos en tiempo real, mejorando la satisfacción del servicio educativo.
-\end{enumerate}
+    \subsection{Dashboard Power BI 2: Matriz de Eficiencia Operativa y Aforo por Sección}
+    Gráfico de dispersión que evalúa el Aforo Ocupado (eje X) frente al Promedio de Rendimiento (eje Y). Permite a la Dirección identificar secciones con alto rendimiento o sobreaforo.
 
-\section{Matriz de Gestión de Riesgos Socio-Técnicos y Mitigación}
+    [id_colegio] = USERPRINCIPALNAME()
+    \end{lstlisting}
 
-La adopción de un sistema ERP centralizado en un entorno escolar conlleva desafíos de implementación que deben gestionarse de forma preventiva. La Tabla~\ref{tab:matriz_riesgos} sintetiza los principales riesgos identificados y sus planes de mitigación:
+    De esta manera, cuando el Director de una institución abre el reporte de Power BI, el motor analítico filtra automáticamente los datos pertenecientes a su colegio.
 
-\begin{xltabular}{\textwidth}{|p{3.2cm}|p{2.8cm}|p{2.5cm}|X|}
-\caption{Matriz de riesgos socio-técnicos y planes de mitigación en SICOLEGIO 360} \label{tab:matriz_riesgos} \\
-\hline
-\textbf{Riesgo Identificado} & \textbf{Categoría} & \textbf{Nivel de Impacto} & \textbf{Plan de Mitigación Institucional} \\
-\hline
-\endfirsthead
+    % ─────────────────────────────────────────────────────────────
+    %  CONCLUSIONES
+    % ─────────────────────────────────────────────────────────────
+    \chapter*{Conclusiones}
+    \addcontentsline{toc}{chapter}{Conclusiones}
+    \markboth{CONCLUSIONES}{CONCLUSIONES}
 
-\multicolumn{4}{c}{{\bfseries Tabla \thetable{} -- Continuación de la página anterior}} \\
-\hline
-\textbf{Riesgo Identificado} & \textbf{Categoría} & \textbf{Nivel de Impacto} & \textbf{Plan de Mitigación Institucional} \\
-\hline
-\endhead
+    \begin{enumerate}
+        \item \textbf{Integración de Sistemas de Información Desacoplados:} La arquitectura de SICOLEGIO 360 demuestra que la gestión educativa no requiere forzar un ERP centralizado monolítico. La interacción de dos \textbf{Sistemas Transaccionales (TPS)} independientes —el \textbf{TPS Pedagógico} (Dirección Académica) y el \textbf{TPS de Control Escolar} (Secretaría y Convivencia)— permite mantener la autonomía operativa de cada área.
+        \item \textbf{Robustez Transaccional mediante TPS y ACID:} La implementación de un motor TPS sustentado en los principios ACID mediante transacciones SQL y disparadores asegura que eventos críticos (como la aprobación de justificaciones médicas) actualicen automáticamente los derechos de evaluación en el registro auxiliar del docente, eliminando la duplicidad de digitación y los ceros indebidos.
+        \item \textbf{Articulación de la Capa de Métricas e Indicadores:} El establecimiento formal de KPIs como la Tasa de Asistencia Ponderada ($\text{TAP}$), el Porcentaje de Desaprobación por Curso ($\text{PDC}$) y el Índice de Incidencias de Conducta ($\text{ICG}$) permite transformar las marcaciones diarias en conocimiento valioso para tutores y coordinadores.
+        \item \textbf{Diferenciación entre Reporting Web Nativo (MIS) y Power BI (DSS):} El documento sustenta la importancia de separar los dashboards web de ventanilla única (latencia $<1$ segundo para auxiliares y secretarios) de los paneles multidimensionales en Power BI. El uso de esquemas en estrella y expresiones DAX permite a la alta dirección correlacionar el ausentismo con el rendimiento académico sin degradar la base operativa.
+        \item \textbf{Optimización de la Experiencia Escolar y Atención a Familias:} La integración transaccional permite atender al apoderado mediante una Ventanilla Única, emitiendo libretas, justificaciones y citaciones en tiempo real de forma transparente.
+    \end{enumerate}
 
-\hline
-\multicolumn{4}{r}{\textit{Continúa en la siguiente página...}} \\
-\endfoot
+    % ─────────────────────────────────────────────────────────────
+    %  RECOMENDACIONES
+    % ─────────────────────────────────────────────────────────────
+    \chapter*{Recomendaciones}
+    \addcontentsline{toc}{chapter}{Recomendaciones}
+    \markboth{RECOMENDACIONES}{RECOMENDACIONES}
 
-\hline
-\endlastfoot
+    \begin{enumerate}
+        \item \textbf{Implantación Socio-Tecnológica y Capacitación Continuada:} Se recomienda acompañar el despliegue de SICOLEGIO 360 con programas de gestión del cambio para que docentes y auxiliares efectúen el registro de notas y asistencia de forma directa en el aula.
+        \item \textbf{Mantenimiento y Respaldo de Bases de Datos:} Mantener políticas estrictas de mantenimiento de la base de datos (SQLite/PostgreSQL), optimizando periódicamente los índices relacionales para soportar picos transaccionales durante cierres de bimestre.
+        \item \textbf{Gobernanza de Datos y Seguridad RLS en Power BI:} Establecer auditorías periódicas a las reglas de Seguridad a Nivel de Fila (\textit{Row-Level Security}) en Power BI para garantizar el aislamiento estricto entre instituciones educativas.
+        \item \textbf{Monitoreo Normativo de Protección de Datos:} Cumplir con la Ley N° 29733 (Ley de Protección de Datos Personales), asegurando el tratamiento confidencial del legajo del estudiante y las calificaciones.
+    \end{enumerate}
 
-\textbf{Resistencia al Cambio del Personal} & Social / Humano & Alto & Programa de capacitación por niveles, talleres de ergonomía de software y diseño intuitivo UX. \\
-\hline
-\textbf{Caída de Conectividad a Internet} & Tecnológico / Infraestructura & Medio & Arquitectura PWA con caché local (\textit{Offline-First}) y sincronización diferida automática al restablecer enlace. \\
-\hline
-\textbf{Fuga o Divulgación de Datos Sensibles} & Seguridad / Legal & Crítico & Cifrado de datos en tránsito (TLS 1.3) y en reposo (AES-256), autenticación de doble factor (2FA) y RBAC. \\
-\hline
-\textbf{Resistencia de Padres al Pago Digital} & Operativo / Social & Medio & Módulos instruccionales breves en el portal y habilitación de múltiples canales (pasarela, Yape/Plin, bancos). \\
-\end{xltabular}
+    % ─────────────────────────────────────────────────────────────
+    %  REFERENCIAS BIBLIOGRÁFICAS (APA 7)
+    % ─────────────────────�\end{document};
 
-\section{Cumplimiento Legal y Protección de Datos Personales (Ley N° 29733)}
+    -- Tabla de Calificaciones y Evaluaciones (Académico - TPS 1)
+    CREATE TABLE notas (
+        id_nota INT AUTO_INCREMENT PRIMARY KEY,
+        id_estudiante INT NOT NULL,
+        id_curso INT NOT NULL,
+        calificacion_numerica DECIMAL(4,2) NOT NULL,
+        permite_reprogramacion BOOLEAN DEFAULT FALSE,
+        FOREIGN KEY (id_estudiante) REFERENCES estudiantes(id_estudiante)
+    );
+    \end{lstlisting}
 
-En el contexto peruano y latinoamericano, la gestión de datos de menores de edad y estados de cuenta familiares está estrictamente regulada por la \textbf{Ley N° 29733 (Ley de Protección de Datos Personales)} y su Reglamento (Decreto Supremo N° 003-2013-JUS). SICOLEGIO 360 cumple con este marco legal mediante los siguientes mecanismos:
+    \section*{Anexo B: Trigger Transaccional para Habilitación Atómica de Reprogramación de Evaluación}
 
-\begin{itemize}
-    \item \textbf{Consentimiento Informado Digital:} El Portal de Apoderados incluye cláusulas explícitas de consentimiento para el tratamiento de datos personales con fines exclusivamente educativos e institucionales.
-    \item \textbf{Principio de Encriptación y Confidencialidad:} Toda la información del legajo del estudiante y las calificaciones se encuentra protegida contra accesos no autorizados.
-    \item \textbf{Derechos ARCO (Acceso, Rectificación, Cancelación y Oposición):} El sistema permite a los apoderados ejercer sus derechos de actualización y rectificación de datos personales a través de la plataforma sin trámites burocráticos presenciales.
-\end{itemize}
+    \begin{lstlisting}[language=SQL, caption={Trigger SQL para la integracion atomica entre Justificacion de Faltas y Evaluaciones}]
+    DELIMITER //
+    CREATE TRIGGER trg_aprobar_justificacion_evaluacion
+    AFTER INSERT ON justificaciones
+    FOR EACH ROW
+    BEGIN
+        -- Si la justificación es aprobada por Secretaría
+        IF NEW.estado = 'APROBADO' THEN
+            -- Habilitar la reprogramación de evaluaciones en el TPS Pedagógico del docente
+            UPDATE notas n
+            INNER JOIN asistencias a ON n.id_estudiante = a.id_estudiante
+            SET n.permite_reprogramacion = TRUE
+            WHERE a.id_asistencia = NEW.id_asistencia;
+        END IF;
+    END;
+    //
+    DELIMITER ;
+    \end{lstlisting}
 
-% ─────────────────────────────────────────────────────────────
-%  CONCLUSIONES
-% ─────────────────────────────────────────────────────────────
-\chapter*{Conclusiones}
-\addcontentsline{toc}{chapter}{Conclusiones}
-\markboth{CONCLUSIONES}{CONCLUSIONES}
+    \end{document}
+    \addcontentsline{toc}{chapter}{Anexos}
+    \markboth{ANEXOS}{ANEXOS}
 
-\begin{enumerate}
-    \item \textbf{Integración ERP y Base de Datos Centralizada:} La arquitectura de SICOLEGIO 360 demuestra que la transformación digital de las instituciones educativas privadas requiere trascender los sistemas aislados. La consolidación de una \textbf{base de datos relacional centralizada} como Única Fuente de Verdad (\textit{SSOT}) elimina de manera definitiva las islas de información entre Secretaría Académica y Tesorería, garantizando la consistencia y auditabilidad de los datos.
-    \item \textbf{Robustez Transaccional mediante TPS y ACID:} La implementación de un motor de Procesamiento de Transacciones (\textbf{TPS}) riguroso, sustentado en las propiedades ACID mediante \textit{Stored Procedures} y \textit{Triggers} SQL, asegura que las operaciones complejas (como el registro simultáneo de matrícula y la generación de compromisos financieros) se ejecuten de manera atómica, previniendo el sobreaforo de aulas y los descuadres de caja.
-    \item \textbf{Articulación de la Capa de Métricas y KPIs:} El establecimiento formal de una capa de métricas con fórmulas matemáticas para la ocupación de vacantes ($\text{TOV}$), morosidad ($\text{IMG}$), tiempo de liquidación ($\text{TPLM}$) y recaudación anual ($\text{ARR}$) permite transformar los datos crudos del colegio en conocimiento gestionable para los mandos medios y directivos.
-    \item \textbf{Diferenciación Clara entre Reporting Web (MIS) y Power BI (DSS):} El trabajo establece la importancia teórica e ingenieril de separar los dashboards operativos web nativos (orientados a la ejecución en tiempo real de secretarios y tesoreros con latencia $<1$ segundo) de la capa analítica estratégica en Power BI. El uso de esquemas dimensionales en estrella y lenguaje DAX permite a la alta dirección analizar patrones históricos y proyecciones de recaudación sin degradar el rendimiento de la base de datos operativa.
-    \item \textbf{Empoderamiento en la Toma de Decisiones Gerenciales y Ventanilla Única:} La experiencia del usuario se optimiza drásticamente al introducir el concepto de Ventanilla Única, reduciendo el tiempo de atención al apoderado de 45 minutos a menos de 5 minutos, respaldando decisiones estratégicas fundamentadas en evidencia cuantitativa confiable.
-\end{enumerate}
+    \section*{Anexo A: DDL SQL de la Base de Datos Centralizada (Subconjunto Secretaría - Tesorería)}
 
-% ─────────────────────────────────────────────────────────────
-%  RECOMENDACIONES
-% ─────────────────────────────────────────────────────────────
-\chapter*{Recomendaciones}
-\addcontentsline{toc}{chapter}{Recomendaciones}
-\markboth{RECOMENDACIONES}{RECOMENDACIONES}
+    \begin{lstlisting}[language=SQL, caption={Script DDL SQL de las tablas centralizadas de Secretaria y Tesoreria}]
+    -- Tabla de Secciones y Aforo (Secretaria)
+    CREATE TABLE secciones (
+        id_seccion INT AUTO_INCREMENT PRIMARY KEY,
+        nombre_seccion VARCHAR(50) NOT NULL,
+        grado VARCHAR(20) NOT NULL,
+        nivel VARCHAR(20) NOT NULL,
+        capacidad INT NOT NULL DEFAULT 30,
+        vacantes_ocupadas INT NOT NULL DEFAULT 0,
+        CONSTRAINT chk_aforo CHECK (vacantes_ocupadas <= capacidad)
+    );
 
-\begin{enumerate}
-    \item \textbf{Implantación Socio-Tecnológica y Capacitación Continuada:} Se recomienda acompañar el despliegue del ERP SICOLEGIO 360 con un programa integral de gestión del cambio. El éxito del sistema no depende únicamente de la tecnología, sino de la capacitación continua del personal de secretaría, docentes y administrativos para que adopten la cultura de ingreso directo de datos en la fuente.
-    \item \textbf{Mantenimiento y Políticas de Respaldo de la Base Centralizada:} Mantener políticas estrictas de mantenimiento de la base de datos PostgreSQL/MySQL, ejecutando respaldos atómicos diarios (\textit{backups}) y optimizando periódicamente los índices relacionales para preservar la rapidez de respuesta de las consultas OLTP durante las temporadas de alta demanda de matrícula.
-    \item \textbf{Gobernanza de Datos y Actualización de Vistas ETL en Power BI:} Establecer una gobernanza de Business Intelligence rigurosa, programando la actualización de las vistas de extracción SQL fuera del horario lectivo pico y auditando periódicamente las políticas de seguridad a nivel de fila (\textit{Row-Level Security - RLS}) para garantizar el aislamiento multi-tenant de las instituciones educativas.
-    \item \textbf{Monitoreo Normativo Legal y Privacidad de Menores:} Se sugiere mantener una auditoría periódica del cumplimiento de la Ley N° 29733 de Protección de Datos Personales, garantizando la encriptación de datos sensibles del menor y renovando anualmente las políticas de uso de datos con los padres de familia.
-\end{enumerate}
+    -- Tabla de Estudiantes (Secretaria)
+    CREATE TABLE estudiantes (
+        id_estudiante INT AUTO_INCREMENT PRIMARY KEY,
+        dni VARCHAR(15) UNIQUE NOT NULL,
+        nombres VARCHAR(100) NOT NULL,
+        apellidos VARCHAR(100) NOT NULL,
+        estado_academico VARCHAR(20) DEFAULT 'MATRICULADO'
+    );
 
-% ─────────────────────────────────────────────────────────────
-%  RECOMENDACIONES
-% ─────────────────────────────────────────────────────────────
-\chapter*{Recomendaciones}
-\addcontentsline{toc}{chapter}{Recomendaciones}
-\markboth{RECOMENDACIONES}{RECOMENDACIONES}
+    -- Tabla de Matriculas (Secretaria)
+    CREATE TABLE matriculas (
+        id_matricula INT AUTO_INCREMENT PRIMARY KEY,
+        id_estudiante INT NOT NULL,
+        id_seccion INT NOT NULL,
+        fecha_matricula DATETIME DEFAULT CURRENT_TIMESTAMP,
+        estado_matricula VARCHAR(30) DEFAULT 'PENDIENTE_PAGO',
+        FOREIGN KEY (id_estudiante) REFERENCES estudiantes(id_estudiante),
+        FOREIGN KEY (id_seccion) REFERENCES secciones(id_seccion)
+    );
 
-\begin{enumerate}
-    \item \textbf{Implantación Socio-Tecnológica y Capacitación Continuada:} Se recomienda acompañar el despliegue del ERP SICOLEGIO 360 con un programa integral de gestión del cambio. El éxito del sistema no depende únicamente de la tecnología, sino de la capacitación continua del personal de secretaría, docentes y administrativos para que adopten la cultura de ingreso directo de datos en la fuente.
-    \item \textbf{Mantenimiento y Políticas de Respaldo de la Base Centralizada:} Mantener políticas estrictas de mantenimiento de la base de datos PostgreSQL/MySQL, ejecutando respaldos atómicos diarios (\textit{backups}) y optimizando periódicamente los índices relacionales para preservar la rapidez de respuesta de las consultas OLTP durante las temporadas de alta demanda de matrícula.
-    \item \textbf{Gobernanza de Datos y Actualización de Vistas ETL en Power BI:} Establecer una gobernanza de Business Intelligence rigurosa, programando la actualización de las vistas de extracción SQL fuera del horario lectivo pico y auditando periódicamente las políticas de seguridad a nivel de fila (\textit{Row-Level Security - RLS}) para garantizar el aislamiento multi-tenant de las instituciones educativas.
-\end{enumerate}
+    -- Tabla de Compromisos de Pago (Tesoreria)
+    CREATE TABLE compromisos_pago (
+        id_compromiso INT AUTO_INCREMENT PRIMARY KEY,
+        id_estudiante INT NOT NULL,
+        concepto VARCHAR(100) NOT NULL,
+        monto DECIMAL(10,2) NOT NULL,
+        fecha_vencimiento DATE NOT NULL,
+        estado VARCHAR(20) DEFAULT 'PENDIENTE',
+        FOREIGN KEY (id_estudiante) REFERENCES estudiantes(id_estudiante)
+    );
 
-% ─────────────────────────────────────────────────────────────
-%  REFERENCIAS BIBLIOGRÁFICAS (APA 7)
-% ─────────────────────────────────────────────────────────────
-\chapter*{Referencias Bibliográficas}
-\addcontentsline{toc}{chapter}{Referencias Bibliográficas}
-\markboth{REFERENCIAS BIBLIOGRÁFICAS}{REFERENCIAS BIBLIOGRÁFICAS}
+    -- Tabla de Pagos Realizados (Tesoreria)
+    CREATE TABLE pagos (
+        id_pago INT AUTO_INCREMENT PRIMARY KEY,
+        id_compromiso INT NOT NULL,
+        monto_pagado DECIMAL(10,2) NOT NULL,
+        fecha_pago DATETIME DEFAULT CURRENT_TIMESTAMP,
+        canal_pago VARCHAR(30) DEFAULT 'PASARELA_ONLINE',
+        FOREIGN KEY (id_compromiso) REFERENCES compromisos_pago(id_compromiso)
+    );
+    \end{lstlisting}
 
-\begin{description}[leftmargin=1.5em, itemindent=-1.5em]
-    \item Date, C. J. (2004). \textit{An Introduction to Database Systems} (8th ed.). Addison-Wesley.
-    \item Elmasri, R., \& Navathe, S. B. (2016). \textit{Fundamentals of Database Systems} (7th ed.). Pearson.
-    \item Kimball, R., \& Ross, M. (2013). \textit{The Data Warehouse Toolkit: The Definitive Guide to Dimensional Modeling} (3rd ed.). John Wiley \& Sons.
-    \item Laudon, K. C., \& Laudon, J. P. (2016). \textit{Management Information Systems: Managing the Digital Firm} (14th ed.). Pearson.
-    \item Ministerio de Educación del Perú [MINEDU]. (2021). \textit{Norma técnica para el desarrollo del año escolar en instituciones educativas y programas educativos de la educación básica}. Lima, Perú: MINEDU.
-    \item O'Brien, J. A., \& Marakas, G. M. (2011). \textit{Management Information Systems} (10th ed.). McGraw-Hill/Irwin.
-    \item Pressman, R. S. (2015). \textit{Software Engineering: A Practitioner's Approach} (8th ed.). McGraw-Hill Education.
-    \item Russo, M., \& Ferrari, A. (2019). \textit{The Definitive Guide to DAX: Business intelligence with Microsoft Power BI, SQL Server Analysis Services, and Excel} (2nd ed.). Microsoft Press.
-    \item Silberschatz, A., Korth, H. F., \& Sudarshan, S. (2020). \textit{Database System Concepts} (7th ed.). McGraw-Hill Education.
-\end{description}
+    \section*{Anexo B: Trigger Transaccional para Generación Atómica de Cronograma de Pagos}
 
-% ─────────────────────────────────────────────────────────────
-%  ANEXOS
-% ─────────────────────────────────────────────────────────────
-\chapter*{Anexos}
-\addcontentsline{toc}{chapter}{Anexos}
-\markboth{ANEXOS}{ANEXOS}
+    \begin{lstlisting}[language=SQL, caption={Trigger SQL para la integracion atomica entre Secretaria y Tesoreria}]
+    DELIMITER //
+    CREATE TRIGGER trg_generar_cronograma_pago
+    AFTER INSERT ON matriculas
+    FOR EACH ROW
+    BEGIN
+        -- 1. Insertar la cuota de Matricula
+        INSERT INTO compromisos_pago (id_estudiante, concepto, monto, fecha_vencimiento, estado)
+        VALUES (NEW.id_estudiante, 'Cuota de Matricula', 350.00, CURDATE(), 'PENDIENTE');
+        
+        -- 2. Insertar Pensiones mensuales de Marzo a Diciembre
+        INSERT INTO compromisos_pago (id_estudiante, concepto, monto, fecha_vencimiento, estado)
+        VALUES 
+        (NEW.id_estudiante, 'Pension Marzo', 400.00, '2026-03-31', 'PENDIENTE'),
+        (NEW.id_estudiante, 'Pension Abril', 400.00, '2026-04-30', 'PENDIENTE'),
+        (NEW.id_estudiante, 'Pension Mayo', 400.00, '2026-05-31', 'PENDIENTE'),
+        (NEW.id_estudiante, 'Pension Junio', 400.00, '2026-06-30', 'PENDIENTE'),
+        (NEW.id_estudiante, 'Pension Julio', 400.00, '2026-07-31', 'PENDIENTE');
+    END;
+    //
+    DELIMITER ;
+    \end{lstlisting}
 
-\section*{Anexo A: DDL SQL de la Base de Datos Centralizada (Subconjunto Secretaría - Tesorería)}
-
-\begin{lstlisting}[language=SQL, caption={Script DDL SQL de las tablas centralizadas de Secretaria y Tesoreria}]
--- Tabla de Secciones y Aforo (Secretaria)
-CREATE TABLE secciones (
-    id_seccion INT AUTO_INCREMENT PRIMARY KEY,
-    nombre_seccion VARCHAR(50) NOT NULL,
-    grado VARCHAR(20) NOT NULL,
-    nivel VARCHAR(20) NOT NULL,
-    capacidad INT NOT NULL DEFAULT 30,
-    vacantes_ocupadas INT NOT NULL DEFAULT 0,
-    CONSTRAINT chk_aforo CHECK (vacantes_ocupadas <= capacidad)
-);
-
--- Tabla de Estudiantes (Secretaria)
-CREATE TABLE estudiantes (
-    id_estudiante INT AUTO_INCREMENT PRIMARY KEY,
-    dni VARCHAR(15) UNIQUE NOT NULL,
-    nombres VARCHAR(100) NOT NULL,
-    apellidos VARCHAR(100) NOT NULL,
-    estado_academico VARCHAR(20) DEFAULT 'MATRICULADO'
-);
-
--- Tabla de Matriculas (Secretaria)
-CREATE TABLE matriculas (
-    id_matricula INT AUTO_INCREMENT PRIMARY KEY,
-    id_estudiante INT NOT NULL,
-    id_seccion INT NOT NULL,
-    fecha_matricula DATETIME DEFAULT CURRENT_TIMESTAMP,
-    estado_matricula VARCHAR(30) DEFAULT 'PENDIENTE_PAGO',
-    FOREIGN KEY (id_estudiante) REFERENCES estudiantes(id_estudiante),
-    FOREIGN KEY (id_seccion) REFERENCES secciones(id_seccion)
-);
-
--- Tabla de Compromisos de Pago (Tesoreria)
-CREATE TABLE compromisos_pago (
-    id_compromiso INT AUTO_INCREMENT PRIMARY KEY,
-    id_estudiante INT NOT NULL,
-    concepto VARCHAR(100) NOT NULL,
-    monto DECIMAL(10,2) NOT NULL,
-    fecha_vencimiento DATE NOT NULL,
-    estado VARCHAR(20) DEFAULT 'PENDIENTE',
-    FOREIGN KEY (id_estudiante) REFERENCES estudiantes(id_estudiante)
-);
-
--- Tabla de Pagos Realizados (Tesoreria)
-CREATE TABLE pagos (
-    id_pago INT AUTO_INCREMENT PRIMARY KEY,
-    id_compromiso INT NOT NULL,
-    monto_pagado DECIMAL(10,2) NOT NULL,
-    fecha_pago DATETIME DEFAULT CURRENT_TIMESTAMP,
-    canal_pago VARCHAR(30) DEFAULT 'PASARELA_ONLINE',
-    FOREIGN KEY (id_compromiso) REFERENCES compromisos_pago(id_compromiso)
-);
-\end{lstlisting}
-
-\section*{Anexo B: Trigger Transaccional para Generación Atómica de Cronograma de Pagos}
-
-\begin{lstlisting}[language=SQL, caption={Trigger SQL para la integracion atomica entre Secretaria y Tesoreria}]
-DELIMITER //
-CREATE TRIGGER trg_generar_cronograma_pago
-AFTER INSERT ON matriculas
-FOR EACH ROW
-BEGIN
-    -- 1. Insertar la cuota de Matricula
-    INSERT INTO compromisos_pago (id_estudiante, concepto, monto, fecha_vencimiento, estado)
-    VALUES (NEW.id_estudiante, 'Cuota de Matricula', 350.00, CURDATE(), 'PENDIENTE');
-    
-    -- 2. Insertar Pensiones mensuales de Marzo a Diciembre
-    INSERT INTO compromisos_pago (id_estudiante, concepto, monto, fecha_vencimiento, estado)
-    VALUES 
-    (NEW.id_estudiante, 'Pension Marzo', 400.00, '2026-03-31', 'PENDIENTE'),
-    (NEW.id_estudiante, 'Pension Abril', 400.00, '2026-04-30', 'PENDIENTE'),
-    (NEW.id_estudiante, 'Pension Mayo', 400.00, '2026-05-31', 'PENDIENTE'),
-    (NEW.id_estudiante, 'Pension Junio', 400.00, '2026-06-30', 'PENDIENTE'),
-    (NEW.id_estudiante, 'Pension Julio', 400.00, '2026-07-31', 'PENDIENTE');
-END;
-//
-DELIMITER ;
-\end{lstlisting}
-
-\end{document}
+    \end{document}
